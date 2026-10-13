@@ -80,7 +80,7 @@ function rendreSuivi() {
 
   const exp = lire("export-periode", {});
   const nbPostulees = suivies.filter((o) => statutDe(o.id) !== "a_postuler").length;
-  h += `<h2 class="groupe">Pour ma conseillère France Travail</h2>
+  h += `<h2 class="groupe">Exporter</h2>
     <div class="bloc-export">
       <p class="vide-petit" style="margin:0 0 8px">Tableau Word de tes candidatures envoyées : date, intitulé, employeur, salaire, résumé de l'offre et suite donnée.
         Tes formations et rendez-vous n'y figurent pas.</p>
