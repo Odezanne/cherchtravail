@@ -1,0 +1,68 @@
+# Réglages de la recherche. Modifiable directement sur GitHub (icône crayon).
+
+# Heure d'envoi du condensé quotidien (heure de Paris)
+heure_condense: 8
+
+# Nombre maximum de nouvelles offres analysées par l'IA chaque jour
+# (les modèles gratuits ont un quota quotidien limité)
+max_analyses_par_jour: 60
+
+# Ordre d'essai des modèles gratuits OpenRouter (le suivant prend le relais si l'un est saturé)
+modeles:
+  - nvidia/nemotron-3-ultra-550b-a55b:free
+  - google/gemma-4-31b-it:free
+  - nvidia/nemotron-3-super-120b-a12b:free
+  - google/gemma-4-26b-a4b-it:free
+
+sources:
+  # Flux RSS officiel du CNRS (toutes les offres, CDD ingénieurs et contrats doctoraux)
+  cnrs: true
+
+  # Alertes e-mail reçues dans Gmail : Indeed, LinkedIn, Welcome to the Jungle, APEC,
+  # France Travail, ABG, EURAXESS, INRAE, Choisir le service public...
+  # Le robot lit uniquement le libellé Gmail indiqué ci-dessous.
+  alertes_mail:
+    actif: true
+    libelle_gmail: "Alertes emploi"
+    jours: 3
+
+  # API France Travail (s'active toute seule quand l'accès sera accordé et les clés ajoutées)
+  france_travail:
+    motscles: ["biostatisticien", "ingénieur d'études biologie", "ingénieur de recherche biologie",
+               "écologie", "comportement animal", "biodiversité", "analyse de données biologie"]
+    departements: ["75", "77", "78", "91", "92", "93", "94", "95"]
+
+  # Autres flux RSS à ajouter librement (une adresse par ligne)
+  rss_supplementaires: []
+
+# Mots-clés qui augmentent l'intérêt d'une offre (préfiltre avant l'IA). Poids de 1 à 5.
+mots_cles:
+  5: ["comportement", "éthologie", "ethologie", "behaviour", "behavior", "biostatisti", "primat",
+      "écologie comportementale", "cognition animale", "bien-être animal", "zebrafish", "poisson zèbre"]
+  4: ["écologie", "ecologie", "ecology", "biodiversité", "biodiversity", "faune", "wildlife",
+      "conservation", "génétique des populations", "population genetics", "modèles mixtes", "glmm",
+      " r ", "statisti", "analyse de données", "data analys", "modélisation", "modelling", "modeling"]
+  3: ["biologie", "biology", "animal", "zoologie", "évolution", "evolution", "neurosciences",
+      "épidémiologie", "santé animale", "one health", "sciences participatives", "vigie-nature",
+      "ingénieur d'étude", "ingénieur d’étude", "ingénieur de recherche", "data manager",
+      "muséum", "mnhn", "inrae", "anses", "ofb"]
+  1: ["médiation scientifique", "biologiste", "environnement", "terrain"]
+
+# Offres écartées d'office (dans le titre)
+exclusions:
+  - "stage"
+  - "stagiaire"
+  - "convention de stage"
+  - "alternance"
+  - "alternant"
+  - "apprenti"
+  - "apprentissage"
+  - "post-doc"
+  - "postdoc"
+  - "post doc"
+  - "postdoctor"
+  - "post-doctor"
+  - "mobilité interne"
+  - "volontariat"
+  - "service civique"
+  - "bénévol"
