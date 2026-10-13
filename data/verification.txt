@@ -1,4 +1,4 @@
-Vérification du 13/10/2026 20:25
+Vérification du 13/10/2026 20:33
 OK   secret OPENROUTER_API_KEY présent
 OK   secret GEMINI_API_KEY présent
 OK   secret GMAIL_ADRESSE présent
@@ -14,9 +14,10 @@ OK   dépôt Odezanne/cherchtravail-donnees trouvé : privé
 OK   écriture dans le dépôt privé
 OK   données du site synchronisées (etat.json) : présentes
 OK   la clé peut voir les workflows de cherchtravail (barre de recherche)
-OK   INRAE (jobs.inrae.fr) : 3 offres lues, ex. : Stage en Sociologie : Quel accès à l’eau pour les agriculteu ·  · Stage 6 mois · limite 2026-11-13 | Etude des procédés de compostage innovants en agriculture bi · Rennes (35) · Stage le stage se déroulera sur 6 mois entre février 2027 et septembre 2027 · limite 2026-11-15 | Stage M2 : Passage à l'échelle d'un graphe de cellules simul ·  · Stage 6 mois · limite 2026-11-02
+OK   INRAE (jobs.inrae.fr) : 3 offres lues, ex. : Stage en Sociologie : Quel accès à l’eau pour les agriculteu ·  · Stage 6 mois · limite 2026-11-13 | Etude des procédés de compostage innovants en agriculture bi · Rennes (35) · Stage 6 mois · limite 2026-11-15 | Stage M2 : Passage à l'échelle d'un graphe de cellules simul ·  · Stage 6 mois · limite 2026-11-02
+OK   recoupement « Analyste de données spatiales biodiversité et haie » : disponible · {"sites": [{"nom": "fr.linkedin.com", "url": "https://fr.linkedin.com/in/nelly-paradelle-780247184"}, {"nom": "Choisir le service public", "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/analyste-de-donnees-spatiales-biodiversite-et-haies-reference-2026-2168525"}], "cherche_le": "2026-10-13", "statut": "plusieurs"}
 OK   Tavily : 2 résultats
-OK   Jooble fr.jooble.org : 20 offres « biostatisticien » / Île-de-France ; ex. : Biostatisticien-ne H/F (Paris); Chargé d'études statistiques H/F (Courbevoie, 92400)
+OK   Jooble fr.jooble.org : 20 offres « biostatisticien » / Île-de-France ; ex. : Biostatisticien-ne H/F (Paris); STAGE - Chargé d'études statistiques H/F (Montrouge, Hauts-de-)
 NON  Jooble (erreur sur l'un des deux sites) : HTTP Error 403: Forbidden
 NON  IA gemini-flash-latest : HTTP 503 [{
   "error": {
@@ -26,4 +27,4 @@ NON  IA gemini-flash-lite-latest : HTTP 503 [{
   "error": {
     "code": 503,
     "message": "This model is currently experiencing high demand. S
-OK   IA nvidia/nemotron-3-super-120b-a12b:free : répond
+NON  IA nvidia/nemotron-3-super-120b-a12b:free : répond
