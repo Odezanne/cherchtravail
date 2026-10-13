@@ -56,6 +56,18 @@ function rendreSuivi() {
 
   h += rendreCalendrier(entretiens);
 
+  const exp = lire("export-periode", {});
+  const nbPostulees = suivies.filter((o) => statutDe(o.id) !== "a_postuler").length;
+  h += `<h2 class="groupe">Pour ma conseillère France Travail</h2>
+    <div class="bloc-export">
+      <p class="vide-petit" style="margin:0 0 8px">Tableau Word de tes candidatures envoyées : date, intitulé, employeur, salaire, résumé de l'offre et suite donnée.</p>
+      <div class="suivi-champs">
+        <label>Du<input type="date" data-suivi="export-du" value="${esc(exp.du || "")}"></label>
+        <label>Au<input type="date" data-suivi="export-au" value="${esc(exp.au || "")}"></label>
+      </div>
+      <button class="bouton principal" data-suivi="export-word" ${nbPostulees ? "" : "disabled"}>Exporter en Word (${nbPostulees} candidature${nbPostulees > 1 ? "s" : ""})</button>
+    </div>`;
+
   h += `<h2 class="groupe">Mes candidatures (${suivies.length})</h2>`;
   if (!suivies.length) {
     h += `<p class="vide-petit">Ouvre une offre et choisis un statut (« À postuler », « Postulé »…) pour la suivre ici.</p>`;
@@ -154,6 +166,57 @@ function telechargerIcs(o, e) {
   setTimeout(() => URL.revokeObjectURL(url), 10000);
 }
 
+/* ------------------------------------------------------------- Export Word pour France Travail */
+
+function resumeCourt(o) {
+  const a = o.analyse || {}; const s = suivi[o.id] || {};
+  let t = a.resume || (a.missions || []).slice(0, 3).join(" ; ") || o.extrait || "";
+  if (/^Analyse automatique simplifiée|^Offre éloignée/.test(t)) t = o.extrait || "";
+  if (/Aller au contenu|Se connecter|sur le Web/.test(t)) t = "";
+  t = String(t).replace(/\s+/g, " ").trim();
+  if (t.length > 320) t = t.slice(0, 317).replace(/\s+\S*$/, "") + "…";
+  return t || s.notes || "";
+}
+
+function exporterWord() {
+  const p = lire("export-periode", {});
+  const lignes = offresSuivies()
+    .filter((o) => statutDe(o.id) !== "a_postuler")
+    .map((o) => ({ o, s: suivi[o.id] || {} }))
+    .filter(({ s }) => (!p.du || (s.date_postule || "") >= p.du) && (!p.au || (s.date_postule || "9999") <= p.au))
+    .sort((x, y) => (x.s.date_postule || "").localeCompare(y.s.date_postule || ""));
+  if (!lignes.length) return toast("Aucune candidature sur cette période");
+  const a = (o) => o.analyse || {};
+  const suite = (o, s) => {
+    const st = statutDe(o.id);
+    const ent = (s.entretiens || []).map((e) => "entretien le " + dateFr(e.date, { day: "numeric", month: "long" })).join(", ");
+    return [STATUTS[st]?.nom, ent].filter(Boolean).join(", ");
+  };
+  const colonnes = [
+    { titre: "Date de candidature", largeur: 2.4 }, { titre: "Intitulé du poste", largeur: 5 },
+    { titre: "Employeur et lieu", largeur: 3.8 }, { titre: "Contrat", largeur: 2.2 }, { titre: "Salaire", largeur: 2.6 },
+    { titre: "Résumé de l'offre", largeur: 7.4 }, { titre: "Suite donnée", largeur: 2.6 },
+  ];
+  const rangs = lignes.map(({ o, s }) => [
+    s.date_postule ? dateFr(s.date_postule, { day: "2-digit", month: "2-digit", year: "numeric" }) : "",
+    o.titre + (o.url ? "\n" + o.url : ""),
+    [o.employeur, o.lieu].filter(Boolean).join(", "),
+    [o.contrat, a(o).duree_mois ? a(o).duree_mois + " mois" : ""].filter(Boolean).join(", "),
+    salaireTexte(a(o)) || o.salaire_texte || "Non précisé",
+    resumeCourt(o),
+    suite(o, s),
+  ]);
+  const periode = p.du || p.au
+    ? `Période : ${p.du ? "du " + dateFr(p.du, { day: "numeric", month: "long", year: "numeric" }) : "depuis le début"} ${p.au ? "au " + dateFr(p.au, { day: "numeric", month: "long", year: "numeric" }) : "à aujourd'hui"}`
+    : `Toutes mes candidatures au ${dateFr(aujourdHui(), { day: "numeric", month: "long", year: "numeric" })}`;
+  const P = Docx.p;
+  const corps = P("Suivi de mes candidatures", { gras: true, taille: 16, apres: 2 })
+    + P(`Eliott Mestrallet · ${periode} · ${lignes.length} candidature${lignes.length > 1 ? "s" : ""}`, { couleur: "5D6A62", apres: 10 })
+    + Docx.tableau(colonnes, rangs, { taille: 9 });
+  Docx.telecharger(Docx.document(corps, { paysage: true, marge: 850, titre: "Suivi de mes candidatures", auteur: "Eliott Mestrallet", taille: 10 }),
+    `Candidatures-Mestrallet-${aujourdHui()}.docx`);
+}
+
 /* ------------------------------------------------------------- Sauvegarde / ajout manuel */
 
 function sauvegarde() {
@@ -206,6 +269,10 @@ function actionSuivi(el, evt) {
       s.statut = el.value || undefined; s.fav = false; s.postule = false;
       if (["postule", "entretien", "offre", "refus"].includes(el.value) && !s.date_postule) s.date_postule = aujourdHui();
       enregistrer(); afficher(); return ouvrirFiche(id);
+    case "export-du": case "export-au":
+      if (evt.type === "change") { const p = lire("export-periode", {}); p[nom.slice(7)] = el.value; ecrire("export-periode", p); }
+      return;
+    case "export-word": return exporterWord();
     case "date": if (evt.type === "change") { s.date_postule = el.value; enregistrer(); afficher(); } return;
     case "notes": if (evt.type === "change") { s.notes = el.value; enregistrer(); } return;
     case "ajout-entretien": {

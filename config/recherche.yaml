@@ -18,6 +18,15 @@ sources:
   # Flux RSS officiel du CNRS (toutes les offres, CDD ingénieurs et contrats doctoraux)
   cnrs: true
 
+  # Choisir le service public : offres du MNHN (toutes) et recherche par mots-clés
+  # dans toute la fonction publique (INRAE, universités, OFB, Anses…). Le site autorise la lecture des offres.
+  choisir_le_service_public:
+    actif: true
+    motscles: ["mnhn", "biostatistique", "biostatisticien", "comportement animal", "éthologie", "écologie",
+               "biodiversité", "génétique des populations", "zebrafish", "ingénieur d'études biologie"]
+    pages: 1        # 20 offres les plus récentes par mot-clé
+    pages_mnhn: 3   # le MNHN publie une trentaine d'offres à la fois
+
   # Alertes e-mail reçues dans Gmail : Indeed, LinkedIn, Welcome to the Jungle, APEC,
   # France Travail, ABG, EURAXESS, INRAE, Choisir le service public...
   # Le robot lit uniquement le libellé Gmail indiqué ci-dessous.
@@ -25,6 +34,11 @@ sources:
     actif: true
     libelle_gmail: "Alertes emploi"
     jours: 3
+    # Ménage : les mails d'alertes et des sites d'emploi (récaps, relances, newsletters) partent à la
+    # corbeille de Gmail (récupérables 30 jours) une fois leurs offres recopiées sur le site.
+    # Les mails qui parlent de candidature, d'entretien, de convocation ou les messages de recruteurs
+    # ne sont jamais touchés. essai = liste seulement dans le condensé ; actif = corbeille ; non = rien.
+    menage: essai
 
   # API France Travail (s'active toute seule quand l'accès sera accordé et les clés ajoutées)
   france_travail:

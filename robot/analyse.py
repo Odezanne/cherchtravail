@@ -52,16 +52,48 @@ def salaire(texte):
     return (min(vals), max(vals)) if vals else (None, None)
 
 
+# Sans au moins un de ces mots, l'offre n'est pas dans le domaine du candidat (biologie, écologie, comportement…)
+DOMAINE = re.compile(r"comportement|etholog|behavio|primat|zebrafish|poisson|ecolog|biodiversit|faune|wildlife|"
+                     r"genetique|genomique|biolog|animal|animaux|zoolog|biologie evolutive|neuroscien|epidemiolog|"
+                     r"biostatisti|vivant|naturaliste|especes?\b|oiseau|insecte|pollinisat|vegetal|plante")
+
+
+def score_heuristique(offre, cfg):
+    """Note sans IA, volontairement prudente : plafonnée à 30 hors domaine, à 80 dans le domaine."""
+    titre = sans_accents(offre.get("titre", ""))
+    t = " " + sans_accents(titre + " " + offre.get("texte", "")[:3000]) + " "
+    points = 0
+    for poids, mots in (cfg.get("mots_cles") or {}).items():
+        for m in mots:
+            m = sans_accents(m)
+            if m in titre:
+                points += 2 * int(poids)
+            elif m in t:
+                points += int(poids)
+    score = points * 3 + (8 if offre.get("region") == "idf" else 0)
+    if re.search(r"ingenieur d.?etudes?|ingenieur de recherche|biostatisticien|charge.? d.?etudes?", titre):
+        score += 8
+    # Spécialités de paillasse ou hors biologie des organismes : le profil ne les couvre pas
+    if re.search(r"moleculaire|biochimi|bioinformati|chimi|cellulaire|\barn\b|epigenet|physique|informatique|"
+                 r"geodynami|microbio|proteom|imagerie medicale|mecanique", titre):
+        score -= 15
+    if not DOMAINE.search(t):
+        return max(0, min(score, 30))
+    return max(0, min(score, 80))
+
+
 def heuristique(offre, cfg):
     t = sans_accents(offre.get("titre", "") + "\n" + offre.get("texte", ""))
-    score = prefiltre(offre, cfg)
+    score = score_heuristique(offre, cfg)
     bloquants = []
     m = RE_EXP.search(t)
     if m and int(m.group(1)) >= 1:
         bloquants.append({"type": "experience", "texte": f"{m.group(1)} an(s) d'expérience demandé(s)"})
     elif re.search(r"experience (significative|confirmee|reussie|professionnelle (de|d.au moins|minimum))", t):
         bloquants.append({"type": "experience", "texte": "Expérience professionnelle demandée"})
-    if re.search(r"(titulaire d.un doctorat|doctorat (exige|requis|obligatoire)|phd (required|is required)|docteur en)", t):
+    if re.match(r"\s*chercheu", sans_accents(offre.get("titre", ""))):
+        bloquants.append({"type": "diplome", "texte": "Poste de chercheur : doctorat généralement exigé"})
+    elif re.search(r"(titulaire d.un doctorat|doctorat (exige|requis|obligatoire)|phd (required|is required)|docteur en)", t):
         bloquants.append({"type": "diplome", "texte": "Doctorat demandé"})
     smin, smax = salaire(offre.get("salaire_texte", "") + " " + offre.get("texte", ""))
     return {

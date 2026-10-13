@@ -26,10 +26,19 @@ function ecrire(cle, val) {
 function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
-function toast(msg) {
+function toast(msg, annuler) {
   const t = $("#toast"); t.textContent = msg; t.hidden = false;
-  clearTimeout(toast.t); toast.t = setTimeout(() => (t.hidden = true), 2600);
+  if (annuler) {
+    const b = Object.assign(document.createElement("button"), { textContent: "Annuler", className: "toast-annuler" });
+    b.onclick = () => { annuler(); t.hidden = true; }; t.append(" ", b);
+  }
+  clearTimeout(toast.t); toast.t = setTimeout(() => (t.hidden = true), annuler ? 5000 : 2600);
 }
+function sourceCourte(o) {
+  const s = o.source || "";
+  return s === "Choisir le service public" ? "Service public" : s === "Welcome to the Jungle" ? "WTTJ" : s === "Alerte e-mail" ? "le site" : s;
+}
+const ONGLETS_OFFRES = ["emploi", "these"];
 function dateFr(iso, opts = { day: "numeric", month: "short" }) {
   if (!iso) return "";
   const d = new Date(iso.length === 10 ? iso + "T12:00:00" : iso);
@@ -61,6 +70,8 @@ function filtrer(onglet, largeur) {
     const a = o.analyse || {}; const s = suivi[o.id] || {};
     if (o.type !== onglet) return false;
     if (s.masque && !etat.voirMasquees) return false;
+    const st = typeof statutDe === "function" ? statutDe(o.id) : null;
+    if (st && st !== "a_postuler") return false;
     if ((a.score ?? 0) < min) return false;
     if (!etat.zones.includes(o.region || "?")) return false;
     if (onglet === "emploi" && !etat.contrats.includes(typeContrat(o))) return false;
@@ -89,13 +100,21 @@ function carte(o) {
   et.push(`<span class="et">${esc(o.source)}</span>`);
   const alerte = bloque
     ? `<div class="alerte"><b>${esc(a.bloquants.map((b) => b.texte).join(" · "))}</b>. Tu peux quand même tenter ta chance.</div>` : "";
-  return `<button class="carte${bloque ? " bloquee" : ""}" data-id="${esc(o.id)}">
-    <div class="score" style="--p:${a.score ?? 0}" aria-label="Intérêt ${a.score ?? 0} %"><b>${a.score ?? 0}%</b></div>
-    <div class="corps">
-      <h3>${esc(o.titre)}</h3>
-      <p class="sous">${esc([o.employeur, o.lieu].filter(Boolean).join(" · ") || o.source)}</p>
-      <div class="etiquettes">${et.join("")}</div>${alerte}
-    </div></button>`;
+  const garde = statutDe(o.id) === "a_postuler";
+  const masque = (suivi[o.id] || {}).masque;
+  return `<article class="carte${bloque ? " bloquee" : ""}${garde ? " gardee" : ""}">
+    <button class="carte-ouvrir" data-id="${esc(o.id)}">
+      <div class="score" style="--p:${a.score ?? 0}" aria-label="Intérêt ${a.score ?? 0} %"><b>${a.score ?? 0}%</b></div>
+      <div class="corps">
+        <h3>${esc(o.titre)}</h3>
+        <p class="sous">${esc([o.employeur, o.lieu].filter(Boolean).join(" · ") || o.source)}</p>
+        <div class="etiquettes">${et.join("")}</div>${alerte}
+      </div></button>
+    <div class="carte-actions">
+      ${o.url ? `<a class="ca" href="${esc(o.url)}" target="_blank" rel="noopener">↗ Voir sur ${esc(sourceCourte(o))}</a>` : "<span></span>"}
+      <button class="ca" data-carte="garder" data-id="${esc(o.id)}" aria-pressed="${garde}">${garde ? "📌 Gardée" : "📌 Garder"}</button>
+      <button class="ca" data-carte="ecarter" data-id="${esc(o.id)}">${masque ? "↺ Remettre" : "✕ Pas pour moi"}</button>
+    </div></article>`;
 }
 
 function afficher() {
@@ -104,7 +123,10 @@ function afficher() {
   const niv = NIVEAUX_LARGEUR[etat.largeur];
   $("#largeur").value = etat.largeur; $("#largeur-nom").textContent = `${niv.nom} (≥ ${niv.min} %)`;
   $("#largeur-aide").textContent = niv.aide;
-  $(".elargir").hidden = etat.onglet === "suivi";
+  const offres = ONGLETS_OFFRES.includes(etat.onglet);
+  $(".elargir").hidden = !offres;
+  $("#btn-filtres").hidden = !offres;
+  if (!offres) $("#panneau").hidden = true;
   $("#salaire-val").textContent = etat.salaire ? `${etat.salaire.toLocaleString("fr-FR")} € brut/mois` : "Aucun";
   for (const t of ["emploi", "these"]) $("#c-" + t).textContent = filtrer(t, etat.largeur).length || "";
   $("#c-suivi").textContent = nbSuivis() || "";
@@ -114,12 +136,20 @@ function afficher() {
   $("#nb-filtres").hidden = !nbFiltres; $("#nb-filtres").textContent = nbFiltres;
 
   if (etat.onglet === "suivi") { $("#liste").innerHTML = rendreSuivi(); return; }
-  const liste = filtrer(etat.onglet, etat.largeur).sort((x, y) => (y.analyse?.score ?? 0) - (x.analyse?.score ?? 0));
+  if (etat.onglet === "lettre") { $("#liste").innerHTML = rendreLettre(); ajusterTout(); return; }
+  if (etat.onglet === "dossier") { rendreDossier(); return; }
+  const tri = (x, y) => (y.analyse?.score ?? 0) - (x.analyse?.score ?? 0);
+  // Offres gardées : toujours en tête, quels que soient les filtres, jusqu'à ce que je postule
+  const gardees = donnees.offres.filter((o) => o.type === etat.onglet && statutDe(o.id) === "a_postuler" && !(suivi[o.id] || {}).masque).sort(tri);
+  const idsGardees = new Set(gardees.map((o) => o.id));
+  const liste = filtrer(etat.onglet, etat.largeur).filter((o) => !idsGardees.has(o.id)).sort(tri);
+  const enTete = gardees.length ? `<h2 class="groupe">📌 À ne pas oublier (${gardees.length})</h2>${gardees.map(carte).join("")}` : "";
   if (!donnees.offres.length) {
     $("#liste").innerHTML = `<div class="vide">Le robot n'a pas encore fait son premier passage.<br>Les offres apparaîtront ici après le prochain condensé.</div>`;
     return;
   }
   if (!liste.length) {
+    if (enTete) { $("#liste").innerHTML = enTete; return; }
     let suivant = etat.largeur + 1;
     while (suivant < NIVEAUX_LARGEUR.length && !filtrer(etat.onglet, suivant).length) suivant++;
     $("#liste").innerHTML = `<div class="vide">Aucune offre avec ces réglages.${suivant < NIVEAUX_LARGEUR.length
@@ -128,7 +158,7 @@ function afficher() {
     $("#btn-elargir")?.addEventListener("click", (e) => { etat.largeur = +e.target.dataset.n; afficher(); });
     return;
   }
-  let html = "", groupe = null;
+  let html = enTete, groupe = null;
   for (const o of liste) {
     const g = o.analyse?.niveau || "hors";
     if (g !== groupe) { html += `<h2 class="groupe">${GROUPES[g] || g}</h2>`; groupe = g; }
@@ -169,9 +199,10 @@ function ouvrirFiche(id) {
     ${liste("Ce qui te manque", a.manques)}
     ${!a.resume && o.extrait ? `<h4>Extrait</h4><p>${esc(o.extrait)}</p>` : ""}
     <div class="actions">
-      ${o.url ? `<a class="bouton principal" href="${esc(o.url)}" target="_blank" rel="noopener">Voir l'offre complète</a>` : ""}
-      <button class="bouton" data-action="claude">Préparer CV et lettre avec Claude</button>
-      ${o.perso ? "" : `<button class="bouton" data-action="masque" aria-pressed="${!!s.masque}">${s.masque ? "Ne plus masquer" : "Masquer cette offre"}</button>`}
+      ${o.url ? `<a class="bouton principal" href="${esc(o.url)}" target="_blank" rel="noopener">Ouvrir l'offre sur ${esc(sourceCourte(o))} ↗</a>` : ""}
+      <button class="bouton" data-action="lettre">Adapter ma lettre à cette offre</button>
+      <button class="bouton" data-action="claude">Adapter mon CV avec Claude</button>
+      ${o.perso ? "" : `<button class="bouton" data-action="masque" aria-pressed="${!!s.masque}">${s.masque ? "Remettre dans la liste" : "✕ Pas pour moi"}</button>`}
     </div>
     ${blocSuivi(o)}
     <p class="note-mode">${o.perso ? "" : a.mode === "ia" ? "Analyse faite par IA à partir de l'annonce : vérifie toujours l'offre d'origine."
@@ -198,6 +229,7 @@ ${a.bloquants?.length ? `Point faible à désamorcer : ${a.bloquants.map((b) => 
 async function action(nom) {
   const id = $("#fiche").dataset.id; const o = toutesOffres().find((x) => x.id === id);
   if (nom === "fermer") return $("#fiche").close();
+  if (nom === "lettre") { $("#fiche").close(); return ouvrirLettre(id); }
   if (nom === "claude") {
     try { await navigator.clipboard.writeText(promptClaude(o)); toast("Demande copiée : colle-la dans ton projet Claude"); }
     catch { toast("Copie impossible sur cet appareil"); }
@@ -207,9 +239,28 @@ async function action(nom) {
   suivi[id] = suivi[id] || {};
   suivi[id][nom] = !suivi[id][nom];
   ecrire("suivi", suivi);
-  if (nom === "masque" && suivi[id].masque) { $("#fiche").close(); toast("Offre masquée"); }
+  if (nom === "masque" && suivi[id].masque) {
+    $("#fiche").close();
+    toast("Offre écartée", () => { suivi[id].masque = false; ecrire("suivi", suivi); afficher(); });
+  }
   else ouvrirFiche(id);
   afficher();
+}
+
+function actionCarte(nom, id) {
+  const s = (suivi[id] = suivi[id] || {});
+  if (nom === "garder") {
+    const avant = statutDe(id);
+    if (avant === "a_postuler") { s.statut = undefined; s.fav = false; toast("Retirée de « À ne pas oublier »"); }
+    else if (!avant) { s.statut = "a_postuler"; s.masque = false; toast("Gardée en tête de liste jusqu'à ta candidature"); }
+  } else if (nom === "ecarter") {
+    s.masque = !s.masque;
+    if (s.masque) {
+      if (statutDe(id) === "a_postuler") s.statut = undefined;
+      toast("Offre écartée, elle ne reviendra plus", () => { s.masque = false; ecrire("suivi", suivi); afficher(); });
+    }
+  }
+  ecrire("suivi", suivi); afficher();
 }
 
 function relierFiltres() {
@@ -239,7 +290,11 @@ function relierFiltres() {
   $("#reinit").addEventListener("click", () => {
     etat = Object.assign({}, DEFAUTS, { onglet: etat.onglet }); ecrire("filtres", etat); location.reload();
   });
-  $("#liste").addEventListener("click", (e) => { const c = e.target.closest(".carte"); if (c) ouvrirFiche(c.dataset.id); });
+  $("#liste").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-carte]");
+    if (b) return actionCarte(b.dataset.carte, b.dataset.id);
+    const c = e.target.closest(".carte-ouvrir"); if (c) ouvrirFiche(c.dataset.id);
+  });
   $("#fiche").addEventListener("click", (e) => {
     if (e.target === $("#fiche")) return $("#fiche").close();
     const b = e.target.closest("[data-action]"); if (b) action(b.dataset.action);

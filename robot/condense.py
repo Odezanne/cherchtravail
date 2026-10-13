@@ -20,7 +20,7 @@ def _ligne(o):
     bloc = ""
     if a.get("bloquants"):
         bloc = (f'<div style="color:#8a5a00;font-size:13px">⚠ {html.escape(a["bloquants"][0]["texte"])} '
-                f'— tente quand même</div>')
+                f', tente quand même</div>')
     return (f'<tr><td style="padding:10px 0;border-bottom:1px solid #eee{";opacity:.6" if a.get("bloquants") else ""}">'
             f'<div><b style="color:#2f6b4f">{a["score"]} %</b> &nbsp;<a href="{html.escape(o["url"])}" '
             f'style="color:#1c2b24;font-weight:600;text-decoration:none">{html.escape(o["titre"])}</a></div>'
@@ -29,7 +29,7 @@ def _ligne(o):
             f'<div style="font-size:13px;margin-top:3px">{html.escape(a.get("resume", ""))}</div>{bloc}</td></tr>')
 
 
-def envoyer(nouvelles, nb_total):
+def envoyer(nouvelles, nb_total, menage=(), mode_menage="non"):
     emplois = [o for o in nouvelles if o["type"] == "emploi" and o["analyse"]["score"] >= 45]
     theses = [o for o in nouvelles if o["type"] == "these" and o["analyse"]["score"] >= 45]
     sujet = f"Cherchtravail : {len(emplois)} nouvelle(s) offre(s) pour toi" + (f", {len(theses)} thèse(s)" if theses else "")
@@ -44,6 +44,19 @@ def envoyer(nouvelles, nb_total):
             corps.append("</table>")
     if not emplois and not theses:
         corps.append("<p>Rien de très pertinent aujourd'hui. Utilise le curseur « Élargir » sur le site pour voir les offres plus éloignées.</p>")
+    if menage:
+        if mode_menage == "actif":
+            corps.append(f'<h3 style="margin:22px 0 4px">Ménage de ta boîte mail</h3><p style="font-size:13px;color:#5b6b63">'
+                         f'{len(menage)} mail(s) d\'alertes et de sites d\'emploi mis à la corbeille : leurs offres sont sur le site. '
+                         f'Ils restent récupérables 30 jours dans la Corbeille de Gmail.</p>')
+        else:
+            corps.append(f'<h3 style="margin:22px 0 4px">Ménage de ta boîte mail (essai, rien n\'a été supprimé)</h3>'
+                         f'<p style="font-size:13px;color:#5b6b63">{len(menage)} mail(s) seraient mis à la corbeille. Vérifie la liste, '
+                         f'puis dis-moi de mettre le tri en marche.</p><ul style="font-size:12.5px;padding-left:18px">')
+            corps += [f'<li>{html.escape(d)} · {html.escape(e[:45])} · {html.escape(suj[:90])}</li>' for d, e, suj in menage[:80]]
+            if len(menage) > 80:
+                corps.append(f"<li>… et {len(menage) - 80} autres</li>")
+            corps.append("</ul>")
     corps.append("</div>")
 
     adresse, mdp = os.environ.get("GMAIL_ADRESSE"), os.environ.get("GMAIL_MOT_DE_PASSE_APPLI")

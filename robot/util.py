@@ -19,10 +19,13 @@ NE_JAMAIS_TELECHARGER = (
 )
 
 _robots_cache = {}
+JOURNAL = []  # lignes du journal, enregistrées dans data/journal.txt à chaque passage
 
 
 def log(*args):
-    print(time.strftime("%H:%M:%S"), *args, flush=True)
+    ligne = " ".join([time.strftime("%H:%M:%S")] + [str(a) for a in args])
+    JOURNAL.append(ligne)
+    print(ligne, flush=True)
 
 
 def autorise(url):
