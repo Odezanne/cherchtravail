@@ -29,6 +29,8 @@ SITES_EMPLOI = ("choisirleservicepublic", "francetravail", "apec.fr", "indeed", 
                 "researchgate", "nature.com/naturecareers", "jobs.ac.uk", "sfecologie", "sfe2", "ecoemploi", "agrojob",
                 "apecita", "biospace", "jobteaser", "glassdoor", "cadremploi", "meteojob", "profilculture", "inrae.fr",
                 "cnrs.fr", "mnhn.fr", "inserm.fr", "pasteur.fr")
+# Une page d'offre a presque toujours l'un de ces mots dans son adresse (on écarte les profils, actualités, annuaires)
+OFFRE_URL = re.compile(r"job|offre|emploi|recrut|career|carriere|poste|vacanc|candidat|position|annonce|stellen|\.pdf$", re.I)
 VIDE = {"de", "du", "des", "la", "le", "les", "et", "en", "a", "au", "aux", "pour", "d", "l", "un", "une", "h", "f", "hf", "fh"}
 
 
@@ -67,11 +69,13 @@ def noter_doublon(orig, autre):
         sites.append({"nom": autre.get("source") or nom_site(autre["url"]), "url": autre["url"]})
 
 
-def _tavily(requete, n=8):
+def _tavily(requete, n=8, domaines=None):
     cle = os.environ.get("TAVILY_API_KEY")
     if not cle:
         return None
     corps = {"api_key": cle, "query": requete, "max_results": n, "search_depth": "basic", "include_answer": False}
+    if domaines:
+        corps["include_domains"] = domaines
     req = urllib.request.Request("https://api.tavily.com/search", data=json.dumps(corps).encode(),
                                  headers={"Content-Type": "application/json"})
     try:
@@ -91,12 +95,20 @@ def chercher_ailleurs(o):
     res = _tavily(f"\"{titre[:90]}\" {o.get('employeur') or ''} offre", 8)
     if res is None:
         return False
+    hote_origine = urlparse(o.get("url", "")).netloc.lower()
+    if dom and not hote_origine.endswith(dom) and not any(urlparse(x.get("url", "")).netloc.lower().endswith(dom) for x in res):
+        res += _tavily(f"{titre[:90]} recrutement", 5, [dom]) or []  # deuxième essai, sur le seul site de l'employeur
     rc = o.setdefault("recoupement", {})
     sites = rc.setdefault("sites", [])
-    url_origine = o.get("url", "")
+    norm = lambda u: u.split("?")[0].split("#")[0].rstrip("/").replace("://www.", "://")
+    url_origine = norm(o.get("url", ""))
     for x in res:
         u = x.get("url", "")
-        if not u or u.split("?")[0] == url_origine.split("?")[0]:
+        if not u or norm(u) == url_origine:
+            continue
+        pu = urlparse(u)
+        if re.search(r"/(in|pub|people|profil|profile|annuaire|team|equipe|actualites?|news)/", pu.path, re.I) \
+                or not OFFRE_URL.search(pu.netloc + pu.path):
             continue
         if not (ressemble(titre, x.get("title", "")) or ressemble(titre, (x.get("content") or "")[:400], 0.8)):
             continue
@@ -128,7 +140,7 @@ def statut(o):
     return "unique"
 
 
-def recouper(offres, gardees_ids, verifier, max_tavily=12, max_verif=45):
+def recouper(offres, gardees_ids, verifier, max_tavily=8, max_verif=45):
     """offres : toutes les offres du site. gardees_ids : offres gardées (« à postuler »).
     verifier(o) -> (disponibilite, texte) : la fonction de recherche.py."""
     auj = date.today().isoformat()
