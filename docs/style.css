@@ -1,31 +1,36 @@
 :root {
-  --fond: #f4f1ea;
-  --carte: #fffdf8;
-  --texte: #1d2721;
-  --doux: #5d6a62;
-  --ligne: #e3ddd0;
-  --vert: #2f6b4f;
-  --vert-pale: #e3efe7;
-  --ambre: #8a5a00;
-  --ambre-pale: #fbf0d9;
-  --rouge: #a23a2a;
-  --ombre: 0 1px 2px rgba(40, 35, 20, .06), 0 4px 14px rgba(40, 35, 20, .05);
-  --rayon: 14px;
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --fond: #151a17; --carte: #1d2420; --texte: #e8ece8; --doux: #9aa69f; --ligne: #2c3530;
-    --vert: #79c29b; --vert-pale: #1f3328; --ambre: #e3b35a; --ambre-pale: #3a2f1a; --rouge: #e2826f;
-    --ombre: none; color-scheme: dark;
-  }
+  /* Thème « cahier à la craie » : fond noir, couleurs pastel, titres manuscrits */
+  --fond: #141414;
+  --carte: #1d1d1f;
+  --texte: #efe9df;
+  --doux: #aaa39a;
+  --ligne: #36363b;
+  --vert: #a8e0bf;        /* menthe */
+  --vert-pale: rgba(168, 224, 191, .13);
+  --ambre: #f6d38f;       /* jaune pâle */
+  --ambre-pale: rgba(246, 211, 143, .13);
+  --rouge: #f5a9a9;       /* rose corail */
+  --bleu: #aecbf5;        /* bleu ciel */
+  --bleu-pale: rgba(174, 203, 245, .13);
+  --rose: #f3b9d6;
+  --lavande: #cbb8f5;
+  --encre: #141414;       /* texte sur fond pastel */
+  --ombre: 0 1px 0 rgba(255, 255, 255, .03), 0 6px 18px rgba(0, 0, 0, .35);
+  --rayon: 16px;
+  --main: "Caveat", "Segoe Print", "Bradley Hand", cursive;
+  --texte-police: "Lora", Georgia, "Iowan Old Style", serif;
+  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; background: var(--fond); color: var(--texte);
-  font: 16px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font: 16px/1.5 var(--texte-police);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .028) 1px, transparent 1px);
+  background-size: 24px 24px;
   padding-bottom: env(safe-area-inset-bottom);
 }
 button, input { font: inherit; color: inherit; }
@@ -136,7 +141,7 @@ dialog {
   background: var(--carte); color: var(--texte);
 }
 @media (min-width: 700px) { dialog { margin: auto; border-radius: 20px; } }
-dialog::backdrop { background: rgba(15, 20, 17, .45); }
+dialog::backdrop { background: rgba(0, 0, 0, .6); }
 .fiche-contenu { padding: 18px 18px calc(24px + env(safe-area-inset-bottom)); overflow-y: auto; max-height: 92vh; }
 .fiche-haut { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
 .fiche-haut h2 { font-size: 20px; margin: 0; line-height: 1.25; }
@@ -251,8 +256,7 @@ label.bouton { cursor: pointer; }
   background: var(--fond); border: 1px solid var(--ligne); color: var(--doux);
 }
 .fichier-icone.pdf { color: var(--rouge); }
-.fichier-icone.doc { color: #2b5797; }
-@media (prefers-color-scheme: dark) { .fichier-icone.doc { color: #8fb3ea; } }
+.fichier-icone.doc { color: var(--bleu); }
 .fichier-corps { flex: 1; min-width: 0; display: grid; gap: 2px; color: var(--texte); text-decoration: none; }
 .fichier-corps strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 15px; }
 .fichier-corps span { color: var(--doux); font-size: 13px; }
@@ -284,8 +288,6 @@ code { font-size: 12.5px; background: var(--fond); padding: 1px 5px; border-radi
 @media (prefers-reduced-motion: reduce) { .tourne { animation: none; } }
 
 /* ---------- Formations et rendez-vous ---------- */
-:root { --bleu: #2b5797; --bleu-pale: #e4ecf7; }
-@media (prefers-color-scheme: dark) { :root { --bleu: #8fb3ea; --bleu-pale: #1d2a3d; } }
 .bouton.evt { border-color: var(--bleu); color: var(--bleu); background: var(--bleu-pale); }
 .evt-date { background: var(--bleu-pale); color: var(--bleu); }
 .tag-oblig { font-size: 11px; font-weight: 700; color: var(--rouge); border: 1px solid currentColor; border-radius: 6px; padding: 0 5px; margin-left: 4px; white-space: nowrap; }
@@ -304,3 +306,96 @@ code { font-size: 12.5px; background: var(--fond); padding: 1px 5px; border-radi
 .evts-passes summary { cursor: pointer; color: var(--doux); }
 .evt-passe { display: block; width: 100%; text-align: left; border: 0; background: none; padding: 6px 2px; color: var(--texte); cursor: pointer; }
 .evt-passe span { color: var(--doux); font-size: 12px; }
+
+/* ================= Thème cosy / scolaire ================= */
+h1 { font-family: var(--main); font-size: 40px; font-weight: 700; letter-spacing: 0; line-height: 1; color: var(--texte); }
+h1::after { content: ""; display: block; height: 6px; width: 62%; margin-top: 2px; border-radius: 6px;
+  background: linear-gradient(90deg, var(--rose), var(--lavande), var(--bleu)); opacity: .55; }
+.entete { background: rgba(20, 20, 20, .94); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border-bottom: 1.5px dashed var(--ligne); }
+.onglets button { font-family: var(--main); font-size: 21px; font-weight: 600; padding: 4px 11px; }
+.onglets button[aria-selected="true"] { background: var(--ambre); color: var(--encre); border-radius: 14px 18px 12px 20px / 18px 12px 20px 14px; }
+.onglets span { font-family: var(--texte-police); font-size: 12px; }
+.groupe { font-family: var(--main); font-size: 23px; font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--texte);
+  display: inline-block; justify-self: start; padding: 0 6px; margin-top: 18px;
+  background: linear-gradient(transparent 58%, rgba(243, 185, 214, .32) 58%, rgba(243, 185, 214, .32) 92%, transparent 92%); }
+.sous-groupe { font-family: var(--main); font-size: 20px; }
+.fiche-haut h2, .fiche h4 { font-family: var(--main); }
+.fiche-haut h2 { font-size: 27px; line-height: 1.1; }
+.fiche h4 { font-size: 21px; text-transform: none; letter-spacing: 0; color: var(--lavande); }
+
+/* cartes : bords « dessinés à la main » */
+.carte, .bloc-export, .calendrier, .entretien-ligne, .case-ligne, .fichier, .verifs, .modele, .panneau {
+  border: 1.5px solid var(--ligne); border-radius: 18px 14px 20px 13px / 14px 20px 13px 18px; }
+.carte { background: var(--carte); }
+.carte:nth-child(3n+1) .score { --c: var(--vert); }
+.carte:nth-child(3n+2) .score { --c: var(--bleu); }
+.carte:nth-child(3n) .score { --c: var(--rose); }
+.score { background: conic-gradient(var(--c, var(--vert)) calc(var(--p) * 1%), var(--ligne) 0); }
+.score b { font-family: var(--main); font-size: 19px; font-weight: 700; }
+.corps h3 { font-family: var(--texte-police); font-weight: 600; font-size: 16.5px; }
+.carte.gardee { border-color: var(--ambre); box-shadow: 0 0 0 3px var(--ambre-pale); }
+.carte-actions { border-top: 1.5px dashed var(--ligne); }
+.ca { font-family: var(--main); font-size: 18px; font-weight: 600; }
+.ca + .ca { border-left: 1.5px dashed var(--ligne); }
+
+/* étiquettes façon surligneur */
+.et { border: 0; background: rgba(255, 255, 255, .06); border-radius: 8px 10px 7px 11px; }
+.et.nouveau { background: var(--rose); color: var(--encre); }
+.et.these { background: var(--lavande); color: var(--encre); }
+.et.dispo { background: var(--vert-pale); color: var(--vert); }
+.et.limite { color: var(--rouge); background: rgba(245, 169, 169, .12); }
+.alerte { background: var(--ambre-pale); color: var(--ambre); border-radius: 10px 14px 9px 13px; }
+
+/* boutons */
+.bouton { border: 1.5px solid var(--ligne); background: transparent; border-radius: 14px 18px 13px 17px / 17px 13px 18px 14px; font-family: var(--texte-police); }
+.bouton.principal { background: var(--vert); border-color: var(--vert); color: var(--encre); }
+.bouton.evt { background: var(--bleu-pale); }
+.lien { color: var(--bleu); text-decoration-style: wavy; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+.lien.rouge { color: var(--rouge); }
+a { color: var(--bleu); }
+.vide button { background: var(--vert); color: var(--encre); }
+.mini { background: transparent; border-style: dashed; }
+.fermer { background: rgba(255, 255, 255, .07); color: var(--texte); }
+.toast { background: var(--ambre); color: var(--encre); font-family: var(--texte-police); }
+.toast-annuler { color: var(--encre); }
+
+/* champs */
+input[type=search], .barre-recherche input, .champ-l input, .champ-l textarea, .champ-l select, .bloc-suivi input, .bloc-suivi select,
+.bloc-suivi textarea, .bloc-evt input:not([type=checkbox]), .bloc-evt select, .bloc-evt textarea {
+  background: rgba(255, 255, 255, .04) !important; border: 1.5px solid var(--ligne) !important; color: var(--texte) !important; }
+.champ-l textarea, .bloc-suivi textarea { background-image: repeating-linear-gradient(transparent 0 23px, rgba(174, 203, 245, .08) 23px 24px) !important; line-height: 24px; }
+input:focus, textarea:focus, select:focus { outline: 2px solid var(--lavande); outline-offset: 1px; }
+.puces span { background: transparent; border: 1.5px dashed var(--ligne); }
+.puces input:checked + span { background: var(--vert-pale); border: 1.5px solid var(--vert); color: var(--vert); }
+.puce-r { background: transparent; border-style: dashed; }
+.puce-r.active { background: var(--vert-pale); }
+input[type=range] { accent-color: var(--ambre); }
+.case input, .case-ligne input { accent-color: var(--vert); }
+
+/* fiche */
+dialog { background: #1a1a1c; border: 1.5px solid var(--ligne); }
+.comp .ok { background: var(--vert-pale); color: var(--vert); }
+.comp .ko { background: rgba(245, 169, 169, .12); color: var(--rouge); }
+.bloc-blocage { background: var(--ambre-pale); border: 1.5px dashed var(--ambre); }
+.bloc-blocage strong { color: var(--ambre); }
+
+/* suivi et calendrier */
+.entretien-date { background: var(--ambre-pale); color: var(--ambre); font-family: var(--main); }
+.entretien-date b { font-size: 24px; }
+.evt-date { background: var(--bleu-pale); color: var(--bleu); }
+.cal-tete strong { font-family: var(--main); font-size: 24px; }
+.cal-grille .a-rdv { background: var(--ambre); color: var(--encre); }
+.cal-grille .a-evt { background: var(--bleu); color: var(--encre); }
+.cal-grille .auj { outline: 2px dashed var(--rose); }
+.pastille-statut { border: 0; background: rgba(255, 255, 255, .07); }
+.pastille-statut.vert { background: var(--vert-pale); color: var(--vert); }
+.pastille-statut.ambre { background: var(--ambre-pale); color: var(--ambre); }
+.tag-oblig { color: var(--rouge); }
+.fichier.reference { border-color: var(--ambre); }
+.fichier-icone { background: transparent; border: 1.5px dashed var(--ligne); font-family: var(--main); font-size: 15px; }
+.fichier-icone.pdf { color: var(--rouge); }
+.fichier-options { background: #222225; }
+.verifs .ok { color: var(--vert); } .verifs .ko { color: var(--ambre); }
+.pastille { background: var(--rose); color: var(--encre); }
+.icone { background: transparent; border: 1.5px dashed var(--ligne); }
+code { background: rgba(255, 255, 255, .07); }
