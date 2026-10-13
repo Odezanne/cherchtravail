@@ -118,7 +118,7 @@ function carte(o) {
         <div class="etiquettes">${et.join("")}</div>${alerte}
       </div></button>
     <div class="carte-actions">
-      ${o.url ? `<a class="ca" href="${esc(o.url)}" target="_blank" rel="noopener">↗ Voir sur ${esc(sourceCourte(o))}</a>` : "<span></span>"}
+      ${o.url ? `<a class="ca" href="${esc(lienOrigine(o))}" target="_blank" rel="noopener">↗ Voir ${o.lien_employeur ? "chez l'employeur" : "sur " + esc(sourceCourte(o))}</a>` : "<span></span>"}
       <button class="ca" data-carte="garder" data-id="${esc(o.id)}" aria-pressed="${garde}">${garde ? "📌 Gardée" : "📌 Garder"}</button>
       <button class="ca" data-carte="ecarter" data-id="${esc(o.id)}">${masque ? "↺ Remettre" : "✕ Pas pour moi"}</button>
     </div></article>`;
@@ -202,11 +202,14 @@ function badgeRecoupement(o) {
   switch (r.statut) {
     case "employeur": return `<span class="et dispo">✓ Confirmée par l'employeur</span>`;
     case "plusieurs": return `<span class="et dispo">✓ Vue sur ${n + 1} sites</span>`;
-    case "officiel": return o.employeur_verifie === "introuvable" ? `<span class="et limite">⚠ Introuvable chez l'employeur</span>` : `<span class="et">Portail de l'État seulement</span>`;
+    case "officiel": return aVerifierMain(o) && o.employeur_verifie !== "introuvable" ? `<span class="et limite">À vérifier chez l'employeur</span>` : o.employeur_verifie === "introuvable" ? `<span class="et limite">⚠ Introuvable chez l'employeur</span>` : `<span class="et">Portail de l'État seulement</span>`;
     case "unique": return `<span class="et">Vue sur 1 seul site</span>`;
   }
   return o.disponibilite === "disponible" ? `<span class="et dispo">✓ En ligne</span>` : "";
 }
+/* Le site de l'employeur refuse les robots (ex. MNHN) : seule une vérification à la main est possible */
+const aVerifierMain = (o) => o.lien_employeur && o.employeur_verifie !== "disponible" && o.disponibilite !== "expiree";
+const lienOrigine = (o) => o.lien_employeur || o.url;
 function blocRecoupement(o) {
   const r = o.recoupement || {};
   const lignes = [];
@@ -215,14 +218,16 @@ function blocRecoupement(o) {
   if (o.lien_employeur && o.disponibilite !== "expiree") {
     const ev = o.employeur_verifie;
     lignes.push(`<p>Page de l'employeur : <a href="${esc(o.lien_employeur)}" target="_blank" rel="noopener">ouvrir ↗</a>${ev === "disponible" ? " · ✓ offre bien en ligne chez l'employeur"
-      : ev === "introuvable" ? " · ⚠ l'offre n'y apparaît pas : vérifie avant de postuler" : ""}</p>`);
+      : ev === "introuvable" ? " · ⚠ l'offre n'y apparaît pas : vérifie avant de postuler"
+      : " · ⚠ ce site refuse les vérifications automatiques : ouvre-le pour voir si l'offre est encore en ligne"}</p>`);
+    if (ev !== "disponible") lignes.push(`<button class="bouton" data-action="retiree">L'offre n'est plus en ligne chez l'employeur : la retirer</button>`);
   }
   const sites = [{ nom: o.source, url: o.url }, ...(r.sites || [])];
   if (r.url_employeur && !sites.some((x) => x.url === r.url_employeur)) sites.push({ nom: "Site de l'employeur", url: r.url_employeur });
   if (sites.length > 1 || r.url_employeur) {
     lignes.push(`<p>Vue sur :</p><ul>${sites.map((x) => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.nom || x.url)} ↗</a>${x.url === r.url_employeur ? " · <b>site de l'employeur</b>" : ""}</li>`).join("")}</ul>`);
   }
-  if (r.statut === "officiel") lignes.push(`<p>Publiée seulement sur Choisir le service public, introuvable sur le site de l'employeur. C'est le portail officiel de l'emploi public, alimenté par les établissements eux-mêmes (MNHN, INRAE, universités…), donc l'offre est bien réelle. Les sites des établissements ne reprennent pas toujours toutes leurs annonces. Vérifie surtout la date limite et le contact indiqué.</p>`);
+  if (r.statut === "officiel" && !aVerifierMain(o)) lignes.push(`<p>Publiée seulement sur Choisir le service public, introuvable sur le site de l'employeur. C'est le portail officiel de l'emploi public, alimenté par les établissements eux-mêmes (MNHN, INRAE, universités…), donc l'offre est bien réelle. Les sites des établissements ne reprennent pas toujours toutes leurs annonces. Vérifie surtout la date limite et le contact indiqué.</p>`);
   if (r.statut === "unique") lignes.push(`<p>Vue sur un seul site pour l'instant. Avant de postuler, cherche l'offre sur le site de l'employeur ou écris au contact indiqué.</p>`);
   if (r.statut === "employeur") lignes.push(`<p>✓ Publiée par l'employeur lui-même.</p>`);
   if (!lignes.length) return "";
@@ -258,7 +263,7 @@ function ouvrirFiche(id) {
     ${!a.resume && o.extrait ? `<h4>Extrait</h4><p>${esc(o.extrait)}</p>` : ""}
     ${blocRecoupement(o)}
     <div class="actions">
-      ${o.url ? `<a class="bouton principal" href="${esc(o.url)}" target="_blank" rel="noopener">Ouvrir l'offre sur ${esc(sourceCourte(o))} ↗</a>` : ""}
+      ${o.url ? `<a class="bouton principal" href="${esc(lienOrigine(o))}" target="_blank" rel="noopener">Ouvrir l'offre ${o.lien_employeur ? "chez l'employeur" : "sur " + esc(sourceCourte(o))} ↗</a>` : ""}
       <button class="bouton" data-action="lettre">Adapter ma lettre à cette offre</button>
       <button class="bouton" data-action="claude">Adapter mon CV avec Claude</button>
       ${o.perso ? "" : `<button class="bouton" data-action="masque" aria-pressed="${!!s.masque}">${s.masque ? "Remettre dans la liste" : "✕ Pas pour moi"}</button>`}
@@ -296,6 +301,10 @@ async function action(nom) {
     return;
   }
   suivi[id] = suivi[id] || {};
+  if (nom === "retiree") {
+    Object.assign(suivi[id], { masque: true, retiree: true }); ecrire("suivi", suivi); $("#fiche").close(); afficher();
+    return toast("Offre retirée de la liste", () => { Object.assign(suivi[id], { masque: false, retiree: false }); ecrire("suivi", suivi); afficher(); });
+  }
   suivi[id][nom] = !suivi[id][nom];
   ecrire("suivi", suivi);
   if (nom === "masque" && suivi[id].masque) {

@@ -40,69 +40,6 @@
    }
   },
   {
-   "id": "csp-2026-2168525",
-   "source": "MNHN",
-   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/analyste-de-donnees-spatiales-biodiversite-et-haies-reference-2026-2168525/",
-   "titre": "Analyste de données spatiales biodiversité et haies",
-   "employeur": "MNHN",
-   "lieu": "Paris (75)",
-   "region": "idf",
-   "contrat": "CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-13",
-   "analyse": {
-    "score": 78,
-    "niveau": "coeur",
-    "mode": "ia",
-    "resume": "Ce poste d'analyste de données spatiales au MNHN (PatriNat) vise à alimenter l'observatoire des haies et l'INPN en réalisant des analyses statistiques et spatiales sous R. Il s'agit d'une excellente opportunité en Île-de-France en lien direct avec la conservation de la biodiversité.",
-    "missions": [
-     "Conduire des analyses et des croisements de données spatiales",
-     "Produire des cartes, synthèses, chiffres-clés et indicateurs",
-     "Rédiger des notes de synthèse, rapports et articles scientifiques"
-    ],
-    "prerequis": [
-     "Doctorat ou diplôme de niveau Bac+5 (école d'ingénieur ou Master 2)",
-     "Expérience pratique en analyse de données sur la biodiversité"
-    ],
-    "competences": [
-     {
-      "nom": "R",
-      "ok": true
-     },
-     {
-      "nom": "analyses spatiales",
-      "ok": true
-     }
-    ],
-    "atouts": [
-     "Master PRIAM en biologie intégrative et écologie",
-     "Solides compétences en R et traitement de données",
-     "Localisation idéale à Paris"
-    ],
-    "manques": [
-     "Première expérience sur le sujet spécifique des haies non mentionnée"
-    ],
-    "bloquants": [],
-    "conseil": "Mettez en avant votre maîtrise de R et des analyses spatiales issues de votre Master et de vos stages (notamment l'utilisation de QGIS et des modèles sous R). Le MNHN est un cadre prestigieux pour un premier emploi.",
-    "salaire_min": null,
-    "salaire_max": null,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": true
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Analyste de données spatiales biodiversité et haies\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non",
-   "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1400&id_origin=3",
-   "verifiee_le": "2026-10-13",
-   "disponibilite": "disponible",
-   "recoupement": {
-    "sites": [],
-    "cherche_le": "2026-10-13",
-    "statut": "officiel"
-   }
-  },
-  {
    "id": "cnrs-UMR5175-MARVAN-005",
    "source": "CNRS",
    "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5175-MARVAN-005/Default.aspx",
