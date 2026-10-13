@@ -49,7 +49,7 @@ sources:
   # Jooble : moteur qui regroupe de nombreux sites d'emploi (clé gratuite, quota de 500 requêtes :
   # on en utilise 3 par jour, plus 1 par recherche lancée depuis le site)
   jooble:
-    actif: true
+    actif: false    # la clé actuelle ne couvre que les États-Unis : repasser à true avec une clé France
     appels_par_jour: 3
 
   # Autres flux RSS à ajouter librement (une adresse par ligne)

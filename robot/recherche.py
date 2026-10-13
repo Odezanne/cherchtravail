@@ -103,7 +103,8 @@ def main():
         brutes += [o for o in sources.collecter_cnrs() if all(m in sans_accents(o["titre"]) for m in mots)]
     except Exception as e:
         log(f"CNRS : {e}")
-    brutes += sources.collecter_jooble([requete], "Île-de-France" if zones == ["idf"] else "France", 1)
+    if (cfg.get("sources", {}).get("jooble") or {}).get("actif", True):
+        brutes += sources.collecter_jooble([requete], "Île-de-France" if zones == ["idf"] else "France", 1)
     brutes += tavily(requete)
 
     vus, offres = set(), []
