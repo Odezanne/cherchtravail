@@ -102,6 +102,14 @@ def rappels(etat_prive, offres_par_id):
             oblig = " Présence obligatoire, je préfère le préciser." if e.get("obligatoire") else ""
             phrases.append(f"{quand}{heure} : {e.get('titre', 'rendez-vous')}{' (' + e['lieu'] + ')' if e.get('lieu') else ''}.{oblig}")
 
+    # Labos à relancer
+    dus = [l for l in (etat_prive.get("labos") or []) if isinstance(l, dict) and l.get("statut") in ("contacte", "relance")
+           and l.get("relance_le") and l["relance_le"] <= auj.isoformat()]
+    if dus:
+        noms = ", ".join(l.get("nom", "un labo").split(",")[0] for l in dus[:3])
+        phrases.append(r.choice([f"Il est temps de relancer : {noms}. Poliment, mais fermement.",
+                                 f"Relance prévue aujourd'hui pour {noms}. Un petit mail, et on n'en parle plus."]))
+
     # Candidatures envoyées ces 7 derniers jours
     semaine = (auj - timedelta(days=7)).isoformat()
     n = sum(1 for s in suivi.values() if isinstance(s, dict) and s.get("statut") in ("postule", "entretien", "offre")
@@ -113,6 +121,69 @@ def rappels(etat_prive, offres_par_id):
         phrases.append(r.choice(["Aucune candidature envoyée cette semaine. Je ne juge pas. Je constate.",
                                  "La semaine est encore jeune pour une première candidature, non ?"]))
     return phrases
+
+
+def periode_actualisation(auj=None):
+    """Actualisation France Travail : du 28 au 15 du mois suivant. Renvoie (clé AAAA-MM, nom du mois, date de clôture) ou None."""
+    auj = auj or date.today()
+    if auj.day >= 28:
+        m = auj.replace(day=1)
+    elif auj.day <= 15:
+        m = (auj.replace(day=1) - timedelta(days=1)).replace(day=1)
+    else:
+        return None
+    fin = (m.replace(day=28) + timedelta(days=10)).replace(day=15)
+    mois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+    return f"{m.year}-{m.month:02d}", mois[m.month - 1], fin
+
+
+def rappels_admin(etat_prive):
+    """Actualisation mensuelle et export avant un rendez-vous France Travail."""
+    r = _tirage()
+    auj = date.today()
+    phrases = []
+    per = periode_actualisation(auj)
+    faites = (etat_prive or {}).get("actualisations") or {}
+    if per and not faites.get(per[0]):
+        cle, nom, fin = per
+        j = (fin - auj).days
+        if auj.day == 28:
+            phrases.append(f"L'actualisation France Travail du mois de {nom} est ouverte. Deux minutes maintenant, zéro stress plus tard.")
+        elif j <= 3:
+            phrases.append(r.choice([f"Actualisation France Travail ({nom}) : clôture le 15 à minuit, il reste {j} jour{'s' if j > 1 else ''}. "
+                                     "Je me permets d'insister, Monsieur.",
+                                     f"Dernier appel pour l'actualisation de {nom} : {j} jour{'s' if j > 1 else ''} avant la clôture."]))
+        elif auj.weekday() == 0:
+            phrases.append(f"Actualisation de {nom} pas encore cochée sur le site. Si c'est fait, cochez-la, sinon faites-la, je ne suis pas difficile.")
+    demain2 = auj + timedelta(days=2)
+    for e in (etat_prive or {}).get("evenements") or []:
+        try:
+            d = date.fromisoformat(e.get("date", ""))
+        except ValueError:
+            continue
+        if e.get("type") == "rdv_ft" and auj <= d <= demain2:
+            phrases.append(f"Rendez-vous France Travail le {d.day}/{d.month} : pensez à exporter vos candidatures (Suivi > Exporter) "
+                           "pour votre conseillère. Elle sera impressionnée, je le sens.")
+    return phrases
+
+
+def bilan_semaine(etat_prive, offres_par_id):
+    """Le dimanche : bilan de la semaine. Renvoie du texte ou None."""
+    if date.today().weekday() != 6 or not etat_prive:
+        return None
+    suivi = etat_prive.get("suivi") or {}
+    semaine = (date.today() - timedelta(days=7)).isoformat()
+    envoyees = [s for s in suivi.values() if isinstance(s, dict) and s.get("statut") in ("postule", "entretien", "offre", "refus")]
+    cette_semaine = sum(1 for s in envoyees if (s.get("date_postule") or "") >= semaine)
+    gardees = sum(1 for s in suivi.values() if isinstance(s, dict) and s.get("statut") == "a_postuler" and not s.get("masque"))
+    reponses = sum(1 for s in envoyees if s.get("statut") in ("entretien", "offre", "refus"))
+    entretiens = sum(1 for s in envoyees if s.get("statut") in ("entretien", "offre"))
+    taux = f"{round(100 * reponses / len(envoyees))} %" if envoyees else "pas encore calculable"
+    commentaire = ("Belle semaine. Continuez comme ça." if cette_semaine >= 3 else
+                   "Semaine tranquille. La prochaine sera meilleure, j'y veillerai." if cette_semaine else
+                   "Zéro candidature cette semaine. Je ne juge pas, mais les offres gardées vous regardent.")
+    return (f"Bilan de la semaine : {cette_semaine} candidature(s) envoyée(s), {len(envoyees)} au total, "
+            f"{entretiens} entretien(s) décroché(s), taux de réponse {taux}. {gardees} offre(s) gardée(s) attendent encore. {commentaire}")
 
 
 def menage(n, actif):

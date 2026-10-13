@@ -92,6 +92,11 @@ def main():
                 brutes += sources.collecter_csp(src.get("choisir_le_service_public") or {"motscles": ["mnhn"]})
             except Exception as e:
                 log(f"Choisir le service public indisponible : {e}")
+        if src.get("abg", True):
+            try:
+                brutes += sources.collecter_abg()
+            except Exception as e:
+                log(f"ABG indisponible : {e}")
         zones = ((etat_prive.get("profil") or {}).get("zones")) or ["idf"]
         brutes += sources.collecter_adzuna(src.get("adzuna") or {"motscles": (src.get("choisir_le_service_public") or {}).get("motscles", [])[1:]}, zones)
         jo = src.get("jooble") or {}
@@ -161,7 +166,7 @@ def main():
         if ia.disponible and (a.get("mode") == "mots-cles" or reanalyser) and len(a_analyser) + len(reprises) < quota:
             o["prefiltre"] = analyse.prefiltre(dict(o, texte=o.get("extrait", "")), cfg)
             if o["prefiltre"] >= 12 or reanalyser:
-                o["telechargeable"] = o["source"] in ("CNRS", "MNHN", "Choisir le service public") or o.get("url", "").startswith("https://emploi.cnrs.fr")
+                o["telechargeable"] = o["source"] in ("CNRS", "MNHN", "Choisir le service public", "ABG") or o.get("url", "").startswith("https://emploi.cnrs.fr")
                 reprises.append(o)
             else:
                 o.pop("prefiltre", None)

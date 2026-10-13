@@ -186,6 +186,53 @@ def texte_offre_csp(page):
     return re.sub(r"\n\s*\n+", "\n", t).strip()
 
 
+# ---------------------------------------------------------------- ABG (offres de thèse ; robots.txt sans restriction)
+# EURAXESS (pages /jobs/* interdites aux robots) et ADUM (robots.txt fermant) restent couverts par les alertes e-mail.
+
+ABG_OFFRE = re.compile(r'href="(?:https://(?:www\.)?abg\.asso\.fr)?(/(?:en|fr)/candidatOffres/show/id_offre/(\d+)/job/[^"]+)"[^>]*>(.*?)</a>', re.S)
+
+
+def lire_page_abg(texte):
+    offres, vus = [], set()
+    trouves = list(ABG_OFFRE.finditer(texte))
+    for k, m in enumerate(trouves):
+        oid = m.group(2)
+        titre = nettoyer(re.sub(r"<[^>]+>", " ", m.group(3)))
+        if oid in vus or len(titre) < 8:
+            continue
+        vus.add(oid)
+        fin = trouves[k + 1].start() if k + 1 < len(trouves) else m.end() + 3000
+        contexte = nettoyer(re.sub(r"<[^>]+>", " ", texte[m.end():fin]))[:600]
+        offres.append({
+            "id": "abg-" + oid, "source": "ABG", "url": "https://www.abg.asso.fr" + m.group(1), "titre": titre,
+            "employeur": "", "lieu": "", "region": region_de(contexte) if contexte else "?",
+            "contrat": "Thèse" + (" CIFRE" if re.search(r"cifre", titre + contexte, re.I) else ""),
+            "type": "these", "date_publication": "", "texte": contexte, "telechargeable": True, "flux_large": True,
+        })
+    return offres
+
+
+def collecter_abg(categories=("biology", "ecology-environment", "psychology-neurosciences",
+                              "health-human-and-veterinary-medicine", "agronomy-agri-food",
+                              "data-science-storage-security-measurement-analysis")):
+    offres, vus = [], set()
+    for c in categories:
+        try:
+            lot = lire_page_abg(telecharger(f"https://www.abg.asso.fr/fr/recruitment/thesis-topic/{c}", timeout=40))
+        except Exception as e:
+            try:
+                lot = lire_page_abg(telecharger(f"https://www.abg.asso.fr/en/recruitment/thesis-topic/{c}", timeout=40))
+            except Exception as e2:
+                log(f"ABG « {c} » : {e2}")
+                continue
+        for o in lot:
+            if o["id"] not in vus:
+                vus.add(o["id"])
+                offres.append(o)
+    log(f"ABG : {len(offres)} offres de thèse")
+    return offres
+
+
 # ---------------------------------------------------------------- Adzuna (API officielle gratuite, regroupe de nombreux sites)
 
 def collecter_adzuna(cfg, zones=("idf",), par_page=50):

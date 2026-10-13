@@ -38,7 +38,11 @@ def envoyer(nouvelles, nb_total, menage=(), mode_menage="non", etat_prive=None, 
     sujet = voix.sujet(len(emplois), len(theses), meilleur["analyse"]["score"] if meilleur else 0)
     corps = [f'<div style="font-family:Georgia,serif;max-width:640px;color:#1c2b24">',
              f'<p style="font-size:15px;margin:0 0 12px">{html.escape(voix.intro(len(nouvelles), len(tous), nb_total, meilleur and meilleur["titre"], meilleur and meilleur["analyse"]["score"]))}</p>']
-    rap = voix.rappels(etat_prive, {o["id"]: o for o in offres_site})
+    parid = {o["id"]: o for o in offres_site}
+    rap = voix.rappels_admin(etat_prive) + voix.rappels(etat_prive, parid)
+    bilan = voix.bilan_semaine(etat_prive, parid)
+    if bilan:
+        rap = [bilan] + rap
     if rap:
         corps.append('<div style="background:#fbf0d9;border-radius:10px;padding:10px 14px;margin:0 0 14px;font-size:14px">'
                      + "".join(f"<p style='margin:4px 0'>• {html.escape(x)}</p>" for x in rap) + "</div>")

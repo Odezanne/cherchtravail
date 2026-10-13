@@ -12,6 +12,18 @@ const STATUTS = {
 let perso = lire("perso", []);
 /* Formations, rendez-vous France Travail, ateliers… : à part des candidatures, jamais dans l'export Word */
 let evenements = lire("evenements", []);
+let actualisations = lire("actualisations", {});
+/* Actualisation France Travail : ouverte du 28 au 15 du mois suivant (minuit). Renvoie {mois:"AAAA-MM", nom, fin} ou null. */
+function periodeActualisation(d = new Date()) {
+  const j = d.getDate();
+  let m;
+  if (j >= 28) m = new Date(d.getFullYear(), d.getMonth(), 1);
+  else if (j <= 15) m = new Date(d.getFullYear(), d.getMonth() - 1, 1);
+  else return null;
+  const fin = new Date(m.getFullYear(), m.getMonth() + 1, 15);
+  return { mois: `${m.getFullYear()}-${String(m.getMonth() + 1).padStart(2, "0")}`,
+    nom: m.toLocaleDateString("fr-FR", { month: "long" }), fin };
+}
 let formEvt = null; // null = fermé ; {} = nouvel événement ; {id…} = modification
 const TYPES_EVT = { formation: "Formation", rdv_ft: "Rendez-vous France Travail", atelier: "Atelier / réunion", autre: "Autre" };
 let moisAffiche = (() => { const d = new Date(); return new Date(d.getFullYear(), d.getMonth(), 1); })();
@@ -50,6 +62,17 @@ function rendreSuivi() {
       <button class="bouton evt" data-suivi="evt-nouveau">+ Formation ou rendez-vous</button>
     </div>`;
   if (formEvt) h += formulaireEvt(formEvt);
+  const per = periodeActualisation();
+  if (per) {
+    const faite = !!actualisations[per.mois];
+    const jours = Math.ceil((per.fin - new Date()) / 86400000);
+    h += `<div class="bloc-actu ${faite ? "faite" : ""}">
+      <label class="case"><input type="checkbox" data-suivi="actu" data-mois="${per.mois}" ${faite ? "checked" : ""}>
+        <span><b>Actualisation France Travail</b> (mois de ${per.nom})<br>
+        <small>${faite ? "Faite, bravo." : `À faire avant le ${per.fin.toLocaleDateString("fr-FR", { day: "numeric", month: "long" })} à minuit${jours <= 3 ? ` · plus que ${jours} jour${jours > 1 ? "s" : ""}` : ""}`}</small></span></label>
+      ${faite ? "" : `<a class="bouton" href="https://www.francetravail.fr/accueil/" target="_blank" rel="noopener">M'actualiser</a>`}
+    </div>`;
+  }
 
   // Agenda : entretiens (liés aux candidatures) et événements (formations, rendez-vous), bien distingués
   const evtsAvenir = evenements.filter((e) => e.date >= aujourdHui());
@@ -315,6 +338,8 @@ function actionSuivi(el, evt) {
     case "sauvegarde": return sauvegarde();
     case "mois": moisAffiche = new Date(moisAffiche.getFullYear(), moisAffiche.getMonth() + +el.dataset.d, 1); return afficher();
     case "ics": return telechargerIcs(o, s.entretiens[+el.dataset.i]);
+    case "actu":
+      actualisations[el.dataset.mois] = el.checked; ecrire("actualisations", actualisations); return afficher();
     case "evt-nouveau": formEvt = {}; afficher(); return document.getElementById("evt-titre")?.focus();
     case "evt-modifier": formEvt = Object.assign({}, evenements.find((e) => e.id === el.dataset.id)); afficher(); return window.scrollTo(0, 0);
     case "evt-annuler": formEvt = null; return afficher();

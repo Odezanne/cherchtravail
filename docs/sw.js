@@ -1,6 +1,6 @@
 // Réseau d'abord, copie locale si hors connexion.
-const CACHE = "cherchtravail-v10";
-const BASE = ["./", "index.html", "style.css", "docx.js", "app.js", "sync.js", "recherche.js", "suivi.js", "lettre.js", "cv.js", "dossier.js", "profil.js", "manifest.webmanifest", "icons/icon-192.png"];
+const CACHE = "cherchtravail-v11";
+const BASE = ["./", "index.html", "style.css", "docx.js", "app.js", "sync.js", "recherche.js", "suivi.js", "lettre.js", "cv.js", "labos.js", "dossier.js", "profil.js", "manifest.webmanifest", "icons/icon-192.png"];
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(BASE))); self.skipWaiting(); });
 self.addEventListener("activate", (e) => {
   e.waitUntil(caches.keys().then((k) => Promise.all(k.filter((x) => x !== CACHE).map((x) => caches.delete(x)))));

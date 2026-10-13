@@ -18,6 +18,9 @@ sources:
   # Flux RSS officiel du CNRS (toutes les offres, CDD ingénieurs et contrats doctoraux)
   cnrs: true
 
+  # ABG : offres de thèse (biologie, écologie, neurosciences, santé animale, agronomie, données)
+  abg: true
+
   # Choisir le service public : offres du MNHN (toutes) et recherche par mots-clés
   # dans toute la fonction publique (INRAE, universités, OFB, Anses…). Le site autorise la lecture des offres.
   choisir_le_service_public:

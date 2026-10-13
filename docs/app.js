@@ -144,6 +144,7 @@ function afficher() {
   if (etat.onglet === "suivi") { $("#liste").innerHTML = rendreSuivi(); return; }
   if (etat.onglet === "lettre") { $("#liste").innerHTML = rendreLettre(); ajusterTout(); return; }
   if (etat.onglet === "cv") { $("#liste").innerHTML = rendreCv(); ajusterTout(); return; }
+  if (etat.onglet === "labos") { $("#liste").innerHTML = rendreLabos(); return; }
   if (etat.onglet === "profil") { $("#liste").innerHTML = rendreProfil(); ajusterTout(); return; }
   if (etat.onglet === "dossier") { rendreDossier(); return; }
   if (vueRecherche) { $("#liste").innerHTML = rendreResultats(); return; }
