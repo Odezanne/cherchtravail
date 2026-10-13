@@ -20,6 +20,7 @@ class IA:
         self.modeles = list(modeles)
         self.morts = set()
         self.appels = 0
+        self.echeance = None  # heure limite (time.time()) au-delà de laquelle on n'appelle plus l'IA
 
     @property
     def disponible(self):
@@ -48,7 +49,8 @@ class IA:
         req = urllib.request.Request(url, data=json.dumps(corps).encode(), headers={
             "Authorization": f"Bearer {cle}", "Content-Type": "application/json",
             "HTTP-Referer": "https://odezanne.github.io/cherchtravail/", "X-Title": "Cherchtravail"})
-        with urllib.request.urlopen(req, timeout=180) as r:
+        reste = (self.echeance - time.time()) if self.echeance else 150
+        with urllib.request.urlopen(req, timeout=max(20, min(150, reste))) as r:
             rep = json.load(r)
         if "error" in rep:
             raise RuntimeError(str(rep["error"])[:300])
@@ -61,6 +63,8 @@ class IA:
                 continue
             format_json = True
             for essai in range(3):
+                if self.echeance and time.time() > self.echeance:
+                    raise QuotaEpuise("temps imparti dépassé")
                 try:
                     self.appels += 1
                     texte = self._post(fournisseur, modele, systeme, message, max_tokens, format_json)
@@ -71,8 +75,8 @@ class IA:
                         format_json = False  # certains modèles refusent l'option « JSON uniquement »
                         continue
                     quotidien = any(k in detail.lower() for k in ("per-day", "daily", "per day", "quota"))
-                    if e.code in (429, 500, 502, 503, 504) and not quotidien and essai < 2:
-                        time.sleep(15 * (essai + 1))
+                    if e.code in (429, 500, 502, 503, 504) and not quotidien and essai < 1:
+                        time.sleep(10)
                         continue
                     log(f"IA {modele} : HTTP {e.code} {detail}")
                     if e.code in (401, 402, 403, 404) or (e.code == 429 and quotidien):

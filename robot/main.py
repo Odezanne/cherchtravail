@@ -7,6 +7,7 @@ Usage : python robot/main.py            (respecte l'heure du condensé)
 import json
 import os
 import sys
+import time
 from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -72,6 +73,7 @@ def main():
     reanalyser = os.environ.get("REANALYSER") == "1"
     src = cfg.get("sources", {})
     ia = IA(cfg.get("modeles", []))
+    ia.echeance = time.time() + 30 * 60  # le robot doit finir dans l'heure, quoi qu'il arrive
     log("Secrets présents : " + ", ".join(f"{k}={'oui' if os.environ.get(k) else 'non'}" for k in (
         "OPENROUTER_API_KEY", "GEMINI_API_KEY", "GMAIL_ADRESSE", "GMAIL_MOT_DE_PASSE_APPLI", "NTFY_SUJET", "FT_CLIENT_ID")))
     aujourd_hui = date.today().isoformat()

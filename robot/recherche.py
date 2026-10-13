@@ -126,6 +126,7 @@ def main():
     offres = [o for o in offres if o["disponibilite"] != "expiree"]
 
     ia = IA(cfg.get("modeles", []))
+    ia.echeance = time.time() + 10 * 60
     analyses = analyse.analyser(ia, profil, offres, cfg)
     resultats = []
     for o in offres:

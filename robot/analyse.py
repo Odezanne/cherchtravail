@@ -161,7 +161,7 @@ def analyser(ia, profil, offres, cfg):
     lots = [offres[i:i + 3] for i in range(0, len(offres), 3)]
     echecs, debut = 0, time.time()
     for lot in lots:
-        if not ia.disponible or echecs >= 3 or time.time() - debut > 35 * 60:
+        if not ia.disponible or echecs >= 3 or (ia.echeance and time.time() > ia.echeance):
             break
         message = "PROFIL DU CANDIDAT :\n" + profil + "\n\nOFFRES :\n" + "\n\n".join(
             f"### id: {o['id']}\nTitre : {o['titre']}\nEmployeur : {o.get('employeur', '')}\nLieu : {o.get('lieu', '')}\n"
@@ -173,7 +173,7 @@ def analyser(ia, profil, offres, cfg):
         except QuotaEpuise:
             echecs += 1
             log(f"IA : lot sans réponse ({echecs}/3), on continue avec le suivant")
-            time.sleep(30)
+            time.sleep(5)
             continue
         for a in (rep.get("offres", rep) if isinstance(rep, dict) else rep) or []:
             if isinstance(a, dict) and a.get("id") in {o["id"] for o in lot}:
