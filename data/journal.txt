@@ -1,26 +1,22 @@
-14:38:55 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
-14:38:58 CNRS : 426 offres dans le flux
-14:39:34 Choisir le service public : 160 offres (18 du MNHN)
-14:39:35 Lecture Gmail impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
-14:39:35 Alertes mail : 0 offres extraites
-14:39:35 Ménage des mails impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
-14:39:35 586 offres collectées, 327 nouvelles, 60 retenues pour l'analyse (dont 0 anciennes à réanalyser), 94 gardées sans IA
-14:44:18 IA nvidia/nemotron-3-ultra-550b-a55b:free : réponse illisible (Expecting ',' delimiter: line 120 column 8 (char 6173)), nouvel essai
-14:47:40 IA nvidia/nemotron-3-ultra-550b-a55b:free : réponse illisible (Expecting ',' delimiter: line 98 column 8 (char 6340)), nouvel essai
-14:48:00 IA google/gemma-4-31b-it:free : HTTP 429 {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate you
-14:49:24 IA nvidia/nemotron-3-super-120b-a12b:free : réponse illisible (pas de JSON), nouvel essai
-14:50:29 IA nvidia/nemotron-3-super-120b-a12b:free : réponse illisible (pas de JSON), nouvel essai
-14:50:50 IA google/gemma-4-26b-a4b-it:free : HTTP 429 {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate
-14:50:50 IA gemini-flash-latest : HTTP 503 [{
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-]
-14:50:50 IA : quota épuisé, repli sur l'analyse par mots-clés
-14:50:50 Appels IA : 9, offres analysées par IA : 0 / 60
-14:50:50 Site mis à jour : 272 offres
-14:50:50 Envoi e-mail impossible : Connection unexpectedly closed
-14:50:50 Notification envoyée
+14:54:33 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
+14:54:39 CNRS : 426 offres dans le flux
+14:55:20 Choisir le service public : 160 offres (18 du MNHN)
+14:55:21 Lecture Gmail impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+14:55:21 Alertes mail : 0 offres extraites
+14:55:21 Ménage des mails impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+14:55:21 586 offres collectées, 173 nouvelles, 60 retenues pour l'analyse (dont 60 anciennes à réanalyser), 0 gardées sans IA
+14:58:42 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+14:59:32 IA gemini-flash-lite-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+15:04:16 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+15:06:22 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+15:09:10 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+15:11:14 IA gemini-flash-lite-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+15:14:46 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+15:15:46 IA gemini-flash-lite-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+15:18:23 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+15:21:48 IA gemini-flash-lite-latest : The read operation timed out
+15:26:40 IA gemini-flash-latest : HTTP 429 [{   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-
+15:34:41 Appels IA : 47, offres analysées par IA : 30 / 60
+15:34:41 Site mis à jour : 272 offres
+15:34:41 Envoi e-mail impossible : Connection unexpectedly closed
+15:34:42 Notification envoyée
