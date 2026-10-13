@@ -94,6 +94,9 @@ if os.environ.get("RECOUPER"):
                 lien = _src.lien_employeur_csp(pg)
                 if lien:
                     note(True, "robots employeur", f"autorisé : {_aut(lien)}")
+                    import recherche as _r
+                    et, pe = _r._page_expiree(lien)
+                    note(True, "page employeur", f"{et} · {len(pe)} car. · plus en ligne : {bool(_r.EXPIREE.search(pe))}")
             except Exception as e:
                 note(False, "page CSP (debug)", str(e)[:200])
             o.pop("recoupement", None)

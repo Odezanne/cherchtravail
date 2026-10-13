@@ -4,6 +4,7 @@ import html
 import re
 import time
 import unicodedata
+import urllib.error
 import urllib.request
 import urllib.robotparser
 from html.parser import HTMLParser
@@ -35,10 +36,20 @@ def autorise(url):
     base = f"{urlparse(url).scheme}://{host}"
     rp = _robots_cache.get(base)
     if rp is None:
+        # On lit robots.txt nous-mêmes, avec notre User-Agent : certains serveurs refusent celui de Python par défaut
+        # (ce que la bibliothèque standard prend à tort pour « tout est interdit »), d'autres renvoient une page HTML.
         rp = urllib.robotparser.RobotFileParser()
-        rp.set_url(base + "/robots.txt")
         try:
-            rp.read()
+            req = urllib.request.Request(base + "/robots.txt", headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                corps = r.read(200000).decode("utf-8", errors="replace")
+                html_page = "html" in (r.headers.get("Content-Type") or "").lower() or "<html" in corps[:500].lower()
+            rp.parse([] if html_page else corps.splitlines())
+        except urllib.error.HTTPError as e:
+            if e.code in (401, 403):
+                rp.disallow_all = True
+            else:
+                rp.parse([])
         except Exception:
             rp = False
         _robots_cache[base] = rp
