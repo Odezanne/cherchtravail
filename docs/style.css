@@ -282,3 +282,25 @@ code { font-size: 12.5px; background: var(--fond); padding: 1px 5px; border-radi
 .tourne { width: 28px; height: 28px; border-radius: 50%; border: 3px solid var(--ligne); border-top-color: var(--vert); margin: 0 auto 12px; animation: tourne 1s linear infinite; }
 @keyframes tourne { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .tourne { animation: none; } }
+
+/* ---------- Formations et rendez-vous ---------- */
+:root { --bleu: #2b5797; --bleu-pale: #e4ecf7; }
+@media (prefers-color-scheme: dark) { :root { --bleu: #8fb3ea; --bleu-pale: #1d2a3d; } }
+.bouton.evt { border-color: var(--bleu); color: var(--bleu); background: var(--bleu-pale); }
+.evt-date { background: var(--bleu-pale); color: var(--bleu); }
+.tag-oblig { font-size: 11px; font-weight: 700; color: var(--rouge); border: 1px solid currentColor; border-radius: 6px; padding: 0 5px; margin-left: 4px; white-space: nowrap; }
+.bloc-evt { display: grid; gap: 2px; border-color: var(--bleu); }
+.bloc-evt label { display: grid; gap: 4px; font-size: 13px; color: var(--doux); margin-bottom: 8px; }
+.bloc-evt input:not([type=checkbox]), .bloc-evt select, .bloc-evt textarea {
+  font: inherit; color: var(--texte); background: var(--fond); border: 1px solid var(--ligne); border-radius: 10px; padding: 9px 10px; width: 100%; min-height: 42px;
+}
+.bloc-evt label.case { display: flex; color: var(--texte); }
+.cal-grille .a-evt { background: var(--bleu); color: var(--fond); font-weight: 700; }
+.cal-grille .a-rdv.a-evt { background: linear-gradient(135deg, var(--ambre) 50%, var(--bleu) 50%); }
+.cal-legende { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--doux); margin-top: 8px; flex-wrap: wrap; }
+.cal-legende .pt { width: 10px; height: 10px; border-radius: 3px; display: inline-block; margin-left: 6px; }
+.cal-legende .pt.rdv { background: var(--ambre); } .cal-legende .pt.evt { background: var(--bleu); }
+.evts-passes { margin-top: 12px; font-size: 14px; }
+.evts-passes summary { cursor: pointer; color: var(--doux); }
+.evt-passe { display: block; width: 100%; text-align: left; border: 0; background: none; padding: 6px 2px; color: var(--texte); cursor: pointer; }
+.evt-passe span { color: var(--doux); font-size: 12px; }

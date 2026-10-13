@@ -10,6 +10,10 @@ const STATUTS = {
   refus: { nom: "Refus", couleur: "gris" },
 };
 let perso = lire("perso", []);
+/* Formations, rendez-vous France Travail, ateliers… : à part des candidatures, jamais dans l'export Word */
+let evenements = lire("evenements", []);
+let formEvt = null; // null = fermé ; {} = nouvel événement ; {id…} = modification
+const TYPES_EVT = { formation: "Formation", rdv_ft: "Rendez-vous France Travail", atelier: "Atelier / réunion", autre: "Autre" };
 let moisAffiche = (() => { const d = new Date(); return new Date(d.getFullYear(), d.getMonth(), 1); })();
 
 function suiviDe(id) { return (suivi[id] = suivi[id] || {}); }
@@ -42,21 +46,35 @@ function rendreSuivi() {
   const avenir = entretiens.filter((x) => x.e.date >= aujourdHui());
   const suivies = offresSuivies();
   let h = `<div class="suivi-actions">
-      <button class="bouton principal" data-suivi="ajouter">+ Ajouter une candidature</button>
-      <button class="bouton" data-suivi="sauvegarde">Sauvegarder / restaurer</button>
+      <button class="bouton principal" data-suivi="ajouter">+ Candidature</button>
+      <button class="bouton evt" data-suivi="evt-nouveau">+ Formation ou rendez-vous</button>
     </div>`;
+  if (formEvt) h += formulaireEvt(formEvt);
 
-  h += `<h2 class="groupe">Prochains entretiens</h2>`;
-  h += avenir.length ? avenir.map(({ o, e, i }) => `
+  // Agenda : entretiens (liés aux candidatures) et événements (formations, rendez-vous), bien distingués
+  const evtsAvenir = evenements.filter((e) => e.date >= aujourdHui());
+  const agenda = avenir.map((x) => ({ date: x.e.date, heure: x.e.heure || "", x, genre: "entretien" }))
+    .concat(evtsAvenir.map((e) => ({ date: e.date, heure: e.heure || "", e, genre: "evt" })))
+    .sort((a, b) => (a.date + a.heure).localeCompare(b.date + b.heure));
+  h += `<h2 class="groupe">À venir</h2>`;
+  h += agenda.length ? agenda.map((it) => it.genre === "entretien" ? `
       <div class="entretien-ligne">
-        <div class="entretien-date"><b>${dateFr(e.date, { day: "numeric" })}</b><span>${dateFr(e.date, { month: "short" })}</span></div>
-        <button class="entretien-corps" data-ouvrir="${esc(o.id)}">
-          <strong>${esc(o.titre)}</strong>
-          <span>${esc([e.heure, e.lieu, o.employeur].filter(Boolean).join(" · "))}</span>
+        <div class="entretien-date"><b>${dateFr(it.x.e.date, { day: "numeric" })}</b><span>${dateFr(it.x.e.date, { month: "short" })}</span></div>
+        <button class="entretien-corps" data-ouvrir="${esc(it.x.o.id)}">
+          <strong>Entretien · ${esc(it.x.o.titre)}</strong>
+          <span>${esc([it.x.e.heure, it.x.e.lieu, it.x.o.employeur].filter(Boolean).join(" · "))}</span>
         </button>
-        <button class="mini" data-suivi="ics" data-id="${esc(o.id)}" data-i="${i}" aria-label="Ajouter au calendrier du téléphone">📅</button>
+        <button class="mini" data-suivi="ics" data-id="${esc(it.x.o.id)}" data-i="${it.x.i}" aria-label="Ajouter au calendrier du téléphone">📅</button>
+      </div>` : `
+      <div class="entretien-ligne evt-ligne">
+        <div class="entretien-date evt-date"><b>${dateFr(it.e.date, { day: "numeric" })}</b><span>${dateFr(it.e.date, { month: "short" })}</span></div>
+        <button class="entretien-corps" data-suivi="evt-modifier" data-id="${esc(it.e.id)}">
+          <strong>${esc(it.e.titre)}${it.e.obligatoire ? ` <span class="tag-oblig">Obligatoire</span>` : ""}</strong>
+          <span>${esc([TYPES_EVT[it.e.type] || "", it.e.heure && (it.e.heure + (it.e.fin ? "–" + it.e.fin : "")), it.e.lieu].filter(Boolean).join(" · "))}</span>
+        </button>
+        <button class="mini" data-suivi="evt-ics" data-id="${esc(it.e.id)}" aria-label="Ajouter au calendrier du téléphone">📅</button>
       </div>`).join("")
-    : `<p class="vide-petit">Aucun entretien prévu. Ajoute-en un depuis la fiche d'une offre.</p>`;
+    : `<p class="vide-petit">Rien de prévu. Les entretiens s'ajoutent depuis la fiche d'une offre, les formations et rendez-vous avec le bouton ci-dessus.</p>`;
 
   h += rendreCalendrier(entretiens);
 
@@ -64,13 +82,20 @@ function rendreSuivi() {
   const nbPostulees = suivies.filter((o) => statutDe(o.id) !== "a_postuler").length;
   h += `<h2 class="groupe">Pour ma conseillère France Travail</h2>
     <div class="bloc-export">
-      <p class="vide-petit" style="margin:0 0 8px">Tableau Word de tes candidatures envoyées : date, intitulé, employeur, salaire, résumé de l'offre et suite donnée.</p>
+      <p class="vide-petit" style="margin:0 0 8px">Tableau Word de tes candidatures envoyées : date, intitulé, employeur, salaire, résumé de l'offre et suite donnée.
+        Tes formations et rendez-vous n'y figurent pas.</p>
       <div class="suivi-champs">
         <label>Du<input type="date" data-suivi="export-du" value="${esc(exp.du || "")}"></label>
         <label>Au<input type="date" data-suivi="export-au" value="${esc(exp.au || "")}"></label>
       </div>
       <button class="bouton principal" data-suivi="export-word" ${nbPostulees ? "" : "disabled"}>Exporter en Word (${nbPostulees} candidature${nbPostulees > 1 ? "s" : ""})</button>
     </div>`;
+
+  const passes = evenements.filter((e) => e.date < aujourdHui()).sort((a, b) => b.date.localeCompare(a.date));
+  if (passes.length) {
+    h += `<details class="evts-passes"><summary>Formations et rendez-vous passés (${passes.length})</summary>${passes.map((e) => `
+      <button class="evt-passe" data-suivi="evt-modifier" data-id="${esc(e.id)}">${dateFr(e.date, { day: "numeric", month: "short", year: "numeric" })} · ${esc(e.titre)} <span>${esc(TYPES_EVT[e.type] || "")}</span></button>`).join("")}</details>`;
+  }
 
   h += `<h2 class="groupe">Mes candidatures (${suivies.length})</h2>`;
   if (!suivies.length) {
@@ -94,11 +119,36 @@ function rendreSuivi() {
       </div>`;
     }).join("");
   }
+  h += `<p class="vide-petit" style="margin-top:14px"><button class="lien" data-suivi="sauvegarde">Sauvegarder / restaurer mes candidatures dans un fichier</button></p>`;
   return h;
+}
+
+function formulaireEvt(e) {
+  return `<div class="bloc-export bloc-evt">
+    <h3 class="sous-groupe" style="margin-top:0">${e.id ? "Modifier" : "Nouvel"} événement</h3>
+    <label>Intitulé<input id="evt-titre" value="${esc(e.titre || "")}" placeholder="ex. Atelier CV France Travail"></label>
+    <label>Type<select id="evt-type">${Object.entries(TYPES_EVT).map(([k, v]) => `<option value="${k}" ${k === (e.type || "formation") ? "selected" : ""}>${v}</option>`).join("")}</select></label>
+    <div class="suivi-champs">
+      <label>Date<input type="date" id="evt-date" value="${esc(e.date || "")}"></label>
+      <label>Début<input type="time" id="evt-heure" value="${esc(e.heure || "")}"></label>
+    </div>
+    <div class="suivi-champs">
+      <label>Fin<input type="time" id="evt-fin" value="${esc(e.fin || "")}"></label>
+      <label>Lieu ou lien<input id="evt-lieu" value="${esc(e.lieu || "")}" placeholder="Agence, visio…"></label>
+    </div>
+    <label class="case"><input type="checkbox" id="evt-oblig" ${e.obligatoire !== false ? "checked" : ""}> Présence obligatoire</label>
+    <label>Notes<textarea id="evt-notes" rows="2" placeholder="Documents à apporter, contact…">${esc(e.notes || "")}</textarea></label>
+    <div class="actions-ligne deux">
+      <button class="bouton principal" data-suivi="evt-enregistrer">Enregistrer</button>
+      <button class="bouton" data-suivi="evt-annuler">Annuler</button>
+    </div>
+    ${e.id ? `<button class="lien rouge" data-suivi="evt-supprimer" data-id="${esc(e.id)}">Supprimer cet événement</button>` : ""}
+  </div>`;
 }
 
 function rendreCalendrier(entretiens) {
   const jours = new Set(entretiens.map((x) => x.e.date));
+  const joursEvt = new Set(evenements.map((e) => e.date));
   const an = moisAffiche.getFullYear(), m = moisAffiche.getMonth();
   const premier = (new Date(an, m, 1).getDay() + 6) % 7; // lundi = 0
   const nb = new Date(an, m + 1, 0).getDate();
@@ -107,7 +157,7 @@ function rendreCalendrier(entretiens) {
   for (let i = 0; i < premier; i++) cases += `<span></span>`;
   for (let j = 1; j <= nb; j++) {
     const iso = `${an}-${String(m + 1).padStart(2, "0")}-${String(j).padStart(2, "0")}`;
-    cases += `<span class="${jours.has(iso) ? "a-rdv" : ""} ${iso === auj ? "auj" : ""}">${j}</span>`;
+    cases += `<span class="${jours.has(iso) ? "a-rdv" : ""} ${joursEvt.has(iso) ? "a-evt" : ""} ${iso === auj ? "auj" : ""}">${j}</span>`;
   }
   return `<div class="calendrier">
     <div class="cal-tete">
@@ -116,6 +166,7 @@ function rendreCalendrier(entretiens) {
       <button class="mini" data-suivi="mois" data-d="1" aria-label="Mois suivant">›</button>
     </div>
     <div class="cal-grille"><i>L</i><i>M</i><i>M</i><i>J</i><i>V</i><i>S</i><i>D</i>${cases}</div>
+    <div class="cal-legende"><span class="pt rdv"></span>Entretien <span class="pt evt"></span>Formation ou rendez-vous</div>
   </div>`;
 }
 
@@ -152,20 +203,20 @@ function blocSuivi(o) {
 
 /* ------------------------------------------------------------- Calendrier du téléphone (.ics) */
 
-function telechargerIcs(o, e) {
+function telechargerIcs(o, e, opts = {}) {
   const d = e.date.replace(/-/g, "");
   const h = (e.heure || "09:00").replace(":", "") + "00";
-  const fin = String(Math.min(23, +h.slice(0, 2) + 1)).padStart(2, "0") + h.slice(2);
+  const fin = e.fin ? e.fin.replace(":", "") + "00" : String(Math.min(23, +h.slice(0, 2) + 1)).padStart(2, "0") + h.slice(2);
   const echap = (t) => String(t || "").replace(/([,;\\])/g, "\\$1").replace(/\n/g, "\\n");
   const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Cherchtravail//FR", "BEGIN:VEVENT",
     `UID:${o.id}-${d}${h}@cherchtravail`, `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").slice(0, 15)}Z`,
     `DTSTART;TZID=Europe/Paris:${d}T${h}`, `DTEND;TZID=Europe/Paris:${d}T${fin}`,
-    `SUMMARY:${echap("Entretien : " + o.titre)}`, `LOCATION:${echap(e.lieu)}`,
-    `DESCRIPTION:${echap([o.employeur, o.url].filter(Boolean).join("\n"))}`,
-    "BEGIN:VALARM", "TRIGGER:-P1D", "ACTION:DISPLAY", "DESCRIPTION:Entretien demain", "END:VALARM",
+    `SUMMARY:${echap(opts.titre || "Entretien : " + o.titre)}`, `LOCATION:${echap(e.lieu)}`,
+    `DESCRIPTION:${echap(opts.description ?? [o.employeur, o.url].filter(Boolean).join("\n"))}`,
+    "BEGIN:VALARM", "TRIGGER:-P1D", "ACTION:DISPLAY", `DESCRIPTION:${echap(opts.rappel || "Entretien demain")}`, "END:VALARM",
     "END:VEVENT", "END:VCALENDAR"].join("\r\n");
   const url = URL.createObjectURL(new Blob([ics], { type: "text/calendar;charset=utf-8" }));
-  const a = Object.assign(document.createElement("a"), { href: url, download: "entretien.ics" });
+  const a = Object.assign(document.createElement("a"), { href: url, download: opts.fichier || "entretien.ics" });
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 10000);
 }
@@ -264,6 +315,26 @@ function actionSuivi(el, evt) {
     case "sauvegarde": return sauvegarde();
     case "mois": moisAffiche = new Date(moisAffiche.getFullYear(), moisAffiche.getMonth() + +el.dataset.d, 1); return afficher();
     case "ics": return telechargerIcs(o, s.entretiens[+el.dataset.i]);
+    case "evt-nouveau": formEvt = {}; afficher(); return document.getElementById("evt-titre")?.focus();
+    case "evt-modifier": formEvt = Object.assign({}, evenements.find((e) => e.id === el.dataset.id)); afficher(); return window.scrollTo(0, 0);
+    case "evt-annuler": formEvt = null; return afficher();
+    case "evt-enregistrer": {
+      const v = (k) => document.getElementById(k).value.trim();
+      if (!v("evt-titre") || !v("evt-date")) return toast("Indique au moins un intitulé et une date");
+      const e = { id: formEvt.id || "evt-" + Date.now(), titre: v("evt-titre"), type: v("evt-type"), date: v("evt-date"),
+        heure: v("evt-heure"), fin: v("evt-fin"), lieu: v("evt-lieu"), notes: v("evt-notes"), obligatoire: document.getElementById("evt-oblig").checked };
+      evenements = evenements.filter((x) => x.id !== e.id).concat(e);
+      ecrire("evenements", evenements); formEvt = null; afficher();
+      return toast("Événement enregistré. Touche 📅 pour l'ajouter au calendrier du téléphone");
+    }
+    case "evt-supprimer":
+      if (!confirm("Supprimer cet événement ?")) return;
+      evenements = evenements.filter((x) => x.id !== el.dataset.id); ecrire("evenements", evenements); formEvt = null; return afficher();
+    case "evt-ics": {
+      const e = evenements.find((x) => x.id === el.dataset.id);
+      return telechargerIcs({ id: e.id }, e, { titre: (e.obligatoire ? "[Obligatoire] " : "") + e.titre,
+        description: [TYPES_EVT[e.type], e.notes].filter(Boolean).join("\n"), rappel: e.titre + " demain", fichier: "evenement.ics" });
+    }
     case "cocher":
       conserverSiRecherche(id);
       if (el.checked) { s.statut = s.statut && s.statut !== "a_postuler" ? s.statut : "postule"; s.date_postule = s.date_postule || aujourdHui(); }

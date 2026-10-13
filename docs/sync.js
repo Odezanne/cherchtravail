@@ -4,8 +4,8 @@
    Fusion à trois voies : ce qui a changé ici depuis la dernière synchro gagne, le reste vient de l'autre appareil. */
 
 const Sync = (() => {
-  const CLES = ["suivi", "perso", "lettres", "lettre-modele", "profil", "cv", "recherches"];
-  const PAR_ID = { perso: true }; // tableaux d'objets {id}
+  const CLES = ["suivi", "perso", "lettres", "lettre-modele", "profil", "cv", "recherches", "evenements"];
+  const PAR_ID = { perso: true, evenements: true }; // tableaux d'objets {id}
   const API = "https://api.github.com";
   let reglages = lire("sync", {});
   let minuteur = null, enCours = null, dernierEtat = "";
@@ -71,7 +71,7 @@ const Sync = (() => {
   const egal = (a, b) => JSON.stringify(a ?? null) === JSON.stringify(b ?? null);
   function enMap(v, cle) { return PAR_ID[cle] ? Object.fromEntries((v || []).map((x) => [x.id, x])) : (v || {}); }
   function fusion(cle, base, ici, la) {
-    const objet = !["suivi", "lettres", "perso"].includes(cle);
+    const objet = !["suivi", "lettres", "perso", "evenements"].includes(cle);
     if (objet) return !egal(ici, base) ? ici : (la ?? ici);
     const B = enMap(base, cle), I = enMap(ici, cle), L = enMap(la, cle), R = {};
     for (const id of new Set([...Object.keys(B), ...Object.keys(I), ...Object.keys(L)])) {
@@ -160,6 +160,7 @@ async function synchroDemarrage() {
     const change = await Sync.synchroniser();
     suivi = lire("suivi", {}); perso = lire("perso", []);
     if (typeof recherches !== "undefined") recherches = lire("recherches", []);
+    if (typeof evenements !== "undefined") evenements = lire("evenements", []);
     if (typeof rechargerLettres === "function") rechargerLettres();
     if (typeof rechargerProfil === "function") rechargerProfil();
     if (typeof rechargerCv === "function") rechargerCv();
