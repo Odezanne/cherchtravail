@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap">
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=14">
 </head>
 <body>
 <header class="entete">
@@ -34,6 +34,7 @@
     <button role="tab" data-onglet="cv" aria-selected="false">CV</button>
     <button role="tab" data-onglet="lettre" aria-selected="false">Lettre</button>
     <button role="tab" data-onglet="labos" aria-selected="false">Labos</button>
+    <button role="tab" data-onglet="contacts" aria-selected="false">Contacts</button>
     <button role="tab" data-onglet="dossier" aria-selected="false">Dossier</button>
     <button role="tab" data-onglet="profil" aria-selected="false">Profil</button>
   </nav>
@@ -68,6 +69,10 @@
     </div>
   </fieldset>
   <fieldset class="champ">
+    <legend>Localisation précise</legend>
+    <div id="lieux-filtre"></div>
+  </fieldset>
+  <fieldset class="champ">
     <legend>Contrat</legend>
     <div class="puces" id="contrats">
       <label><input type="checkbox" value="cdd" checked><span>CDD</span></label>
@@ -87,15 +92,17 @@
 </dialog>
 
 <div class="toast" id="toast" role="status" hidden></div>
-<script src="docx.js?v=13"></script>
-<script src="app.js?v=13"></script>
-<script src="sync.js?v=13"></script>
-<script src="recherche.js?v=13"></script>
-<script src="suivi.js?v=13"></script>
-<script src="lettre.js?v=13"></script>
-<script src="cv.js?v=13"></script>
-<script src="labos.js?v=13"></script>
-<script src="dossier.js?v=13"></script>
-<script src="profil.js?v=13"></script>
+<script src="docx.js?v=14"></script>
+<script src="app.js?v=14"></script>
+<script src="lieux.js?v=14"></script>
+<script src="sync.js?v=14"></script>
+<script src="recherche.js?v=14"></script>
+<script src="suivi.js?v=14"></script>
+<script src="lettre.js?v=14"></script>
+<script src="cv.js?v=14"></script>
+<script src="labos.js?v=14"></script>
+<script src="contacts.js?v=14"></script>
+<script src="dossier.js?v=14"></script>
+<script src="profil.js?v=14"></script>
 </body>
 </html>

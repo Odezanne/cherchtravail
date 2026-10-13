@@ -421,3 +421,38 @@ a.mini { display: inline-grid; place-items: center; text-decoration: none; color
 select { color-scheme: dark; }
 select option, select optgroup { background-color: #1d1d1f; color: #efe9df; }
 select option:checked { background-color: #36363b; color: #ffffff; }
+
+/* Filtre de localisation */
+#lieux-saisie { width: 100%; margin-top: 8px; border: 1.5px dashed var(--ligne); background: rgba(255, 255, 255, .04); color: var(--texte);
+  border-radius: 10px; padding: 10px 12px; font: inherit; }
+.lieux-mode { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.lieux-mode label { position: relative; }
+.lieux-mode input { position: absolute; opacity: 0; pointer-events: none; }
+.lieux-mode span { display: inline-block; padding: 6px 11px; border-radius: 99px; border: 1.5px dashed var(--ligne); font-size: 13.5px; cursor: pointer; }
+.lieux-mode input:checked + span { border: 1.5px solid var(--lavande); color: var(--lavande); font-weight: 600; }
+.lieux-choix:empty { display: none; }
+.raccourcis { margin-top: 8px; }
+.puce-lieu { font: inherit; font-size: 13.5px; padding: 6px 11px; border-radius: 99px; cursor: pointer;
+  border: 1.5px solid var(--vert); background: var(--vert-pale); color: var(--vert); }
+.puce-lieu.legere { border: 1.5px dashed var(--ligne); background: transparent; color: inherit; }
+.bandeau-lieux { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 10px; font-size: 14px; }
+.bandeau-lieux .lien { padding: 4px 0; font-size: 13.5px; }
+.recoupement { font-size: 14px; }
+.recoupement p { margin: 4px 0; }
+.recoupement ul { margin: 4px 0 6px; padding-left: 18px; }
+.recoupement a { color: var(--bleu); }
+.alerte-texte { color: var(--rouge); }
+.labo.contact { flex-wrap: wrap; }
+.verif-contact { flex-basis: 100%; font-size: 13px; color: var(--doux); border-top: 1.5px dashed var(--ligne); padding-top: 8px; }
+.verif-contact b { color: var(--texte); }
+.verif-contact.vert b { color: var(--vert); }
+.verif-contact.ambre b { color: var(--ambre); }
+.verif-contact a { color: var(--bleu); margin-right: 8px; }
+/* CV Canva */
+.canva-carte { background: var(--carte); border: 1.5px solid var(--ligne); border-radius: 14px; padding: 12px; margin: 0 0 12px; }
+.canva-tete { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.canva-apercu { position: relative; width: 100%; padding-top: 141.4%; border-radius: 8px; overflow: hidden; margin-bottom: 10px; background: rgba(255,255,255,.04); }
+.canva-apercu iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.canva-carte .bouton { text-align: center; text-decoration: none; }
+.cv-texte { margin-top: 14px; border-top: 1.5px dashed var(--ligne); padding-top: 10px; }
+.cv-texte summary { cursor: pointer; color: var(--lavande); font-weight: 600; margin-bottom: 10px; }

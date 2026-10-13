@@ -9,7 +9,7 @@ const NIVEAUX_LARGEUR = [
 ];
 const GROUPES = { coeur: "Cœur de cible", tres_proche: "Très proche", proche: "Proche", eloigne: "Plus éloigné", hors: "Hors profil" };
 const DEFAUTS = { onglet: "emploi", largeur: 1, recherche: "", salaire: 0, sansSalaire: true,
-  zones: ["idf", "?"], contrats: ["cdd", "cdi", "autre"], cacherBloques: false, voirMasquees: false };
+  zones: ["idf", "?"], contrats: ["cdd", "cdi", "autre"], cacherBloques: false, voirMasquees: false, lieux: [], lieuxMode: "inclure" };
 
 let donnees = { offres: [], maj: null };
 let etat = Object.assign({}, DEFAUTS, lire("filtres", {}));
@@ -77,7 +77,9 @@ function filtrer(onglet, largeur) {
     const st = typeof statutDe === "function" ? statutDe(o.id) : null;
     if (st && st !== "a_postuler") return false;
     if ((a.score ?? 0) < min) return false;
-    if (!etat.zones.includes(o.region || "?")) return false;
+    const lieuxChoisis = (etat.lieux || []).length && etat.lieuxMode !== "exclure";
+    if (!lieuxChoisis && !etat.zones.includes(o.region || "?")) return false;
+    if (typeof passeLieu === "function" && !passeLieu(o)) return false;
     if (onglet === "emploi" && !etat.contrats.includes(typeContrat(o))) return false;
     if (etat.cacherBloques && a.bloquants?.length) return false;
     if (etat.salaire > 0) {
@@ -102,8 +104,7 @@ function carte(o) {
   if (j != null && j >= 0) et.push(`<span class="et ${j <= 7 ? "limite" : ""}">Limite ${dateFr(a.date_limite)}</span>`);
   if (a.lien_these && o.type === "emploi") et.push(`<span class="et these">Tremplin thèse</span>`);
   et.push(`<span class="et">${esc(o.source)}</span>`);
-  if (o.disponibilite === "disponible") et.push(`<span class="et dispo">✓ En ligne</span>`);
-  else if (o.disponibilite === "non_verifiable") et.push(`<span class="et">Non vérifiée</span>`);
+  const rc = badgeRecoupement(o); if (rc) et.push(rc);
   const alerte = bloque
     ? `<div class="alerte"><b>${esc(a.bloquants.map((b) => b.texte).join(" · "))}</b>. Tu peux quand même tenter ta chance.</div>` : "";
   const garde = statutDe(o.id) === "a_postuler";
@@ -113,7 +114,7 @@ function carte(o) {
       <div class="score" style="--p:${a.score ?? 0};--c:${couleurScore(a.score ?? 0)}" aria-label="Intérêt ${a.score ?? 0} %"><b>${a.score ?? 0}%</b></div>
       <div class="corps">
         <h3>${esc(o.titre)}</h3>
-        <p class="sous">${esc([o.employeur, o.lieu].filter(Boolean).join(" · ") || o.source)}</p>
+        <p class="sous">${esc([o.employeur, typeof lieuAffiche === "function" ? lieuAffiche(o) : o.lieu].filter(Boolean).join(" · ") || o.source)}</p>
         <div class="etiquettes">${et.join("")}</div>${alerte}
       </div></button>
     <div class="carte-actions">
@@ -138,17 +139,18 @@ function afficher() {
   $("#c-suivi").textContent = nbSuivis() || "";
   const nbFiltres = (etat.recherche ? 1 : 0) + (etat.salaire ? 1 : 0) + (etat.cacherBloques ? 1 : 0)
     + (JSON.stringify(etat.zones) !== JSON.stringify(DEFAUTS.zones) ? 1 : 0)
-    + (etat.contrats.length !== 3 ? 1 : 0);
+    + (etat.contrats.length !== 3 ? 1 : 0) + ((etat.lieux || []).length ? 1 : 0);
   $("#nb-filtres").hidden = !nbFiltres; $("#nb-filtres").textContent = nbFiltres;
 
   if (etat.onglet === "suivi") { $("#liste").innerHTML = rendreSuivi(); return; }
   if (etat.onglet === "lettre") { $("#liste").innerHTML = rendreLettre(); ajusterTout(); return; }
   if (etat.onglet === "cv") { $("#liste").innerHTML = rendreCv(); ajusterTout(); return; }
   if (etat.onglet === "labos") { $("#liste").innerHTML = rendreLabos(); return; }
+  if (etat.onglet === "contacts") { $("#liste").innerHTML = rendreContacts(); return; }
   if (etat.onglet === "profil") { $("#liste").innerHTML = rendreProfil(); ajusterTout(); return; }
   if (etat.onglet === "dossier") { rendreDossier(); return; }
   if (vueRecherche) { $("#liste").innerHTML = rendreResultats(); return; }
-  const barre = barreRecherche();
+  const barre = barreRecherche() + (typeof bandeauLieux === "function" ? bandeauLieux() : "");
   const tri = (x, y) => (y.analyse?.score ?? 0) - (x.analyse?.score ?? 0);
   // Offres gardées : toujours en tête, quels que soient les filtres, jusqu'à ce que je postule
   const gardees = donnees.offres.filter((o) => o.type === etat.onglet && statutDe(o.id) === "a_postuler" && !(suivi[o.id] || {}).masque).sort(tri);
@@ -182,6 +184,35 @@ function liste(titre, items, rendu = (x) => esc(x)) {
   return items?.length ? `<h4>${titre}</h4><ul>${items.map((x) => `<li>${rendu(x)}</li>`).join("")}</ul>` : "";
 }
 
+/* Recoupement : l'offre existe-t-elle vraiment, et où ? (fait par le robot chaque jour) */
+function badgeRecoupement(o) {
+  if (o.disponibilite === "expiree") return `<span class="et limite">⚠ Plus en ligne</span>`;
+  const r = o.recoupement || {}; const n = (r.sites || []).length;
+  switch (r.statut) {
+    case "employeur": return `<span class="et dispo">✓ Confirmée par l'employeur</span>`;
+    case "plusieurs": return `<span class="et dispo">✓ Vue sur ${n + 1} sites</span>`;
+    case "officiel": return `<span class="et">Portail de l'État seulement</span>`;
+    case "unique": return `<span class="et">Vue sur 1 seul site</span>`;
+  }
+  return o.disponibilite === "disponible" ? `<span class="et dispo">✓ En ligne</span>` : "";
+}
+function blocRecoupement(o) {
+  const r = o.recoupement || {};
+  const lignes = [];
+  if (o.disponibilite === "expiree") lignes.push(`<p class="alerte-texte">⚠ La page d'origine n'est plus en ligne depuis le ${dateFr(o.expiree_le || o.verifiee_le)} : l'offre est sans doute pourvue ou retirée.</p>`);
+  else if (o.verifiee_le) lignes.push(`<p>Page d'origine revérifiée le ${dateFr(o.verifiee_le)} : toujours en ligne.</p>`);
+  const sites = [{ nom: o.source, url: o.url }, ...(r.sites || [])];
+  if (r.url_employeur && !sites.some((x) => x.url === r.url_employeur)) sites.push({ nom: "Site de l'employeur", url: r.url_employeur });
+  if (sites.length > 1 || r.url_employeur) {
+    lignes.push(`<p>Vue sur :</p><ul>${sites.map((x) => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.nom || x.url)} ↗</a>${x.url === r.url_employeur ? " · <b>site de l'employeur</b>" : ""}</li>`).join("")}</ul>`);
+  }
+  if (r.statut === "officiel") lignes.push(`<p>Publiée seulement sur Choisir le service public, introuvable sur le site de l'employeur. C'est le portail officiel de l'emploi public, alimenté par les établissements eux-mêmes (MNHN, INRAE, universités…), donc l'offre est bien réelle. Les sites des établissements ne reprennent pas toujours toutes leurs annonces. Vérifie surtout la date limite et le contact indiqué.</p>`);
+  if (r.statut === "unique") lignes.push(`<p>Vue sur un seul site pour l'instant. Avant de postuler, cherche l'offre sur le site de l'employeur ou écris au contact indiqué.</p>`);
+  if (r.statut === "employeur") lignes.push(`<p>✓ Publiée par l'employeur lui-même.</p>`);
+  if (!lignes.length) return "";
+  return `<h4>Vérification de l'offre</h4><div class="recoupement">${lignes.join("")}</div>`;
+}
+
 function ouvrirFiche(id) {
   const o = toutesOffres().find((x) => x.id === id); if (!o) return;
   const a = o.analyse || {}; const s = suivi[o.id] || {};
@@ -209,6 +240,7 @@ function ouvrirFiche(id) {
     ${liste("Tes atouts", a.atouts)}
     ${liste("Ce qui te manque", a.manques)}
     ${!a.resume && o.extrait ? `<h4>Extrait</h4><p>${esc(o.extrait)}</p>` : ""}
+    ${blocRecoupement(o)}
     <div class="actions">
       ${o.url ? `<a class="bouton principal" href="${esc(o.url)}" target="_blank" rel="noopener">Ouvrir l'offre sur ${esc(sourceCourte(o))} ↗</a>` : ""}
       <button class="bouton" data-action="lettre">Adapter ma lettre à cette offre</button>
@@ -277,6 +309,7 @@ function actionCarte(nom, id) {
 function relierFiltres() {
   $("#btn-filtres").addEventListener("click", () => {
     const p = $("#panneau"); p.hidden = !p.hidden; $("#btn-filtres").setAttribute("aria-expanded", !p.hidden);
+    if (!p.hidden && typeof rendreFiltreLieux === "function") rendreFiltreLieux();
   });
   document.querySelectorAll(".onglets button").forEach((b) => b.addEventListener("click", () => {
     if (b.dataset.onglet === etat.onglet && typeof vueRecherche !== "undefined") vueRecherche = null;

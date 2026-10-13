@@ -84,6 +84,14 @@ def rappels(etat_prive, offres_par_id):
             f"Petit rappel amical : « {titre} », date limite {quand}. Amical, mais insistant.",
         ]))
 
+    # Offres gardées qui ont disparu du site d'origine (vu par le recoupement du jour)
+    for i, s in suivi.items():
+        if isinstance(s, dict) and s.get("statut") == "a_postuler" and not s.get("masque"):
+            o = offre(i)
+            if o.get("disponibilite") == "expiree" and o.get("expiree_le") == auj.isoformat():
+                phrases.append(r.choice([f"Mauvaise nouvelle : « {o.get('titre', 'une offre gardée')} » n'est plus en ligne. Pourvue, sans doute. On passe à la suivante.",
+                                         f"« {o.get('titre', 'une offre gardée')} » a disparu de son site d'origine. Je l'ai marquée, inutile d'y passer la soirée."]))
+
     # Entretiens et événements d'aujourd'hui et demain
     demain = auj + timedelta(days=1)
     for i, s in suivi.items():

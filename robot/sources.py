@@ -206,6 +206,8 @@ def lire_offre_inrae(url, page):
         m = re.search(nom + r"\s*:\s*([^\n]{1,80})", t)
         return nettoyer(m.group(1)) if m else ""
     contrat, duree, dl = champ("Contrat"), champ("Durée"), champ("Date limite")
+    m = re.search(r"\d+\s*(?:mois|ans?)\b", duree)
+    duree = m.group(0) if m else ""
     lieu = ""
     m = re.search(r"\b(\d{5})\s+([A-ZÉÈÀÂÎÔÛÇ][A-ZÉÈÀÂÎÔÛÇ' -]{2,40})", t)
     if m:

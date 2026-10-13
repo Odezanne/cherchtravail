@@ -1,0 +1,37 @@
+name: Vérification des contacts
+
+# Lancée depuis l'onglet Contacts du site, et automatiquement le 1er de chaque mois.
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "Identifiants des contacts à vérifier (vide = tous)"
+        required: false
+        type: string
+  schedule:
+    - cron: "17 5 1 * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: contacts
+
+jobs:
+  contacts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Vérifier l'affiliation professionnelle des contacts
+        env:
+          CONTACT_IDS: ${{ inputs.ids }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          DONNEES_TOKEN: ${{ secrets.DONNEES_TOKEN }}
+        run: python robot/contacts.py

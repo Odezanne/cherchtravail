@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 import analyse  # noqa: E402
 import donnees  # noqa: E402
 import condense  # noqa: E402
+import recoupement  # noqa: E402
 import sources  # noqa: E402
 from llm import IA  # noqa: E402
 from util import JOURNAL, identifiant, log, sans_accents, telecharger, html_en_texte  # noqa: E402
@@ -60,7 +61,8 @@ def main():
     etat = charger(ETAT, {})
     base = charger(DONNEES, {"offres": []})
     connues = {o["id"]: o for o in base.get("offres", [])}
-    doublons = {cle_doublon(o) for o in connues.values()}
+    par_cle = {cle_doublon(o): o for o in connues.values()}
+    doublons = set(par_cle)
     if not doit_tourner(cfg, etat):
         return
     hors_ligne = os.environ.get("HORS_LIGNE") == "1"
@@ -148,8 +150,10 @@ def main():
             continue
         cd = cle_doublon(o)
         if cd in doublons:
+            recoupement.noter_doublon(par_cle.get(cd), o)  # même offre vue sur un autre site
             continue
         doublons.add(cd)
+        par_cle[cd] = o
         o["prefiltre"] = analyse.prefiltre(o, cfg)
         nouvelles.append(o)
     # Les offres des alertes e-mail viennent de recherches choisies : toujours analysées.
@@ -226,12 +230,23 @@ def main():
             a["score"] = analyse.score_heuristique(dict(o, texte=o.get("extrait", "")), cfg)
             a["niveau"] = analyse.niveau(a["score"])
 
-    # 5. Nettoyage : offres trop anciennes ou date limite dépassée
+    # 4 bis. Recoupement : toujours en ligne ? publiée aussi par l'employeur ou ailleurs ?
+    gardees_ids = {i for i, s in (etat_prive.get("suivi") or {}).items() if isinstance(s, dict) and s.get("statut") == "a_postuler"}
+    if not hors_ligne:
+        try:
+            import recherche
+            recoupement.recouper([o for o in connues.values() if o["id"] not in ecartees], gardees_ids, recherche.verifier)
+        except Exception as e:
+            log(f"Recoupement impossible : {e}")
+
+    # 5. Nettoyage : offres trop anciennes, date limite dépassée, ou retirées du site d'origine (sauf si gardées)
     limite = (date.today() - timedelta(days=GARDER_JOURS)).isoformat()
     garder = []
     for o in connues.values():
         dl = o.get("analyse", {}).get("date_limite")
         if o.get("vu_le", aujourd_hui) < limite or (dl and dl < aujourd_hui):
+            continue
+        if o.get("disponibilite") == "expiree" and o["id"] not in gardees_ids:
             continue
         garder.append(o)
     garder.sort(key=lambda o: (-o["analyse"]["score"], o["titre"]))

@@ -42,9 +42,12 @@ function rendreResultats() {
   }
   if (r.statut === "erreur") return h + `<div class="vide">La recherche a échoué. Réessaie, ou dis-le-moi pour que je regarde le journal.</div>`;
   const ids = new Set(donnees.offres.map((o) => o.id));
-  const liste = (r.offres || []).filter((o) => !(suivi[o.id] || {}).masque);
+  const toutes = (r.offres || []).filter((o) => !(suivi[o.id] || {}).masque);
+  const liste = toutes.filter((o) => typeof passeLieu !== "function" || passeLieu(o));
   const deja = liste.filter((o) => ids.has(o.id)).length;
-  h += `<p class="vide-petit">${liste.length} offre${liste.length > 1 ? "s" : ""} trouvée${liste.length > 1 ? "s" : ""}${deja ? `, dont ${deja} déjà dans tes offres du jour` : ""}. Les offres expirées ont été retirées.</p>`;
+  const caches = toutes.length - liste.length;
+  h += (typeof bandeauLieux === "function" ? bandeauLieux() : "");
+  h += `<p class="vide-petit">${liste.length} offre${liste.length > 1 ? "s" : ""} trouvée${liste.length > 1 ? "s" : ""}${deja ? `, dont ${deja} déjà dans tes offres du jour` : ""}${caches ? `, ${caches} cachée${caches > 1 ? "s" : ""} par le filtre de localisation` : ""}. Les offres expirées ont été retirées.</p>`;
   return h + (liste.length ? liste.map(carte).join("") : `<div class="vide">Rien de pertinent. Essaie des mots plus larges.</div>`);
 }
 

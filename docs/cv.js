@@ -39,11 +39,69 @@ const SECTIONS_CV = [
   ["publication", "Publication", 3], ["competences", "Compétences", 5, "Une ligne par groupe : « Groupe : éléments »."],
   ["langues", "Langues", 1], ["interets", "Centres d'intérêt", 1],
 ];
+/* Mes CV mis en page dans Canva (liens d'édition : ils ne s'ouvrent que connecté à mon compte Canva) */
+const CANVA_DEFAUT = [
+  { id: "DAHX6A-6xBY", nom: "CV français", lien: "https://www.canva.com/design/DAHX6A-6xBY/edit", langue: "fr" },
+  { id: "DAHX6CAC0nA", nom: "CV anglais", lien: "https://www.canva.com/design/DAHX6CAC0nA/edit", langue: "en" },
+];
 let cvBase = Object.assign({}, CV_DEFAUT, lire("cv", {}).base || {});
 let cvAdaptes = lire("cv", {}).adaptes || {};
+let cvCanva = lire("cv", {}).canva || CANVA_DEFAUT;
 let cvCourant = lire("cv-courant", "base");
-function rechargerCv() { const c = lire("cv", {}); cvBase = Object.assign({}, CV_DEFAUT, c.base || {}); cvAdaptes = c.adaptes || {}; }
-function enregistrerCv() { ecrire("cv", { base: cvBase, adaptes: cvAdaptes }); }
+let formCanva = null;
+function rechargerCv() {
+  const c = lire("cv", {}); cvBase = Object.assign({}, CV_DEFAUT, c.base || {}); cvAdaptes = c.adaptes || {}; cvCanva = c.canva || CANVA_DEFAUT;
+}
+function enregistrerCv() { ecrire("cv", { base: cvBase, adaptes: cvAdaptes, canva: cvCanva }); }
+
+/* Lien d'intégration Canva (Partager > Intégrer) → adresse d'aperçu ; on n'accepte que canva.com */
+function lienApercu(x) {
+  const brut = (x.embed || "").trim();
+  const m = brut.match(/https:\/\/www\.canva\.com\/design\/[\w-]+\/[\w-]+\/(?:view|watch)[^"'\s<]*/);
+  if (!m) return "";
+  const u = m[0].replace(/&amp;/g, "&");
+  return u.includes("embed") ? u : u + (u.includes("?") ? "&" : "?") + "embed";
+}
+
+function blocCanva(o) {
+  const cartes = cvCanva.map((x, i) => {
+    const apercu = lienApercu(x);
+    return `<div class="canva-carte">
+      <div class="canva-tete">
+        <strong>${esc(x.nom)}</strong>
+        <button class="mini" data-cv="canva-modifier" data-i="${i}" aria-label="Réglages de ${esc(x.nom)}">⚙</button>
+      </div>
+      ${apercu ? `<div class="canva-apercu"><iframe loading="lazy" src="${esc(apercu)}" title="Aperçu ${esc(x.nom)}" allowfullscreen allow="fullscreen"></iframe></div>`
+        : `<p class="vide-petit">Pas d'aperçu : ajoute le lien d'intégration Canva dans ⚙ si tu veux voir ton CV ici.</p>`}
+      <div class="actions-ligne deux">
+        <a class="bouton principal" href="${esc(x.lien)}" target="_blank" rel="noopener">Modifier dans Canva ↗</a>
+        <button class="bouton" data-cv="canva-claude" data-i="${i}">${o ? "Adapter à l'offre avec Claude" : "Demander une modif à Claude"}</button>
+      </div>
+    </div>`;
+  }).join("");
+  return `<h2 class="groupe">Mon CV dans Canva</h2>
+    <p class="vide-petit">« Modifier dans Canva » ouvre l'éditeur (l'appli Canva sur le téléphone). Canva n'autorise pas son éditeur à l'intérieur d'un autre site :
+      ici tu as l'aperçu, la modification se fait dans Canva, ou par Claude qui travaille sur une copie et te la montre avant de valider.</p>
+    ${cartes}
+    ${formCanva ? formulaireCanva(formCanva) : `<button class="lien" data-cv="canva-ajouter">+ Ajouter un autre design Canva (version adaptée, autre langue…)</button>`}`;
+}
+
+function formulaireCanva(x) {
+  return `<div class="bloc-export bloc-evt">
+    <h3 class="sous-groupe" style="margin-top:0">${x.i != null ? "Réglages" : "Nouveau design"}</h3>
+    <label class="champ-l">Nom<input id="canva-nom" value="${esc(x.nom || "")}" placeholder="ex. CV adapté MNHN"></label>
+    <label class="champ-l">Lien du design<input id="canva-lien" value="${esc(x.lien || "")}" placeholder="https://www.canva.com/design/…/edit"></label>
+    <label class="champ-l">Lien d'intégration (facultatif, pour l'aperçu)
+      <small>Dans Canva : Partager › Plus › Intégrer › copier le code ou le lien. Attention : toute personne qui a ce lien peut voir le CV
+        (avec ton téléphone et ton e-mail). Il reste rangé dans tes données privées, jamais dans le code du site.</small>
+      <input id="canva-embed" value="${esc(x.embed || "")}" placeholder="https://www.canva.com/design/…/view?embed"></label>
+    <div class="actions-ligne deux">
+      <button class="bouton principal" data-cv="canva-enregistrer">Enregistrer</button>
+      <button class="bouton" data-cv="canva-annuler">Annuler</button>
+    </div>
+    ${x.i != null ? `<button class="lien rouge" data-cv="canva-supprimer">Retirer de la liste</button>` : ""}
+  </div>`;
+}
 
 /* ---------- adaptation à une offre : on remonte ce qui correspond, sans rien ajouter */
 function motsOffre(o) {
@@ -88,12 +146,16 @@ function rendreCv() {
   const lignes = lignesCv(cv);
   const manques = o ? (o.analyse?.competences || []).filter((c) => !c.ok).map((c) => c.nom) : [];
   return `<div class="lettre">
-    <label class="champ-l">Version
+    <label class="champ-l">Pour quelle offre ?
       <select data-cv="choix">
-        <option value="base" ${cvCourant === "base" ? "selected" : ""}>Mon CV de base</option>
+        <option value="base" ${cvCourant === "base" ? "selected" : ""}>Aucune : mon CV général</option>
         ${suivies.length ? `<optgroup label="Adapter à une de mes candidatures">${suivies.map(opt).join("")}</optgroup>` : ""}
         ${autres.length ? `<optgroup label="Adapter à une offre proche de mon profil">${autres.map(opt).join("")}</optgroup>` : ""}
       </select></label>
+    ${blocCanva(o)}
+    <details class="cv-texte" ${lire("cv-texte-ouvert", false) ? "open" : ""}>
+    <summary>Version texte et Word (adaptation automatique à une offre)</summary>
+
     <ul class="verifs">
       <li class="${lignes <= 62 ? "ok" : "ko"}">${lignes <= 62 ? "✓ Tient a priori sur une page" : "! Risque de dépasser une page : raccourcis les expériences"}</li>
       ${o ? `<li class="ok">✓ Version adaptée à « ${esc(o.titre.slice(0, 60))} » : compétences et réalisations utiles remontées en tête</li>` : `<li class="ok">✓ Les modifications du CV de base servent à toutes les futures versions adaptées</li>`}
@@ -108,8 +170,7 @@ function rendreCv() {
         <button class="bouton" data-cv="claude">Faire relire par Claude</button>
       </div>
       ${o ? `<button class="lien" data-cv="refaire">Refaire la version adaptée à partir du CV de base</button>` : ""}
-      <p class="vide-petit">Pour la mise en page Canva : télécharge le Word puis importe-le dans Canva, ou demande-moi (Claude) de reporter les changements dans ton design Canva.</p>
-    </div></div>`;
+    </div></details></div>`;
 }
 
 function cvDocx(cv) {
@@ -154,6 +215,7 @@ async function actionCv(el, evt) {
     return afficher();
   }
   if (evt.type !== "click") return;
+  if (nom.startsWith("canva")) return actionCanva(nom, el, o);
   const fichier = `CV-Mestrallet${o ? "-" + (o.employeur || "offre").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^\w]+/g, "-").slice(0, 30) : ""}.docx`;
   switch (nom) {
     case "word": return Docx.telecharger(cvDocx(cv), fichier);
@@ -179,6 +241,41 @@ ${texte}`;
   }
 }
 function nomCvTexte(cv) { return cv.nom; }
+
+async function actionCanva(nom, el, o) {
+  const i = el.dataset.i != null ? +el.dataset.i : null;
+  switch (nom) {
+    case "canva-ajouter": formCanva = {}; return afficher();
+    case "canva-modifier": formCanva = Object.assign({ i }, cvCanva[i]); return afficher();
+    case "canva-annuler": formCanva = null; return afficher();
+    case "canva-supprimer":
+      if (!confirm("Retirer ce design de la liste ? (il reste dans ton compte Canva)")) return;
+      cvCanva = cvCanva.filter((_, k) => k !== formCanva.i); formCanva = null; enregistrerCv(); return afficher();
+    case "canva-enregistrer": {
+      const v = (k) => (document.getElementById("canva-" + k)?.value || "").trim();
+      if (!/^https:\/\/(www\.)?canva\.com\//.test(v("lien"))) return toast("Colle un lien qui commence par https://www.canva.com/");
+      if (v("embed") && !lienApercu({ embed: v("embed") })) return toast("Lien d'intégration non reconnu : copie-le depuis Partager › Intégrer");
+      const id = (v("lien").match(/design\/([\w-]+)/) || [])[1] || "";
+      const n = { id, nom: v("nom") || "CV Canva", lien: v("lien"), embed: v("embed") };
+      if (formCanva.i != null) cvCanva[formCanva.i] = Object.assign({}, cvCanva[formCanva.i], n); else cvCanva = cvCanva.concat(n);
+      formCanva = null; enregistrerCv(); afficher(); return toast("Enregistré");
+    }
+    case "canva-claude": {
+      const x = cvCanva[i]; const a = (o && o.analyse) || {};
+      const demande = o
+        ? `Adapte mon CV Canva « ${x.nom} » (${x.lien}) à l'offre ci-dessous. Travaille sur une COPIE du design (ne touche pas à l'original), montre-moi les changements avant de valider. Règles du projet : ne rien inventer, seulement réordonner, reformuler et mettre en avant ; une page ; « Scientific Reports ».
+
+OFFRE : ${o.titre} · ${o.employeur || ""} · ${o.lieu || ""} · ${o.url || ""}
+Compétences attendues : ${(a.competences || []).map((c) => c.nom).join(", ")}
+Missions : ${(a.missions || []).join(" ; ")}
+Prérequis : ${(a.prerequis || []).join(" ; ")}`
+        : `Modifie mon CV Canva « ${x.nom} » (${x.lien}). Ce que je veux changer : [écris ici]. Montre-moi avant de valider. Règles du projet : ne rien inventer, une page, « Scientific Reports ».`;
+      try { await navigator.clipboard.writeText(demande); toast("Demande copiée : colle-la dans ton projet Claude"); } catch { toast("Copie impossible"); }
+      return setTimeout(() => window.open("https://claude.ai/", "_blank", "noopener"), 600);
+    }
+  }
+}
+document.addEventListener("toggle", (e) => { if (e.target.classList?.contains("cv-texte")) ecrire("cv-texte-ouvert", e.target.open); }, true);
 
 document.addEventListener("input", (e) => {
   const el = e.target.closest("[data-cv-champ]"); if (!el) return;
