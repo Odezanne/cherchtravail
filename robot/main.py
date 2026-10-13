@@ -229,7 +229,7 @@ def main():
     # 6. Condensé
     if not hors_ligne:
         condense.envoyer([o for o in a_analyser + eloignees if o["id"] not in ids_reprises and o["id"] not in ecartees],
-                         len(garder), menage, mode_menage)
+                         len(garder), menage, mode_menage, etat_prive, garder)
     etat["dernier_condense"] = datetime.now(ZoneInfo("Europe/Paris")).date().isoformat()
     ETAT.parent.mkdir(parents=True, exist_ok=True)
     ETAT.write_text(json.dumps(etat, ensure_ascii=False, indent=1), encoding="utf-8")
