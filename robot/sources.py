@@ -238,13 +238,17 @@ def collecter_jooble(motscles, lieu="Île-de-France", max_appels=3):
     offres, vus = [], set()
     for mc in list(motscles)[:max_appels]:
         corps = json.dumps({"keywords": mc, "location": lieu, "page": "1"}).encode()
-        req = urllib.request.Request(f"https://jooble.org/api/{cle}", data=corps,
-                                     headers={"Content-Type": "application/json", "User-Agent": "cherchtravail"})
-        try:
-            with urllib.request.urlopen(req, timeout=40) as r:
-                res = json.load(r).get("jobs", [])
-        except Exception as e:
-            log(f"Jooble « {mc} » : {str(e).replace(cle, '***')}")
+        res = None
+        for hote in ("fr.jooble.org", "jooble.org"):  # la clé France répond sur fr.jooble.org
+            req = urllib.request.Request(f"https://{hote}/api/{cle}", data=corps,
+                                         headers={"Content-Type": "application/json", "User-Agent": "cherchtravail"})
+            try:
+                with urllib.request.urlopen(req, timeout=40) as r:
+                    res = json.load(r).get("jobs", [])
+                break
+            except Exception as e:
+                log(f"Jooble {hote} « {mc} » : {str(e).replace(cle, '***')}")
+        if res is None:
             continue
         for j in res:
             oid = "joo-" + identifiant(str(j.get("id") or j.get("link", "")))

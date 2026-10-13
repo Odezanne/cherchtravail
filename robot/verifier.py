@@ -78,15 +78,14 @@ if os.environ.get("TAVILY_API_KEY"):
 # Jooble
 if os.environ.get("JOOBLE_API_KEY"):
     try:
-        for hote, mots, lieu in (("jooble.org", "biostatistique", "Paris, France"), ("fr.jooble.org", "biostatistique", "Paris"),
-                                 ("fr.jooble.org", "ingénieur d'études", "Île-de-France")):
+        for hote, mots, lieu in (("fr.jooble.org", "biostatisticien", "Île-de-France"), ("jooble.org", "biostatisticien", "Paris")):
             st, b = http(f"https://{hote}/api/{os.environ['JOOBLE_API_KEY']}",
                          json.dumps({"keywords": mots, "location": lieu, "page": "1"}).encode(), {"Content-Type": "application/json"})
             j = json.loads(b)
             note(True, f"Jooble {hote}", f"{j.get('totalCount', '?')} offres « {mots} » / {lieu} ; ex. : "
                  + "; ".join((x.get('title', '')[:40] + ' (' + x.get('location', '')[:20] + ')') for x in j.get('jobs', [])[:2]))
     except Exception as e:
-        note(False, "Jooble", str(e).replace(os.environ["JOOBLE_API_KEY"], "***")[:120])
+        note(False, "Jooble (erreur sur l'un des deux sites)", str(e).replace(os.environ["JOOBLE_API_KEY"], "***")[:120])
 
 # Dernière recherche lancée depuis le site
 rid = os.environ.get("RECHERCHE_ID")
