@@ -2,6 +2,11 @@ name: Vérification des branchements
 
 on:
   workflow_dispatch:
+    inputs:
+      recherche:
+        description: "Identifiant d'une recherche à contrôler (facultatif)"
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -32,6 +37,7 @@ jobs:
           JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          RECHERCHE_ID: ${{ inputs.recherche }}
         run: python robot/verifier.py
       - name: Enregistrer le résultat
         run: |

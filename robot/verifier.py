@@ -78,11 +78,26 @@ if os.environ.get("TAVILY_API_KEY"):
 # Jooble
 if os.environ.get("JOOBLE_API_KEY"):
     try:
-        st, b = http(f"https://jooble.org/api/{os.environ['JOOBLE_API_KEY']}",
-                     json.dumps({"keywords": "biostatisticien", "location": "Paris", "page": "1"}).encode(), {"Content-Type": "application/json"})
-        note(True, "Jooble", f"{json.loads(b).get('totalCount', '?')} offres pour « biostatisticien » à Paris")
+        for hote, mots, lieu in (("jooble.org", "biostatistique", "Paris, France"), ("fr.jooble.org", "biostatistique", "Paris"),
+                                 ("fr.jooble.org", "ingénieur d'études", "Île-de-France")):
+            st, b = http(f"https://{hote}/api/{os.environ['JOOBLE_API_KEY']}",
+                         json.dumps({"keywords": mots, "location": lieu, "page": "1"}).encode(), {"Content-Type": "application/json"})
+            j = json.loads(b)
+            note(True, f"Jooble {hote}", f"{j.get('totalCount', '?')} offres « {mots} » / {lieu} ; ex. : "
+                 + "; ".join((x.get('title', '')[:40] + ' (' + x.get('location', '')[:20] + ')') for x in j.get('jobs', [])[:2]))
     except Exception as e:
         note(False, "Jooble", str(e).replace(os.environ["JOOBLE_API_KEY"], "***")[:120])
+
+# Dernière recherche lancée depuis le site
+rid = os.environ.get("RECHERCHE_ID")
+if rid and donnees.actif():
+    r = donnees.lire_json(f"recherches/{rid}.json", None)
+    if r:
+        note(r.get("statut") == "termine", f"recherche « {r.get('requete')} »", f"{r.get('statut')}, {len(r.get('offres', []))} offres : "
+             + "; ".join(f"{o['analyse']['score']} % {o['titre'][:45]} ({o['source']}, {o.get('disponibilite')})" for o in r.get("offres", [])[:6]))
+        lignes.extend("     " + l[:160] for l in (r.get("journal") or [])[-15:])
+    else:
+        note(False, f"recherche {rid}", "fichier introuvable")
 
 # IA
 ia = IA(["nvidia/nemotron-3-super-120b-a12b:free"])
