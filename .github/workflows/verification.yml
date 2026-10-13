@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: robot
+  group: verification
   cancel-in-progress: false
 
 jobs:
