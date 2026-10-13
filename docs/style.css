@@ -416,3 +416,8 @@ a.mini { display: inline-grid; place-items: center; text-decoration: none; color
 .labo-corps .theme { color: var(--lavande); font-style: italic; }
 .labo-actions { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; align-items: center; max-width: 45%; }
 .pastille-statut.bleu { background: var(--bleu-pale); color: var(--bleu); }
+
+/* Listes déroulantes : options lisibles (texte clair sur fond sombre) */
+select { color-scheme: dark; }
+select option, select optgroup { background-color: #1d1d1f; color: #efe9df; }
+select option:checked { background-color: #36363b; color: #ffffff; }
