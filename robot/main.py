@@ -143,10 +143,11 @@ def main():
     else:
         brutes += json.loads(os.environ.get("OFFRES_TEST", "[]"))
 
-    # 2. Tri : nouvelles offres, sans doublon ni exclusion
+    # 2. Tri : nouvelles offres, sans doublon ni exclusion (ni offres déjà vues retirées par l'employeur)
+    expirees = set(etat.get("expirees", []))
     nouvelles = []
     for o in brutes:
-        if o["id"] in connues or analyse.exclue(o, cfg):
+        if o["id"] in connues or o["id"] in expirees or analyse.exclue(o, cfg):
             continue
         cd = cle_doublon(o)
         if cd in doublons:
@@ -247,6 +248,7 @@ def main():
         if o.get("vu_le", aujourd_hui) < limite or (dl and dl < aujourd_hui):
             continue
         if o.get("disponibilite") == "expiree" and o["id"] not in gardees_ids:
+            expirees.add(o["id"])
             continue
         garder.append(o)
     garder.sort(key=lambda o: (-o["analyse"]["score"], o["titre"]))
@@ -260,6 +262,7 @@ def main():
     if not hors_ligne:
         condense.envoyer([o for o in a_analyser + eloignees if o["id"] not in ids_reprises and o["id"] not in ecartees],
                          len(garder), menage, mode_menage, etat_prive, garder)
+    etat["expirees"] = sorted(expirees)[-3000:]
     etat["dernier_condense"] = datetime.now(ZoneInfo("Europe/Paris")).date().isoformat()
     ETAT.parent.mkdir(parents=True, exist_ok=True)
     ETAT.write_text(json.dumps(etat, ensure_ascii=False, indent=1), encoding="utf-8")

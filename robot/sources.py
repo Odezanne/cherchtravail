@@ -176,6 +176,16 @@ def collecter_csp(cfg):
     return offres
 
 
+def lien_employeur_csp(page):
+    """Lien du bouton « Postuler sur le site employeur » d'une page d'offre de Choisir le service public."""
+    for m in re.finditer(r'<a\b[^>]*href="(https?://[^"]+)"[^>]*>(.*?)</a>', page, re.S):
+        if re.search(r"site\s+(de\s+l.)?employeur", html.unescape(re.sub(r"<[^>]+>", " ", m.group(2))), re.I):
+            u = html.unescape(m.group(1))
+            if "choisirleservicepublic" not in u:
+                return u
+    return ""
+
+
 def texte_offre_csp(page):
     """Garde la partie utile d'une page d'offre (de « Date limite » / « Nature de l'emploi » à la fin des missions)."""
     t = html_en_texte(page)

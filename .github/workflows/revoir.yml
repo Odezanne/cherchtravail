@@ -1,0 +1,55 @@
+name: Revérifier toutes les offres
+
+# À la demande : chaque offre du site est revérifiée sur son site d'origine (et sur le site de l'employeur
+# pour Choisir le service public). Les offres retirées disparaissent du site.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: robot
+  cancel-in-progress: false
+
+jobs:
+  revoir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    outputs:
+      change: ${{ steps.commit.outputs.change }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml pypdf
+      - name: Revérifier les offres
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          DONNEES_TOKEN: ${{ secrets.DONNEES_TOKEN }}
+        run: python robot/revoir.py
+      - name: Enregistrer
+        id: commit
+        run: |
+          git config user.name "cherchtravail-robot"
+          git config user.email "robot@users.noreply.github.com"
+          git add docs/data data
+          if git diff --cached --quiet; then
+            echo "change=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Offres revérifiées le $(TZ=Europe/Paris date +%d/%m/%Y)"
+            git pull --rebase -q && git push
+            echo "change=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  site:
+    needs: revoir
+    if: needs.revoir.outputs.change == 'true'
+    uses: ./.github/workflows/site.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

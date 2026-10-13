@@ -140,27 +140,30 @@ def statut(o):
     return "unique"
 
 
-def recouper(offres, gardees_ids, verifier, max_tavily=8, max_verif=45):
+def recouper(offres, gardees_ids, verifier, max_tavily=8, max_verif=220):
     """offres : toutes les offres du site. gardees_ids : offres gardées (« à postuler »).
     verifier(o) -> (disponibilite, texte) : la fonction de recherche.py."""
     auj = date.today().isoformat()
-    # 1. Toujours en ligne ? Les offres gardées d'abord, puis les meilleures.
-    ordre = sorted(offres, key=lambda o: (o["id"] not in gardees_ids, -(o.get("analyse") or {}).get("score", 0)))
+    # 1. Toujours en ligne ? Sur la page d'origine ET, pour Choisir le service public, sur le site de l'employeur.
+    #    Toutes les offres du site sont revues chaque jour (offres gardées d'abord, puis les jamais vérifiées, puis par %).
+    ordre = sorted(offres, key=lambda o: (o["id"] not in gardees_ids, bool(o.get("verifiee_le")),
+                                          -(o.get("analyse") or {}).get("score", 0)))
     n_verif = n_mortes = 0
     for o in ordre:
         if n_verif >= max_verif:
             break
-        if o["id"] not in gardees_ids and (o.get("analyse") or {}).get("score", 0) < 60:
-            continue
-        if o.get("verifiee_le") == auj:
+        if o.get("verifiee_le") == auj or o.get("perso"):
             continue
         dispo, _ = verifier(o)
         n_verif += 1
         o["verifiee_le"] = auj
+        if o.get("url_employeur") and o.get("employeur_confirme"):
+            o.setdefault("recoupement", {})["url_employeur"] = o["url_employeur"]
         if dispo == "expiree":
             if o.get("disponibilite") != "expiree":
                 o["expiree_le"] = auj
                 n_mortes += 1
+                log(f"  plus en ligne : {o.get('titre', '')[:70]} ({o.get('url_employeur') or o.get('url')})")
             o["disponibilite"] = "expiree"
         elif dispo == "disponible":
             o["disponibilite"] = "disponible"
