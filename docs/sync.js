@@ -158,7 +158,7 @@ ecrire = function (cle, val, sansSynchro) { // eslint-disable-line no-global-ass
 
 /* Version du site : un appareil resté sur une vieille version se recharge tout seul avant de synchroniser
    (une vieille version ne connaît pas les nouvelles données et pourrait les écraser). */
-const VERSION_SITE = 14;
+const VERSION_SITE = 15;
 async function versionAJour() {
   try {
     const r = await fetch("version.json?t=" + Date.now(), { cache: "no-store" });

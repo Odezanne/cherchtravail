@@ -124,6 +124,15 @@ function carte(o) {
     </div></article>`;
 }
 
+/* Nombre d'offres visibles avec les filtres actuels (offres du jour ou résultats de la recherche ouverte) */
+function compteFiltre() {
+  if (!ONGLETS_OFFRES.includes(etat.onglet)) return null;
+  if (typeof vueRecherche !== "undefined" && vueRecherche && resultats[vueRecherche]?.offres) {
+    return resultats[vueRecherche].offres.filter((o) => !(suivi[o.id] || {}).masque && (typeof passeLieu !== "function" || passeLieu(o))).length;
+  }
+  return filtrer(etat.onglet, etat.largeur).length;
+}
+
 function afficher() {
   ecrire("filtres", etat);
   document.querySelectorAll(".onglets button").forEach((b) => b.setAttribute("aria-selected", b.dataset.onglet === etat.onglet));
@@ -141,6 +150,8 @@ function afficher() {
     + (JSON.stringify(etat.zones) !== JSON.stringify(DEFAUTS.zones) ? 1 : 0)
     + (etat.contrats.length !== 3 ? 1 : 0) + ((etat.lieux || []).length ? 1 : 0);
   $("#nb-filtres").hidden = !nbFiltres; $("#nb-filtres").textContent = nbFiltres;
+  const nApp = compteFiltre();
+  $("#appliquer").textContent = nApp == null ? "Appliquer les filtres" : `Appliquer · ${nApp} offre${nApp > 1 ? "s" : ""}`;
 
   if (etat.onglet === "suivi") { $("#liste").innerHTML = rendreSuivi(); return; }
   if (etat.onglet === "lettre") { $("#liste").innerHTML = rendreLettre(); ajusterTout(); return; }
@@ -334,6 +345,12 @@ function relierFiltres() {
       });
     });
   }
+  $("#appliquer").addEventListener("click", () => {
+    $("#panneau").hidden = true; $("#btn-filtres").setAttribute("aria-expanded", "false");
+    afficher(); window.scrollTo({ top: 0, behavior: "smooth" });
+    const n = compteFiltre();
+    toast(n == null ? "Filtres appliqués" : `Filtres appliqués : ${n} offre${n > 1 ? "s" : ""}`);
+  });
   $("#reinit").addEventListener("click", () => {
     etat = Object.assign({}, DEFAUTS, { onglet: etat.onglet }); ecrire("filtres", etat); location.reload();
   });
