@@ -42,7 +42,7 @@ def envoyer(nouvelles, nb_total, menage=(), mode_menage="non", etat_prive=None, 
     if rap:
         corps.append('<div style="background:#fbf0d9;border-radius:10px;padding:10px 14px;margin:0 0 14px;font-size:14px">'
                      + "".join(f"<p style='margin:4px 0'>• {html.escape(x)}</p>" for x in rap) + "</div>")
-    corps.append(f'<p style="margin:0 0 6px"><a href="{SITE}">Ouvrir Cherchtravail</a></p>')
+    corps.append(f'<p style="margin:0 0 6px"><a href="{SITE}">Ouvrir Jobot</a></p>')
     for titre, groupe in (("Emplois", emplois), ("Thèses et CIFRE", theses)):
         if groupe:
             corps.append(f'<h3 style="margin:18px 0 0">{titre}</h3><table style="width:100%;border-collapse:collapse">')
@@ -62,7 +62,7 @@ def envoyer(nouvelles, nb_total, menage=(), mode_menage="non", etat_prive=None, 
     adresse, mdp = os.environ.get("GMAIL_ADRESSE"), os.environ.get("GMAIL_MOT_DE_PASSE_APPLI")
     if adresse and mdp:
         msg = MIMEText("".join(corps), "html", "utf-8")
-        msg["Subject"], msg["From"], msg["To"] = sujet, f"Cherchtravail <{adresse}>", adresse
+        msg["Subject"], msg["From"], msg["To"] = sujet, f"Jobot <{adresse}>", adresse
         try:
             with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
                 s.login(adresse, mdp.replace(" ", ""))

@@ -1,4 +1,4 @@
-# Cherchtravail
+# Jobot
 
 Mon agrégateur personnel d'offres d'emploi et de thèse, trié selon mon CV.
 

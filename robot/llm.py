@@ -48,7 +48,7 @@ class IA:
             corps["response_format"] = {"type": "json_object"}
         req = urllib.request.Request(url, data=json.dumps(corps).encode(), headers={
             "Authorization": f"Bearer {cle}", "Content-Type": "application/json",
-            "HTTP-Referer": "https://odezanne.github.io/cherchtravail/", "X-Title": "Cherchtravail"})
+            "HTTP-Referer": "https://odezanne.github.io/cherchtravail/", "X-Title": "Jobot"})
         reste = (self.echeance - time.time()) if self.echeance else 150
         with urllib.request.urlopen(req, timeout=max(20, min(150, reste))) as r:
             rep = json.load(r)

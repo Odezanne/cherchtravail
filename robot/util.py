@@ -9,7 +9,7 @@ import urllib.robotparser
 from html.parser import HTMLParser
 from urllib.parse import urlparse
 
-USER_AGENT = "Cherchtravail/1.0 (agregateur personnel, usage non commercial)"
+USER_AGENT = "Jobot/1.0 (agregateur personnel, usage non commercial)"
 
 # Sites dont les conditions d'utilisation interdisent l'extraction automatique :
 # on n'ouvre jamais leurs pages, on se contente du contenu des alertes e-mail reçues.

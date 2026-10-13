@@ -1,6 +1,6 @@
 {
-  "name": "Cherchtravail",
-  "short_name": "Cherchtravail",
+  "name": "Jobot",
+  "short_name": "Jobot",
   "description": "Mes offres d'emploi et de thèse, triées selon mon profil.",
   "start_url": "./",
   "scope": "./",

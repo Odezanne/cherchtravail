@@ -208,7 +208,7 @@ function telechargerIcs(o, e, opts = {}) {
   const h = (e.heure || "09:00").replace(":", "") + "00";
   const fin = e.fin ? e.fin.replace(":", "") + "00" : String(Math.min(23, +h.slice(0, 2) + 1)).padStart(2, "0") + h.slice(2);
   const echap = (t) => String(t || "").replace(/([,;\\])/g, "\\$1").replace(/\n/g, "\\n");
-  const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Cherchtravail//FR", "BEGIN:VEVENT",
+  const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Jobot//FR", "BEGIN:VEVENT",
     `UID:${o.id}-${d}${h}@cherchtravail`, `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").slice(0, 15)}Z`,
     `DTSTART;TZID=Europe/Paris:${d}T${h}`, `DTEND;TZID=Europe/Paris:${d}T${fin}`,
     `SUMMARY:${echap(opts.titre || "Entretien : " + o.titre)}`, `LOCATION:${echap(e.lieu)}`,
