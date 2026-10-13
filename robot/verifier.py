@@ -94,6 +94,13 @@ if os.environ.get("RECOUPER"):
                 lien = _src.lien_employeur_csp(pg)
                 if lien:
                     note(True, "robots employeur", f"autorisé : {_aut(lien)}")
+                    import urllib.request as _u
+                    from util import USER_AGENT as _UA
+                    try:
+                        with _u.urlopen(_u.Request("https://recrutement.mnhn.fr/robots.txt", headers={"User-Agent": _UA}), timeout=20) as _rr:
+                            note(True, "robots.txt MNHN", f"HTTP {_rr.status} {_rr.headers.get('Content-Type')} : {_rr.read(600).decode(errors='replace')!r}")
+                    except Exception as _e:
+                        note(False, "robots.txt MNHN", str(_e)[:200])
                     import recherche as _r
                     et, pe = _r._page_expiree(lien)
                     note(True, "page employeur", f"{et} · {len(pe)} car. · plus en ligne : {bool(_r.EXPIREE.search(pe))}")
