@@ -202,7 +202,7 @@ function badgeRecoupement(o) {
   switch (r.statut) {
     case "employeur": return `<span class="et dispo">✓ Confirmée par l'employeur</span>`;
     case "plusieurs": return `<span class="et dispo">✓ Vue sur ${n + 1} sites</span>`;
-    case "officiel": return `<span class="et">Portail de l'État seulement</span>`;
+    case "officiel": return o.employeur_verifie === "introuvable" ? `<span class="et limite">⚠ Introuvable chez l'employeur</span>` : `<span class="et">Portail de l'État seulement</span>`;
     case "unique": return `<span class="et">Vue sur 1 seul site</span>`;
   }
   return o.disponibilite === "disponible" ? `<span class="et dispo">✓ En ligne</span>` : "";
@@ -212,6 +212,11 @@ function blocRecoupement(o) {
   const lignes = [];
   if (o.disponibilite === "expiree") lignes.push(`<p class="alerte-texte">⚠ La page d'origine n'est plus en ligne depuis le ${dateFr(o.expiree_le || o.verifiee_le)} : l'offre est sans doute pourvue ou retirée.</p>`);
   else if (o.verifiee_le) lignes.push(`<p>Page d'origine revérifiée le ${dateFr(o.verifiee_le)} : toujours en ligne.</p>`);
+  if (o.lien_employeur && o.disponibilite !== "expiree") {
+    const ev = o.employeur_verifie;
+    lignes.push(`<p>Page de l'employeur : <a href="${esc(o.lien_employeur)}" target="_blank" rel="noopener">ouvrir ↗</a>${ev === "disponible" ? " · ✓ offre bien en ligne chez l'employeur"
+      : ev === "introuvable" ? " · ⚠ l'offre n'y apparaît pas : vérifie avant de postuler" : ""}</p>`);
+  }
   const sites = [{ nom: o.source, url: o.url }, ...(r.sites || [])];
   if (r.url_employeur && !sites.some((x) => x.url === r.url_employeur)) sites.push({ nom: "Site de l'employeur", url: r.url_employeur });
   if (sites.length > 1 || r.url_employeur) {

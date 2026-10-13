@@ -146,6 +146,7 @@ def main():
     # 2. Tri : nouvelles offres, sans doublon ni exclusion (ni offres déjà vues retirées par l'employeur)
     expirees = set(etat.get("expirees", []))
     nouvelles = []
+    expirees = set(etat.get("expirees", []))
     for o in brutes:
         if o["id"] in connues or o["id"] in expirees or analyse.exclue(o, cfg):
             continue
@@ -187,7 +188,24 @@ def main():
     log(f"{len(brutes)} offres collectées, {len(nouvelles)} nouvelles, {len(a_analyser)} retenues pour l'analyse "
         f"(dont {len(reprises)} anciennes à réanalyser), {len(eloignees)} gardées sans IA")
 
-    # 3. Texte complet quand le site l'autorise
+    # 3. Texte complet quand le site l'autorise. Pour Choisir le service public, on vérifie aussi que l'offre est
+    #    toujours en ligne chez l'employeur (lien « Postuler sur le site employeur ») avant de dépenser une analyse.
+    import recherche
+    retirees = []
+    for o in a_analyser:
+        if not hors_ligne and "choisirleservicepublic" in o.get("url", "") and o["id"] not in ids_reprises:
+            dispo, texte = recherche.verifier(o)
+            if dispo == "expiree":
+                retirees.append(o)
+                continue
+            o["verifiee_le"], o["disponibilite"] = aujourd_hui, dispo
+            if texte and not o.get("texte"):
+                o["texte"] = texte[:8000]
+    if retirees:
+        log(f"{len(retirees)} offres déjà retirées par l'employeur, écartées : " + " | ".join(o["titre"][:50] for o in retirees))
+        ids_ret = {o["id"] for o in retirees}
+        a_analyser = [o for o in a_analyser if o["id"] not in ids_ret]
+        etat["expirees"] = (etat.get("expirees", []) + list(ids_ret))[-3000:]
     for o in a_analyser:
         if o.get("telechargeable") and not o.get("texte") and not hors_ligne:
             try:
@@ -235,7 +253,6 @@ def main():
     gardees_ids = {i for i, s in (etat_prive.get("suivi") or {}).items() if isinstance(s, dict) and s.get("statut") == "a_postuler"}
     if not hors_ligne:
         try:
-            import recherche
             recoupement.recouper([o for o in connues.values() if o["id"] not in ecartees], gardees_ids, recherche.verifier)
         except Exception as e:
             log(f"Recoupement impossible : {e}")

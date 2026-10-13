@@ -129,7 +129,7 @@ def statut(o):
     rc = o.get("recoupement") or {}
     dom = domaine_employeur(o)
     hote = urlparse(o.get("url", "")).netloc.lower()
-    if (dom and hote.endswith(dom)) or rc.get("url_employeur"):
+    if (dom and hote.endswith(dom)) or rc.get("url_employeur") or o.get("employeur_verifie") == "disponible":
         return "employeur"
     if rc.get("sites"):
         return "plusieurs"

@@ -27,7 +27,8 @@ from llm import IA  # noqa: E402
 from util import JOURNAL, NE_JAMAIS_TELECHARGER, autorise, html_en_texte, identifiant, log, sans_accents, telecharger  # noqa: E402
 
 RACINE = Path(__file__).resolve().parent.parent
-EXPIREE = re.compile(r"(offre (n.est plus|a expir|expir[ée]e|pourvue|cl[ôo]tur[ée]e|n.existe plus|introuvable)|"
+EXPIREE = re.compile(r"(n.est plus en ligne|n.est plus disponible|plus disponible à la candidature|"
+                     r"offre (n.est plus|a expir|expir[ée]e|pourvue|cl[ôo]tur[ée]e|n.existe plus|introuvable)|"
                      r"(poste|annonce) (d[ée]j[àa] )?pourvu|recrutement (est )?(termin|clos|cl[ôo]tur)|candidatures? (sont )?(closes|cl[ôo]tur)|"
                      r"no longer (available|accepting)|this job (has expired|is closed)|annonce (expir|n.est plus)|"
                      r"date limite de candidature est d[ée]pass[ée]e)", re.I)
@@ -58,9 +59,8 @@ def tavily(requete, n=12):
     return offres
 
 
-def verifier(o):
-    """Renvoie (disponibilite, texte). disponibilite : 'disponible', 'expiree' ou 'non_verifiable'."""
-    url = o.get("url") or ""
+def _page_expiree(url):
+    """(etat, texte) pour une page : 'expiree', 'disponible' ou 'non_verifiable'."""
     hote = urlparse(url).netloc.lower()
     if not url or any(b in hote for b in NE_JAMAIS_TELECHARGER):
         return "non_verifiable", ""
@@ -72,42 +72,36 @@ def verifier(o):
         return ("expiree" if e.code in (404, 410) else "non_verifiable"), ""
     except Exception:
         return "non_verifiable", ""
+    return ("expiree" if EXPIREE.search(html_en_texte(page)[:6000]) else "disponible"), page
+
+
+def verifier(o):
+    """Renvoie (disponibilite, texte). disponibilite : 'disponible', 'expiree' ou 'non_verifiable'.
+    Pour Choisir le service public, on suit aussi le lien « Postuler sur le site employeur » : une offre retirée par
+    l'employeur (ex. MNHN « L'offre n'est plus en ligne ») reste parfois affichée sur le portail de l'État."""
+    url = o.get("url") or ""
+    etat_page, page = _page_expiree(url)
+    if etat_page != "disponible":
+        return etat_page, ""
     texte = sources.texte_offre_csp(page) if "choisirleservicepublic" in url else html_en_texte(page)
     debut = sans_accents(texte).find(sans_accents(o.get("titre", ""))[:25])
     texte = texte[debut:] if debut > 0 else texte
     if EXPIREE.search(texte[:4000]):
         return "expiree", texte[:6000]
-    # Choisir le service public garde parfois en ligne une offre que l'employeur a déjà retirée de son propre site :
-    # on suit le bouton « Postuler sur le site employeur » et c'est l'employeur qui fait foi.
     if "choisirleservicepublic" in url:
         lien = sources.lien_employeur_csp(page)
         if lien:
-            o["url_employeur"] = lien
-            etat = verifier_page_employeur(lien)
-            if etat == "expiree":
+            o["lien_employeur"] = lien
+            etat_emp, page_emp = _page_expiree(lien)
+            if etat_emp == "disponible":
+                from recoupement import ressemble
+                # page en ligne, mais l'offre y figure-t-elle ? (sinon : renvoi vers la liste générale des offres)
+                etat_emp = "disponible" if ressemble(o.get("titre", ""), html_en_texte(page_emp)[:12000], 0.7) else "introuvable"
+            o["employeur_verifie"] = etat_emp
+            if etat_emp == "expiree":
+                log(f"Retirée chez l'employeur : {o.get('titre', '')[:60]} ({lien})")
                 return "expiree", texte[:6000]
-            if etat == "disponible":
-                o["employeur_confirme"] = True
     return "disponible", texte[:6000]
-
-
-def verifier_page_employeur(url):
-    """'disponible', 'expiree' ou 'non_verifiable' pour la page de l'offre sur le site de l'employeur."""
-    hote = urlparse(url).netloc.lower()
-    if any(b in hote for b in NE_JAMAIS_TELECHARGER):
-        return "non_verifiable"
-    try:
-        if not autorise(url):
-            return "non_verifiable"
-        page = telecharger(url, timeout=30, verifier_robots=False)
-    except urllib.error.HTTPError as e:
-        return "expiree" if e.code in (404, 410) else "non_verifiable"
-    except Exception:
-        return "non_verifiable"
-    t = html_en_texte(page)
-    if EXPIREE.search(t[:6000]):
-        return "expiree"
-    return "disponible" if len(t) > 300 else "non_verifiable"
 
 
 def main():
