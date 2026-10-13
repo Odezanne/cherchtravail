@@ -92,6 +92,12 @@ def main():
                 log(f"Choisir le service public indisponible : {e}")
         zones = ((etat_prive.get("profil") or {}).get("zones")) or ["idf"]
         brutes += sources.collecter_adzuna(src.get("adzuna") or {"motscles": (src.get("choisir_le_service_public") or {}).get("motscles", [])[1:]}, zones)
+        jo = src.get("jooble") or {}
+        if jo.get("actif", True):
+            lieu = "Île-de-France" if zones == ["idf"] else "France"
+            brutes += sources.collecter_jooble(((src.get("adzuna") or {}).get("motscles"))
+                                               or (src.get("choisir_le_service_public") or {}).get("motscles", [])[1:],
+                                               lieu, int(jo.get("appels_par_jour", 3)))
         for url in src.get("rss_supplementaires") or []:
             brutes += sources.collecter_rss(url)
         brutes += sources.collecter_france_travail(src.get("france_travail") or {})

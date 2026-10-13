@@ -1,6 +1,6 @@
 """Recherche à la demande, lancée depuis la barre de recherche du site.
 
-Sources : Adzuna (API, regroupe de nombreux sites d'emploi), Choisir le service public, flux CNRS,
+Sources : Jooble et Adzuna (API, regroupent de nombreux sites d'emploi ; Adzuna est payant, facultatif), Choisir le service public, flux CNRS,
 recherche web Tavily (API). Chaque offre est vérifiée (page encore en ligne ?) quand le site l'autorise,
 puis notée par l'IA selon le profil. Résultat écrit dans le dépôt privé : recherches/<id>.json
 """
@@ -103,6 +103,7 @@ def main():
         brutes += [o for o in sources.collecter_cnrs() if all(m in sans_accents(o["titre"]) for m in mots)]
     except Exception as e:
         log(f"CNRS : {e}")
+    brutes += sources.collecter_jooble([requete], "Île-de-France" if zones == ["idf"] else "France", 1)
     brutes += tavily(requete)
 
     vus, offres = set(), []

@@ -14,6 +14,7 @@ Chaque matin, un robot GitHub (gratuit) :
      (le site autorise la lecture de ses offres) ;
    - mes **alertes e-mail** Indeed, LinkedIn, Welcome to the Jungle, APEC, France Travail, ABG, EURAXESS,
      INRAE, Choisir le service public… rangées dans le libellé Gmail « Alertes emploi » ;
+   - Jooble (API gratuite qui regroupe de nombreux sites d'emploi, 3 requêtes par jour) ;
    - l'API France Travail, dès que l'accès sera accordé ;
 2. **les analyse avec une IA gratuite** (OpenRouter) : note d'intérêt en %, missions, prérequis, compétences
    attendues (✓ j'ai / ✗ il me manque), blocages (expérience ou doctorat exigés) et conseil pour tenter quand même ;

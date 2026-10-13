@@ -51,6 +51,7 @@ jobs:
           DONNEES_TOKEN: ${{ secrets.DONNEES_TOKEN }}
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
         run: python robot/main.py
       - name: Enregistrer les offres

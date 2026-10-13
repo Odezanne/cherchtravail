@@ -229,6 +229,42 @@ def collecter_adzuna(cfg, zones=("idf",), par_page=50):
     return offres
 
 
+# ---------------------------------------------------------------- Jooble (API gratuite, regroupe de nombreux sites ; quota limité)
+
+def collecter_jooble(motscles, lieu="Île-de-France", max_appels=3):
+    cle = os.environ.get("JOOBLE_API_KEY")
+    if not cle:
+        return []
+    offres, vus = [], set()
+    for mc in list(motscles)[:max_appels]:
+        corps = json.dumps({"keywords": mc, "location": lieu, "page": "1"}).encode()
+        req = urllib.request.Request(f"https://jooble.org/api/{cle}", data=corps,
+                                     headers={"Content-Type": "application/json", "User-Agent": "cherchtravail"})
+        try:
+            with urllib.request.urlopen(req, timeout=40) as r:
+                res = json.load(r).get("jobs", [])
+        except Exception as e:
+            log(f"Jooble « {mc} » : {str(e).replace(cle, '***')}")
+            continue
+        for j in res:
+            oid = "joo-" + identifiant(str(j.get("id") or j.get("link", "")))
+            if oid in vus:
+                continue
+            vus.add(oid)
+            titre = nettoyer(re.sub(r"<[^>]+>", "", j.get("title", "")))
+            offres.append({
+                "id": oid, "source": nettoyer(j.get("source", "")) or "Jooble", "url": j.get("link", ""), "titre": titre,
+                "employeur": nettoyer(j.get("company", "")), "lieu": nettoyer(j.get("location", "")),
+                "region": region_de(j.get("location", "")), "contrat": nettoyer(j.get("type", "")),
+                "type": "these" if re.search(r"th[eè]se|doctorant|cifre", titre, re.I) else "emploi",
+                "date_publication": (j.get("updated") or "")[:10],
+                "texte": nettoyer(re.sub(r"<[^>]+>", " ", j.get("snippet", ""))), "salaire_texte": nettoyer(j.get("salary", "")),
+                "telechargeable": False, "flux_large": True,
+            })
+    log(f"Jooble : {len(offres)} offres")
+    return offres
+
+
 # ---------------------------------------------------------------- Alertes e-mail (Gmail, IMAP)
 
 def _entete(v):

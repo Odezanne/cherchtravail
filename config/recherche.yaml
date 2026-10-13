@@ -46,6 +46,12 @@ sources:
                "écologie", "comportement animal", "biodiversité", "analyse de données biologie"]
     departements: ["75", "77", "78", "91", "92", "93", "94", "95"]
 
+  # Jooble : moteur qui regroupe de nombreux sites d'emploi (clé gratuite, quota de 500 requêtes :
+  # on en utilise 3 par jour, plus 1 par recherche lancée depuis le site)
+  jooble:
+    actif: true
+    appels_par_jour: 3
+
   # Autres flux RSS à ajouter librement (une adresse par ligne)
   rss_supplementaires: []
 
