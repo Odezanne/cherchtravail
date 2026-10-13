@@ -163,8 +163,11 @@ function rendreLettre() {
   return h;
 }
 
+function rechargerLettres() {
+  lettres = lire("lettres", {}); modele = Object.assign({}, MODELE_DEFAUT, lire("lettre-modele", {}));
+}
 function ajuster(t) { t.style.height = "auto"; t.style.height = t.scrollHeight + 2 + "px"; }
-function ajusterTout() { document.querySelectorAll(".lettre textarea").forEach(ajuster); }
+function ajusterTout() { document.querySelectorAll("#liste textarea").forEach(ajuster); }
 
 function ouvrirLettre(id) {
   lettreCourante = id; ecrire("lettre-courante", id);

@@ -98,6 +98,8 @@ function carte(o) {
   if (j != null && j >= 0) et.push(`<span class="et ${j <= 7 ? "limite" : ""}">Limite ${dateFr(a.date_limite)}</span>`);
   if (a.lien_these && o.type === "emploi") et.push(`<span class="et these">Tremplin thèse</span>`);
   et.push(`<span class="et">${esc(o.source)}</span>`);
+  if (o.disponibilite === "disponible") et.push(`<span class="et dispo">✓ En ligne</span>`);
+  else if (o.disponibilite === "non_verifiable") et.push(`<span class="et">Non vérifiée</span>`);
   const alerte = bloque
     ? `<div class="alerte"><b>${esc(a.bloquants.map((b) => b.texte).join(" · "))}</b>. Tu peux quand même tenter ta chance.</div>` : "";
   const garde = statutDe(o.id) === "a_postuler";
@@ -137,7 +139,11 @@ function afficher() {
 
   if (etat.onglet === "suivi") { $("#liste").innerHTML = rendreSuivi(); return; }
   if (etat.onglet === "lettre") { $("#liste").innerHTML = rendreLettre(); ajusterTout(); return; }
+  if (etat.onglet === "cv") { $("#liste").innerHTML = rendreCv(); ajusterTout(); return; }
+  if (etat.onglet === "profil") { $("#liste").innerHTML = rendreProfil(); ajusterTout(); return; }
   if (etat.onglet === "dossier") { rendreDossier(); return; }
+  if (vueRecherche) { $("#liste").innerHTML = rendreResultats(); return; }
+  const barre = barreRecherche();
   const tri = (x, y) => (y.analyse?.score ?? 0) - (x.analyse?.score ?? 0);
   // Offres gardées : toujours en tête, quels que soient les filtres, jusqu'à ce que je postule
   const gardees = donnees.offres.filter((o) => o.type === etat.onglet && statutDe(o.id) === "a_postuler" && !(suivi[o.id] || {}).masque).sort(tri);
@@ -145,20 +151,20 @@ function afficher() {
   const liste = filtrer(etat.onglet, etat.largeur).filter((o) => !idsGardees.has(o.id)).sort(tri);
   const enTete = gardees.length ? `<h2 class="groupe">📌 À ne pas oublier (${gardees.length})</h2>${gardees.map(carte).join("")}` : "";
   if (!donnees.offres.length) {
-    $("#liste").innerHTML = `<div class="vide">Le robot n'a pas encore fait son premier passage.<br>Les offres apparaîtront ici après le prochain condensé.</div>`;
+    $("#liste").innerHTML = barre + `<div class="vide">Le robot n'a pas encore fait son premier passage.<br>Les offres apparaîtront ici après le prochain condensé.</div>`;
     return;
   }
   if (!liste.length) {
-    if (enTete) { $("#liste").innerHTML = enTete; return; }
+    if (enTete) { $("#liste").innerHTML = barre + enTete; return; }
     let suivant = etat.largeur + 1;
     while (suivant < NIVEAUX_LARGEUR.length && !filtrer(etat.onglet, suivant).length) suivant++;
-    $("#liste").innerHTML = `<div class="vide">Aucune offre avec ces réglages.${suivant < NIVEAUX_LARGEUR.length
+    $("#liste").innerHTML = barre + `<div class="vide">Aucune offre avec ces réglages.${suivant < NIVEAUX_LARGEUR.length
       ? `<br><button id="btn-elargir" data-n="${suivant}">Élargir à « ${NIVEAUX_LARGEUR[suivant].nom} » (${filtrer(etat.onglet, suivant).length})</button>`
       : "<br>Essaie d'assouplir les filtres de zone ou de salaire."}</div>`;
     $("#btn-elargir")?.addEventListener("click", (e) => { etat.largeur = +e.target.dataset.n; afficher(); });
     return;
   }
-  let html = enTete, groupe = null;
+  let html = barre + enTete, groupe = null;
   for (const o of liste) {
     const g = o.analyse?.niveau || "hors";
     if (g !== groupe) { html += `<h2 class="groupe">${GROUPES[g] || g}</h2>`; groupe = g; }
@@ -252,7 +258,7 @@ function actionCarte(nom, id) {
   if (nom === "garder") {
     const avant = statutDe(id);
     if (avant === "a_postuler") { s.statut = undefined; s.fav = false; toast("Retirée de « À ne pas oublier »"); }
-    else if (!avant) { s.statut = "a_postuler"; s.masque = false; toast("Gardée en tête de liste jusqu'à ta candidature"); }
+    else if (!avant) { conserverSiRecherche(id); s.statut = "a_postuler"; s.masque = false; toast("Gardée en tête de liste jusqu'à ta candidature"); }
   } else if (nom === "ecarter") {
     s.masque = !s.masque;
     if (s.masque) {
@@ -267,7 +273,10 @@ function relierFiltres() {
   $("#btn-filtres").addEventListener("click", () => {
     const p = $("#panneau"); p.hidden = !p.hidden; $("#btn-filtres").setAttribute("aria-expanded", !p.hidden);
   });
-  document.querySelectorAll(".onglets button").forEach((b) => b.addEventListener("click", () => { etat.onglet = b.dataset.onglet; afficher(); window.scrollTo(0, 0); }));
+  document.querySelectorAll(".onglets button").forEach((b) => b.addEventListener("click", () => {
+    if (b.dataset.onglet === etat.onglet && typeof vueRecherche !== "undefined") vueRecherche = null;
+    etat.onglet = b.dataset.onglet; afficher(); window.scrollTo(0, 0);
+  }));
   $("#largeur").addEventListener("input", (e) => { etat.largeur = +e.target.value; afficher(); });
   $("#recherche").value = etat.recherche;
   $("#recherche").addEventListener("input", (e) => { etat.recherche = e.target.value; afficher(); });

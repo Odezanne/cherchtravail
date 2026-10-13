@@ -15,6 +15,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).parent))
 import analyse  # noqa: E402
+import donnees  # noqa: E402
 import condense  # noqa: E402
 import sources  # noqa: E402
 from llm import IA  # noqa: E402
@@ -62,6 +63,13 @@ def main():
     if not doit_tourner(cfg, etat):
         return
     hors_ligne = os.environ.get("HORS_LIGNE") == "1"
+    etat_prive = {}
+    if not hors_ligne and donnees.actif():
+        etat_prive = (donnees.lire_json("etat.json", {}) or {}).get("donnees") or {}
+        log(f"Données privées lues : {len(etat_prive.get('suivi') or {})} offres suivies ou écartées")
+    cfg, profil = donnees.appliquer_profil(cfg, profil, etat_prive) if not hors_ligne else (cfg, profil)
+    ecartees = {i for i, s in (etat_prive.get("suivi") or {}).items() if isinstance(s, dict) and s.get("masque")}
+    reanalyser = os.environ.get("REANALYSER") == "1"
     src = cfg.get("sources", {})
     ia = IA(cfg.get("modeles", []))
     log("Secrets présents : " + ", ".join(f"{k}={'oui' if os.environ.get(k) else 'non'}" for k in (
@@ -82,6 +90,8 @@ def main():
                 brutes += sources.collecter_csp(src.get("choisir_le_service_public") or {"motscles": ["mnhn"]})
             except Exception as e:
                 log(f"Choisir le service public indisponible : {e}")
+        zones = ((etat_prive.get("profil") or {}).get("zones")) or ["idf"]
+        brutes += sources.collecter_adzuna(src.get("adzuna") or {"motscles": (src.get("choisir_le_service_public") or {}).get("motscles", [])[1:]}, zones)
         for url in src.get("rss_supplementaires") or []:
             brutes += sources.collecter_rss(url)
         brutes += sources.collecter_france_travail(src.get("france_travail") or {})
@@ -135,11 +145,14 @@ def main():
     eloignees += [o for o in candidates[quota:]]
     # Anciennes offres notées sans IA (IA indisponible un jour) : nouvelle tentative s'il reste du quota
     reprises = []
-    for o in connues.values():
+    ordre = sorted(connues.values(), key=lambda o: -(o.get("analyse") or {}).get("score", 0))
+    for o in ordre:
         a = o.get("analyse") or {}
-        if ia.disponible and a.get("mode") == "mots-cles" and len(a_analyser) + len(reprises) < quota:
+        if o["id"] in ecartees:
+            continue
+        if ia.disponible and (a.get("mode") == "mots-cles" or reanalyser) and len(a_analyser) + len(reprises) < quota:
             o["prefiltre"] = analyse.prefiltre(dict(o, texte=o.get("extrait", "")), cfg)
-            if o["prefiltre"] >= 12:
+            if o["prefiltre"] >= 12 or reanalyser:
                 o["telechargeable"] = o["source"] in ("CNRS", "MNHN", "Choisir le service public") or o.get("url", "").startswith("https://emploi.cnrs.fr")
                 reprises.append(o)
             else:
@@ -207,7 +220,8 @@ def main():
 
     # 6. Condensé
     if not hors_ligne:
-        condense.envoyer([o for o in a_analyser + eloignees if o["id"] not in ids_reprises], len(garder), menage, mode_menage)
+        condense.envoyer([o for o in a_analyser + eloignees if o["id"] not in ids_reprises and o["id"] not in ecartees],
+                         len(garder), menage, mode_menage)
     etat["dernier_condense"] = datetime.now(ZoneInfo("Europe/Paris")).date().isoformat()
     ETAT.parent.mkdir(parents=True, exist_ok=True)
     ETAT.write_text(json.dumps(etat, ensure_ascii=False, indent=1), encoding="utf-8")

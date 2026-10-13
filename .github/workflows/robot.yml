@@ -11,6 +11,10 @@ on:
         description: "Lancer la recherche maintenant"
         type: boolean
         default: true
+      reanalyser:
+        description: "Recalculer les % des offres déjà trouvées (après un changement de profil)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -32,7 +36,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pyyaml
+      - run: pip install pyyaml pypdf
       - name: Recherche et analyse des offres
         env:
           FORCER: ${{ github.event_name == 'workflow_dispatch' && inputs.forcer && '1' || '0' }}
@@ -43,6 +47,10 @@ jobs:
           NTFY_SUJET: ${{ secrets.NTFY_SUJET }}
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+          REANALYSER: ${{ github.event_name == 'workflow_dispatch' && inputs.reanalyser && '1' || '0' }}
+          DONNEES_TOKEN: ${{ secrets.DONNEES_TOKEN }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
         run: python robot/main.py
       - name: Enregistrer les offres

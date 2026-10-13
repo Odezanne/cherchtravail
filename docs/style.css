@@ -264,3 +264,21 @@ label.bouton { cursor: pointer; }
 }
 .fichier-options label { display: grid; gap: 4px; font-size: 13px; color: var(--doux); }
 .fichier-options select { font: inherit; color: var(--texte); background: var(--fond); border: 1px solid var(--ligne); border-radius: 8px; padding: 7px; }
+
+.champ-l small { font-size: 12px; color: var(--doux); opacity: .85; }
+.profil .puces { margin-top: 4px; }
+.fichier.reference { border-color: var(--vert); }
+code { font-size: 12.5px; background: var(--fond); padding: 1px 5px; border-radius: 5px; }
+
+/* ---------- Recherche partout ---------- */
+.barre-recherche { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+.barre-recherche input { width: 100%; border: 1px solid var(--ligne); background: var(--carte); border-radius: 12px; padding: 11px 12px; font-size: 16px; }
+.barre-recherche .bouton { padding: 10px 16px; }
+.recherches-passees { margin-top: -2px; }
+.puce-r { border: 1px solid var(--ligne); background: var(--carte); border-radius: 99px; padding: 6px 11px; font-size: 13px; cursor: pointer; color: var(--texte); }
+.puce-r.active { border-color: var(--vert); color: var(--vert); background: var(--vert-pale); font-weight: 600; }
+.entete-resultats { display: flex; align-items: center; gap: 12px; margin-top: 4px; }
+.et.dispo { color: var(--vert); border-color: var(--vert-pale); background: var(--vert-pale); }
+.tourne { width: 28px; height: 28px; border-radius: 50%; border: 3px solid var(--ligne); border-top-color: var(--vert); margin: 0 auto 12px; animation: tourne 1s linear infinite; }
+@keyframes tourne { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .tourne { animation: none; } }

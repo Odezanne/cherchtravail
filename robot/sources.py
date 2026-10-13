@@ -186,6 +186,49 @@ def texte_offre_csp(page):
     return re.sub(r"\n\s*\n+", "\n", t).strip()
 
 
+# ---------------------------------------------------------------- Adzuna (API officielle gratuite, regroupe de nombreux sites)
+
+def collecter_adzuna(cfg, zones=("idf",), par_page=50):
+    app_id, app_key = os.environ.get("ADZUNA_APP_ID"), os.environ.get("ADZUNA_APP_KEY")
+    if not (app_id and app_key):
+        return []
+    offres, vus = [], set()
+    for mc in cfg.get("motscles") or []:
+        params = {"app_id": app_id, "app_key": app_key, "what": mc, "results_per_page": par_page,
+                  "max_days_old": cfg.get("jours", 14), "content-type": "application/json", "sort_by": "date"}
+        if list(zones) == ["idf"]:
+            params.update({"where": "Paris", "distance": 60})
+        url = "https://api.adzuna.com/v1/api/jobs/fr/search/1?" + urllib.parse.urlencode(params)
+        try:
+            req = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "cherchtravail"})
+            with urllib.request.urlopen(req, timeout=40) as r:
+                res = json.load(r).get("results", [])
+        except Exception as e:
+            log(f"Adzuna « {mc} » : {e}")
+            continue
+        for j in res:
+            oid = "adz-" + str(j.get("id"))
+            if oid in vus:
+                continue
+            vus.add(oid)
+            lieu = (j.get("location") or {}).get("display_name", "")
+            zone = " ".join((j.get("location") or {}).get("area") or [])
+            smin, smax = j.get("salary_min"), j.get("salary_max")
+            sal = ""
+            if smin and not j.get("salary_is_predicted") in ("1", 1, True):
+                sal = f"{round(smin)}" + (f"-{round(smax)}" if smax and smax != smin else "") + " € par an"
+            offres.append({
+                "id": oid, "source": "Adzuna", "url": j.get("redirect_url", ""), "titre": nettoyer(re.sub(r"<[^>]+>", "", j.get("title", ""))),
+                "employeur": nettoyer((j.get("company") or {}).get("display_name", "")), "lieu": lieu,
+                "region": region_de(zone + " " + lieu), "contrat": {"contract": "CDD", "permanent": "CDI"}.get(j.get("contract_type"), ""),
+                "type": "these" if re.search(r"th[eè]se|doctorant|cifre", j.get("title", ""), re.I) else "emploi",
+                "date_publication": (j.get("created") or "")[:10], "texte": nettoyer(re.sub(r"<[^>]+>", "", j.get("description", ""))),
+                "salaire_texte": sal, "telechargeable": False, "flux_large": True,
+            })
+    log(f"Adzuna : {len(offres)} offres")
+    return offres
+
+
 # ---------------------------------------------------------------- Alertes e-mail (Gmail, IMAP)
 
 def _entete(v):

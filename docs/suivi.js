@@ -17,7 +17,11 @@ function statutDe(id) {
   const s = suivi[id] || {};
   return s.statut || (s.postule ? "postule" : s.fav ? "a_postuler" : null);
 }
-function toutesOffres() { return donnees.offres.concat(perso); }
+function toutesOffres() {
+  const ids = new Set(donnees.offres.map((o) => o.id));
+  const base = donnees.offres.concat(perso.filter((o) => !ids.has(o.id)));
+  return typeof offresRecherches === "function" ? base.concat(offresRecherches().filter((o) => !perso.some((p) => p.id === o.id))) : base;
+}
 function offresSuivies() { return toutesOffres().filter((o) => statutDe(o.id)); }
 function nbSuivis() { return offresSuivies().length; }
 function enregistrer() { ecrire("suivi", suivi); ecrire("perso", perso); }
@@ -261,11 +265,13 @@ function actionSuivi(el, evt) {
     case "mois": moisAffiche = new Date(moisAffiche.getFullYear(), moisAffiche.getMonth() + +el.dataset.d, 1); return afficher();
     case "ics": return telechargerIcs(o, s.entretiens[+el.dataset.i]);
     case "cocher":
+      conserverSiRecherche(id);
       if (el.checked) { s.statut = s.statut && s.statut !== "a_postuler" ? s.statut : "postule"; s.date_postule = s.date_postule || aujourdHui(); }
       else { s.statut = "a_postuler"; }
       enregistrer(); return afficher();
     case "statut":
       if (evt.type !== "change") return;
+      conserverSiRecherche(id);
       s.statut = el.value || undefined; s.fav = false; s.postule = false;
       if (["postule", "entretien", "offre", "refus"].includes(el.value) && !s.date_postule) s.date_postule = aujourdHui();
       enregistrer(); afficher(); return ouvrirFiche(id);

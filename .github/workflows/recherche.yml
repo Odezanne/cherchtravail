@@ -1,0 +1,42 @@
+name: Recherche à la demande
+
+# Lancée depuis la barre de recherche du site. Les résultats vont dans le dépôt privé des données.
+on:
+  workflow_dispatch:
+    inputs:
+      requete:
+        description: "Ce que je cherche (ex. biostatisticien Paris)"
+        required: true
+        type: string
+      id:
+        description: "Identifiant de la recherche (donné par le site)"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: recherche-${{ inputs.id }}
+
+jobs:
+  recherche:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml pypdf
+      - name: Chercher, vérifier et noter les offres
+        env:
+          REQUETE: ${{ inputs.requete }}
+          RECHERCHE_ID: ${{ inputs.id }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          DONNEES_TOKEN: ${{ secrets.DONNEES_TOKEN }}
+        run: python robot/recherche.py

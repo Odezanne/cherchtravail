@@ -150,6 +150,8 @@ Pour chaque offre, renvoie un objet :
 Règles : le candidat cherche son PREMIER emploi. Toute expérience professionnelle exigée (hors stages) est un bloquant.
 Un doctorat exigé est un bloquant. Ne jamais inventer de compétence au candidat. Si l'offre est un simple titre sans
 description, note prudemment et dis-le dans le résumé.
+Si le texte n'est PAS une offre d'emploi ou de thèse précise (page listant plusieurs offres, article, page d'accueil,
+offre expirée), mets score 0 et commence le résumé par « Pas une offre : ».
 Format de sortie : {"offres": [ ... ]}"""
 
 
