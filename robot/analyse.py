@@ -1,6 +1,7 @@
 """Préfiltre par mots-clés, analyse IA des offres (note d'intérêt, compétences, blocages) et repli sans IA."""
 import json
 import re
+import time
 
 from llm import QuotaEpuise
 from util import log, sans_accents
@@ -155,9 +156,10 @@ Format de sortie : {"offres": [ ... ]}"""
 def analyser(ia, profil, offres, cfg):
     """Analyse les offres par lots de 4. Renvoie {id: analyse}. Les offres non traitées reçoivent le repli."""
     resultats = {}
-    lots = [offres[i:i + 4] for i in range(0, len(offres), 4)]
+    lots = [offres[i:i + 3] for i in range(0, len(offres), 3)]
+    echecs, debut = 0, time.time()
     for lot in lots:
-        if not ia.disponible:
+        if not ia.disponible or echecs >= 3 or time.time() - debut > 35 * 60:
             break
         message = "PROFIL DU CANDIDAT :\n" + profil + "\n\nOFFRES :\n" + "\n\n".join(
             f"### id: {o['id']}\nTitre : {o['titre']}\nEmployeur : {o.get('employeur', '')}\nLieu : {o.get('lieu', '')}\n"
@@ -165,9 +167,12 @@ def analyser(ia, profil, offres, cfg):
             f"Texte :\n{(o.get('texte') or '(pas de description, seulement le titre)')[:3500]}" for o in lot)
         try:
             rep = ia.json(SYSTEME_ANALYSE, message)
+            echecs = 0
         except QuotaEpuise:
-            log("IA : quota épuisé, repli sur l'analyse par mots-clés")
-            break
+            echecs += 1
+            log(f"IA : lot sans réponse ({echecs}/3), on continue avec le suivant")
+            time.sleep(30)
+            continue
         for a in (rep.get("offres", rep) if isinstance(rep, dict) else rep) or []:
             if isinstance(a, dict) and a.get("id") in {o["id"] for o in lot}:
                 resultats[a["id"]] = normaliser(a)
