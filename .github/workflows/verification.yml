@@ -3,6 +3,10 @@ name: Vérification des branchements
 on:
   workflow_dispatch:
     inputs:
+      recouper:
+        description: "Identifiant d'une offre à recouper (facultatif)"
+        required: false
+        type: string
       recherche:
         description: "Identifiant d'une recherche à contrôler (facultatif)"
         required: false
@@ -38,6 +42,7 @@ jobs:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
           RECHERCHE_ID: ${{ inputs.recherche }}
+          RECOUPER: ${{ inputs.recouper }}
         run: python robot/verifier.py
       - name: Enregistrer le résultat
         run: |

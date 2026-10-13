@@ -75,6 +75,19 @@ try:
 except Exception as e:
     note(False, "INRAE (jobs.inrae.fr)", str(e)[:120])
 
+# Recoupement d'une offre (option RECOUPER = identifiant d'offre)
+if os.environ.get("RECOUPER"):
+    try:
+        import recherche, recoupement  # noqa: E402,E401
+        offres = json.loads((Path(__file__).resolve().parent.parent / "docs" / "data" / "offres.json").read_text(encoding="utf-8"))["offres"]
+        o = next((x for x in offres if x["id"] == os.environ["RECOUPER"]), None)
+        if o:
+            o.pop("recoupement", None)
+            recoupement.recouper([o], {o["id"]}, recherche.verifier)
+            note(True, f"recoupement « {o['titre'][:50]} »", f"{o.get('disponibilite')} · {json.dumps(o.get('recoupement'), ensure_ascii=False)[:600]}")
+    except Exception as e:
+        note(False, "recoupement", str(e)[:150])
+
 # Tavily
 if os.environ.get("TAVILY_API_KEY"):
     try:
