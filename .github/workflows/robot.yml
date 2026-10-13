@@ -1,0 +1,69 @@
+name: Robot quotidien
+
+on:
+  schedule:
+    # Toutes les heures à :40 ; le robot ne travaille vraiment qu'une heure avant
+    # l'heure du condensé (réglée dans config/recherche.yaml), quelle que soit l'heure d'été/hiver.
+    - cron: "40 * * * *"
+  workflow_dispatch:
+    inputs:
+      forcer:
+        description: "Lancer la recherche maintenant"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: robot
+  cancel-in-progress: false
+
+jobs:
+  robot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      change: ${{ steps.commit.outputs.change }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Recherche et analyse des offres
+        env:
+          FORCER: ${{ github.event_name == 'workflow_dispatch' && inputs.forcer && '1' || '0' }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GMAIL_ADRESSE: ${{ secrets.GMAIL_ADRESSE }}
+          GMAIL_MOT_DE_PASSE_APPLI: ${{ secrets.GMAIL_MOT_DE_PASSE_APPLI }}
+          NTFY_SUJET: ${{ secrets.NTFY_SUJET }}
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python robot/main.py
+      - name: Enregistrer les offres
+        id: commit
+        run: |
+          git config user.name "cherchtravail-robot"
+          git config user.email "robot@users.noreply.github.com"
+          git add docs/data data
+          if git diff --cached --quiet; then
+            echo "change=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Offres du $(TZ=Europe/Paris date +%d/%m/%Y)"
+            git pull --rebase -q && git push
+            echo "change=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  site:
+    needs: robot
+    if: needs.robot.outputs.change == 'true'
+    uses: ./.github/workflows/site.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

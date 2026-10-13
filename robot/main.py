@@ -84,11 +84,11 @@ def main():
                 log(f"Lecture Gmail impossible : {e}")
                 mails = []
             deja = set(etat.get("mails_traites", []))
-            nouveaux_mails = [m for m in mails if m["id"] not in deja]
+            nouveaux_mails = [m for m in mails if identifiant(m["id"]) not in deja]
             for mail, o in analyse.extraire_offres_mails(ia, nouveaux_mails):
                 if o.get("titre"):
                     brutes.append(sources.offre_depuis_mail(o, mail))
-            etat["mails_traites"] = (list(deja) + [m["id"] for m in nouveaux_mails])[-500:]
+            etat["mails_traites"] = (list(deja) + [identifiant(m["id"]) for m in nouveaux_mails])[-500:]
     else:
         brutes += json.loads(os.environ.get("OFFRES_TEST", "[]"))
 

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cherchtravail</title>
+<meta name="description" content="Mes offres d'emploi et de thèse, triées selon mon profil.">
+<meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151a17" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Cherchtravail">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="entete">
+  <div class="titre-ligne">
+    <h1>Cherchtravail</h1>
+    <button class="icone" id="btn-filtres" aria-label="Filtres" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="pastille" id="nb-filtres" hidden></span>
+    </button>
+  </div>
+  <p class="maj" id="maj">Chargement…</p>
+  <nav class="onglets" role="tablist">
+    <button role="tab" data-onglet="emploi" aria-selected="true">Emplois <span id="c-emploi"></span></button>
+    <button role="tab" data-onglet="these" aria-selected="false">Thèses &amp; CIFRE <span id="c-these"></span></button>
+    <button role="tab" data-onglet="favoris" aria-selected="false">Suivi <span id="c-favoris"></span></button>
+  </nav>
+  <div class="elargir">
+    <div class="elargir-ligne">
+      <label for="largeur">Proximité avec mon profil</label>
+      <strong id="largeur-nom"></strong>
+    </div>
+    <input type="range" id="largeur" min="0" max="4" step="1" value="1" aria-describedby="largeur-aide">
+    <div class="graduations" aria-hidden="true"><span>Strict</span><span>Proche</span><span>Large</span><span>Très large</span><span>Tout</span></div>
+    <p class="aide" id="largeur-aide"></p>
+  </div>
+</header>
+
+<section class="panneau" id="panneau" hidden>
+  <div class="champ">
+    <label for="recherche">Mots-clés</label>
+    <input type="search" id="recherche" placeholder="ex. écologie, R, INRAE" autocomplete="off">
+  </div>
+  <div class="champ">
+    <div class="elargir-ligne"><label for="salaire">Salaire minimum</label><strong id="salaire-val"></strong></div>
+    <input type="range" id="salaire" min="0" max="4000" step="100" value="0">
+    <label class="case"><input type="checkbox" id="sans-salaire" checked> Garder les offres sans salaire indiqué</label>
+  </div>
+  <fieldset class="champ">
+    <legend>Zone</legend>
+    <div class="puces" id="zones">
+      <label><input type="checkbox" value="idf" checked><span>Île-de-France</span></label>
+      <label><input type="checkbox" value="france"><span>Reste de la France</span></label>
+      <label><input type="checkbox" value="etranger"><span>Étranger</span></label>
+      <label><input type="checkbox" value="?" checked><span>Lieu inconnu</span></label>
+    </div>
+  </fieldset>
+  <fieldset class="champ">
+    <legend>Contrat</legend>
+    <div class="puces" id="contrats">
+      <label><input type="checkbox" value="cdd" checked><span>CDD</span></label>
+      <label><input type="checkbox" value="cdi" checked><span>CDI</span></label>
+      <label><input type="checkbox" value="autre" checked><span>Autre / non précisé</span></label>
+    </div>
+  </fieldset>
+  <label class="case"><input type="checkbox" id="cacher-bloques"> Cacher les offres qui demandent de l'expérience</label>
+  <label class="case"><input type="checkbox" id="voir-masquees"> Revoir les offres que j'ai masquées</label>
+  <button class="lien" id="reinit">Réinitialiser les filtres</button>
+</section>
+
+<main id="liste" aria-live="polite"></main>
+
+<dialog id="fiche" aria-labelledby="fiche-titre">
+  <div class="fiche-contenu" id="fiche-contenu"></div>
+</dialog>
+
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
