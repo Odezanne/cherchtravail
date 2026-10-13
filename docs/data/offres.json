@@ -1,6 +1,39 @@
 {
- "maj": "2026-10-13T17:34+02:00",
+ "maj": "2026-10-13T18:14+02:00",
  "offres": [
+  {
+   "id": "cnrs-UMR9197-JULBOU-033",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR9197-JULBOU-033/Default.aspx",
+   "titre": "Ingénieur en analyse de données transcriptomiques",
+   "employeur": "CNRS",
+   "lieu": "Saclay",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-05",
+   "analyse": {
+    "score": 80,
+    "niveau": "coeur",
+    "mode": "mots-cles",
+    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
+    "missions": [],
+    "prerequis": [],
+    "competences": [],
+    "atouts": [],
+    "manques": [],
+    "bloquants": [],
+    "conseil": "",
+    "salaire_min": 2467,
+    "salaire_max": 3786,
+    "duree_mois": null,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur en analyse de données transcriptomiques\n\n Institut des Neurosciences Paris-Saclay\r\n\nSACLAY • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut des Neurosciences Paris-Saclay\n\nType de C"
+  },
   {
    "id": "csp-2026-2168525",
    "source": "MNHN",
@@ -116,6 +149,67 @@
    "extrait": "Assistant ingénieur en écologie urbaine des pollinisateurs H/F\n\n Centre d'écologie fonctionnelle et évolutive\r\n\nMONTPELLIER • Hérault\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nCentre d'écologie fonctionn"
   },
   {
+   "id": "cnrs-UMR8002-CENAGU-006",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8002-CENAGU-006/Default.aspx",
+   "titre": "Ingénieur d’étude en techniques biologiques",
+   "employeur": "CNRS",
+   "lieu": "Paris 06",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-09-24",
+   "analyse": {
+    "score": 75,
+    "niveau": "coeur",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur d'études en techniques biologiques au Centre de Neurosciences Intégratives et Cognition à Paris 6 propose un contrat de 12 mois incluant des approches de comportement animal. C'est un excellent tremplin vers une thèse, bien qu'il y ait une part de biologie cellulaire/moléculaire.",
+    "missions": [
+     "Gestion d'une colonie de souris et mise en œuvre expérimentale",
+     "Optimisation d'expériences incluant le comportement animal et l'immunohistochimie",
+     "Génération et analyse des données scientifiques",
+     "Rédaction de protocoles et encadrement de stagiaires"
+    ],
+    "prerequis": [
+     "Licence, BTS ou Master en neuroscience, biologie et/ou physiologie",
+     "Compétences appréciées en immunohistochimie, comportement animal, chirurgie, etc."
+    ],
+    "competences": [
+     {
+      "nom": "Master en biologie / neuroscience",
+      "ok": true
+     },
+     {
+      "nom": "Comportement animal",
+      "ok": true
+     },
+     {
+      "nom": "Biologie moléculaire / paillasse",
+      "ok": false
+     }
+    ],
+    "atouts": [
+     "Master PRIAM (biologie intégrative) parfaitement aligné",
+     "Compétences en éthologie et comportement animal",
+     "Localisation idéale à Paris 6",
+     "Environnement de recherche académique fort (CNRS/Université Paris Cité), idéal pour une thèse"
+    ],
+    "manques": [
+     "Expérience pratique en biologie de paillasse (immunohistochimie, qPCR) non mentionnée"
+    ],
+    "bloquants": [],
+    "conseil": "Mettez en avant votre solide formation en biologie intégrative (Master PRIAM), votre rigueur expérimentale et vos compétences en comportement animal, tout en exprimant votre motivation à vous former rapidement aux techniques de laboratoire demandées.",
+    "salaire_min": 2571,
+    "salaire_max": null,
+    "duree_mois": 12,
+    "date_limite": "2026-10-15",
+    "contact": "Cendra Agulhon",
+    "lien_these": true
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur d’étude en techniques biologiques (H/F)\n\n Centre Neuroscience Intégrative et Cognition\r\n\nPARIS 06 • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nCentre Neuroscience Intégrative et Cognition\n\n"
+  },
+  {
    "id": "csp-2026-2427826",
    "source": "Choisir le service public",
    "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/ingenieur-en-ecologie-forestiere-fh-reference-2026-2427826/",
@@ -179,39 +273,6 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur en écologie forestière F/H\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD de 6 mois\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonct"
-  },
-  {
-   "id": "cnrs-UMR5023-JOHPAN-004",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5023-JOHPAN-004/Default.aspx",
-   "titre": "Ingénieur ou Ingénieure de Recherche en écologie aquatique et biogéochimie",
-   "employeur": "CNRS",
-   "lieu": "Villeurbanne",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-09-22",
-   "analyse": {
-    "score": 75,
-    "niveau": "coeur",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 3175,
-    "salaire_max": 3175,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Ingénieur ou Ingénieure de Recherche en écologie aquatique et biogéochimie (H/F) \n\n Laboratoire d'Ecologie des Hydrosystèmes Naturels et Anthropisés\r\n\nVILLEURBANNE • Rhône\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 5 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\n"
   },
   {
    "id": "csp-2026-2431226",
@@ -364,28 +425,110 @@
    "extrait": "Chargé d'études en expérimentation et analyse du comportement lié au stress (F/H)\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n2000€ - 2300€ net mensuel \n € brut/an "
   },
   {
-   "id": "cnrs-UMR7646-CHRJOS-005",
+   "id": "cnrs-UAR2058-CHRLAM-001",
    "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7646-CHRJOS-005/Default.aspx",
-   "titre": "Ingénieur d'étude en simulation d'écoulements multiphasiques",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UAR2058-CHRLAM-001/Default.aspx",
+   "titre": "Ingénieur de recherche  Sciences participatives et recherche-action en santé-environnement",
    "employeur": "CNRS",
-   "lieu": "Palaiseau",
+   "lieu": "Paris 13",
    "region": "idf",
    "contrat": "Ingénieur/Technicien CDD",
    "type": "emploi",
-   "date_publication": "2026-10-05",
+   "date_publication": "2026-10-06",
    "analyse": {
-    "score": 70,
+    "score": 68,
     "niveau": "tres_proche",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
+    "mode": "ia",
+    "resume": "Le poste consiste à coordonner scientifiquement des démarches de sciences participatives en santé-environnement, offrant une bonne immersion académique en Île-de-France malgré une orientation sociologique prononcée. C'est un contrat de 18 mois en labo CNRS, potentiellement intéressant pour élargir le réseau vers l'interdisciplinarité.",
+    "missions": [
+     "Concevoir et animer des protocoles de sciences participatives adaptés aux territoires",
+     "Mobiliser les acteurs non académiques et animer les collectifs transdisciplinaires",
+     "Contribuer à la conception de méthodologies d'enquête participative",
+     "Assurer une veille méthodologique sur les pratiques de recherche participative"
+    ],
+    "prerequis": [
+     "BAC+5"
+    ],
+    "competences": [
+     {
+      "nom": "BAC+5",
+      "ok": true
+     },
+     {
+      "nom": "Médiation scientifique",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Master PRIAM obtenu (BAC+5)",
+     "Expérience en médiation scientifique (service civique)",
+     "Localisation en Île-de-France (Paris 13)"
+    ],
+    "manques": [
+     "Expérience directe en sciences participatives orientées santé-environnement humaine"
+    ],
     "bloquants": [],
-    "conseil": "",
+    "conseil": "Mettre en avant l'expérience en médiation scientifique, la rigueur méthodologique acquise lors des stages et le master en biologie intégrative.",
+    "salaire_min": 3237,
+    "salaire_max": null,
+    "duree_mois": 18,
+    "date_limite": "2026-10-27",
+    "contact": null,
+    "lien_these": true
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+  },
+  {
+   "id": "csp-2026-2413978",
+   "source": "Choisir le service public",
+   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/chef-de-projet-atlas-de-la-biodiversite-communale-abc-hf-reference-2026-2413978/",
+   "titre": "Chef de projet \"Atlas de la biodiversité communale ABC\" (h/f)",
+   "employeur": "Office Français de la Biodiversité (OFB)",
+   "lieu": "Val de Marne (94)",
+   "region": "idf",
+   "contrat": "CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-13",
+   "analyse": {
+    "score": 60,
+    "niveau": "tres_proche",
+    "mode": "ia",
+    "resume": "Ce poste de chef de projet pour les Atlas de la biodiversité communale à l'Office Français de la Biodiversité permet de travailler sur la coordination et la valorisation de la connaissance naturaliste. Bien qu'orienté gestion de projet institutionnel plutôt que recherche pure, il touche directement à la conservation et à l'écologie en Île-de-France.",
+    "missions": [
+     "Pilotage et animation du programme ABC et organisation de la campagne de financement",
+     "Coordination nationale de la sélection, du suivi et de l'accompagnement des projets",
+     "Développement du programme des ABC et renforcement de capacités des acteurs",
+     "Contribution technique et méthodologique à la mise en place des ABC"
+    ],
+    "prerequis": [
+     "Expérience confirmée",
+     "Niveau cadre (Catégorie A)"
+    ],
+    "competences": [
+     {
+      "nom": "connaissance naturaliste",
+      "ok": true
+     },
+     {
+      "nom": "médiation scientifique",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Intérêt fort pour la biodiversité et la conservation",
+     "Expérience en animation et communication scientifique (service civique)"
+    ],
+    "manques": [
+     "Expérience confirmée en pilotage de projets institutionnels d'envergure nationale"
+    ],
+    "bloquants": [
+     {
+      "type": "experience",
+      "texte": "Expérience souhaitée : Confirmé"
+     }
+    ],
+    "conseil": "Mettez en avant votre double compétence en écologie/biodiversité (Master PRIAM) et votre expérience en médiation et organisation (comité d'éthique, service civique) pour compenser le manque d'expérience confirmée.",
     "salaire_min": null,
     "salaire_max": null,
     "duree_mois": null,
@@ -394,73 +537,7 @@
     "lien_these": false
    },
    "vu_le": "2026-10-13",
-   "extrait": "Ingénieur d'étude en simulation d'écoulements multiphasiques (H/F)\n\n Laboratoire d'Hydrodynamique\r\n\nPALAISEAU • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nLaboratoire d'Hydrodynamique\n\nType de Con"
-  },
-  {
-   "id": "cnrs-UMR8002-CENAGU-006",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8002-CENAGU-006/Default.aspx",
-   "titre": "Ingénieur d’étude en techniques biologiques",
-   "employeur": "CNRS",
-   "lieu": "Paris 06",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-09-24",
-   "analyse": {
-    "score": 67,
-    "niveau": "tres_proche",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 2571,
-    "salaire_max": 2571,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Ingénieur d’étude en techniques biologiques (H/F)\n\n Centre Neuroscience Intégrative et Cognition\r\n\nPARIS 06 • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nCentre Neuroscience Intégrative et Cognition\n\n"
-  },
-  {
-   "id": "cnrs-UMR8038-BRUSAR-001",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8038-BRUSAR-001/Default.aspx",
-   "titre": "Ingénieur d'étude  en biologie moléculaire (épitranscriptomique virale)",
-   "employeur": "CNRS",
-   "lieu": "Paris 06",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-09-24",
-   "analyse": {
-    "score": 61,
-    "niveau": "tres_proche",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 3500,
-    "salaire_max": 3500,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+   "extrait": "Chef de projet \"Atlas de la biodiversité communale ABC\" (h/f)\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires"
   },
   {
    "id": "csp-INRAE-OT-30644",
@@ -525,110 +602,6 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur-e en analyse d’images et vision par ordinateur appliquées au comportement de la truite arc\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les c"
-  },
-  {
-   "id": "cnrs-UAR3514-AMESAU-002",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UAR3514-AMESAU-002/Default.aspx",
-   "titre": "Chercheur en écologie chimique marine",
-   "employeur": "CNRS",
-   "lieu": "Biguglia",
-   "region": "france",
-   "contrat": "Chercheur CDD",
-   "type": "emploi",
-   "date_publication": "2026-09-30",
-   "analyse": {
-    "score": 57,
-    "niveau": "proche",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [
-     {
-      "type": "diplome",
-      "texte": "Poste de chercheur : doctorat généralement exigé"
-     }
-    ],
-    "conseil": "Un critère ne colle pas avec ton profil. Si le sujet te plaît, contacte quand même le responsable pour en discuter.",
-    "salaire_min": null,
-    "salaire_max": null,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Chercheur en écologie chimique marine (H/F)\n\n Sustainable TEchnologies for LittoraL Aquaculture and MArine REsearch\r\n\nBIGUGLIA • Corse\n\n- \r\n Chercheur en contrat CDD\r\n\n- \r\n\n 24 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre e"
-  },
-  {
-   "id": "cnrs-UMR5263-ANNCAM-088",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR5263-ANNCAM-088/Default.aspx",
-   "titre": "Contrat doctoral en neurosciences cognitives computationnelles : modélisation des mécanismes thalamo-frontaux du contrôle cognitif",
-   "employeur": "CNRS",
-   "lieu": "Toulouse",
-   "region": "france",
-   "contrat": "CDD Doctorant",
-   "type": "these",
-   "date_publication": "2026-09-24",
-   "analyse": {
-    "score": 57,
-    "niveau": "proche",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 2300,
-    "salaire_max": 2300,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Contrat doctoral en neurosciences cognitives computationnelles : modélisation des mécanismes thalamo-frontaux du contrôle cognitif H/F\n\n Cognition, Langues, Langage, Ergonomie\r\n\nTOULOUSE • Haute-Garonne\n\n- \r\n CDD Doctorant\r\n\n- \r\n\n 36 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de trava"
-  },
-  {
-   "id": "cnrs-UMR5239-MARDEL-006",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5239-MARDEL-006/Default.aspx",
-   "titre": "Ingénieur de recherche  en bioinformatique: génétique des populations et génomique comparative de nématodes subissant l'élimination programmée de l'ADN",
-   "employeur": "CNRS",
-   "lieu": "Villeurbanne",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-12",
-   "analyse": {
-    "score": 56,
-    "niveau": "proche",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 3175,
-    "salaire_max": 4864,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
   },
   {
    "id": "cnrs-UMR7289-ANGSIR0-007",
@@ -734,39 +707,6 @@
    "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
   },
   {
-   "id": "cnrs-UMR7355-DIETOG-002",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7355-DIETOG-002/Default.aspx",
-   "titre": "Ingénieur d’études en techniques biologiques et expérimentation animale",
-   "employeur": "CNRS",
-   "lieu": "Orleans",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-06",
-   "analyse": {
-    "score": 53,
-    "niveau": "proche",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 2400,
-    "salaire_max": 2400,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Ingénieur d’études en techniques biologiques et expérimentation animale (H/F)\n\n Immuno-Neuro Modulation\r\n\nORLEANS • Loiret\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 13 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nImmuno-Neuro Modulation\n\nType de Contra"
-  },
-  {
    "id": "csp-2026-2165887",
    "source": "Choisir le service public",
    "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/biostatisticienne-specialisee-en-recherche-biomedicale---drci-reference-2026-2165887/",
@@ -827,42 +767,117 @@
    "extrait": "BIOSTATISTICIEN(NE) SPECIALISE(E) EN RECHERCHE BIOMEDICALE - DRCI\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonct"
   },
   {
-   "id": "cnrs-UMR8197-VALHER-258",
+   "id": "cnrs-UMR5263-ANNCAM-088",
    "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8197-VALHER-258/Default.aspx",
-   "titre": "Chercheur en Dynamique des interactions intestine-cerveau chez la larve du poisson zèbre.",
+   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR5263-ANNCAM-088/Default.aspx",
+   "titre": "Contrat doctoral en neurosciences cognitives computationnelles : modélisation des mécanismes thalamo-frontaux du contrôle cognitif",
    "employeur": "CNRS",
-   "lieu": "Paris 05",
-   "region": "idf",
-   "contrat": "Chercheur CDD",
-   "type": "emploi",
-   "date_publication": "2026-09-29",
+   "lieu": "Toulouse",
+   "region": "france",
+   "contrat": "CDD Doctorant",
+   "type": "these",
+   "date_publication": "2026-09-24",
    "analyse": {
     "score": 50,
     "niveau": "proche",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [
+    "mode": "ia",
+    "resume": "Il s'agit d'un contrat doctoral en neurosciences cognitives computationnelles à Toulouse. Bien que le sujet touche à la cognition (qui se rapproche de l'intérêt du candidat), c'est un contrat de thèse direct et non un CDD d'ingénieur tremplin, et il est situé hors Île-de-France.",
+    "missions": [
+     "Développer et tester un modèle computationnel thalamo-frontal du contrôle cognitif adaptatif",
+     "Concevoir et conduire des expériences comportementales et EEG",
+     "Développer des versions 'lésées' du modèle"
+    ],
+    "prerequis": [
+     "Master (Bac +5) en sciences cognitives, psychologie, neurosciences, mathématiques/ingénierie"
+    ],
+    "competences": [
      {
-      "type": "diplome",
-      "texte": "Poste de chercheur : doctorat généralement exigé"
+      "nom": "R",
+      "ok": true
+     },
+     {
+      "nom": "modélisation",
+      "ok": true
      }
     ],
-    "conseil": "Un critère ne colle pas avec ton profil. Si le sujet te plaît, contacte quand même le responsable pour en discuter.",
-    "salaire_min": 3131,
-    "salaire_max": 4806,
+    "atouts": [
+     "Master pertinent obtenu",
+     "Compétences en modélisation et programmation sous R"
+    ],
+    "manques": [
+     "Expérience en EEG ou neurosciences humaines"
+    ],
+    "bloquants": [],
+    "conseil": "Si le domaine des neurosciences cognitives humaines vous intéresse autant que l'éthologie animale, vous pouvez tenter votre chance puisque vous avez le Master requis et des compétences en R.",
+    "salaire_min": 2300,
+    "salaire_max": null,
+    "duree_mois": 36,
+    "date_limite": "2026-10-15",
+    "contact": null,
+    "lien_these": true
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Contrat doctoral en neurosciences cognitives computationnelles : modélisation des mécanismes thalamo-frontaux du contrôle cognitif H/F\n\n Cognition, Langues, Langage, Ergonomie\r\n\nTOULOUSE • Haute-Garonne\n\n- \r\n CDD Doctorant\r\n\n- \r\n\n 36 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de trava"
+  },
+  {
+   "id": "csp-2026-2412503",
+   "source": "Choisir le service public",
+   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/data-manager-direction-de-la-recherche-en-sante-reference-2026-2412503/",
+   "titre": "Data Manager Direction de la Recherche en Santé",
+   "employeur": "HOPITAUX UNIVERSITAIRE DE MARSEILLE APHM",
+   "lieu": "Bouches du Rhône (13)",
+   "region": "france",
+   "contrat": "CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-13",
+   "analyse": {
+    "score": 50,
+    "niveau": "proche",
+    "mode": "ia",
+    "resume": "Ce poste de data manager au sein des Hôpitaux Universitaires de Marseille implique la gestion de données cliniques et la participation à des projets de recherche. Bien qu'il touche à la biostatistique et aux bases de données, il s'oriente vers la recherche clinique médicale plutôt que vers l'écologie ou le comportement animal.",
+    "missions": [
+     "Assurer la gestion des données cliniques des projets de recherche",
+     "Concevoir et mettre en œuvre les outils de recueil et de gestion des données (CRF/eCRF)",
+     "Rédiger et mettre à jour les documents de référence du data management",
+     "Programmer et valider les contrôles de cohérence et réaliser les exports de données"
+    ],
+    "prerequis": [
+     "Diplôme de niveau Bac +5 (Master ou équivalent) dans le domaine des systèmes d’information, du data management, de la biostatistique ou de la gestion des données"
+    ],
+    "competences": [
+     {
+      "nom": "biostatistique",
+      "ok": true
+     },
+     {
+      "nom": "Master ou équivalent",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Titulaire d'un Master en biologie/biostatistique",
+     "Solides compétences en traitement et analyse de données"
+    ],
+    "manques": [
+     "Expérience en data management clinique",
+     "Connaissance des outils spécifiques de type eCRF"
+    ],
+    "bloquants": [
+     {
+      "type": "experience",
+      "texte": "Expérience souhaitée : Confirmé (bloquant potentiel pour un premier emploi selon l'application stricte)"
+     }
+    ],
+    "conseil": "Mettez en avant votre rigueur méthodologique acquise lors de vos analyses sous R pour des jeux de données complexes et votre formation en biostatistique.",
+    "salaire_min": null,
+    "salaire_max": null,
     "duree_mois": null,
     "date_limite": null,
     "contact": null,
     "lien_these": false
    },
    "vu_le": "2026-10-13",
-   "extrait": "Chercheur en Dynamique des interactions intestine-cerveau chez la larve du poisson zèbre.\n\n Institut de biologie de l'Ecole Normale Supérieure\r\n\nPARIS 05 • Paris\n\n- \r\n Chercheur en contrat CDD\r\n\n- \r\n\n 22 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleu"
+   "extrait": "Data Manager Direction de la Recherche en Santé\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non renseign"
   },
   {
    "id": "csp-2026-2407193",
@@ -932,6 +947,73 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur de Recherche Biostatisticien SEEDem PHARES F/H\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD d'1 an\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\nENTRE 29520 ET 37680 EUROS BRUT\n € br"
+  },
+  {
+   "id": "cnrs-UMR5023-JOHPAN-004",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5023-JOHPAN-004/Default.aspx",
+   "titre": "Ingénieur ou Ingénieure de Recherche en écologie aquatique et biogéochimie",
+   "employeur": "CNRS",
+   "lieu": "Villeurbanne",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-09-22",
+   "analyse": {
+    "score": 50,
+    "niveau": "proche",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur de recherche en écologie aquatique et biogéochimie au CNRS à Villeurbanne propose l'analyse de données et la valorisation scientifique. Bien que le domaine soit un peu éloigné de l'éthologie pure, les compétences en biostatistique et R du candidat sont adaptées, mais le lieu est hors Île-de-France et la durée est courte (5 mois).",
+    "missions": [
+     "Gestion de la base de données environnementales",
+     "Traitement et analyses statistiques de données sous R",
+     "Rédaction d'un article scientifique",
+     "Participation éventuelle à des missions de terrain"
+    ],
+    "prerequis": [
+     "BAC+5",
+     "Connaissances approfondies en écologie fluviale, biogéochimie",
+     "Maitrise de logiciels d'analyse de données",
+     "Bio-statistiques",
+     "Rédaction en anglais"
+    ],
+    "competences": [
+     {
+      "nom": "Biostatistiques",
+      "ok": true
+     },
+     {
+      "nom": "R",
+      "ok": true
+     },
+     {
+      "nom": "Écologie",
+      "ok": true
+     },
+     {
+      "nom": "Rédaction en anglais",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Master PRIAM en biologie intégrative",
+     "Solides compétences en R et biostatistiques",
+     "Expérience de publication scientifique"
+    ],
+    "manques": [
+     "Spécialisation initiale plutôt orientée éthologie comportementale qu'écologie aquatique et biogéochimie"
+    ],
+    "bloquants": [],
+    "conseil": "Mettez en avant vos compétences robustes en modélisation statistique sous R et votre expérience de rédaction (Scientific Reports) pour compenser le fait que votre spécialité est l'éthologie.",
+    "salaire_min": 3175,
+    "salaire_max": null,
+    "duree_mois": 5,
+    "date_limite": "2026-10-13",
+    "contact": "Fanny Colas et Johan Pansu",
+    "lien_these": true
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur ou Ingénieure de Recherche en écologie aquatique et biogéochimie (H/F) \n\n Laboratoire d'Ecologie des Hydrosystèmes Naturels et Anthropisés\r\n\nVILLEURBANNE • Rhône\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 5 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\n"
   },
   {
    "id": "csp-2026-2430353",
@@ -1011,16 +1093,16 @@
    "extrait": "Lyon 1 Université - Ingénieur d'études en conception de bases de données pour l'écologie (H/F)\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD d'1 an\n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n2534"
   },
   {
-   "id": "cnrs-UMR7275-MALARH-018",
+   "id": "cnrs-UMR5203-STEBAR-012",
    "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7275-MALARH-018/Default.aspx",
-   "titre": "Ingénieur d'études en techniques biologiques",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5203-STEBAR-012/Default.aspx",
+   "titre": "Ingénieur d'étude  en techniques biologiques",
    "employeur": "CNRS",
-   "lieu": "Valbonne",
+   "lieu": "Montpellier",
    "region": "france",
    "contrat": "Ingénieur/Technicien CDD",
    "type": "emploi",
-   "date_publication": "2026-09-22",
+   "date_publication": "2026-09-30",
    "analyse": {
     "score": 47,
     "niveau": "proche",
@@ -1033,74 +1115,8 @@
     "manques": [],
     "bloquants": [],
     "conseil": "",
-    "salaire_min": 3743,
-    "salaire_max": 3743,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Ingénieur d'études en techniques biologiques (H/F)\n\n Institut de Pharmacologie Moléculaire et Cellulaire\r\n\nVALBONNE • Alpes-Maritimes\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut de Pharmacologie Mo"
-  },
-  {
-   "id": "csp-2026-2172159",
-   "source": "MNHN",
-   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/charge-d-etudes-scientifiques--reference-2026-2172159/",
-   "titre": "Chargé d'études scientifiques",
-   "employeur": "MNHN",
-   "lieu": "Paris (75)",
-   "region": "idf",
-   "contrat": "",
-   "type": "emploi",
-   "date_publication": "2026-10-13",
-   "analyse": {
-    "score": 46,
-    "niveau": "proche",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": null,
-    "salaire_max": null,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Chargé d'études scientifiques \nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non renseignée \n- \n Caté"
-  },
-  {
-   "id": "cnrs-UMR8175-KARBOU-001",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8175-KARBOU-001/Default.aspx",
-   "titre": "Ingénieur d'étude  - Développement d'applications biologiques pour une puce thermoplastique à membrane encapsulée",
-   "employeur": "CNRS",
-   "lieu": "Paris 06",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-12",
-   "analyse": {
-    "score": 46,
-    "niveau": "proche",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 2571,
-    "salaire_max": 2571,
+    "salaire_min": 2521,
+    "salaire_max": 2521,
     "duree_mois": null,
     "date_limite": null,
     "contact": null,
@@ -1190,37 +1206,115 @@
    "extrait": "Biostatisticien-ne\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non r"
   },
   {
-   "id": "csp-2026-2412503",
-   "source": "Choisir le service public",
-   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/data-manager-direction-de-la-recherche-en-sante-reference-2026-2412503/",
-   "titre": "Data Manager Direction de la Recherche en Santé",
-   "employeur": "HOPITAUX UNIVERSITAIRE DE MARSEILLE APHM",
-   "lieu": "Bouches du Rhône (13)",
-   "region": "france",
-   "contrat": "",
+   "id": "csp-2026-2172159",
+   "source": "MNHN",
+   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/charge-d-etudes-scientifiques--reference-2026-2172159/",
+   "titre": "Chargé d'études scientifiques",
+   "employeur": "MNHN",
+   "lieu": "Paris (75)",
+   "region": "idf",
+   "contrat": "CDD",
    "type": "emploi",
    "date_publication": "2026-10-13",
    "analyse": {
     "score": 45,
     "niveau": "proche",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
+    "mode": "ia",
+    "resume": "Ce poste de chargé d'études scientifiques au MNHN à Paris concerne un projet aquacole sur l'holothurie noire et la diversification des élevages. L'offre est intéressante pour son lien avec le MNHN et les études faunistiques, mais le descriptif est très sommaire et orienté gestion de projet aquacole.",
+    "missions": [
+     "Coordonner le projet Voloth sur l'aval de la filière et la valorisation des holothuries",
+     "Explorer les voies de commercialisation et retombées économiques",
+     "Travailler en lien avec la filière conchylicole"
+    ],
+    "prerequis": [
+     "Diplôme : Master 2",
+     "Connaissances en gestion de projet",
+     "Compétences managériales"
+    ],
+    "competences": [
+     {
+      "nom": "Master 2",
+      "ok": true
+     },
+     {
+      "nom": "Gestion de projet",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Diplômé d'un Master 2 en biologie",
+     "Localisation à Paris"
+    ],
+    "manques": [
+     "Compétences managériales approfondies",
+     "Expérience en aquaculture"
+    ],
     "bloquants": [],
-    "conseil": "",
+    "conseil": "Mettez en avant vos compétences en gestion de projet acquises lors de vos stages de recherche et votre formation en biologie pour ce poste basé au MNHN.",
     "salaire_min": null,
     "salaire_max": null,
     "duree_mois": null,
     "date_limite": null,
     "contact": null,
+    "lien_these": true
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Chargé d'études scientifiques \nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non renseignée \n- \n Caté"
+  },
+  {
+   "id": "cnrs-UMR7159-CHRHER-004",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7159-CHRHER-004/Default.aspx",
+   "titre": "Ingénieur de Recherche  en calcul scientifique en appui à l’analyse de données océanographiques",
+   "employeur": "CNRS",
+   "lieu": "Paris 05",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-09-30",
+   "analyse": {
+    "score": 45,
+    "niveau": "proche",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur de recherche en calcul scientifique et analyse de données océanographiques est en Île-de-France et implique du traitement de données, mais demande un profil bac+5 en océanographie ou physique numérique. Le contrat de 6 mois est court et le profil est très axé physique/océanographie.",
+    "missions": [
+     "Développer et mettre en œuvre les traitements numériques pour l'analyse de grands jeux de données",
+     "Analyser des jeux de données de propriétés hydrologiques et de vitesses de courant",
+     "Développer et utiliser des outils d’analyse de données"
+    ],
+    "prerequis": [
+     "BAC+5",
+     "Compétences en calcul scientifique et analyse de données"
+    ],
+    "competences": [
+     {
+      "nom": "Master",
+      "ok": true
+     },
+     {
+      "nom": "biostatistique",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Formation de niveau Master (BAC+5)",
+     "Solides compétences en analyse de données et traitement numérique sous R"
+    ],
+    "manques": [
+     "Spécialisation en océanographie / climatologie",
+     "Expérience en calcul scientifique intensif"
+    ],
+    "bloquants": [],
+    "conseil": "Mettre en avant la rigueur des analyses statistiques sous R et la capacité à traiter de grands jeux de données, même si le domaine cible est l'océanographie physique.",
+    "salaire_min": 3238,
+    "salaire_max": 3238,
+    "duree_mois": 6,
+    "date_limite": "2026-10-21",
+    "contact": null,
     "lien_these": false
    },
    "vu_le": "2026-10-13",
-   "extrait": "Data Manager Direction de la Recherche en Santé\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non renseign"
+   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
   },
   {
    "id": "cnrs-UMR9191-RICCOR-002",
@@ -1380,18 +1474,18 @@
    "extrait": "Ingénieur(e) d'études en écologie marine – M2C\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative po"
   },
   {
-   "id": "cnrs-UMR7314-FRESAU-022",
+   "id": "cnrs-UMR7365-FLOCHA-011",
    "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7314-FRESAU-022/Default.aspx",
-   "titre": "Ingénieur d'étude en développement de cellules solaires transparentes à jonction solide",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7365-FLOCHA-011/Default.aspx",
+   "titre": "Ingénieur d'étude en biologie moléculaire et cellulaire",
    "employeur": "CNRS",
-   "lieu": "Amiens",
+   "lieu": "Vandoeuvre Les Nancy",
    "region": "france",
    "contrat": "Ingénieur/Technicien CDD",
    "type": "emploi",
-   "date_publication": "2026-09-28",
+   "date_publication": "2026-10-08",
    "analyse": {
-    "score": 44,
+    "score": 41,
     "niveau": "eloigne",
     "mode": "mots-cles",
     "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
@@ -1402,27 +1496,27 @@
     "manques": [],
     "bloquants": [],
     "conseil": "",
-    "salaire_min": 2497,
-    "salaire_max": 3706,
+    "salaire_min": 2522,
+    "salaire_max": 2522,
     "duree_mois": null,
     "date_limite": null,
     "contact": null,
     "lien_these": false
    },
    "vu_le": "2026-10-13",
-   "extrait": "Ingénieur d'étude en développement de cellules solaires transparentes à jonction solide (H/F)\n\n Laboratoire de réactivité et de chimie des solides\r\n\nAMIENS • Somme\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 9 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n"
+   "extrait": "Ingénieur d'étude en biologie moléculaire et cellulaire H/F\n\n Ingénierie Moléculaire, Cellulaire et Physiopathologie\r\n\nVANDOEUVRE LES NANCY • Meurthe-et-Moselle\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 36 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nI"
   },
   {
-   "id": "csp-2026-2413978",
-   "source": "Choisir le service public",
-   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/chef-de-projet-atlas-de-la-biodiversite-communale-abc-hf-reference-2026-2413978/",
-   "titre": "Chef de projet \"Atlas de la biodiversité communale ABC\" (h/f)",
-   "employeur": "Office Français de la Biodiversité (OFB)",
-   "lieu": "Val de Marne (94)",
-   "region": "idf",
-   "contrat": "",
+   "id": "cnrs-UPR3212-JULQUI-038",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UPR3212-JULQUI-038/Default.aspx",
+   "titre": "Ingénieur de recherche en neurobiologie cellulaire",
+   "employeur": "CNRS",
+   "lieu": "Strasbourg",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
    "type": "emploi",
-   "date_publication": "2026-10-13",
+   "date_publication": "2026-10-12",
    "analyse": {
     "score": 41,
     "niveau": "eloigne",
@@ -1443,7 +1537,7 @@
     "lien_these": false
    },
    "vu_le": "2026-10-13",
-   "extrait": "Chef de projet \"Atlas de la biodiversité communale ABC\" (h/f)\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires"
+   "extrait": "Ingénieur de recherche en neurobiologie cellulaire (H/F)\n\n Nouveau\r\n\n Institut des Neurosciences Cellulaires et Intégratives\r\n\nSTRASBOURG • Bas-Rhin\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 23 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut des "
   },
   {
    "id": "csp-2026-2392759",
@@ -1599,6 +1693,67 @@
    "extrait": "Ingénieur d’étude en génétique, biologie moléculaire (H/F)\n\n Nouveau\r\n\n Institut de Biologie Intégrative de la Cellule\r\n\nGIF SUR YVETTE • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 13 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut de Bi"
   },
   {
+   "id": "cnrs-UMR7355-DIETOG-002",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7355-DIETOG-002/Default.aspx",
+   "titre": "Ingénieur d’études en techniques biologiques et expérimentation animale",
+   "employeur": "CNRS",
+   "lieu": "Orleans",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-06",
+   "analyse": {
+    "score": 40,
+    "niveau": "eloigne",
+    "mode": "ia",
+    "resume": "Poste d'ingénieur d'études en techniques biologiques et expérimentation animale sur rongeurs. Intéressant pour l'expérimentation animale, mais l'exigence d'une habilitation et l'orientation très biomédicale/immunologie éloignent l'offre de l'écologie comportementale.",
+    "missions": [
+     "Concevoir et réaliser des modèles expérimentaux murins",
+     "Réaliser des techniques de biologie cellulaire et moléculaire",
+     "Traiter et analyser les données biologiques"
+    ],
+    "prerequis": [
+     "Connaissances approfondies en Immunologie",
+     "Habilitation à l'expérimentation animale obligatoire",
+     "BAC+5"
+    ],
+    "competences": [
+     {
+      "nom": "expérimentation animale",
+      "ok": false
+     },
+     {
+      "nom": "biologie moléculaire",
+      "ok": false
+     }
+    ],
+    "atouts": [
+     "Master 2 biologie",
+     "Rigueur statistique"
+    ],
+    "manques": [
+     "Habilitation à l'expérimentation animale",
+     "Expérience sur rongeurs"
+    ],
+    "bloquants": [
+     {
+      "type": "autre",
+      "texte": "Habilitation à l'expérimentation animale obligatoire"
+     }
+    ],
+    "conseil": "L'absence d'habilitation à l'expérimentation animale est bloquante pour ce type de modèle en laboratoire.",
+    "salaire_min": 2400,
+    "salaire_max": null,
+    "duree_mois": 13,
+    "date_limite": "2026-10-27",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur d’études en techniques biologiques et expérimentation animale (H/F)\n\n Immuno-Neuro Modulation\r\n\nORLEANS • Loiret\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 13 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nImmuno-Neuro Modulation\n\nType de Contra"
+  },
+  {
    "id": "cnrs-UMR9019-NATPET-009",
    "source": "CNRS",
    "url": "https://emploi.cnrs.fr/Offres/CDD/UMR9019-NATPET-009/Default.aspx",
@@ -1701,6 +1856,62 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Modélisation du mécanisme d'action d'intercalants de l'ADN pour des applications en thérapie anticancéreuse (H/F)\n\n Laboratoire de Physique et Chimie Théoriques\r\n\nVANDOEUVRE LES NANCY • Meurthe-et-Moselle\n\n- \r\n Chercheur en contrat CDD\r\n\n- \r\n\n 24 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qua"
+  },
+  {
+   "id": "csp-DEF_04-00064610",
+   "source": "Choisir le service public",
+   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/charge-d-environnement-charge-de-la-preparation-operationnelle-et-biodiversite-3b23-reference-DEF_04-00064610/",
+   "titre": "CHARGE D'ENVIRONNEMENT-CHARGE DE LA PREPARATION OPERATIONNELLE ET BIODIVERSITE 3B/23",
+   "employeur": "Armée de terre",
+   "lieu": "Morbihan (56)",
+   "region": "france",
+   "contrat": "CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-13",
+   "analyse": {
+    "score": 35,
+    "niveau": "eloigne",
+    "mode": "ia",
+    "resume": "Ce poste de chargé d'environnement au sein de l'Armée de terre implique la gestion durable et la préservation de la biodiversité sur des terrains militaires. Bien que le domaine de la biodiversité soit connexe, le type de structure et l'exigence d'une expérience confirmée en font un choix peu adapté pour un jeune diplômé cherchant un tremplin académique.",
+    "missions": [
+     "Coordonner l'entretien et la libre disposition des sites d'instruction",
+     "Conseiller le commandement sur le développement et la gestion des zones naturelles",
+     "Concevoir et mettre en œuvre une politique de gestion durable des terrains militaires",
+     "Participer à l'élaboration d'un plan de gestion et d'entretien des espaces"
+    ],
+    "prerequis": [
+     "Expérience souhaitée dans la gestion des camps et de la préparation opérationnelle",
+     "CV obligatoire"
+    ],
+    "competences": [
+     {
+      "nom": "gestion durable",
+      "ok": false
+     }
+    ],
+    "atouts": [
+     "Intérêt pour la conservation et l'écologie"
+    ],
+    "manques": [
+     "Expérience confirmée en gestion de camps",
+     "Expérience professionnelle hors stages"
+    ],
+    "bloquants": [
+     {
+      "type": "experience",
+      "texte": "Expérience souhaitée : Confirmé"
+     }
+    ],
+    "conseil": "Si vous souhaitez postuler malgré l'exigence d'expérience, mettez en avant votre stage sur les macaques de Barbarie et vos interactions avec les acteurs de terrain, ainsi que vos compétences en écologie comportementale.",
+    "salaire_min": null,
+    "salaire_max": null,
+    "duree_mois": null,
+    "date_limite": null,
+    "contact": "nathalie.rio@intradef.gouv.fr",
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "CHARGE D'ENVIRONNEMENT-CHARGE DE LA PREPARATION OPERATIONNELLE ET BIODIVERSITE 3B/23\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative "
   },
   {
    "id": "csp-AGRI_2026-15-A5SAS00192-57761",
@@ -1829,6 +2040,113 @@
    "extrait": "Ingénieur d'Etude en écotoxicologie aquatique H/F\n\n Biodiversité Marine, Exploitation et Conservation\r\n\nSETE • Hérault\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 2 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nBiodiversité Marine, Exploitation et Conse"
   },
   {
+   "id": "cnrs-UMR8175-KARBOU-001",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8175-KARBOU-001/Default.aspx",
+   "titre": "Ingénieur d'étude  - Développement d'applications biologiques pour une puce thermoplastique à membrane encapsulée",
+   "employeur": "CNRS",
+   "lieu": "Paris 06",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-12",
+   "analyse": {
+    "score": 35,
+    "niveau": "eloigne",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur d'étude au CNRS à Paris 6 porte sur le développement d'applications biologiques pour une puce thermoplastique (microfluidique et nanomédecine). Le poste est bien situé en Île-de-France mais s'éloigne totalement du comportement animal et de l'écologie.",
+    "missions": [
+     "Consolider la technique d'encapsulation membranaire",
+     "Explorer les applications sur des puces en thermoplastique",
+     "Collaborer avec les plateformes de microfabrication et d'imagerie"
+    ],
+    "prerequis": [
+     "Connaissances en microfabrication",
+     "Ingénierie biomédicale",
+     "Compétences opérationnelles en ingénierie de projet"
+    ],
+    "competences": [
+     {
+      "nom": "Ingénierie de projet",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Localisation à Paris 6",
+     "Cadre de recherche académique (CNRS)"
+    ],
+    "manques": [
+     "Microfabrication",
+     "Ingénierie biomédicale",
+     "Microfluidique"
+    ],
+    "bloquants": [],
+    "conseil": "Ce poste technique en nanomédecine ne correspond pas à votre objectif de thèse en comportement animal ou écologie, privilégiez des sujets en biologie intégrative ou écologie.",
+    "salaire_min": 2571,
+    "salaire_max": null,
+    "duree_mois": 18,
+    "date_limite": "2026-11-02",
+    "contact": "Hugo SALMON",
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+  },
+  {
+   "id": "cnrs-UMR5239-MARDEL-006",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5239-MARDEL-006/Default.aspx",
+   "titre": "Ingénieur de recherche  en bioinformatique: génétique des populations et génomique comparative de nématodes subissant l'élimination programmée de l'ADN",
+   "employeur": "CNRS",
+   "lieu": "Villeurbanne",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-12",
+   "analyse": {
+    "score": 35,
+    "niveau": "eloigne",
+    "mode": "ia",
+    "resume": "Poste d'ingénieur de recherche en bioinformatique axé sur la génétique des populations de nématodes. Bien que le domaine touche à la génétique, le profil est trop orienté bioinformatique pure et analyse de génomes, ce qui ne correspond pas au cœur de métier du candidat (biostatistiques et écologie comportementale).",
+    "missions": [
+     "Exploiter des données de génétique des populations",
+     "Caractériser les forces sélectives s'exerçant sur le motif PDE",
+     "Analyser des données génomiques"
+    ],
+    "prerequis": [
+     "BAC+5",
+     "Compétences en bioinformatique"
+    ],
+    "competences": [
+     {
+      "nom": "génétique des populations",
+      "ok": true
+     },
+     {
+      "nom": "bioinformatique",
+      "ok": false
+     }
+    ],
+    "atouts": [
+     "Formation en génétique des populations"
+    ],
+    "manques": [
+     "Compétences en bioinformatique",
+     "Expérience approfondie en génomique"
+    ],
+    "bloquants": [],
+    "conseil": "Le poste demande une forte expertise en bioinformatique absente du profil, pas de lien direct avec le comportement animal.",
+    "salaire_min": 3175,
+    "salaire_max": 4864,
+    "duree_mois": 24,
+    "date_limite": "2026-11-02",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+  },
+  {
    "id": "csp-2025-2098339",
    "source": "Choisir le service public",
    "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/ingenieur-de-recherche-en-bio-informatique---dr---laboratoire-gbcm-reference-2025-2098339/",
@@ -1898,6 +2216,70 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur de recherche en bio informatique - DR - Laboratoire GBCM\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\nA partir de 35k\n € bru"
+  },
+  {
+   "id": "cnrs-UMR8097-ARLMOL-008",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8097-ARLMOL-008/Default.aspx",
+   "titre": "Ingénieur de recherche en traitement, production et analyse des données",
+   "employeur": "CNRS",
+   "lieu": "Paris 14",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-07",
+   "analyse": {
+    "score": 35,
+    "niveau": "eloigne",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur de recherche au Centre Maurice Halbwachs demande de traiter des données textuelles et médiatiques pour des analyses sociologiques. Bien que le contrat et le lieu soient parfaits, le domaine en sciences humaines et l'exigence de Python bloquent l'adéquation.",
+    "missions": [
+     "Réaliser une base de données à partir de sources Europresse, INA et Youtube",
+     "Constituer un corpus presse et média sur dix ans",
+     "Établir la cartographie des médias et des acteurs portant une critique de l'Etat de droit",
+     "Aider au traitement final et à la rédaction du rapport"
+    ],
+    "prerequis": [
+     "BAC+5",
+     "1 à 4 années d'expérience",
+     "Maîtrise Python et R",
+     "Connaissance de la littérature sur le hate speech et critique de l'Etat de droit"
+    ],
+    "competences": [
+     {
+      "nom": "R",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Maîtrise de R",
+     "Expérience en traitement de données et bases de données"
+    ],
+    "manques": [
+     "Expérience professionnelle salariée (1 à 4 ans demandés)",
+     "Python",
+     "Connaissances en sociologie / hate speech"
+    ],
+    "bloquants": [
+     {
+      "type": "experience",
+      "texte": "1 à 4 années d'expérience souhaitée"
+     },
+     {
+      "type": "autre",
+      "texte": "Maîtrise de Python exigée"
+     }
+    ],
+    "conseil": "Même si R est maîtrisé, l'expérience exigée et le domaine en sciences humaines et sociales (sociologie du droit) ne correspondent pas au projet de thèse en biologie/comportement animal.",
+    "salaire_min": 3238,
+    "salaire_max": 3238,
+    "duree_mois": 6,
+    "date_limite": "2026-10-28",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur de recherche en traitement, production et analyse des données (H/F)\n\n Centre Maurice Halbwachs\r\n\nPARIS 14 • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+5\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'u"
   },
   {
    "id": "cnrs-UMR7289-BRUGIO-009",
@@ -2068,103 +2450,155 @@
    "extrait": "Méthodologiste - Biostatisticien - CIC domaine d'activité Biométrie H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD de 2 ans\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n30000 € BRUT/AN\n € b"
   },
   {
-   "id": "csp-DEF_04-00064610",
-   "source": "Choisir le service public",
-   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/charge-d-environnement-charge-de-la-preparation-operationnelle-et-biodiversite-3b23-reference-DEF_04-00064610/",
-   "titre": "CHARGE D'ENVIRONNEMENT-CHARGE DE LA PREPARATION OPERATIONNELLE ET BIODIVERSITE 3B/23",
-   "employeur": "Armée de terre",
-   "lieu": "Morbihan (56)",
-   "region": "france",
-   "contrat": "",
-   "type": "emploi",
-   "date_publication": "2026-10-13",
-   "analyse": {
-    "score": 33,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": null,
-    "salaire_max": null,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "CHARGE D'ENVIRONNEMENT-CHARGE DE LA PREPARATION OPERATIONNELLE ET BIODIVERSITE 3B/23\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative "
-  },
-  {
-   "id": "csp-2026-2258606",
-   "source": "Choisir le service public",
-   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/ingenieur-detude-en-biologie-moleculaire-et--cellulaire--reference-2026-2258606/",
-   "titre": "Ingénieur détude, en biologie moléculaire et cellulaire",
-   "employeur": "Inserm Délégation Régionale Paris IDF Centre Nord",
-   "lieu": "Paris (75)",
-   "region": "idf",
-   "contrat": "",
-   "type": "emploi",
-   "date_publication": "2026-10-13",
-   "analyse": {
-    "score": 31,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": null,
-    "salaire_max": null,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Ingénieur détude, en biologie moléculaire et cellulaire \nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires"
-  },
-  {
-   "id": "cnrs-UMR7329-VALMER-100",
+   "id": "cnrs-UMR5077-RAFGAL-009",
    "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7329-VALMER-100/Default.aspx",
-   "titre": "CH sur la Modélisation de l’évolution géodynamique de l’intérieur lunaire",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5077-RAFGAL-009/Default.aspx",
+   "titre": "Ingénieur d'études (/D) en biologie moléculaire et culture cellulaire",
    "employeur": "CNRS",
-   "lieu": "Valbonne",
+   "lieu": "Toulouse",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-02",
+   "analyse": {
+    "score": 32,
+    "niveau": "eloigne",
+    "mode": "mots-cles",
+    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
+    "missions": [],
+    "prerequis": [],
+    "competences": [],
+    "atouts": [],
+    "manques": [],
+    "bloquants": [],
+    "conseil": "",
+    "salaire_min": null,
+    "salaire_max": null,
+    "duree_mois": null,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+  },
+  {
+   "id": "cnrs-UMR5535-SARADE-114",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5535-SARADE-114/Default.aspx",
+   "titre": "Ingénieur d'études en biologie moleculaire",
+   "employeur": "CNRS",
+   "lieu": "Montpellier",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-10",
+   "analyse": {
+    "score": 32,
+    "niveau": "eloigne",
+    "mode": "mots-cles",
+    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
+    "missions": [],
+    "prerequis": [],
+    "competences": [],
+    "atouts": [],
+    "manques": [],
+    "bloquants": [],
+    "conseil": "",
+    "salaire_min": 2521,
+    "salaire_max": 2521,
+    "duree_mois": null,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur d'études en biologie moleculaire (H/F)\n\n Nouveau\r\n\n Institut de génétique moléculaire de Montpellier\r\n\nMONTPELLIER • Hérault\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 3 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut de génétique molé"
+  },
+  {
+   "id": "cnrs-UMR5286-VIRPET-008",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5286-VIRPET-008/Default.aspx",
+   "titre": "ingenieur de recherche en biochimie et biologie moleculaire",
+   "employeur": "CNRS",
+   "lieu": "Lyon 08",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-09-23",
+   "analyse": {
+    "score": 32,
+    "niveau": "eloigne",
+    "mode": "mots-cles",
+    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
+    "missions": [],
+    "prerequis": [],
+    "competences": [],
+    "atouts": [],
+    "manques": [],
+    "bloquants": [],
+    "conseil": "",
+    "salaire_min": 3175,
+    "salaire_max": 3175,
+    "duree_mois": null,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "ingenieur de recherche en biochimie et biologie moleculaire H/F\n\n Centre de recherche en cancérologie de Lyon\r\n\nLYON 08 • Rhône\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 24 mois\r\n\n- \r\n BAC+5\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r"
+  },
+  {
+   "id": "cnrs-UAR3514-AMESAU-002",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UAR3514-AMESAU-002/Default.aspx",
+   "titre": "Chercheur en écologie chimique marine",
+   "employeur": "CNRS",
+   "lieu": "Biguglia",
    "region": "france",
    "contrat": "Chercheur CDD",
    "type": "emploi",
-   "date_publication": "2026-10-01",
+   "date_publication": "2026-09-30",
    "analyse": {
     "score": 30,
     "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 3072,
-    "salaire_max": 3072,
-    "duree_mois": null,
-    "date_limite": null,
+    "mode": "ia",
+    "resume": "Il s'agit d'un contrat de chercheur (post-doctorat) en écologie chimique marine en Corse. L'offre exige un doctorat, ce qui constitue un blocage absolu pour un jeune diplômé de niveau Master.",
+    "missions": [
+     "Mener des expérimentations de priming sur des herbiers marins",
+     "Confirmer le rôle des COVB comme médiateurs chimiques"
+    ],
+    "prerequis": [
+     "Doctorat"
+    ],
+    "competences": [
+     {
+      "nom": "écologie",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Formation en écologie et biologie"
+    ],
+    "manques": [
+     "Doctorat"
+    ],
+    "bloquants": [
+     {
+      "type": "diplome",
+      "texte": "Doctorat exigé"
+     }
+    ],
+    "conseil": "Ne postulez pas car ce poste de niveau chercheur/post-doctorat nécessite impérativement un doctorat.",
+    "salaire_min": 3041,
+    "salaire_max": 3467,
+    "duree_mois": 24,
+    "date_limite": "2026-10-21",
     "contact": null,
     "lien_these": false
    },
    "vu_le": "2026-10-13",
-   "extrait": "CH sur la Modélisation de l’évolution géodynamique de l’intérieur lunaire (H/F)\n\n GéoAzur\r\n\nVALBONNE • Alpes-Maritimes\n\n- \r\n Chercheur en contrat CDD\r\n\n- \r\n\n 20 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil"
+   "extrait": "Chercheur en écologie chimique marine (H/F)\n\n Sustainable TEchnologies for LittoraL Aquaculture and MArine REsearch\r\n\nBIGUGLIA • Corse\n\n- \r\n Chercheur en contrat CDD\r\n\n- \r\n\n 24 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre e"
   },
   {
    "id": "csp-2026-2410915",
@@ -2284,6 +2718,39 @@
    "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
   },
   {
+   "id": "cnrs-UMR7346-ANNPOR-187",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7346-ANNPOR-187/Default.aspx",
+   "titre": "Ingénieur d'étude en imagerie isotopique",
+   "employeur": "CNRS",
+   "lieu": "Marseille 09",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-08",
+   "analyse": {
+    "score": 30,
+    "niveau": "eloigne",
+    "mode": "mots-cles",
+    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
+    "missions": [],
+    "prerequis": [],
+    "competences": [],
+    "atouts": [],
+    "manques": [],
+    "bloquants": [],
+    "conseil": "",
+    "salaire_min": 2742,
+    "salaire_max": 2742,
+    "duree_mois": null,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur d'étude en imagerie isotopique (H/F)\n\n Centre de Physique des Particules de Marseille\r\n\nMARSEILLE 09 • Bouches-du-Rhône\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 18 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nCentre de Physique des Particule"
+  },
+  {
    "id": "cnrs-UMR5307-ERISER-002",
    "source": "CNRS",
    "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5307-ERISER-002/Default.aspx",
@@ -2350,103 +2817,67 @@
    "extrait": "Ingénieur d'étude sur la compréhension du vieillissement postmortem et recyclage de cellules PV à pérovskite (H/F)\n\n Laboratoire de réactivité et de chimie des solides\r\n\nAMIENS • Somme\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un "
   },
   {
-   "id": "cnrs-UMR8061-VICGYS-013",
+   "id": "cnrs-UMR7275-MALARH-018",
    "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8061-VICGYS-013/Default.aspx",
-   "titre": "Ingénieur d'études - palimpsestes latins",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7275-MALARH-018/Default.aspx",
+   "titre": "Ingénieur d'études en techniques biologiques",
    "employeur": "CNRS",
-   "lieu": "Paris 05",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-01",
-   "analyse": {
-    "score": 30,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 3817,
-    "salaire_max": 3817,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Ingénieur d'études - palimpsestes latins (H/F)\n\n Centre Léon Robin de recherche sur la pensée antique\r\n\nPARIS 05 • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'"
-  },
-  {
-   "id": "cnrs-UMR9015-NONNAD-009",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR9015-NONNAD-009/Default.aspx",
-   "titre": "Ingénieur d'études en TAL dans le projet ERA-NET CHIST-ERA FAIRClinical",
-   "employeur": "CNRS",
-   "lieu": "Gif Sur Yvette",
-   "region": "idf",
+   "lieu": "Valbonne",
+   "region": "france",
    "contrat": "Ingénieur/Technicien CDD",
    "type": "emploi",
    "date_publication": "2026-09-22",
    "analyse": {
     "score": 30,
     "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 2571,
-    "salaire_max": 2571,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur d'études en techniques biologiques au CNRS concerne la gestion de lignées de souris et l'expérimentation animale à Valbonne. Il est peu pertinent car il s'éloigne de l'écologie, du comportement animal et de la biostatistique.",
+    "missions": [
+     "Gérer les lignées de souris transgéniques de l'équipe",
+     "Assurer le suivi du bien-être des animaux et appliquer les règles d'éthique",
+     "Mettre au point des protocoles de préparation d'échantillons biologiques",
+     "Effectuer des analyses par microscopie de fluorescence et histologiques"
+    ],
+    "prerequis": [
+     "Formation à l'expérimentation animale de niveau A minimum",
+     "Biologie moléculaire, cellulaire et biochimie",
+     "Imagerie de fluorescence"
+    ],
+    "competences": [
+     {
+      "nom": "Biologie moléculaire",
+      "ok": false
+     },
+     {
+      "nom": "Imagerie de fluorescence",
+      "ok": false
+     }
+    ],
+    "atouts": [
+     "Formation en biologie (Master PRIAM)",
+     "Sensibilité au bien-être animal et à l'éthique"
+    ],
+    "manques": [
+     "Habilitation à l'expérimentation animale",
+     "Biologie cellulaire et moléculaire de paillasse",
+     "Imagerie"
+    ],
+    "bloquants": [
+     {
+      "type": "autre",
+      "texte": "Formation à l'expérimentation animale de niveau A minimum exigée"
+     }
+    ],
+    "conseil": "Passez votre formation à l'expérimentation animale si vous souhaitez viser ce type de poste en laboratoire, mais l'offre est très éloignée de votre projet de thèse en comportement animal.",
+    "salaire_min": 2521,
+    "salaire_max": 3743,
+    "duree_mois": 12,
+    "date_limite": "2026-10-13",
+    "contact": "Dr. Eric Honoré",
     "lien_these": false
    },
    "vu_le": "2026-10-13",
-   "extrait": "Ingénieur d'études en TAL dans le projet ERA-NET CHIST-ERA FAIRClinical (H/F)\n\n Laboratoire Interdisciplinaire des Sciences du Numérique\r\n\nGIF SUR YVETTE • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 4 mois\r\n\n- \r\n BAC+3/4\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse hand"
-  },
-  {
-   "id": "cnrs-UMR7159-CHRHER-004",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7159-CHRHER-004/Default.aspx",
-   "titre": "Ingénieur de Recherche  en calcul scientifique en appui à l’analyse de données océanographiques",
-   "employeur": "CNRS",
-   "lieu": "Paris 05",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-09-30",
-   "analyse": {
-    "score": 30,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 3238,
-    "salaire_max": 3238,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+   "extrait": "Ingénieur d'études en techniques biologiques (H/F)\n\n Institut de Pharmacologie Moléculaire et Cellulaire\r\n\nVALBONNE • Alpes-Maritimes\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut de Pharmacologie Mo"
   },
   {
    "id": "cnrs-UMR8539-ISARIC-132",
@@ -2512,7 +2943,7 @@
     "lien_these": false
    },
    "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+   "extrait": "Ingénieur de Recherche en Photonique H/F\n\n Laboratoire Matériaux et Phénomènes Quantiques\r\n\nPARIS 13 • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 18 mois\r\n\n- \r\n Doctorat\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nLaboratoire Matériaux et Phénomènes Quantiques\n\nTy"
   },
   {
    "id": "cnrs-UMR8539-ISARIC-131",
@@ -2545,205 +2976,7 @@
     "lien_these": false
    },
    "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UMR7161-CONENE-003",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7161-CONENE-003/Default.aspx",
-   "titre": "Ingénieur de recherche  - Preuves formelles basées sur des scenarios pour le logiciel concurrent",
-   "employeur": "CNRS",
-   "lieu": "Palaiseau",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-10",
-   "analyse": {
-    "score": 30,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 3237,
-    "salaire_max": 3505,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UAR2058-CHRLAM-001",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UAR2058-CHRLAM-001/Default.aspx",
-   "titre": "Ingénieur de recherche  Sciences participatives et recherche-action en santé-environnement",
-   "employeur": "CNRS",
-   "lieu": "Paris 13",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-06",
-   "analyse": {
-    "score": 30,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 3237,
-    "salaire_max": 3237,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UMR8502-SOPGUE-007",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8502-SOPGUE-007/Default.aspx",
-   "titre": "Ingénieur de recherche  pour réalisation et intégration de gatemons dans des résonateurs bi et tridimensionnels",
-   "employeur": "CNRS",
-   "lieu": "Orsay",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-09-22",
-   "analyse": {
-    "score": 30,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": null,
-    "salaire_max": null,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UAR2506-NICSAU-002",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UAR2506-NICSAU-002/Default.aspx",
-   "titre": "Ingénieur de recherche MLops",
-   "employeur": "CNRS",
-   "lieu": "Paris 06",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-07",
-   "analyse": {
-    "score": 30,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 3238,
-    "salaire_max": 3238,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UMR5254-SOPPUY-150",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5254-SOPPUY-150/Default.aspx",
-   "titre": "Ingénieur de recherche en chimie théorique et modélisation moléculaire des interactions métal-nanoplastique",
-   "employeur": "CNRS",
-   "lieu": "Pau",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-13",
-   "analyse": {
-    "score": 30,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 3143,
-    "salaire_max": 3403,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UMR8097-ARLMOL-008",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8097-ARLMOL-008/Default.aspx",
-   "titre": "Ingénieur de recherche en traitement, production et analyse des données",
-   "employeur": "CNRS",
-   "lieu": "Paris 14",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-07",
-   "analyse": {
-    "score": 30,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 3238,
-    "salaire_max": 3238,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+   "extrait": "Ingénieur de Recherche expert (H/F) en calcul numérique pour la modélisation du climat de la planète Mars\n\n Laboratoire de météorologie dynamique\r\n\nPARIS 05 • Paris\n\n- \r\n IT en contrat de projet\r\n\n- \r\n\n 60 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\n"
   },
   {
    "id": "cnrs-UMR168-ELISIL-012",
@@ -2759,90 +2992,103 @@
    "analyse": {
     "score": 30,
     "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
+    "mode": "ia",
+    "resume": "Poste d'ingénieur de recherche en analyse d'image et modélisation multiphysique pour modèles tumor-on-chip au CNRS Paris 05, contrat CDD de 18 mois. Peu pertinent pour un projet de thèse en comportement animal, car le domaine est la cancérologie et les compétences demandées (doctorat, analyse d'image, modélisation multiphysique) sont éloignées du profil.",
+    "missions": [
+     "Développer et optimiser des méthodes d’analyse quantitative d’images de microscopie 3D",
+     "Développer des modèles de simulation multiphysique des champs et gradients magnétiques",
+     "Analyser et formaliser les résultats dans des rapports techniques et scientifiques",
+     "Contribuer à la rédaction de publications scientifiques, de projets et de demandes de financement"
+    ],
+    "prerequis": [
+     "Doctorat en bioingénierie, biophysique, physique, ingénierie biomédicale ou domaine connexe",
+     "Expérience en analyse d’image scientifique (Fiji/ImageJ, Python ou équivalent)",
+     "Expérience ou bonnes bases en modélisation multiphysique (idéalement COMSOL)",
+     "Bonnes capacités de communication scientifique et de rédaction en anglais",
+     "Connaissances en culture cellulaire, microfluidique, modélisation 3D ou nanomagnétisme (appréciées)"
+    ],
+    "competences": [
+     {
+      "nom": "Doctorat en bioingénierie/biophysique/physique/ingénierie biomédicale",
+      "ok": false
+     },
+     {
+      "nom": "Analyse d’image scientifique",
+      "ok": false
+     },
+     {
+      "nom": "Maîtrise de Fiji/ImageJ",
+      "ok": false
+     },
+     {
+      "nom": "Maîtrise de Python ou outils équivalents",
+      "ok": false
+     },
+     {
+      "nom": "Modélisation multiphysique (COMSOL)",
+      "ok": false
+     },
+     {
+      "nom": "Communication scientifique et rédaction en anglais",
+      "ok": true
+     },
+     {
+      "nom": "Connaissances en culture cellulaire",
+      "ok": false
+     },
+     {
+      "nom": "Connaissances en microfluidique",
+      "ok": false
+     },
+     {
+      "nom": "Connaissances en modélisation 3D",
+      "ok": false
+     },
+     {
+      "nom": "Connaissances en nanomagnétisme",
+      "ok": false
+     },
+     {
+      "nom": "Rédaction de publications, projets, demandes de financement",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Anglais courant (IELTS 8.5)",
+     "Expérience de rédaction scientifique (co-auteur d’un article dans Scientific Reports)",
+     "Capacités d’analyse statistique et de modélisation sous R"
+    ],
+    "manques": [
+     "Doctorat",
+     "Expérience en analyse d’image scientifique",
+     "Maîtrise de Python/Fiji/ImageJ",
+     "Modélisation multiphysique/COMSOL",
+     "Connaissances en culture cellulaire, microfluidique, modélisation 3D, nanomagnétisme"
+    ],
+    "bloquants": [
+     {
+      "type": "diplome",
+      "texte": "Doctorat exigé"
+     },
+     {
+      "type": "experience",
+      "texte": "Expérience en analyse d’image scientifique (Fiji/ImageJ, Python ou équivalent) exigée"
+     },
+     {
+      "type": "experience",
+      "texte": "Expérience ou bonnes bases en modélisation multiphysique (COMSOL) exigée"
+     }
+    ],
+    "conseil": "Comme le doctorat est un bloquant incontournable, il est difficile de candidater directement. Vous pourriez toutefois mettre en avant votre forte capacité d’analyse statistique sous R et votre expérience de rédaction scientifique pour viser des postes d’ingénieur d’étude en analyse d’images plus accessibles (sans doctorat) dans des unités de biologie ou d’écologie.",
     "salaire_min": 3238,
     "salaire_max": 3506,
-    "duree_mois": null,
-    "date_limite": null,
+    "duree_mois": 18,
+    "date_limite": "2026-10-29",
     "contact": null,
     "lien_these": false
    },
    "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UMR5203-XIACON-003",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5203-XIACON-003/Default.aspx",
-   "titre": "Ingénieur d’étude  en modélisation moléculaire des protéines membranaires",
-   "employeur": "CNRS",
-   "lieu": "Montpellier",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-09",
-   "analyse": {
-    "score": 30,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 2522,
-    "salaire_max": 2522,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UMR9197-JULBOU-033",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR9197-JULBOU-033/Default.aspx",
-   "titre": "Ingénieur en analyse de données transcriptomiques",
-   "employeur": "CNRS",
-   "lieu": "Saclay",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-05",
-   "analyse": {
-    "score": 30,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 2467,
-    "salaire_max": 3786,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+   "extrait": "Ingénieur de recherche – Analyse d’image et modélisation multiphysique pour modèles tumor-on-chip (H/F)\n\n Physique des Cellules et Cancer\r\n\nPARIS 05 • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 18 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapé"
   },
   {
    "id": "csp-2026-2156917",
@@ -3123,49 +3369,16 @@
    "extrait": "Ingénieur d'étude (H/F) en biochimie et biologie cellulaire\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD d'1 an\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\nentre 2571,89 € et 2742 € bruts me"
   },
   {
-   "id": "cnrs-UMR7365-FLOCHA-011",
+   "id": "cnrs-UMR5193-VALCEC-024",
    "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7365-FLOCHA-011/Default.aspx",
-   "titre": "Ingénieur d'étude en biologie moléculaire et cellulaire",
-   "employeur": "CNRS",
-   "lieu": "Vandoeuvre Les Nancy",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-08",
-   "analyse": {
-    "score": 29,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 2522,
-    "salaire_max": 2522,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UMR5077-RAFGAL-009",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5077-RAFGAL-009/Default.aspx",
-   "titre": "Ingénieur d'études (/D) en biologie moléculaire et culture cellulaire",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5193-VALCEC-024/Default.aspx",
+   "titre": "Ingénieur d'études  Relations interpersonnelles et vote dans les campagnes populaires",
    "employeur": "CNRS",
    "lieu": "Toulouse",
    "region": "france",
    "contrat": "Ingénieur/Technicien CDD",
    "type": "emploi",
-   "date_publication": "2026-10-02",
+   "date_publication": "2026-09-23",
    "analyse": {
     "score": 29,
     "niveau": "eloigne",
@@ -3176,10 +3389,15 @@
     "competences": [],
     "atouts": [],
     "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": null,
-    "salaire_max": null,
+    "bloquants": [
+     {
+      "type": "experience",
+      "texte": "2 an(s) d'expérience demandé(s)"
+     }
+    ],
+    "conseil": "L'offre demande de l'expérience, mais les recruteurs en recherche publique acceptent souvent un jeune diplômé solide. Tente quand même : écris au contact en mettant en avant tes 10 mois de stages de recherche, tes analyses sous R et ta publication dans Scientific Reports.",
+    "salaire_min": 2497,
+    "salaire_max": 2879,
     "duree_mois": null,
     "date_limite": null,
     "contact": null,
@@ -3227,45 +3445,12 @@
    "extrait": "Ingénieur d'études en biologie cellulaire et immunologie\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n31200\n € brut/an \n Fourchette indicative pour les fonctionnaires\n No"
   },
   {
-   "id": "cnrs-UMR5535-SARADE-114",
+   "id": "cnrs-UMR5107-SOPHEU0-090",
    "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5535-SARADE-114/Default.aspx",
-   "titre": "Ingénieur d'études en biologie moleculaire",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5107-SOPHEU0-090/Default.aspx",
+   "titre": "Ingénieur d'études en développement de dispositifs expérimentaux",
    "employeur": "CNRS",
-   "lieu": "Montpellier",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-10",
-   "analyse": {
-    "score": 29,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 2521,
-    "salaire_max": 2521,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UPR3212-JULQUI-038",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UPR3212-JULQUI-038/Default.aspx",
-   "titre": "Ingénieur de recherche en neurobiologie cellulaire",
-   "employeur": "CNRS",
-   "lieu": "Strasbourg",
+   "lieu": "Talence",
    "region": "france",
    "contrat": "Ingénieur/Technicien CDD",
    "type": "emploi",
@@ -3282,15 +3467,15 @@
     "manques": [],
     "bloquants": [],
     "conseil": "",
-    "salaire_min": null,
-    "salaire_max": null,
+    "salaire_min": 2496,
+    "salaire_max": 2662,
     "duree_mois": null,
     "date_limite": null,
     "contact": null,
     "lien_these": false
    },
    "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+   "extrait": "Ingénieur d'études en développement de dispositifs expérimentaux\n\n Nouveau\r\n\n Centre lasers intenses et applications\r\n\nTALENCE • Gironde\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nCentre lasers intenses e"
   },
   {
    "id": "cnrs-UMR5086-SYLMAN-001",
@@ -3317,39 +3502,6 @@
     "conseil": "",
     "salaire_min": 2521,
     "salaire_max": 2521,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UMR5286-VIRPET-008",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5286-VIRPET-008/Default.aspx",
-   "titre": "ingenieur de recherche en biochimie et biologie moleculaire",
-   "employeur": "CNRS",
-   "lieu": "Lyon 08",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-09-23",
-   "analyse": {
-    "score": 29,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 3175,
-    "salaire_max": 3175,
     "duree_mois": null,
     "date_limite": null,
     "contact": null,
@@ -3416,143 +3568,6 @@
     "conseil": "",
     "salaire_min": null,
     "salaire_max": null,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UMR5203-STEBAR-012",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5203-STEBAR-012/Default.aspx",
-   "titre": "Ingénieur d'étude  en techniques biologiques",
-   "employeur": "CNRS",
-   "lieu": "Montpellier",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-09-30",
-   "analyse": {
-    "score": 26,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 2521,
-    "salaire_max": 2521,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UMR7346-ANNPOR-187",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7346-ANNPOR-187/Default.aspx",
-   "titre": "Ingénieur d'étude en imagerie isotopique",
-   "employeur": "CNRS",
-   "lieu": "Marseille 09",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-08",
-   "analyse": {
-    "score": 26,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 2742,
-    "salaire_max": 2742,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UMR5193-VALCEC-024",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5193-VALCEC-024/Default.aspx",
-   "titre": "Ingénieur d'études  Relations interpersonnelles et vote dans les campagnes populaires",
-   "employeur": "CNRS",
-   "lieu": "Toulouse",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-09-23",
-   "analyse": {
-    "score": 26,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [
-     {
-      "type": "experience",
-      "texte": "2 an(s) d'expérience demandé(s)"
-     }
-    ],
-    "conseil": "L'offre demande de l'expérience, mais les recruteurs en recherche publique acceptent souvent un jeune diplômé solide. Tente quand même : écris au contact en mettant en avant tes 10 mois de stages de recherche, tes analyses sous R et ta publication dans Scientific Reports.",
-    "salaire_min": 2497,
-    "salaire_max": 2879,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
-  },
-  {
-   "id": "cnrs-UMR5107-SOPHEU0-090",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5107-SOPHEU0-090/Default.aspx",
-   "titre": "Ingénieur d'études en développement de dispositifs expérimentaux",
-   "employeur": "CNRS",
-   "lieu": "Talence",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-10-12",
-   "analyse": {
-    "score": 26,
-    "niveau": "eloigne",
-    "mode": "mots-cles",
-    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": 2496,
-    "salaire_max": 2662,
     "duree_mois": null,
     "date_limite": null,
     "contact": null,
@@ -3951,6 +3966,101 @@
     "salaire_max": 2522,
     "duree_mois": null,
     "date_limite": null,
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+  },
+  {
+   "id": "cnrs-UMR5203-XIACON-003",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5203-XIACON-003/Default.aspx",
+   "titre": "Ingénieur d’étude  en modélisation moléculaire des protéines membranaires",
+   "employeur": "CNRS",
+   "lieu": "Montpellier",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-09",
+   "analyse": {
+    "score": 25,
+    "niveau": "eloigne",
+    "mode": "ia",
+    "resume": "Ingénieur d’étude en modélisation moléculaire des protéines membranaires au CNRS Montpellier, contrat CDD de 12 mois. Le poste concerne la chimie computationnelle et le drug design, éloigné du comportement animal et nécessitant des compétences en Python, docking et dynamique moléculaire que le candidat ne possède pas.",
+    "missions": [
+     "Préparation et analyse de structures d’enzymes transmembranaires et de leurs sites de liaison",
+     "Réalisation de campagnes de criblage virtuel par docking et cofolding protéine–ligand par apprentissage profond",
+     "Étude des complexes par dynamique moléculaire et analyse des interactions ligand–protéine",
+     "Analyse des relations structure–activité (SAR)",
+     "Proposition de modifications structurales pour l’optimisation des hits",
+     "Développement et automatisation de workflows de modélisation et d’analyse"
+    ],
+    "prerequis": [
+     "Formation Master 2 / ingénieur en bioinformatique, chimie computationnelle, biophysique, biologie quantitative, biologie structurale ou domaine connexe",
+     "Expérience en apprentissage automatique, analyse structurale, docking, dynamique moléculaire, programmation Python, ou analyse statistique avec R",
+     "Connaissance des protéines membranaires et/ou du drug design (atout)"
+    ],
+    "competences": [
+     {
+      "nom": "Master 2 en bioinformatique/chimie computationnelle/biophysique/biologie quantitative/biologie structurale",
+      "ok": false
+     },
+     {
+      "nom": "Expérience en apprentissage automatique",
+      "ok": false
+     },
+     {
+      "nom": "Analyse structurale",
+      "ok": false
+     },
+     {
+      "nom": "Docking",
+      "ok": false
+     },
+     {
+      "nom": "Dynamique moléculaire",
+      "ok": false
+     },
+     {
+      "nom": "Programmation Python",
+      "ok": false
+     },
+     {
+      "nom": "Analyse statistique avec R",
+      "ok": true
+     },
+     {
+      "nom": "Connaissance des protéines membranaires",
+      "ok": false
+     },
+     {
+      "nom": "Connaissance du drug design",
+      "ok": false
+     }
+    ],
+    "atouts": [
+     "Maîtrise de R et de la biostatistique",
+     "Anglais courant",
+     "Expérience de rédaction scientifique"
+    ],
+    "manques": [
+     "Master 2 en bioinformatique/chimie computationnelle/biophysique/biologie quantitative/biologie structurale",
+     "Expérience en apprentissage automatique, docking, dynamique moléculaire",
+     "Programmation Python",
+     "Connaissances en protéines membranaires et drug design"
+    ],
+    "bloquants": [
+     {
+      "type": "experience",
+      "texte": "Expérience en apprentissage automatique, analyse structurale, docking, dynamique moléculaire, programmation Python ou analyse statistique avec R souhaitée"
+     }
+    ],
+    "conseil": "Le poste demande des compétences en modélisation moléculaire et en programmation Python que vous n’avez pas. Pour rester dans votre objectif de thèse en comportement animal, privilégiez des offres d’analyse de données ou d’éthologie où votre maîtrise de R et votre expérience de terrain seront valorisées.",
+    "salaire_min": 2522,
+    "salaire_max": null,
+    "duree_mois": 12,
+    "date_limite": "2026-10-30",
     "contact": null,
     "lien_these": false
    },
@@ -4862,6 +4972,68 @@
    "extrait": "Ingénieur d'étude H/F en biologie moléculaire (épitranscriptomique virale)\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD de 2 ans\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n2571 à 3500 € bru"
   },
   {
+   "id": "csp-2026-2258606",
+   "source": "Choisir le service public",
+   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/ingenieur-detude-en-biologie-moleculaire-et--cellulaire--reference-2026-2258606/",
+   "titre": "Ingénieur détude, en biologie moléculaire et cellulaire",
+   "employeur": "Inserm Délégation Régionale Paris IDF Centre Nord",
+   "lieu": "Paris (75)",
+   "region": "idf",
+   "contrat": "CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-13",
+   "analyse": {
+    "score": 20,
+    "niveau": "hors",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur d'études à l'Inserm porte sur la biologie moléculaire, cellulaire et la physiologie appliquée à l'obésité et au diabète au sein de l'Institut Cochin à Paris. Il ne correspond ni au comportement animal ni aux biostatistiques visés par le candidat, et exige de la biologie de paillasse qu'il ne possède pas.",
+    "missions": [
+     "Participer à un projet de recherche sur les régulateurs dans l'obésité et le diabète",
+     "Définir l'ensemble des techniques de biologie nécessaires à la réalisation expérimentale",
+     "Traiter, analyser, interpréter et valider les résultats"
+    ],
+    "prerequis": [
+     "Master 2 ou diplôme d'ingénieur en biologie",
+     "Expertise en biologie cellulaire, culture de cellules et physiologie",
+     "1 an d'expérience en laboratoire de recherche souhaitée"
+    ],
+    "competences": [
+     {
+      "nom": "biologie cellulaire",
+      "ok": false
+     },
+     {
+      "nom": "analyse de données",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Master 2 en biologie",
+     "Localisation à Paris"
+    ],
+    "manques": [
+     "Biologie moléculaire et cellulaire",
+     "Culture cellulaire",
+     "Expérience en laboratoire de recherche"
+    ],
+    "bloquants": [
+     {
+      "type": "experience",
+      "texte": "1 an d'expérience en laboratoire de recherche souhaitée"
+     }
+    ],
+    "conseil": "Ce poste est très éloigné de l'éthologie et de la biostatistique. Mieux vaut concentrer vos efforts sur des offres en écologie ou comportement animal.",
+    "salaire_min": null,
+    "salaire_max": null,
+    "duree_mois": 13,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": true
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur détude, en biologie moléculaire et cellulaire \nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires"
+  },
+  {
    "id": "cnrs-UMR8104-ANDOLD-001",
    "source": "CNRS",
    "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8104-ANDOLD-001/Default.aspx",
@@ -5586,6 +5758,69 @@
    "extrait": "Ingénieur d'étude en biologie animale \nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non renseignée \n"
   },
   {
+   "id": "cnrs-UMR9015-NONNAD-009",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR9015-NONNAD-009/Default.aspx",
+   "titre": "Ingénieur d'études en TAL dans le projet ERA-NET CHIST-ERA FAIRClinical",
+   "employeur": "CNRS",
+   "lieu": "Gif Sur Yvette",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-09-22",
+   "analyse": {
+    "score": 15,
+    "niveau": "hors",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur d'études en traitement automatique du langues (TAL) et apprentissage profond se déroule en Île-de-France mais relève de l'informatique pure. Il ne correspond pas aux compétences en biostatistique écologique ou éthologie du candidat.",
+    "missions": [
+     "Identifier les sources de données nécessaires à l'extraction",
+     "Développer des pipelines d’extraction d’information",
+     "Évaluer les méthodes d’extraction d’information"
+    ],
+    "prerequis": [
+     "Master en informatique, en traitement automatique des langues ou similaire",
+     "Compétences en apprentissage automatique supervisé et semi-supervisé, y compris l'apprentissage profond",
+     "Expérience en traitement automatique des langues",
+     "Maîtrise de l'anglais"
+    ],
+    "competences": [
+     {
+      "nom": "Master",
+      "ok": true
+     },
+     {
+      "nom": "Maîtrise de l'anglais",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Diplôme de Master",
+     "Solide niveau en anglais"
+    ],
+    "manques": [
+     "Master en informatique ou TAL",
+     "Expérience en traitement automatique des langues et deep learning",
+     "Python / compétences informatiques avancées non mentionnées"
+    ],
+    "bloquants": [
+     {
+      "type": "diplome",
+      "texte": "Master en informatique, TAL ou similaire exigé"
+     }
+    ],
+    "conseil": "Poste en informatique pure inadapté au profil orienté biologie/écologie.",
+    "salaire_min": 2571,
+    "salaire_max": 2571,
+    "duree_mois": 4,
+    "date_limite": "2026-10-13",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur d'études en TAL dans le projet ERA-NET CHIST-ERA FAIRClinical (H/F)\n\n Laboratoire Interdisciplinaire des Sciences du Numérique\r\n\nGIF SUR YVETTE • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 4 mois\r\n\n- \r\n BAC+3/4\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse hand"
+  },
+  {
    "id": "csp-2025-2079703",
    "source": "Choisir le service public",
    "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/ingenieur-d-etudes-en-biologie-reference-2025-2079703/",
@@ -5669,6 +5904,108 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur d'études en biologie\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD d'1 an\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires"
+  },
+  {
+   "id": "joo-552667474769",
+   "source": "fitly.work",
+   "url": "https://jooble.org/desc/3727916070687290260?ckey=comportement+animal&rgn=55175&pos=2&groupId=39826&elckey=7851567327176121213&p=1&aq=-5561180388286152603&cid=21476&jobAge=129&brelb=15&bscr=28.384148&scr=28.384148",
+   "titre": "Lead UX (F/H) - CDI - Annecy",
+   "employeur": "Scalian",
+   "lieu": "France",
+   "region": "france",
+   "contrat": "Full-time",
+   "type": "emploi",
+   "date_publication": "2026-10-08",
+   "salaire_texte": "",
+   "analyse": {
+    "score": 15,
+    "niveau": "hors",
+    "mode": "mots-cles",
+    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
+    "missions": [],
+    "prerequis": [],
+    "competences": [],
+    "atouts": [],
+    "manques": [],
+    "bloquants": [],
+    "conseil": "",
+    "salaire_min": null,
+    "salaire_max": null,
+    "duree_mois": null,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "...les parcours utilisateurs Réaliser des userflows, wireframes et prototypes interactifs Définir les logiques d'interaction et les comportements dynamiques Contribuer fortement aux livrables UX UX Research Réaliser des benchmarks et des audits Participer aux recherches..."
+  },
+  {
+   "id": "joo-afa22406503c",
+   "source": "fitly.work",
+   "url": "https://jooble.org/away/-7737218405562856588?p=1&pos=1&rgn=55175&cid=21476&ckey=comportement+animal&jobAge=105&brelb=15&scr=28.39833&bscr=28.39833&aq=-5561180388286152603&elckey=7851567327176121213",
+   "titre": "Lead UX H/F",
+   "employeur": "NEXTON",
+   "lieu": "France",
+   "region": "france",
+   "contrat": "Full-time",
+   "type": "emploi",
+   "date_publication": "2026-10-09",
+   "salaire_texte": "",
+   "analyse": {
+    "score": 15,
+    "niveau": "hors",
+    "mode": "mots-cles",
+    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
+    "missions": [],
+    "prerequis": [],
+    "competences": [],
+    "atouts": [],
+    "manques": [],
+    "bloquants": [],
+    "conseil": "",
+    "salaire_min": null,
+    "salaire_max": null,
+    "duree_mois": null,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "...riences digitales délivrées. Tes missions : Concevoir les parcours utilisateurs et définir les logiques d'interaction ainsi que les comportements dynamiques. Réaliser les userflows, wireframes et prototypes interactifs complexes. Participer activement aux recherches..."
+  },
+  {
+   "id": "joo-0b3034091a5c",
+   "source": "fitly.work",
+   "url": "https://jooble.org/away/-3188173077488009406?p=1&pos=6&rgn=55175&cid=21476&ckey=comportement+animal&jobAge=153&brelb=15&scr=12.261677&bscr=12.261677&aq=-5561180388286152603&elckey=7851567327176121213",
+   "titre": "Lead UX Researcher - H/F/X",
+   "employeur": "Accor",
+   "lieu": "France",
+   "region": "france",
+   "contrat": "Full-time",
+   "type": "emploi",
+   "date_publication": "2026-10-07",
+   "salaire_texte": "",
+   "analyse": {
+    "score": 15,
+    "niveau": "hors",
+    "mode": "mots-cles",
+    "resume": "Analyse automatique simplifiée (IA indisponible ce jour-là). Ouvre l'offre pour le détail.",
+    "missions": [],
+    "prerequis": [],
+    "competences": [],
+    "atouts": [],
+    "manques": [],
+    "bloquants": [],
+    "conseil": "",
+    "salaire_min": null,
+    "salaire_max": null,
+    "duree_mois": null,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "...équipe Voice of Customer joue un rôle central pour guider la conception de nos produits digitaux alignés sur les besoins et les comportements des utilisateurs et faire grandir une culture centrée client. Votre mission : En tant que Lead UX Research, votre mission est..."
   },
   {
    "id": "cnrs-UMR8617-VIRKAT-013",
@@ -6303,6 +6640,65 @@
    "extrait": "Chargé de projet Écologie Industrielle Territoriale F/H\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n"
   },
   {
+   "id": "cnrs-UMR8197-VALHER-258",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8197-VALHER-258/Default.aspx",
+   "titre": "Chercheur en Dynamique des interactions intestine-cerveau chez la larve du poisson zèbre.",
+   "employeur": "CNRS",
+   "lieu": "Paris 05",
+   "region": "idf",
+   "contrat": "Chercheur CDD",
+   "type": "emploi",
+   "date_publication": "2026-09-29",
+   "analyse": {
+    "score": 10,
+    "niveau": "hors",
+    "mode": "ia",
+    "resume": "Offre de chercheur post-doctoral ou équivalent nécessitant un doctorat. Le profil de jeune diplômé en Master ne permet pas de postuler.",
+    "missions": [
+     "Recherche fondamentale sur les interactions intestin-cerveau chez le poisson zèbre",
+     "Expériences d'imagerie bi-photonique et optogénétique",
+     "Analyser les données et écrire des articles"
+    ],
+    "prerequis": [
+     "Doctorat",
+     "Compétences en Matlab et Python"
+    ],
+    "competences": [
+     {
+      "nom": "poisson zèbre",
+      "ok": true
+     },
+     {
+      "nom": "Matlab",
+      "ok": false
+     }
+    ],
+    "atouts": [
+     "Expérience préalable sur le poisson zèbre (stage M1)"
+    ],
+    "manques": [
+     "Doctorat",
+     "Maîtrise de Matlab et Python"
+    ],
+    "bloquants": [
+     {
+      "type": "diplome",
+      "texte": "Doctorat exigé"
+     }
+    ],
+    "conseil": "Le niveau doctorat exigé bloque l'accès à ce poste de chercheur.",
+    "salaire_min": 3131,
+    "salaire_max": 4806,
+    "duree_mois": 22,
+    "date_limite": "2026-10-20",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Chercheur en Dynamique des interactions intestine-cerveau chez la larve du poisson zèbre.\n\n Institut de biologie de l'Ecole Normale Supérieure\r\n\nPARIS 05 • Paris\n\n- \r\n Chercheur en contrat CDD\r\n\n- \r\n\n 22 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleu"
+  },
+  {
    "id": "csp-O095260914000974",
    "source": "Choisir le service public",
    "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/dga-ecologie-et-cadre-de-vie---communaute-d-agglomeration-de-cergy-pontoise-reference-O095260914000974/",
@@ -6360,6 +6756,259 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "DGA Ecologie et cadre de vie - Communauté d'Agglomération de Cergy Pontoise\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les "
+  },
+  {
+   "id": "cnrs-UMR8038-BRUSAR-001",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8038-BRUSAR-001/Default.aspx",
+   "titre": "Ingénieur d'étude  en biologie moléculaire (épitranscriptomique virale)",
+   "employeur": "CNRS",
+   "lieu": "Paris 06",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-09-24",
+   "analyse": {
+    "score": 10,
+    "niveau": "hors",
+    "mode": "ia",
+    "resume": "Il s'agit d'un poste d'ingénieur d'études en biologie moléculaire et épitranscriptomique virale au CNRS à Paris. Ce poste ne correspond ni au domaine du comportement animal ni aux biostatistiques recherchés par le candidat.",
+    "missions": [
+     "Sondage chimique SHAPE des ARN viraux",
+     "Modélisation de la structure des ARN",
+     "Cartographie des sites de méthylation sur les ARN viraux"
+    ],
+    "prerequis": [
+     "BAC+5",
+     "Manipulation d'acides nucléiques et d'ARN"
+    ],
+    "competences": [
+     {
+      "nom": "biologie moléculaire",
+      "ok": false
+     }
+    ],
+    "atouts": [
+     "Niveau Master 5 validé",
+     "Localisation en Île-de-France"
+    ],
+    "manques": [
+     "Compétences en biologie moléculaire de paillasse",
+     "Expérience en virologie ou épitranscriptomique"
+    ],
+    "bloquants": [
+     {
+      "type": "autre",
+      "texte": "Domaine scientifique totalement éloigné de l'éthologie et de l'écologie comportementale."
+     }
+    ],
+    "conseil": "Passez votre chemin, le domaine est trop éloigné de vos objectifs de thèse en comportement animal.",
+    "salaire_min": 2571,
+    "salaire_max": 3500,
+    "duree_mois": 24,
+    "date_limite": "2026-10-15",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+  },
+  {
+   "id": "cnrs-UMR7314-FRESAU-022",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7314-FRESAU-022/Default.aspx",
+   "titre": "Ingénieur d'étude en développement de cellules solaires transparentes à jonction solide",
+   "employeur": "CNRS",
+   "lieu": "Amiens",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-09-28",
+   "analyse": {
+    "score": 10,
+    "niveau": "hors",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur d'étude au CNRS concerne le développement de cellules solaires transparentes à jonction solide au sein d'un laboratoire de chimie des solides. Il s'agit d'un domaine de physique-chimie des matériaux totalement hors du profil et des intérêts du candidat.",
+    "missions": [
+     "Optimiser les conditions de fabrication de la cellule à colorant à jonction solide",
+     "Étudier les performances électriques sous différentes conditions d'éclairage",
+     "Étudier la stabilité des systèmes avec différentes technologies d'encapsulation",
+     "Réaliser la caractérisation par méthodes spectroscopiques"
+    ],
+    "prerequis": [
+     "BAC+5",
+     "Expérience dans le domaine du photovoltaïque et des cellules à colorant",
+     "Compétences sur des techniques d'impression (sérigraphie, spin coating)",
+     "Maitrise de l'anglais"
+    ],
+    "competences": [
+     {
+      "nom": "BAC+5",
+      "ok": true
+     },
+     {
+      "nom": "anglais",
+      "ok": true
+     },
+     {
+      "nom": "photovoltaïque",
+      "ok": false
+     }
+    ],
+    "atouts": [
+     "Niveau Bac+5 validé"
+    ],
+    "manques": [
+     "Aucune compétence en physique des matériaux ou photovoltaïque",
+     "Absence d'expérience en laboratoire de chimie"
+    ],
+    "bloquants": [
+     {
+      "type": "experience",
+      "texte": "Vous devez avoir une experience dans le domaine du photovoltaïque et en particulier des cellules à colorant"
+     }
+    ],
+    "conseil": "Ne pas postuler, ce poste ne correspond ni au domaine scientifique ni au projet professionnel.",
+    "salaire_min": 2496,
+    "salaire_max": 3706,
+    "duree_mois": 9,
+    "date_limite": "2026-10-19",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur d'étude en développement de cellules solaires transparentes à jonction solide (H/F)\n\n Laboratoire de réactivité et de chimie des solides\r\n\nAMIENS • Somme\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 9 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n"
+  },
+  {
+   "id": "cnrs-UMR7646-CHRJOS-005",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7646-CHRJOS-005/Default.aspx",
+   "titre": "Ingénieur d'étude en simulation d'écoulements multiphasiques",
+   "employeur": "CNRS",
+   "lieu": "Palaiseau",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-05",
+   "analyse": {
+    "score": 10,
+    "niveau": "hors",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur d'étude en simulation d'écoulements multiphasiques à Palaiseau requiert des compétences en mécanique des fluides et calcul intensif. Ce profil technique en physique-mathématiques ne correspond pas au parcours en biologie et comportement animal du candidat.",
+    "missions": [
+     "Mener des simulations numériques d'écoulements multiphasiques",
+     "Lancer des simulations en calcul intensif sur Basilisk et StarCCM+",
+     "Traiter les données pour obtenir un modèle physique"
+    ],
+    "prerequis": [
+     "BAC+3/4",
+     "Expertise en mécanique des fluides",
+     "Expertise en simulation numérique des écoulements multiphasiques",
+     "Maitrise des logiciels Basilisk et StarCCM+",
+     "1 à 4 années d'expérience"
+    ],
+    "competences": [
+     {
+      "nom": "Mécanique des fluides",
+      "ok": false
+     },
+     {
+      "nom": "Simulation numérique",
+      "ok": false
+     },
+     {
+      "nom": "Basilisk",
+      "ok": false
+     }
+    ],
+    "atouts": [
+     "Diplôme BAC+5 compatible avec le niveau requis"
+    ],
+    "manques": [
+     "Absence totale de compétences en mécanique des fluides et simulation numérique physique"
+    ],
+    "bloquants": [
+     {
+      "type": "experience",
+      "texte": "1 à 4 années d'expérience exigées"
+     },
+     {
+      "type": "autre",
+      "texte": "Compétences techniques spécifiques en physique non possédées (mécanique des fluides, logiciels dédiés)"
+     }
+    ],
+    "conseil": "Offre non adaptée au profil biologique et biostatistique du candidat.",
+    "salaire_min": 2571,
+    "salaire_max": 2571,
+    "duree_mois": 6,
+    "date_limite": "2026-10-26",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur d'étude en simulation d'écoulements multiphasiques (H/F)\n\n Laboratoire d'Hydrodynamique\r\n\nPALAISEAU • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nLaboratoire d'Hydrodynamique\n\nType de Con"
+  },
+  {
+   "id": "cnrs-UAR2506-NICSAU-002",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UAR2506-NICSAU-002/Default.aspx",
+   "titre": "Ingénieur de recherche MLops",
+   "employeur": "CNRS",
+   "lieu": "Paris 06",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-07",
+   "analyse": {
+    "score": 10,
+    "niveau": "hors",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur de recherche MLOps au CNRS vise à développer l'offre de service IA et à piloter des formations en sciences humaines et sociales. Il est totalement inadapté au profil du candidat, qui se spécialise en écologie et biostatistique comportementale.",
+    "missions": [
+     "Déployer des modèles et assurer leur mise à disposition",
+     "Participer à la mise en place d'un registre national des modèles et des données",
+     "Suivre l'utilisation des modèles et détecter les dérives statistiques",
+     "Participer au pilotage et à la réalisation du plan de formation en ingénierie IA"
+    ],
+    "prerequis": [
+     "BAC+5",
+     "Maîtrise de Docker et architectures d'orchestration",
+     "Maîtrise du deep learning",
+     "Langages de programmation (Python)",
+     "Anglais B2 minimum"
+    ],
+    "competences": [
+     {
+      "nom": "Anglais courant",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Solide niveau d'anglais"
+    ],
+    "manques": [
+     "Python",
+     "Deep learning",
+     "Docker",
+     "MLOps",
+     "Administration système"
+    ],
+    "bloquants": [
+     {
+      "type": "autre",
+      "texte": "Compétences techniques en MLOps, Deep Learning et Python non possédées"
+     }
+    ],
+    "conseil": "Poste non pertinent, axé sur l'informatique pure et l'IA en sciences humaines, très éloigné du comportement animal.",
+    "salaire_min": 3238,
+    "salaire_max": null,
+    "duree_mois": 24,
+    "date_limite": "2026-10-28",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur de recherche MLops (H/F)\n\n UAR PROGEDO\r\n\nPARIS 06 • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 24 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nUAR PROGEDO\n\nType de Contrat\n\nIT en contrat CDD\n\nTemps de Travail\n\nComplet\n\nLieu de Travail\n\n7"
   },
   {
    "id": "cnrs-UMR5151-SARLER-001",
@@ -9155,6 +9804,56 @@
    "extrait": "DNRT - Analyste opérationnel - section ultra gauche, autonomismes et écologie radicale\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indi"
   },
   {
+   "id": "cnrs-UMR5254-SOPPUY-150",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5254-SOPPUY-150/Default.aspx",
+   "titre": "Ingénieur de recherche en chimie théorique et modélisation moléculaire des interactions métal-nanoplastique",
+   "employeur": "CNRS",
+   "lieu": "Pau",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-13",
+   "analyse": {
+    "score": 5,
+    "niveau": "hors",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur de recherche en chimie théorique et modélisation moléculaire s'adresse à des titulaires d'un doctorat. Il ne correspond ni au domaine disciplinaire (chimie/nanoplastiques) ni au niveau requis du candidat.",
+    "missions": [
+     "Mettre en œuvre des approches de chimie quantique (DFT) et de dynamique moléculaire",
+     "Construire et valider des modèles moléculaires de nanoplastiques",
+     "Étudier les interactions entre métaux et nanoplastiques",
+     "Établir des liens entre modélisation et données expérimentales"
+    ],
+    "prerequis": [
+     "Doctorat"
+    ],
+    "competences": [],
+    "atouts": [],
+    "manques": [
+     "Doctorat",
+     "Chimie théorique",
+     "Chimie quantique et DFT",
+     "Dynamique moléculaire"
+    ],
+    "bloquants": [
+     {
+      "type": "diplome",
+      "texte": "Doctorat exigé"
+     }
+    ],
+    "conseil": "Offre à ignorer, totalement hors domaine et bloquée par l'exigence d'un doctorat.",
+    "salaire_min": 3143,
+    "salaire_max": 3403,
+    "duree_mois": 12,
+    "date_limite": "2026-11-03",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur de recherche en chimie théorique et modélisation moléculaire des interactions métal-nanoplastique - H/F\n\n Nouveau\r\n\n Institut des sciences analytiques et de physico-chimie pour l'environnement et les matériaux\r\n\nPAU • Pyrénées-Atlantiques\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n Doctorat\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de "
+  },
+  {
    "id": "cnrs-UMR7009-FREBON-056",
    "source": "CNRS",
    "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7009-FREBON-056/Default.aspx",
@@ -9759,6 +10458,59 @@
    "extrait": ""
   },
   {
+   "id": "cnrs-UMR7329-VALMER-100",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7329-VALMER-100/Default.aspx",
+   "titre": "CH sur la Modélisation de l’évolution géodynamique de l’intérieur lunaire",
+   "employeur": "CNRS",
+   "lieu": "Valbonne",
+   "region": "france",
+   "contrat": "Chercheur CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-01",
+   "analyse": {
+    "score": 0,
+    "niveau": "hors",
+    "mode": "ia",
+    "resume": "Pas une offre : il s'agit d'un contrat postdoctoral en géodynamique et modélisation de l'intérieur lunaire exigeant un doctorat, ce qui ne correspond pas au profil de jeune diplômé de niveau Master du candidat.",
+    "missions": [
+     "Contraindre l'évolution thermochimique et géodynamique de l'intérieur lunaire",
+     "Mettre en œuvre des conditions dans des simulations numériques de géodynamique"
+    ],
+    "prerequis": [
+     "Doctorat",
+     "Formation en pétrologie et en géodynamique"
+    ],
+    "competences": [
+     {
+      "nom": "analyse de données",
+      "ok": true
+     }
+    ],
+    "atouts": [],
+    "manques": [
+     "Doctorat",
+     "Pétrologie",
+     "Géodynamique"
+    ],
+    "bloquants": [
+     {
+      "type": "diplome",
+      "texte": "Doctorat exigé"
+     }
+    ],
+    "conseil": "Ne pas postuler, cette offre s'adresse exclusivement à des titulaires d'un doctorat en géophysique.",
+    "salaire_min": 3072,
+    "salaire_max": null,
+    "duree_mois": 20,
+    "date_limite": "2026-10-22",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "CH sur la Modélisation de l’évolution géodynamique de l’intérieur lunaire (H/F)\n\n GéoAzur\r\n\nVALBONNE • Alpes-Maritimes\n\n- \r\n Chercheur en contrat CDD\r\n\n- \r\n\n 20 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil"
+  },
+  {
    "id": "cnrs-UMR9012-VALPIA-041",
    "source": "CNRS",
    "url": "https://emploi.cnrs.fr/Offres/CDD/UMR9012-VALPIA-041/Default.aspx",
@@ -9955,6 +10707,181 @@
    },
    "vu_le": "2026-10-13",
    "extrait": ""
+  },
+  {
+   "id": "cnrs-UMR8061-VICGYS-013",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8061-VICGYS-013/Default.aspx",
+   "titre": "Ingénieur d'études - palimpsestes latins",
+   "employeur": "CNRS",
+   "lieu": "Paris 05",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-01",
+   "analyse": {
+    "score": 0,
+    "niveau": "hors",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur d'études concerne le déchiffrement et l'édition de manuscrits latins anciens (palimpsestes). Il ne correspond pas du tout au domaine du candidat en biologie, écologie ou biostatistique.",
+    "missions": [
+     "Déchiffrement et transcription de l'écriture inférieure du palimpseste de Gaius d'Autun",
+     "Participation à l'étude d'autres palimpsestes du projet PALAI",
+     "Contribution aux campagnes d'imagerie",
+     "Publication des résultats",
+     "Documentation et gestion des données de recherche"
+    ],
+    "prerequis": [
+     "Doctorat",
+     "Excellente maîtrise du latin",
+     "Bonne connaissance du grec ancien",
+     "Formation en paléographie latine"
+    ],
+    "competences": [
+     {
+      "nom": "Master",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Formation universitaire de niveau Master"
+    ],
+    "manques": [
+     "Doctorat",
+     "Maîtrise du latin et du grec ancien",
+     "Formation en paléographie latine"
+    ],
+    "bloquants": [
+     {
+      "type": "diplome",
+      "texte": "Doctorat exigé"
+     },
+     {
+      "type": "autre",
+      "texte": "Maîtrise du latin et paléographie latine exigées"
+     }
+    ],
+    "conseil": "Offre totalement hors domaine (philologie classique / humanités numériques), non recommandée.",
+    "salaire_min": 2572,
+    "salaire_max": 3817,
+    "duree_mois": 12,
+    "date_limite": "2026-10-22",
+    "contact": "Victor Gysembergh",
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Ingénieur d'études - palimpsestes latins (H/F)\n\n Centre Léon Robin de recherche sur la pensée antique\r\n\nPARIS 05 • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'"
+  },
+  {
+   "id": "cnrs-UMR7161-CONENE-003",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR7161-CONENE-003/Default.aspx",
+   "titre": "Ingénieur de recherche  - Preuves formelles basées sur des scenarios pour le logiciel concurrent",
+   "employeur": "CNRS",
+   "lieu": "Palaiseau",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-10",
+   "analyse": {
+    "score": 0,
+    "niveau": "hors",
+    "mode": "ia",
+    "resume": "Poste en informatique théorique et vérification formelle de logiciels, sans aucun rapport avec le comportement animal, l'écologie ou les biostatistiques.",
+    "missions": [
+     "Développer de nouveaux algorithmes pour la vérification formelle de systèmes",
+     "Formaliser les scénarios comme un quotient d'exécution d'un programme",
+     "Concevoir des langages pour représenter abstraitement des quotients",
+     "Concevoir des algorithmes d'analyse de programme"
+    ],
+    "prerequis": [
+     "Master 2 en informatique",
+     "Expertise très pointue en informatique théorique, méthodes formelles, systèmes concurrents ou distribués"
+    ],
+    "competences": [
+     {
+      "nom": "Master 2",
+      "ok": false
+     },
+     {
+      "nom": "Informatique théorique",
+      "ok": false
+     }
+    ],
+    "atouts": [],
+    "manques": [
+     "Master en informatique",
+     "Expertise en méthodes formelles et systèmes concurrents"
+    ],
+    "bloquants": [
+     {
+      "type": "diplome",
+      "texte": "Master 2 en informatique requis"
+     }
+    ],
+    "conseil": "Ne pas postuler, ce poste ne correspond ni au domaine scientifique ni au profil du candidat.",
+    "salaire_min": 3237,
+    "salaire_max": 3505,
+    "duree_mois": 7,
+    "date_limite": "2026-10-31",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
+  },
+  {
+   "id": "cnrs-UMR8502-SOPGUE-007",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8502-SOPGUE-007/Default.aspx",
+   "titre": "Ingénieur de recherche  pour réalisation et intégration de gatemons dans des résonateurs bi et tridimensionnels",
+   "employeur": "CNRS",
+   "lieu": "Orsay",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-09-22",
+   "analyse": {
+    "score": 0,
+    "niveau": "hors",
+    "mode": "ia",
+    "resume": "Poste en physique des solides et circuits quantiques supraconducteurs, sans aucun lien avec la biologie, l'écologie ou l'éthologie.",
+    "missions": [
+     "Développement de résonateurs 2D et 3D",
+     "Réalisation d'un gatemon et choix de matériaux topologiques",
+     "Mesures basse température et haute fréquence"
+    ],
+    "prerequis": [
+     "Connaissance des circuits résonants et des qubits",
+     "Conception de circuits quantiques",
+     "Connaissance des matériaux topologiques"
+    ],
+    "competences": [
+     {
+      "nom": "Physique quantique",
+      "ok": false
+     }
+    ],
+    "atouts": [],
+    "manques": [
+     "Compétences en physique des solides et circuits quantiques"
+    ],
+    "bloquants": [
+     {
+      "type": "autre",
+      "texte": "Compétences expertes en physique quantique et circuits supraconducteurs exigées"
+     }
+    ],
+    "conseil": "Ne pas postuler, profil totalement inadapté à ce domaine de physique fondamentale.",
+    "salaire_min": 3237,
+    "salaire_max": null,
+    "duree_mois": 6,
+    "date_limite": "2026-10-13",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-13",
+   "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com"
   },
   {
    "id": "cnrs-UMR8190-CARSEB-006",
