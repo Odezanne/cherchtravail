@@ -82,9 +82,23 @@ if os.environ.get("RECOUPER"):
         offres = json.loads((Path(__file__).resolve().parent.parent / "docs" / "data" / "offres.json").read_text(encoding="utf-8"))["offres"]
         o = next((x for x in offres if x["id"] == os.environ["RECOUPER"]), None)
         if o:
+            try:
+                import re as _re
+                from util import telecharger as _tel
+                import sources as _src
+                pg = _tel(o["url"], timeout=40)
+                i = pg.find("employeur")
+                extraits = [_re.sub(r"\s+", " ", pg[max(0, m.start() - 300):m.start() + 80]) for m in _re.finditer("site employeur|Postuler", pg)][:3]
+                note(True, "page CSP (debug)", f"{len(pg)} car., lien trouvé : {_src.lien_employeur_csp(pg)} ; extraits : {' ||| '.join(extraits)[:1500]}")
+                from util import autorise as _aut
+                lien = _src.lien_employeur_csp(pg)
+                if lien:
+                    note(True, "robots employeur", f"autorisé : {_aut(lien)}")
+            except Exception as e:
+                note(False, "page CSP (debug)", str(e)[:200])
             o.pop("recoupement", None)
             recoupement.recouper([o], {o["id"]}, recherche.verifier)
-            note(True, f"recoupement « {o['titre'][:50]} »", f"{o.get('disponibilite')} · {json.dumps(o.get('recoupement'), ensure_ascii=False)[:600]}")
+            note(True, f"recoupement « {o['titre'][:50]} »", f"{o.get('disponibilite')} · employeur {o.get('employeur_verifie')} {o.get('lien_employeur')} · {json.dumps(o.get('recoupement'), ensure_ascii=False)[:600]}")
     except Exception as e:
         note(False, "recoupement", str(e)[:150])
 
