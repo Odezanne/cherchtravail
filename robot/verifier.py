@@ -66,6 +66,15 @@ if donnees.actif():
     except urllib.error.HTTPError as e:
         note(False, "accès de la clé à cherchtravail", f"HTTP {e.code} : ajoute cherchtravail aux dépôts de la clé, Actions en Read and write")
 
+# INRAE (plan du site + une offre)
+try:
+    import sources  # noqa: E402
+    lot, lues = sources.collecter_inrae(set(), jours=30, max_pages=3)
+    note(bool(lues), "INRAE (jobs.inrae.fr)", f"{len(lues)} offres lues, ex. : " + " | ".join(
+        f"{o['titre'][:60]} · {o['lieu']} · {o['contrat']} · limite {o.get('date_limite') or '?'}" for o in lot[:3]))
+except Exception as e:
+    note(False, "INRAE (jobs.inrae.fr)", str(e)[:120])
+
 # Tavily
 if os.environ.get("TAVILY_API_KEY"):
     try:

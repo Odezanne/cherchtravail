@@ -18,6 +18,9 @@ sources:
   # Flux RSS officiel du CNRS (toutes les offres, CDD ingénieurs et contrats doctoraux)
   cnrs: true
 
+  # INRAE : toutes les offres de jobs.inrae.fr (CDD, thèses), lues via le plan du site autorisé aux robots
+  inrae: true
+
   # ABG : offres de thèse (biologie, écologie, neurosciences, santé animale, agronomie, données)
   abg: true
 

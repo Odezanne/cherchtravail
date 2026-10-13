@@ -1,5 +1,6 @@
 """Collecte des offres : flux RSS (CNRS et autres), alertes e-mail Gmail, API France Travail."""
 import email
+import html
 import email.header
 import imaplib
 import json
@@ -184,6 +185,83 @@ def texte_offre_csp(page):
                      "Partager sur LinkedIn", "Partager par email", "Copier dans le presse-papier", "Ajouter aux favoris"):
         t = t.replace(parasite, "")
     return re.sub(r"\n\s*\n+", "\n", t).strip()
+
+
+# ---------------------------------------------------------------- INRAE (jobs.inrae.fr)
+# robots.txt : seules la recherche, les filtres de tri et l'administration sont interdits. On passe par le plan du
+# site (sitemap.xml, publié pour les robots) puis on lit chaque offre « OT-xxxxx » (CDD, thèses…) une seule fois.
+
+INRAE = "https://jobs.inrae.fr"
+
+
+def lire_offre_inrae(url, page):
+    t = html_en_texte(page)
+    m = re.search(r'<meta property="og:title" content="([^"]+)"', page) or re.search(r"<h1[^>]*>(.*?)</h1>", page, re.S) \
+        or re.search(r"<title>(.*?)</title>", page, re.S)
+    titre = nettoyer(re.sub(r"<[^>]+>", " ", html.unescape(m.group(1)))) if m else ""
+    titre = re.sub(r"\s*[|–-]\s*(INRAE|Jobs INRAE).*$", "", titre, flags=re.I).strip()
+    titre = re.sub(r"\s*\((?:F/H|H/F)\)\s*$", "", titre).strip()
+
+    def champ(nom):
+        m = re.search(nom + r"\s*:\s*([^\n]{1,80})", t)
+        return nettoyer(m.group(1)) if m else ""
+    contrat, duree, dl = champ("Contrat"), champ("Durée"), champ("Date limite")
+    lieu = ""
+    m = re.search(r"\b(\d{5})\s+([A-ZÉÈÀÂÎÔÛÇ][A-ZÉÈÀÂÎÔÛÇ' -]{2,40})", t)
+    if m:
+        lieu = f"{m.group(2).strip().title()} ({m.group(1)[:2]})"
+    dl_iso = ""
+    m = re.match(r"(\d{2})/(\d{2})/(\d{4})", dl)
+    if m:
+        dl_iso = f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
+    debut = sans_accents_local(t).find(sans_accents_local(titre)[:25]) if titre else -1
+    texte = (t[debut:] if debut > 0 else t)[:8000]
+    ref = re.search(r"/(ot-\d+)", url)
+    return {
+        "id": "inrae-" + (ref.group(1) if ref else identifiant(url)), "source": "INRAE", "url": url, "titre": titre,
+        "employeur": "INRAE", "lieu": lieu, "region": region_de(lieu),
+        "contrat": " ".join(x for x in (contrat, duree) if x),
+        "type": "these" if re.search(r"th[eè]se|doctora|cifre", titre + " " + contrat, re.I) else "emploi",
+        "date_publication": "", "date_limite": dl_iso, "texte": texte, "telechargeable": False, "flux_large": True,
+    }
+
+
+def sans_accents_local(s):
+    from util import sans_accents
+    return sans_accents(s)
+
+
+def collecter_inrae(deja_vus, jours=45, max_pages=40):
+    """deja_vus : ensemble d'URL déjà lues (mémorisé par le robot). Renvoie (offres, urls_lues)."""
+    plan = telecharger(INRAE + "/sitemap.xml", timeout=60)
+    limite = (datetime.now(timezone.utc) - timedelta(days=jours)).date().isoformat()
+    urls = []
+    for bloc in re.findall(r"<url>(.*?)</url>", plan, re.S):
+        loc = re.search(r"<loc>\s*(.*?)\s*</loc>", bloc)
+        mod = re.search(r"<lastmod>\s*(\S+?)\s*</lastmod>", bloc)
+        if not loc or not re.search(r"jobs\.inrae\.fr/ot-\d+$", loc.group(1)):
+            continue
+        if mod and mod.group(1)[:10] < limite:
+            continue
+        urls.append((mod.group(1) if mod else "", loc.group(1).replace("http://", "https://")))
+    urls.sort(reverse=True)
+    offres, lues = [], []
+    for mod, url in urls:
+        if url in deja_vus:
+            continue
+        if len(lues) >= max_pages:
+            break
+        lues.append(url)
+        try:
+            o = lire_offre_inrae(url, telecharger(url, timeout=40))
+        except Exception as e:
+            log(f"INRAE {url} : {e}")
+            continue
+        if o["titre"]:
+            o["date_publication"] = mod[:10] or datetime.now(timezone.utc).date().isoformat()
+            offres.append(o)
+    log(f"INRAE : {len(urls)} offres récentes dans le plan du site, {len(lues)} nouvelles lues, {len(offres)} gardées")
+    return offres, lues
 
 
 # ---------------------------------------------------------------- ABG (offres de thèse ; robots.txt sans restriction)

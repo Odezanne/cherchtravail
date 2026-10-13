@@ -4,8 +4,8 @@
    Fusion à trois voies : ce qui a changé ici depuis la dernière synchro gagne, le reste vient de l'autre appareil. */
 
 const Sync = (() => {
-  const CLES = ["suivi", "perso", "lettres", "lettre-modele", "profil", "cv", "recherches", "evenements", "actualisations", "labos"];
-  const PAR_ID = { perso: true, evenements: true, labos: true }; // tableaux d'objets {id}
+  const CLES = ["suivi", "perso", "lettres", "lettre-modele", "profil", "cv", "recherches", "evenements", "actualisations", "labos", "contacts"];
+  const PAR_ID = { perso: true, evenements: true, labos: true, contacts: true }; // tableaux d'objets {id}
   const API = "https://api.github.com";
   let reglages = lire("sync", {});
   let minuteur = null, enCours = null, dernierEtat = "";
@@ -71,7 +71,9 @@ const Sync = (() => {
   const egal = (a, b) => JSON.stringify(a ?? null) === JSON.stringify(b ?? null);
   function enMap(v, cle) { return PAR_ID[cle] ? Object.fromEntries((v || []).map((x) => [x.id, x])) : (v || {}); }
   function fusion(cle, base, ici, la) {
-    const objet = !["suivi", "lettres", "perso", "evenements", "labos", "actualisations"].includes(cle);
+    // Clé absente du dépôt (écrit par une ancienne version du site) : on ne supprime rien, on garde ce qui est ici
+    if (la === undefined || la === null) return ici ?? null;
+    const objet = !["suivi", "lettres", "perso", "evenements", "labos", "actualisations", "contacts"].includes(cle);
     if (objet) return !egal(ici, base) ? ici : (la ?? ici);
     const B = enMap(base, cle), I = enMap(ici, cle), L = enMap(la, cle), R = {};
     for (const id of new Set([...Object.keys(B), ...Object.keys(I), ...Object.keys(L)])) {
@@ -98,7 +100,7 @@ const Sync = (() => {
         const nouveau = JSON.stringify(fusionne);
         try {
           if (!egal(fusionne, distant)) {
-            await ecrireJson("etat.json", { maj: new Date().toISOString(), donnees: fusionne }, sha);
+            await ecrireJson("etat.json", { maj: new Date().toISOString(), donnees: Object.assign({}, distant, fusionne) }, sha);
           }
           ecrire("sync-base", fusionne, true);
           reglages.derniere = new Date().toISOString(); ecrire("sync", reglages, true);
@@ -154,7 +156,22 @@ ecrire = function (cle, val, sansSynchro) { // eslint-disable-line no-global-ass
   if (!sansSynchro && Sync.CLES.includes(cle)) Sync.planifier();
 };
 
+/* Version du site : un appareil resté sur une vieille version se recharge tout seul avant de synchroniser
+   (une vieille version ne connaît pas les nouvelles données et pourrait les écraser). */
+const VERSION_SITE = 13;
+async function versionAJour() {
+  try {
+    const r = await fetch("version.json?t=" + Date.now(), { cache: "no-store" });
+    const v = (await r.json()).v;
+    if (v > VERSION_SITE && sessionStorage.getItem("recharge") !== String(v)) {
+      sessionStorage.setItem("recharge", String(v)); location.reload(); return false;
+    }
+  } catch { /* hors connexion : on continue */ }
+  return true;
+}
+
 async function synchroDemarrage() {
+  if (!(await versionAJour())) return;
   if (!Sync.actif()) return;
   try {
     const change = await Sync.synchroniser();
@@ -163,6 +180,7 @@ async function synchroDemarrage() {
     if (typeof evenements !== "undefined") evenements = lire("evenements", []);
     if (typeof actualisations !== "undefined") actualisations = lire("actualisations", {});
     if (typeof labos !== "undefined") labos = lire("labos", []);
+    if (typeof contacts !== "undefined") contacts = lire("contacts", []);
     if (typeof rechargerLettres === "function") rechargerLettres();
     if (typeof rechargerProfil === "function") rechargerProfil();
     if (typeof rechargerCv === "function") rechargerCv();

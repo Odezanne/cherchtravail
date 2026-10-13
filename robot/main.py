@@ -92,6 +92,13 @@ def main():
                 brutes += sources.collecter_csp(src.get("choisir_le_service_public") or {"motscles": ["mnhn"]})
             except Exception as e:
                 log(f"Choisir le service public indisponible : {e}")
+        if src.get("inrae", True):
+            try:
+                lot, lues = sources.collecter_inrae(set(etat.get("inrae_vus", [])))
+                brutes += lot
+                etat["inrae_vus"] = (etat.get("inrae_vus", []) + lues)[-2000:]
+            except Exception as e:
+                log(f"INRAE indisponible : {e}")
         if src.get("abg", True):
             try:
                 brutes += sources.collecter_abg()
@@ -166,7 +173,7 @@ def main():
         if ia.disponible and (a.get("mode") == "mots-cles" or reanalyser) and len(a_analyser) + len(reprises) < quota:
             o["prefiltre"] = analyse.prefiltre(dict(o, texte=o.get("extrait", "")), cfg)
             if o["prefiltre"] >= 12 or reanalyser:
-                o["telechargeable"] = o["source"] in ("CNRS", "MNHN", "Choisir le service public", "ABG") or o.get("url", "").startswith("https://emploi.cnrs.fr")
+                o["telechargeable"] = o["source"] in ("CNRS", "MNHN", "Choisir le service public", "ABG", "INRAE") or o.get("url", "").startswith("https://emploi.cnrs.fr")
                 reprises.append(o)
             else:
                 o.pop("prefiltre", None)
@@ -199,6 +206,9 @@ def main():
             if a.get(champ) and (not o.get(champ) or o.get(champ) == "?"):
                 o[champ] = a[champ]
             a.pop(champ, None)
+        if not a.get("date_limite") and o.get("date_limite"):
+            a["date_limite"] = o["date_limite"]
+        o.pop("date_limite", None)
         o["analyse"] = a
         if o["id"] not in ids_reprises:
             o["vu_le"] = aujourd_hui
