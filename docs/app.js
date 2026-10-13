@@ -59,6 +59,10 @@ function salaireTexte(a) {
   const f = (n) => n.toLocaleString("fr-FR") + " €";
   return (a.salaire_max && a.salaire_max !== a.salaire_min ? `${f(a.salaire_min)}–${f(a.salaire_max)}` : f(a.salaire_min)) + " brut/mois";
 }
+/* Couleur du % par palier : rouge pastel près de 0 %, vert pastel près de 100 % */
+function couleurScore(s) {
+  return s >= 75 ? "var(--s5)" : s >= 60 ? "var(--s4)" : s >= 45 ? "var(--s3)" : s >= 25 ? "var(--s2)" : "var(--s1)";
+}
 function estNouveau(o) {
   return o.vu_le && (Date.now() - new Date(o.vu_le + "T00:00:00")) < 36 * 3600000;
 }
@@ -106,7 +110,7 @@ function carte(o) {
   const masque = (suivi[o.id] || {}).masque;
   return `<article class="carte${bloque ? " bloquee" : ""}${garde ? " gardee" : ""}">
     <button class="carte-ouvrir" data-id="${esc(o.id)}">
-      <div class="score" style="--p:${a.score ?? 0}" aria-label="Intérêt ${a.score ?? 0} %"><b>${a.score ?? 0}%</b></div>
+      <div class="score" style="--p:${a.score ?? 0};--c:${couleurScore(a.score ?? 0)}" aria-label="Intérêt ${a.score ?? 0} %"><b>${a.score ?? 0}%</b></div>
       <div class="corps">
         <h3>${esc(o.titre)}</h3>
         <p class="sous">${esc([o.employeur, o.lieu].filter(Boolean).join(" · ") || o.source)}</p>
@@ -192,7 +196,7 @@ function ouvrirFiche(id) {
     salaireTexte(a), a.date_limite && `Date limite : ${dateFr(a.date_limite, { day: "numeric", month: "long", year: "numeric" })}`,
     `Source : ${o.source}`].filter(Boolean);
   $("#fiche-contenu").innerHTML = `<div class="fiche">
-    <div class="fiche-haut"><div><p class="sous">${o.perso ? "Candidature ajoutée à la main" : `${a.score ?? 0} % d'intérêt · ${GROUPES[a.niveau] || ""}`}</p>
+    <div class="fiche-haut"><div><p class="sous">${o.perso ? "Candidature ajoutée à la main" : `<b style="color:${couleurScore(a.score ?? 0)}">${a.score ?? 0} %</b> d'intérêt · ${GROUPES[a.niveau] || ""}`}</p>
       <h2 id="fiche-titre">${esc(o.titre)}</h2></div>
       <button class="fermer" aria-label="Fermer" data-action="fermer">×</button></div>
     <p class="sous" style="margin-top:6px">${infos.map(esc).join(" · ")}</p>

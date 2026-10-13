@@ -17,7 +17,9 @@
   --encre: #141414;       /* texte sur fond pastel */
   --ombre: 0 1px 0 rgba(255, 255, 255, .03), 0 6px 18px rgba(0, 0, 0, .35);
   --rayon: 16px;
-  --main: "Caveat", "Segoe Print", "Bradley Hand", cursive;
+  --main: "Lora", Georgia, "Iowan Old Style", serif;
+  /* couleurs du % par palier : du rouge (0 %) au vert (100 %), en pastel */
+  --s1: #f5a3a3; --s2: #f7bc8c; --s3: #f6d98f; --s4: #cfe6a0; --s5: #a5e0bd;
   --texte-police: "Lora", Georgia, "Iowan Old Style", serif;
   color-scheme: dark;
 }
@@ -308,34 +310,31 @@ code { font-size: 12.5px; background: var(--fond); padding: 1px 5px; border-radi
 .evt-passe span { color: var(--doux); font-size: 12px; }
 
 /* ================= Thème cosy / scolaire ================= */
-h1 { font-family: var(--main); font-size: 40px; font-weight: 700; letter-spacing: 0; line-height: 1; color: var(--texte); }
+h1 { font-family: var(--main); font-size: 30px; font-weight: 600; font-style: italic; letter-spacing: -.01em; line-height: 1.1; color: var(--texte); }
 h1::after { content: ""; display: block; height: 6px; width: 62%; margin-top: 2px; border-radius: 6px;
   background: linear-gradient(90deg, var(--rose), var(--lavande), var(--bleu)); opacity: .55; }
 .entete { background: rgba(20, 20, 20, .94); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border-bottom: 1.5px dashed var(--ligne); }
-.onglets button { font-family: var(--main); font-size: 21px; font-weight: 600; padding: 4px 11px; }
+.onglets button { font-family: var(--main); font-size: 15px; font-weight: 600; padding: 7px 11px; }
 .onglets button[aria-selected="true"] { background: var(--ambre); color: var(--encre); border-radius: 14px 18px 12px 20px / 18px 12px 20px 14px; }
 .onglets span { font-family: var(--texte-police); font-size: 12px; }
-.groupe { font-family: var(--main); font-size: 23px; font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--texte);
+.groupe { font-family: var(--main); font-size: 17px; font-weight: 600; font-style: italic; letter-spacing: 0; text-transform: none; color: var(--texte);
   display: inline-block; justify-self: start; padding: 0 6px; margin-top: 18px;
   background: linear-gradient(transparent 58%, rgba(243, 185, 214, .32) 58%, rgba(243, 185, 214, .32) 92%, transparent 92%); }
-.sous-groupe { font-family: var(--main); font-size: 20px; }
+.sous-groupe { font-family: var(--main); font-size: 15.5px; font-style: italic; }
 .fiche-haut h2, .fiche h4 { font-family: var(--main); }
-.fiche-haut h2 { font-size: 27px; line-height: 1.1; }
-.fiche h4 { font-size: 21px; text-transform: none; letter-spacing: 0; color: var(--lavande); }
+.fiche-haut h2 { font-size: 21px; line-height: 1.2; }
+.fiche h4 { font-size: 15px; font-style: italic; text-transform: none; letter-spacing: 0; color: var(--lavande); }
 
 /* cartes : bords « dessinés à la main » */
 .carte, .bloc-export, .calendrier, .entretien-ligne, .case-ligne, .fichier, .verifs, .modele, .panneau {
   border: 1.5px solid var(--ligne); border-radius: 18px 14px 20px 13px / 14px 20px 13px 18px; }
 .carte { background: var(--carte); }
-.carte:nth-child(3n+1) .score { --c: var(--vert); }
-.carte:nth-child(3n+2) .score { --c: var(--bleu); }
-.carte:nth-child(3n) .score { --c: var(--rose); }
 .score { background: conic-gradient(var(--c, var(--vert)) calc(var(--p) * 1%), var(--ligne) 0); }
-.score b { font-family: var(--main); font-size: 19px; font-weight: 700; }
+.score b { font-family: var(--main); font-size: 14px; font-weight: 600; color: var(--c, var(--texte)); }
 .corps h3 { font-family: var(--texte-police); font-weight: 600; font-size: 16.5px; }
 .carte.gardee { border-color: var(--ambre); box-shadow: 0 0 0 3px var(--ambre-pale); }
 .carte-actions { border-top: 1.5px dashed var(--ligne); }
-.ca { font-family: var(--main); font-size: 18px; font-weight: 600; }
+.ca { font-family: var(--main); font-size: 13.5px; font-weight: 600; }
 .ca + .ca { border-left: 1.5px dashed var(--ligne); }
 
 /* étiquettes façon surligneur */
@@ -381,9 +380,9 @@ dialog { background: #1a1a1c; border: 1.5px solid var(--ligne); }
 
 /* suivi et calendrier */
 .entretien-date { background: var(--ambre-pale); color: var(--ambre); font-family: var(--main); }
-.entretien-date b { font-size: 24px; }
+.entretien-date b { font-size: 18px; }
 .evt-date { background: var(--bleu-pale); color: var(--bleu); }
-.cal-tete strong { font-family: var(--main); font-size: 24px; }
+.cal-tete strong { font-family: var(--main); font-size: 17px; font-style: italic; }
 .cal-grille .a-rdv { background: var(--ambre); color: var(--encre); }
 .cal-grille .a-evt { background: var(--bleu); color: var(--encre); }
 .cal-grille .auj { outline: 2px dashed var(--rose); }
@@ -392,7 +391,7 @@ dialog { background: #1a1a1c; border: 1.5px solid var(--ligne); }
 .pastille-statut.ambre { background: var(--ambre-pale); color: var(--ambre); }
 .tag-oblig { color: var(--rouge); }
 .fichier.reference { border-color: var(--ambre); }
-.fichier-icone { background: transparent; border: 1.5px dashed var(--ligne); font-family: var(--main); font-size: 15px; }
+.fichier-icone { background: transparent; border: 1.5px dashed var(--ligne); font-size: 11px; }
 .fichier-icone.pdf { color: var(--rouge); }
 .fichier-options { background: #222225; }
 .verifs .ok { color: var(--vert); } .verifs .ko { color: var(--ambre); }
