@@ -13,6 +13,7 @@ const DEFAUTS = { onglet: "emploi", largeur: 1, recherche: "", salaire: 0, sansS
 
 let donnees = { offres: [], maj: null };
 let etat = Object.assign({}, DEFAUTS, lire("filtres", {}));
+if (etat.onglet === "favoris") etat.onglet = "suivi";
 let suivi = lire("suivi", {});
 const $ = (s) => document.querySelector(s);
 
@@ -58,7 +59,6 @@ function filtrer(onglet, largeur) {
   const q = etat.recherche.trim().toLowerCase();
   return donnees.offres.filter((o) => {
     const a = o.analyse || {}; const s = suivi[o.id] || {};
-    if (onglet === "favoris") return s.fav || s.postule;
     if (o.type !== onglet) return false;
     if (s.masque && !etat.voirMasquees) return false;
     if ((a.score ?? 0) < min) return false;
@@ -104,14 +104,16 @@ function afficher() {
   const niv = NIVEAUX_LARGEUR[etat.largeur];
   $("#largeur").value = etat.largeur; $("#largeur-nom").textContent = `${niv.nom} (≥ ${niv.min} %)`;
   $("#largeur-aide").textContent = niv.aide;
-  $(".elargir").hidden = etat.onglet === "favoris";
+  $(".elargir").hidden = etat.onglet === "suivi";
   $("#salaire-val").textContent = etat.salaire ? `${etat.salaire.toLocaleString("fr-FR")} € brut/mois` : "Aucun";
-  for (const t of ["emploi", "these", "favoris"]) $("#c-" + t).textContent = filtrer(t, etat.largeur).length || "";
+  for (const t of ["emploi", "these"]) $("#c-" + t).textContent = filtrer(t, etat.largeur).length || "";
+  $("#c-suivi").textContent = nbSuivis() || "";
   const nbFiltres = (etat.recherche ? 1 : 0) + (etat.salaire ? 1 : 0) + (etat.cacherBloques ? 1 : 0)
     + (JSON.stringify(etat.zones) !== JSON.stringify(DEFAUTS.zones) ? 1 : 0)
     + (etat.contrats.length !== 3 ? 1 : 0);
   $("#nb-filtres").hidden = !nbFiltres; $("#nb-filtres").textContent = nbFiltres;
 
+  if (etat.onglet === "suivi") { $("#liste").innerHTML = rendreSuivi(); return; }
   const liste = filtrer(etat.onglet, etat.largeur).sort((x, y) => (y.analyse?.score ?? 0) - (x.analyse?.score ?? 0));
   if (!donnees.offres.length) {
     $("#liste").innerHTML = `<div class="vide">Le robot n'a pas encore fait son premier passage.<br>Les offres apparaîtront ici après le prochain condensé.</div>`;
@@ -120,18 +122,16 @@ function afficher() {
   if (!liste.length) {
     let suivant = etat.largeur + 1;
     while (suivant < NIVEAUX_LARGEUR.length && !filtrer(etat.onglet, suivant).length) suivant++;
-    const msg = etat.onglet === "favoris" ? "Ajoute des offres à ton suivi avec ☆ dans leur fiche."
-      : "Aucune offre avec ces réglages.";
-    $("#liste").innerHTML = `<div class="vide">${msg}${etat.onglet !== "favoris" && suivant < NIVEAUX_LARGEUR.length
+    $("#liste").innerHTML = `<div class="vide">Aucune offre avec ces réglages.${suivant < NIVEAUX_LARGEUR.length
       ? `<br><button id="btn-elargir" data-n="${suivant}">Élargir à « ${NIVEAUX_LARGEUR[suivant].nom} » (${filtrer(etat.onglet, suivant).length})</button>`
-      : etat.onglet !== "favoris" ? "<br>Essaie d'assouplir les filtres de zone ou de salaire." : ""}</div>`;
+      : "<br>Essaie d'assouplir les filtres de zone ou de salaire."}</div>`;
     $("#btn-elargir")?.addEventListener("click", (e) => { etat.largeur = +e.target.dataset.n; afficher(); });
     return;
   }
   let html = "", groupe = null;
   for (const o of liste) {
     const g = o.analyse?.niveau || "hors";
-    if (g !== groupe && etat.onglet !== "favoris") { html += `<h2 class="groupe">${GROUPES[g] || g}</h2>`; groupe = g; }
+    if (g !== groupe) { html += `<h2 class="groupe">${GROUPES[g] || g}</h2>`; groupe = g; }
     html += carte(o);
   }
   $("#liste").innerHTML = html;
@@ -142,7 +142,7 @@ function liste(titre, items, rendu = (x) => esc(x)) {
 }
 
 function ouvrirFiche(id) {
-  const o = donnees.offres.find((x) => x.id === id); if (!o) return;
+  const o = toutesOffres().find((x) => x.id === id); if (!o) return;
   const a = o.analyse || {}; const s = suivi[o.id] || {};
   const comp = a.competences?.length
     ? `<h4>Compétences attendues</h4><ul class="comp">${a.competences.map((c) =>
@@ -156,7 +156,7 @@ function ouvrirFiche(id) {
     salaireTexte(a), a.date_limite && `Date limite : ${dateFr(a.date_limite, { day: "numeric", month: "long", year: "numeric" })}`,
     `Source : ${o.source}`].filter(Boolean);
   $("#fiche-contenu").innerHTML = `<div class="fiche">
-    <div class="fiche-haut"><div><p class="sous">${a.score ?? 0} % d'intérêt · ${GROUPES[a.niveau] || ""}</p>
+    <div class="fiche-haut"><div><p class="sous">${o.perso ? "Candidature ajoutée à la main" : `${a.score ?? 0} % d'intérêt · ${GROUPES[a.niveau] || ""}`}</p>
       <h2 id="fiche-titre">${esc(o.titre)}</h2></div>
       <button class="fermer" aria-label="Fermer" data-action="fermer">×</button></div>
     <p class="sous" style="margin-top:6px">${infos.map(esc).join(" · ")}</p>
@@ -171,13 +171,10 @@ function ouvrirFiche(id) {
     <div class="actions">
       ${o.url ? `<a class="bouton principal" href="${esc(o.url)}" target="_blank" rel="noopener">Voir l'offre complète</a>` : ""}
       <button class="bouton" data-action="claude">Préparer CV et lettre avec Claude</button>
-      <div class="actions-ligne">
-        <button class="bouton" data-action="fav" aria-pressed="${!!s.fav}">${s.fav ? "★ Suivie" : "☆ Suivre"}</button>
-        <button class="bouton" data-action="postule" aria-pressed="${!!s.postule}">${s.postule ? "✓ Postulé" : "Postulé ?"}</button>
-        <button class="bouton" data-action="masque" aria-pressed="${!!s.masque}">${s.masque ? "Démasquer" : "Masquer"}</button>
-      </div>
+      ${o.perso ? "" : `<button class="bouton" data-action="masque" aria-pressed="${!!s.masque}">${s.masque ? "Ne plus masquer" : "Masquer cette offre"}</button>`}
     </div>
-    <p class="note-mode">${a.mode === "ia" ? "Analyse faite par IA à partir de l'annonce : vérifie toujours l'offre d'origine."
+    ${blocSuivi(o)}
+    <p class="note-mode">${o.perso ? "" : a.mode === "ia" ? "Analyse faite par IA à partir de l'annonce : vérifie toujours l'offre d'origine."
       : "Analyse simplifiée par mots-clés (IA indisponible ce jour-là)."}</p></div>`;
   $("#fiche").dataset.id = id;
   $("#fiche").showModal();
@@ -199,7 +196,7 @@ ${a.bloquants?.length ? `Point faible à désamorcer : ${a.bloquants.map((b) => 
 }
 
 async function action(nom) {
-  const id = $("#fiche").dataset.id; const o = donnees.offres.find((x) => x.id === id);
+  const id = $("#fiche").dataset.id; const o = toutesOffres().find((x) => x.id === id);
   if (nom === "fermer") return $("#fiche").close();
   if (nom === "claude") {
     try { await navigator.clipboard.writeText(promptClaude(o)); toast("Demande copiée : colle-la dans ton projet Claude"); }

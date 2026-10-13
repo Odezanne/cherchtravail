@@ -155,3 +155,49 @@ dialog::backdrop { background: rgba(15, 20, 17, .45); }
   background: var(--texte); color: var(--fond); padding: 10px 16px; border-radius: 99px; font-size: 14px; z-index: 20;
   max-width: calc(100% - 32px);
 }
+
+/* ---------- Candidatures, entretiens, calendrier ---------- */
+.suivi-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.suivi-actions .bouton { font-size: 14px; padding: 11px 8px; }
+.sous-groupe { font-size: 14px; margin: 12px 2px 4px; color: var(--texte); }
+.vide-petit { color: var(--doux); font-size: 14px; margin: 4px 2px; }
+.mini {
+  border: 1px solid var(--ligne); background: var(--carte); border-radius: 10px; min-width: 38px; height: 38px;
+  cursor: pointer; font-size: 16px; flex: none;
+}
+.entretien-ligne, .case-ligne {
+  display: flex; align-items: center; gap: 10px; background: var(--carte); border: 1px solid var(--ligne);
+  border-radius: 12px; padding: 10px 12px;
+}
+.entretien-date { display: grid; place-items: center; min-width: 44px; background: var(--ambre-pale); color: var(--ambre); border-radius: 10px; padding: 4px 0; }
+.entretien-date b { font-size: 18px; line-height: 1.1; }
+.entretien-date span { font-size: 11px; text-transform: uppercase; }
+.entretien-corps, .case-corps {
+  flex: 1; min-width: 0; text-align: left; border: 0; background: none; padding: 0; cursor: pointer; display: grid; gap: 2px;
+}
+.entretien-corps span, .case-corps span { color: var(--doux); font-size: 13px; overflow: hidden; text-overflow: ellipsis; }
+.case-ligne input { width: 22px; height: 22px; accent-color: var(--vert); flex: none; }
+.case-ligne.faite { background: transparent; }
+.pastille-statut { font-size: 11.5px; padding: 3px 8px; border-radius: 99px; white-space: nowrap; background: var(--fond); border: 1px solid var(--ligne); }
+.pastille-statut.vert { background: var(--vert-pale); color: var(--vert); border-color: transparent; }
+.pastille-statut.ambre { background: var(--ambre-pale); color: var(--ambre); border-color: transparent; }
+.pastille-statut.gris { opacity: .7; }
+.calendrier { background: var(--carte); border: 1px solid var(--ligne); border-radius: 14px; padding: 12px; margin-top: 10px; }
+.cal-tete { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; text-transform: capitalize; }
+.cal-grille { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; font-size: 14px; }
+.cal-grille i { font-style: normal; font-size: 11px; color: var(--doux); }
+.cal-grille span { padding: 6px 0; border-radius: 8px; }
+.cal-grille .auj { outline: 1.5px solid var(--vert); }
+.cal-grille .a-rdv { background: var(--ambre); color: var(--fond); font-weight: 700; }
+.bloc-suivi { margin-top: 22px; border-top: 1px solid var(--ligne); padding-top: 6px; }
+.suivi-champs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.bloc-suivi label { display: grid; gap: 4px; font-size: 13px; color: var(--doux); margin-bottom: 8px; }
+.bloc-suivi select, .bloc-suivi input, .bloc-suivi textarea {
+  font: inherit; color: var(--texte); background: var(--fond); border: 1px solid var(--ligne); border-radius: 10px;
+  padding: 9px 10px; width: 100%; min-height: 42px;
+}
+.bloc-suivi textarea { resize: vertical; }
+.liste-entretiens { list-style: none; padding: 0 !important; display: grid; gap: 6px; margin-bottom: 10px !important; }
+.liste-entretiens li { display: flex; align-items: center; gap: 6px; background: var(--ambre-pale); border-radius: 10px; padding: 6px 8px; }
+.liste-entretiens li span { flex: 1; font-size: 14px; }
+.lien.rouge { color: var(--rouge); margin-top: 10px; }
