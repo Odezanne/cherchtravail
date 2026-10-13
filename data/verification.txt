@@ -1,4 +1,4 @@
-Vérification du 13/10/2026 17:44
+Vérification du 13/10/2026 17:54
 OK   secret OPENROUTER_API_KEY présent
 OK   secret GEMINI_API_KEY présent
 OK   secret GMAIL_ADRESSE présent
@@ -12,24 +12,14 @@ NON  secret FT_CLIENT_ID présent
 OK   connexion Gmail : adresse eli…@gmail.com
 OK   dépôt Odezanne/cherchtravail-donnees trouvé : privé
 OK   écriture dans le dépôt privé
-NON  données du site synchronisées (etat.json) : pas encore : connecte le site dans l'onglet Profil
+OK   données du site synchronisées (etat.json) : présentes
 OK   la clé peut voir les workflows de cherchtravail (barre de recherche)
 OK   Tavily : 2 résultats
-OK   Jooble jooble.org : 0 offres « biostatistique » / Paris, France ; ex. : 
-NON  Jooble : HTTP Error 403: Forbidden
-OK   recherche « biostatisticien » : termine, 8 offres : 50 % Ingénieur de Recherche Biostatisticien SEEDem (Choisir le service public, disponible); 50 % Biostatisticien-ne (Choisir le service public, disponible); 45 % Méthodologiste - Biostatisticien - CIC domain (Choisir le service public, disponible); 45 % BIOSTATISTICIEN(NE) SPECIALISE(E) EN RECHERCH (Choisir le service public, disponible); 45 % Ingénieur-e biologiste en analyse de données  (Choisir le service public, disponible); 35 % Épidémiologiste/biostatisticien (f/h) Saint-D (choisirleservicepublic.gouv.fr, disponible)
-     15:29:54 CNRS : 427 offres dans le flux
-     15:29:58 Jooble : 0 offres
-     15:29:59 Tavily : 12 pages trouvées
-     15:29:59 20 résultats, 19 retenus pour vérification et analyse
-     15:31:30 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand a
-     15:33:29 IA gemini-flash-latest : HTTP 429 [{   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing 
+OK   Jooble fr.jooble.org : 17 offres « biostatisticien » / Île-de-France ; ex. : STAGE - Chargé d'études statistiques H/F (Montrouge, Hauts-de-); Statisticien H/F (Paris)
+NON  Jooble (erreur sur l'un des deux sites) : HTTP Error 403: Forbidden
 NON  IA gemini-flash-latest : HTTP 429 [{
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your 
-NON  IA gemini-flash-lite-latest : HTTP 503 [{
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. S
-OK   IA nvidia/nemotron-3-super-120b-a12b:free : répond
+OK   IA gemini-flash-lite-latest : répond
+NON  IA nvidia/nemotron-3-super-120b-a12b:free : répond
