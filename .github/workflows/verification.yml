@@ -1,0 +1,42 @@
+name: Vérification des branchements
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: robot
+  cancel-in-progress: false
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml pypdf
+      - name: Vérifier clés, Gmail, dépôt privé et API
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GMAIL_ADRESSE: ${{ secrets.GMAIL_ADRESSE }}
+          GMAIL_MOT_DE_PASSE_APPLI: ${{ secrets.GMAIL_MOT_DE_PASSE_APPLI }}
+          NTFY_SUJET: ${{ secrets.NTFY_SUJET }}
+          DONNEES_TOKEN: ${{ secrets.DONNEES_TOKEN }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+        run: python robot/verifier.py
+      - name: Enregistrer le résultat
+        run: |
+          git config user.name "cherchtravail-robot"
+          git config user.email "robot@users.noreply.github.com"
+          git add data/verification.txt
+          git commit -q -m "Vérification des branchements" || exit 0
+          git pull --rebase -q && git push -q
