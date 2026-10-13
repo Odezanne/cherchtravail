@@ -157,8 +157,8 @@ def recouper(offres, gardees_ids, verifier, max_tavily=8, max_verif=220):
         dispo, _ = verifier(o)
         n_verif += 1
         o["verifiee_le"] = auj
-        if o.get("url_employeur") and o.get("employeur_confirme"):
-            o.setdefault("recoupement", {})["url_employeur"] = o["url_employeur"]
+        if o.get("lien_employeur") and o.get("employeur_verifie") == "disponible":
+            o.setdefault("recoupement", {})["url_employeur"] = o["lien_employeur"]
         if dispo == "expiree":
             if o.get("disponibilite") != "expiree":
                 o["expiree_le"] = auj

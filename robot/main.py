@@ -146,7 +146,6 @@ def main():
     # 2. Tri : nouvelles offres, sans doublon ni exclusion (ni offres déjà vues retirées par l'employeur)
     expirees = set(etat.get("expirees", []))
     nouvelles = []
-    expirees = set(etat.get("expirees", []))
     for o in brutes:
         if o["id"] in connues or o["id"] in expirees or analyse.exclue(o, cfg):
             continue
