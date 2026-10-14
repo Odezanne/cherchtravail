@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-14T11:11+02:00",
+ "maj": "2026-10-14T11:32+02:00",
  "offres": [
   {
    "id": "cnrs-UMR5175-MARVAN-005",
@@ -7532,7 +7532,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://www.emploi-territorial.fr/offre/o095260914000974-dga-ecologie-cadre-vie?pk_campaign=ep",
-   "employeur_verifie": "introuvable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://www.emploi-territorial.fr/offre/o095260914000974-dga-ecologie-cadre-vie?pk_campaign=ep",
+    "statut": "employeur"
+   }
   },
   {
    "id": "abg-140471",
@@ -8822,45 +8827,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://www.emploi-territorial.fr/offre/o091260917000192-appariteur-referent-courrier?pk_campaign=ep",
-   "employeur_verifie": "introuvable"
-  },
-  {
-   "id": "csp-2026-2210887",
-   "source": "MNHN",
-   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/-adjoint-au-chef-de-service-securite-surete-et-logistique-fh-reference-2026-2210887/",
-   "titre": "Adjoint au chef de service sécurité sûreté et logistique",
-   "employeur": "MNHN",
-   "lieu": "Paris (75)",
-   "region": "idf",
-   "contrat": "",
-   "type": "emploi",
-   "date_publication": "2026-10-13",
-   "analyse": {
-    "score": 8,
-    "niveau": "hors",
-    "mode": "mots-cles",
-    "resume": "Offre éloignée de ton profil d'après les mots-clés : pas d'analyse détaillée. Ouvre l'offre d'origine si le titre t'intrigue.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": null,
-    "salaire_max": null,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "",
-   "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1462&id_origin=0",
-   "verifiee_le": "2026-10-14",
-   "disponibilite": "disponible",
-   "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1462&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://www.emploi-territorial.fr/offre/o091260917000192-appariteur-referent-courrier?pk_campaign=ep",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-2026-2413946",
@@ -8898,7 +8870,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1640&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1640&id_origin=0",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-MAE_200e9f09-f0e2-416e-8ce7-d48fcc8fad52",
@@ -9008,7 +8985,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1642&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1642&id_origin=0",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-2026-2418414",
@@ -9046,7 +9028,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1641&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1641&id_origin=0",
+    "statut": "employeur"
+   }
   },
   {
    "id": "cnrs-MOY400-STERIG-415",
@@ -9313,7 +9300,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1638&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1638&id_origin=0",
+    "statut": "employeur"
+   }
   },
   {
    "id": "cnrs-MOY200-DELMAC-037",
@@ -9467,7 +9459,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1647&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1647&id_origin=0",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-O075260203000276",
@@ -9505,7 +9502,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://www.emploi-territorial.fr/offre/o075260203000276-charge-metrologie-sav-298?pk_campaign=ep",
-   "employeur_verifie": "introuvable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://www.emploi-territorial.fr/offre/o075260203000276-charge-metrologie-sav-298?pk_campaign=ep",
+    "statut": "employeur"
+   }
   },
   {
    "id": "cnrs-INS1619-CLAETI-023",
@@ -9581,7 +9583,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1637&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1637&id_origin=0",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-2026-2151792",
@@ -9624,7 +9631,8 @@
    },
    "disponibilite": "disponible",
    "lien_employeur": "https://jobs.sorbonne-universite.fr/offre-de-emploi/emploi-charge-du-traitement-des-publications-f-h_1286.aspx",
-   "employeur_verifie": "introuvable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14"
   },
   {
    "id": "cnrs-UMR9022-SAMBEL-011",
@@ -9811,7 +9819,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1639&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1639&id_origin=0",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-2026-2362249",
@@ -10391,12 +10404,13 @@
    "employeur_confirme": true,
    "verifiee_le": "2026-10-14",
    "recoupement": {
-    "url_employeur": "https://passerelles.economie.gouv.fr/Pages/Offre/DetailOffre.aspx?idOffre=32689&idOrigine=&LCID=1036&action=jobapplication",
+    "url_employeur": "https://passerelles.economie.gouv.fr/Pages/Offre/DetailOffre.aspx?idOffre=32689&idOrigine=&LCID=1036",
     "statut": "employeur"
    },
    "disponibilite": "disponible",
    "lien_employeur": "https://passerelles.economie.gouv.fr/Pages/Offre/DetailOffre.aspx?idOffre=32689&idOrigine=&LCID=1036",
-   "employeur_verifie": "introuvable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14"
   },
   {
    "id": "csp-MEF_2026-33053",
@@ -10434,12 +10448,13 @@
    "employeur_confirme": true,
    "verifiee_le": "2026-10-14",
    "recoupement": {
-    "url_employeur": "https://passerelles.economie.gouv.fr/Pages/Offre/DetailOffre.aspx?idOffre=33053&idOrigine=&LCID=1036&action=jobapplication",
+    "url_employeur": "https://passerelles.economie.gouv.fr/Pages/Offre/DetailOffre.aspx?idOffre=33053&idOrigine=&LCID=1036",
     "statut": "employeur"
    },
    "disponibilite": "disponible",
    "lien_employeur": "https://passerelles.economie.gouv.fr/Pages/Offre/DetailOffre.aspx?idOffre=33053&idOrigine=&LCID=1036",
-   "employeur_verifie": "introuvable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14"
   },
   {
    "id": "abg-140412",
@@ -11354,7 +11369,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1645&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1645&id_origin=0",
+    "statut": "employeur"
+   }
   },
   {
    "id": "cnrs-UMR7587-VIAMAZ-003",
@@ -11430,7 +11450,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1646&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1646&id_origin=0",
+    "statut": "employeur"
+   }
   },
   {
    "id": "cnrs-UMR7638-REJBOD-003",
@@ -12152,45 +12177,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://www.emploi-territorial.fr/offre/o075260713001532-responsable-unite-metrologie-sav?pk_campaign=ep",
-   "employeur_verifie": "introuvable"
-  },
-  {
-   "id": "csp-2026-2168526",
-   "source": "MNHN",
-   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/restaurateur-reference-2026-2168526/",
-   "titre": "Restaurateur",
-   "employeur": "MNHN",
-   "lieu": "Paris (75)",
-   "region": "idf",
-   "contrat": "",
-   "type": "emploi",
-   "date_publication": "2026-10-13",
-   "analyse": {
-    "score": 8,
-    "niveau": "hors",
-    "mode": "mots-cles",
-    "resume": "Offre éloignée de ton profil d'après les mots-clés : pas d'analyse détaillée. Ouvre l'offre d'origine si le titre t'intrigue.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": null,
-    "salaire_max": null,
-    "duree_mois": null,
-    "date_limite": null,
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "",
-   "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1393&id_origin=3",
-   "verifiee_le": "2026-10-14",
-   "disponibilite": "disponible",
-   "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1393&id_origin=3",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://www.emploi-territorial.fr/offre/o075260713001532-responsable-unite-metrologie-sav?pk_campaign=ep",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-2026-2424798",
@@ -12228,45 +12220,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1644&id_origin=0",
-   "employeur_verifie": "non_verifiable"
-  },
-  {
-   "id": "csp-2026-2312571",
-   "source": "MNHN",
-   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/secretaire-pedagogique-et-de-scolarite-fh-reference-2026-2312571/",
-   "titre": "Secrétaire pédagogique et de scolarité",
-   "employeur": "MNHN",
-   "lieu": "Paris (75)",
-   "region": "idf",
-   "contrat": "",
-   "type": "emploi",
-   "date_publication": "2026-10-13",
-   "analyse": {
-    "score": 8,
-    "niveau": "hors",
-    "mode": "mots-cles",
-    "resume": "Offre éloignée de ton profil d'après les mots-clés : pas d'analyse détaillée. Ouvre l'offre d'origine si le titre t'intrigue.",
-    "missions": [],
-    "prerequis": [],
-    "competences": [],
-    "atouts": [],
-    "manques": [],
-    "bloquants": [],
-    "conseil": "",
-    "salaire_min": null,
-    "salaire_max": null,
-    "duree_mois": null,
-    "date_limite": "2026-10-14",
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "",
-   "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1549&id_origin=0",
-   "verifiee_le": "2026-10-14",
-   "disponibilite": "disponible",
-   "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1549&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1644&id_origin=0",
+    "statut": "employeur"
+   }
   },
   {
    "id": "joo-fda5676a21d1",
@@ -12789,7 +12748,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1635&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1635&id_origin=0",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-2026-2397467",
@@ -12908,7 +12872,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://www.emploi-territorial.fr/offre/o056260917000983-charge-e-etudes-environnement-transition-ecologique?pk_campaign=ep",
-   "employeur_verifie": "introuvable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://www.emploi-territorial.fr/offre/o056260917000983-charge-e-etudes-environnement-transition-ecologique?pk_campaign=ep",
+    "statut": "employeur"
+   }
   },
   {
    "id": "cnrs-UMR5077-ANTHEN-002",
@@ -13193,12 +13162,13 @@
    "employeur_confirme": true,
    "verifiee_le": "2026-10-14",
    "recoupement": {
-    "url_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=119865&idOrigine=&LCID=1036&action=jobapplication",
+    "url_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=119865&idOrigine=&LCID=1036",
     "statut": "employeur"
    },
    "disponibilite": "disponible",
    "lien_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=119865&idOrigine=&LCID=1036",
-   "employeur_verifie": "introuvable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14"
   },
   {
    "id": "cnrs-UMR5254-SOPPUY-150",
@@ -15893,7 +15863,8 @@
    },
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.aphp.fr/jobs/job-redirect?extId=2026-23313&source=exchange&action=jobapplication",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14"
   },
   {
    "id": "mail-7aa6094260e9",

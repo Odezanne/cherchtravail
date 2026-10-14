@@ -1,22 +1,5 @@
-09:06:33   plus en ligne : Chargé de valorisation scientifique et médiation (https://emploi.cnrs.fr/Offres/CDD/UMR9022-VERDAS-012/Default.aspx)
-09:07:03   plus en ligne : Doctorant  Synthèse Organique Catalyse et Hétérocycles (https://emploi.cnrs.fr/Offres/Doctorant/UMR8180-CLEGHI-002/Default.aspx)
-09:07:44   plus en ligne : Gestionnaire financier (https://emploi.cnrs.fr/Offres/CDD/UMR9001-SYLLAM0-094/Default.aspx)
-09:07:45   plus en ligne : INGENIEUR D’ETUDES  : Fabrication et caractérisation de transistors HE (https://emploi.cnrs.fr/Offres/CDD/UMR8520-NICDEF0-002/Default.aspx)
-09:07:49   plus en ligne : Ingénieur - Traitement et validation des données MSA / BepiColombo (https://emploi.cnrs.fr/Offres/CDD/UMR7648-EDOBOU-053/Default.aspx)
-09:08:26   plus en ligne : Ingénieur de recherche : batteries à l'état solide à couche mince (https://emploi.cnrs.fr/Offres/CDD/UMR8520-WANTSA-008/Default.aspx)
-09:08:48   plus en ligne : Ingénieur électronicien (https://emploi.cnrs.fr/Offres/CDD/UMR7164-SANMER-042/Default.aspx)
-09:09:22   plus en ligne : Thèse sur l'étude d'un circuit insecte pour la formation d'une mémoire (https://emploi.cnrs.fr/Offres/Doctorant/UMR9197-LAUDAS-001/Default.aspx)
-09:10:33   plus en ligne : Ingénieur(e) d'étude en biologie moléculaire (https://emploi.cnrs.fr/Offres/CDD/UMR7258-FREBAR-008/Default.aspx)
-09:11:09   plus en ligne : Doctorat en mathématiques et informatique fondamentale (https://emploi.cnrs.fr/Offres/Doctorant/UMR8243-LAUPIN-004/Default.aspx)
-09:11:52 Recoupement : 158 pages revérifiées (10 plus en ligne), 0 recherches sur le web
-09:11:52   retirée : Chargé de valorisation scientifique et médiation (https://emploi.cnrs.fr/Offres/CDD/UMR9022-VERDAS-012/Default.aspx)
-09:11:52   retirée : Doctorant  Synthèse Organique Catalyse et Hétérocycles (https://emploi.cnrs.fr/Offres/Doctorant/UMR8180-CLEGHI-002/Default.aspx)
-09:11:52   retirée : Gestionnaire financier (https://emploi.cnrs.fr/Offres/CDD/UMR9001-SYLLAM0-094/Default.aspx)
-09:11:52   retirée : INGENIEUR D’ETUDES  : Fabrication et caractérisation de transistors HE (https://emploi.cnrs.fr/Offres/CDD/UMR8520-NICDEF0-002/Default.aspx)
-09:11:52   retirée : Ingénieur - Traitement et validation des données MSA / BepiColombo (https://emploi.cnrs.fr/Offres/CDD/UMR7648-EDOBOU-053/Default.aspx)
-09:11:52   retirée : Ingénieur de recherche : batteries à l'état solide à couche mince (https://emploi.cnrs.fr/Offres/CDD/UMR8520-WANTSA-008/Default.aspx)
-09:11:52   retirée : Ingénieur électronicien (https://emploi.cnrs.fr/Offres/CDD/UMR7164-SANMER-042/Default.aspx)
-09:11:52   retirée : Thèse sur l'étude d'un circuit insecte pour la formation d'une mémoire (https://emploi.cnrs.fr/Offres/Doctorant/UMR9197-LAUDAS-001/Default.aspx)
-09:11:52   retirée : Ingénieur(e) d'étude en biologie moléculaire (https://emploi.cnrs.fr/Offres/CDD/UMR7258-FREBAR-008/Default.aspx)
-09:11:52   retirée : Doctorat en mathématiques et informatique fondamentale (https://emploi.cnrs.fr/Offres/Doctorant/UMR8243-LAUPIN-004/Default.aspx)
-09:11:52 Revérification : 10 offres retirées du site, 361 restantes
+09:32:22 Vérifications de Didier : 3 offre(s) retirée(s) chez l'employeur
+09:32:22   retirée : Adjoint au chef de service sécurité sûreté et logistique (https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1462&id_origin=0)
+09:32:22   retirée : Restaurateur (https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1393&id_origin=3)
+09:32:22   retirée : Secrétaire pédagogique et de scolarité (https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1549&id_origin=0)
+09:32:22 Revérification : 3 offres retirées du site, 358 restantes
