@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-14T07:19+02:00",
+ "maj": "2026-10-14T10:55+02:00",
  "offres": [
   {
    "id": "cnrs-UMR5175-MARVAN-005",
@@ -399,12 +399,13 @@
       "url": "https://recrutement.mnhn.fr/offre-emploi-416.html"
      }
     ],
-    "url_employeur": "https://recrutement.mnhn.fr/offre-emploi-416.html",
+    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1643&id_origin=0",
     "cherche_le": "2026-10-13",
     "statut": "employeur"
    },
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1643&id_origin=0",
-   "employeur_verifie": "non_verifiable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14"
   },
   {
    "id": "csp-2026-2380548",
