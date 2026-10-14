@@ -28,6 +28,7 @@ DONNEES = RACINE / "docs" / "data" / "offres.json"
 ETAT = RACINE / "data" / "etat.json"
 JOURNAL_TXT = RACINE / "data" / "journal.txt"
 GARDER_JOURS = 45
+SCORE_MIN = 10  # en dessous : hors profil (physique, astrophysique, informatique…), retirée du site
 
 
 def charger(p, defaut):
@@ -145,9 +146,10 @@ def main():
 
     # 2. Tri : nouvelles offres, sans doublon ni exclusion (ni offres déjà vues retirées par l'employeur)
     expirees = set(etat.get("expirees", []))
+    hors_profil = set(etat.get("hors_profil", []))
     nouvelles = []
     for o in brutes:
-        if o["id"] in connues or o["id"] in expirees or analyse.exclue(o, cfg):
+        if o["id"] in connues or o["id"] in expirees or o["id"] in hors_profil or analyse.exclue(o, cfg):
             continue
         cd = cle_doublon(o)
         if cd in doublons:
@@ -258,11 +260,19 @@ def main():
             log(f"Recoupement impossible : {e}")
 
     # 5. Nettoyage : offres trop anciennes, date limite dépassée, ou retirées du site d'origine (sauf si gardées)
+    #    Offres hors profil (moins de SCORE_MIN %, ou exclues par les réglages) : retirées et jamais reprises,
+    #    sauf celles du MNHN et celles que je suis.
     limite = (date.today() - timedelta(days=GARDER_JOURS)).isoformat()
+    suivies = set(etat_prive.get("suivi") or {})
+    nouveaux_hors = []
     garder = []
     for o in connues.values():
         dl = o.get("analyse", {}).get("date_limite")
         if o.get("vu_le", aujourd_hui) < limite or (dl and dl < aujourd_hui):
+            continue
+        if o["id"] not in suivies and o.get("source") != "MNHN" and (
+                analyse.exclue(o, cfg) or o.get("analyse", {}).get("score", 0) < SCORE_MIN):
+            nouveaux_hors.append(o["id"])
             continue
         if o.get("disponibilite") == "expiree" and o["id"] not in gardees_ids:
             expirees.add(o["id"])
@@ -273,11 +283,14 @@ def main():
     DONNEES.parent.mkdir(parents=True, exist_ok=True)
     DONNEES.write_text(json.dumps({"maj": datetime.now(ZoneInfo("Europe/Paris")).isoformat(timespec="minutes"),
                                    "offres": garder}, ensure_ascii=False, indent=1), encoding="utf-8")
-    log(f"Site mis à jour : {len(garder)} offres")
+    log(f"Site mis à jour : {len(garder)} offres ({len(nouveaux_hors)} hors profil écartées)")
+    etat["hors_profil"] = (etat.get("hors_profil", []) + nouveaux_hors)[-5000:]
 
     # 6. Condensé
     if not hors_ligne:
-        condense.envoyer([o for o in a_analyser + eloignees if o["id"] not in ids_reprises and o["id"] not in ecartees],
+        ids_hors = set(nouveaux_hors)
+        condense.envoyer([o for o in a_analyser + eloignees
+                          if o["id"] not in ids_reprises and o["id"] not in ecartees and o["id"] not in ids_hors],
                          len(garder), menage, mode_menage, etat_prive, garder)
     etat["expirees"] = sorted(expirees)[-3000:]
     etat["dernier_condense"] = datetime.now(ZoneInfo("Europe/Paris")).date().isoformat()

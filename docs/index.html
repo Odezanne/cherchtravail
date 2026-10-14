@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap">
-<link rel="stylesheet" href="style.css?v=16">
+<link rel="stylesheet" href="style.css?v=17">
 </head>
 <body>
 <header class="entete">
@@ -46,6 +46,13 @@
     <input type="range" id="largeur" min="0" max="4" step="1" value="1" aria-describedby="largeur-aide">
     <div class="graduations" aria-hidden="true"><span>Strict</span><span>Proche</span><span>Large</span><span>Très large</span><span>Tout</span></div>
     <p class="aide" id="largeur-aide"></p>
+    <div class="tri">
+      <span class="tri-titre">Trier par</span>
+      <div class="puces" id="tri">
+        <label><input type="radio" name="tri" value="score" checked><span>Pertinence</span></label>
+        <label><input type="radio" name="tri" value="limite"><span>Date limite</span></label>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -95,17 +102,17 @@
 </dialog>
 
 <div class="toast" id="toast" role="status" hidden></div>
-<script src="docx.js?v=16"></script>
-<script src="app.js?v=16"></script>
-<script src="lieux.js?v=16"></script>
-<script src="sync.js?v=16"></script>
-<script src="recherche.js?v=16"></script>
-<script src="suivi.js?v=16"></script>
-<script src="lettre.js?v=16"></script>
-<script src="cv.js?v=16"></script>
-<script src="labos.js?v=16"></script>
-<script src="contacts.js?v=16"></script>
-<script src="dossier.js?v=16"></script>
-<script src="profil.js?v=16"></script>
+<script src="docx.js?v=17"></script>
+<script src="app.js?v=17"></script>
+<script src="lieux.js?v=17"></script>
+<script src="sync.js?v=17"></script>
+<script src="recherche.js?v=17"></script>
+<script src="suivi.js?v=17"></script>
+<script src="lettre.js?v=17"></script>
+<script src="cv.js?v=17"></script>
+<script src="labos.js?v=17"></script>
+<script src="contacts.js?v=17"></script>
+<script src="dossier.js?v=17"></script>
+<script src="profil.js?v=17"></script>
 </body>
 </html>

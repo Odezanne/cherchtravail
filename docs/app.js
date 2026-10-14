@@ -8,7 +8,7 @@ const NIVEAUX_LARGEUR = [
   { nom: "Tout", min: 0, aide: "Tout ce que le robot a trouvé, même hors profil." },
 ];
 const GROUPES = { coeur: "Cœur de cible", tres_proche: "Très proche", proche: "Proche", eloigne: "Plus éloigné", hors: "Hors profil" };
-const DEFAUTS = { onglet: "emploi", largeur: 1, recherche: "", salaire: 0, sansSalaire: true,
+const DEFAUTS = { onglet: "emploi", largeur: 1, tri: "score", recherche: "", salaire: 0, sansSalaire: true,
   zones: ["idf", "?"], contrats: ["cdd", "cdi", "autre"], cacherBloques: false, voirMasquees: false, lieux: [], lieuxMode: "inclure" };
 
 let donnees = { offres: [], maj: null };
@@ -162,7 +162,10 @@ function afficher() {
   if (etat.onglet === "dossier") { rendreDossier(); return; }
   if (vueRecherche) { $("#liste").innerHTML = rendreResultats(); return; }
   const barre = barreRecherche() + (typeof bandeauLieux === "function" ? bandeauLieux() : "");
-  const tri = (x, y) => (y.analyse?.score ?? 0) - (x.analyse?.score ?? 0);
+  const parScore = (x, y) => (y.analyse?.score ?? 0) - (x.analyse?.score ?? 0);
+  // Par date limite : la plus proche d'abord, les offres sans date à la fin (puis par %)
+  const parLimite = (x, y) => (x.analyse?.date_limite || "9999").localeCompare(y.analyse?.date_limite || "9999") || parScore(x, y);
+  const tri = etat.tri === "limite" ? parLimite : parScore;
   // Offres gardées : toujours en tête, quels que soient les filtres, jusqu'à ce que je postule
   const gardees = donnees.offres.filter((o) => o.type === etat.onglet && statutDe(o.id) === "a_postuler" && !(suivi[o.id] || {}).masque).sort(tri);
   const idsGardees = new Set(gardees.map((o) => o.id));
@@ -184,11 +187,16 @@ function afficher() {
   }
   let html = barre + enTete, groupe = null;
   for (const o of liste) {
-    const g = o.analyse?.niveau || "hors";
-    if (g !== groupe) { html += `<h2 class="groupe">${GROUPES[g] || g}</h2>`; groupe = g; }
+    const g = etat.tri === "limite" ? groupeLimite(o) : GROUPES[o.analyse?.niveau || "hors"] || o.analyse?.niveau;
+    if (g !== groupe) { html += `<h2 class="groupe">${g}</h2>`; groupe = g; }
     html += carte(o);
   }
   $("#liste").innerHTML = html;
+}
+
+function groupeLimite(o) {
+  const j = joursAvant(o.analyse?.date_limite);
+  return j == null ? "Sans date limite connue" : j <= 7 ? "Cette semaine" : j <= 31 ? "Dans le mois" : "Plus tard";
 }
 
 function liste(titre, items, rendu = (x) => esc(x)) {
@@ -352,6 +360,10 @@ function relierFiltres() {
   $("#cacher-bloques").addEventListener("change", (e) => { etat.cacherBloques = e.target.checked; afficher(); });
   $("#voir-masquees").checked = etat.voirMasquees;
   $("#voir-masquees").addEventListener("change", (e) => { etat.voirMasquees = e.target.checked; afficher(); });
+  document.querySelectorAll("#tri input").forEach((i) => {
+    i.checked = i.value === etat.tri;
+    i.addEventListener("change", () => { etat.tri = i.value; afficher(); });
+  });
   for (const [sel, cle] of [["#zones", "zones"], ["#contrats", "contrats"]]) {
     document.querySelectorAll(sel + " input").forEach((i) => {
       i.checked = etat[cle].includes(i.value);
