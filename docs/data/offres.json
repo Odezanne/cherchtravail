@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-14T10:55+02:00",
+ "maj": "2026-10-14T10:59+02:00",
  "offres": [
   {
    "id": "cnrs-UMR5175-MARVAN-005",
@@ -3973,7 +3973,7 @@
    "type": "emploi",
    "date_publication": "2026-10-14",
    "lien_employeur": "https://passerelles.economie.gouv.fr/Pages/Offre/DetailOffre.aspx?idOffre=32315&idOrigine=&LCID=1036&action=jobapplication",
-   "employeur_verifie": "introuvable",
+   "employeur_verifie": "disponible",
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "analyse": {
@@ -4024,7 +4024,12 @@
     "lien_these": false
    },
    "vu_le": "2026-10-14",
-   "extrait": "Technicien(ne) analyse et recherche en biologie H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non rens"
+   "extrait": "Technicien(ne) analyse et recherche en biologie H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non rens",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://passerelles.economie.gouv.fr/Pages/Offre/DetailOffre.aspx?idOffre=32315&idOrigine=&LCID=1036&action=jobapplication",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-2026-2430742",
@@ -4569,7 +4574,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://www.emploi-territorial.fr/offre/o971261005001356-responsable-service-biodiversite-littoral?pk_campaign=ep",
-   "employeur_verifie": "introuvable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://www.emploi-territorial.fr/offre/o971261005001356-responsable-service-biodiversite-littoral?pk_campaign=ep",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-DEF_04-00057138",
@@ -5195,7 +5205,12 @@
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "lien_employeur": "https://www.emploi-territorial.fr/offre/o062260622000502-agent-capture-animale?pk_campaign=ep",
-   "employeur_verifie": "introuvable"
+   "employeur_verifie": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://www.emploi-territorial.fr/offre/o062260622000502-agent-capture-animale?pk_campaign=ep",
+    "statut": "employeur"
+   }
   },
   {
    "id": "cnrs-UAR44-MONTOR-025",
@@ -5782,9 +5797,14 @@
    "vu_le": "2026-10-14",
    "extrait": "",
    "lien_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=123784&idOrigine=&LCID=1036&action=jobapplication",
-   "employeur_verifie": "introuvable",
+   "employeur_verifie": "disponible",
    "verifiee_le": "2026-10-14",
-   "disponibilite": "disponible"
+   "disponibilite": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=123784&idOrigine=&LCID=1036&action=jobapplication",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-MINT_PTSB069PS-123992",
@@ -5819,9 +5839,14 @@
    "vu_le": "2026-10-14",
    "extrait": "",
    "lien_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=123992&idOrigine=&LCID=1036&action=jobapplication",
-   "employeur_verifie": "introuvable",
+   "employeur_verifie": "disponible",
    "verifiee_le": "2026-10-14",
-   "disponibilite": "disponible"
+   "disponibilite": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=123992&idOrigine=&LCID=1036&action=jobapplication",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-MINT_PTSB069PS-123780",
@@ -5856,9 +5881,14 @@
    "vu_le": "2026-10-14",
    "extrait": "",
    "lien_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=123780&idOrigine=&LCID=1036&action=jobapplication",
-   "employeur_verifie": "introuvable",
+   "employeur_verifie": "disponible",
    "verifiee_le": "2026-10-14",
-   "disponibilite": "disponible"
+   "disponibilite": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=123780&idOrigine=&LCID=1036&action=jobapplication",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-MINT_PTSB069PS-126620",
@@ -5893,9 +5923,14 @@
    "vu_le": "2026-10-14",
    "extrait": "",
    "lien_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=126620&idOrigine=&LCID=1036&action=jobapplication",
-   "employeur_verifie": "introuvable",
+   "employeur_verifie": "disponible",
    "verifiee_le": "2026-10-14",
-   "disponibilite": "disponible"
+   "disponibilite": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=126620&idOrigine=&LCID=1036&action=jobapplication",
+    "statut": "employeur"
+   }
   },
   {
    "id": "cnrs-UMR5075-CYNDAV-089",
@@ -7923,7 +7958,7 @@
    "type": "emploi",
    "date_publication": "2026-10-14",
    "lien_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=126445&idOrigine=&LCID=1036&action=jobapplication",
-   "employeur_verifie": "introuvable",
+   "employeur_verifie": "disponible",
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "analyse": {
@@ -7967,7 +8002,12 @@
     "lien_these": false
    },
    "vu_le": "2026-10-14",
-   "extrait": "LPS 75 - DIP - Section post-analytique - Analyste biologie F/H H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonc"
+   "extrait": "LPS 75 - DIP - Section post-analytique - Analyste biologie F/H H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonc",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=126445&idOrigine=&LCID=1036&action=jobapplication",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-MINT_PTSB075PS-122103",
@@ -7981,7 +8021,7 @@
    "type": "emploi",
    "date_publication": "2026-10-14",
    "lien_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=122103&idOrigine=&LCID=1036&action=jobapplication",
-   "employeur_verifie": "introuvable",
+   "employeur_verifie": "disponible",
    "verifiee_le": "2026-10-14",
    "disponibilite": "disponible",
    "analyse": {
@@ -8025,7 +8065,12 @@
     "lien_these": false
    },
    "vu_le": "2026-10-14",
-   "extrait": "LPS Paris - DIP - Section analytique - Analyste biologie F/H H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les foncti"
+   "extrait": "LPS Paris - DIP - Section analytique - Analyste biologie F/H H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les foncti",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=122103&idOrigine=&LCID=1036&action=jobapplication",
+    "statut": "employeur"
+   }
   },
   {
    "id": "abg-140179",
@@ -8730,9 +8775,14 @@
    "vu_le": "2026-10-14",
    "extrait": "",
    "lien_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=118426&idOrigine=&LCID=1036&action=jobapplication",
-   "employeur_verifie": "introuvable",
+   "employeur_verifie": "disponible",
    "verifiee_le": "2026-10-14",
-   "disponibilite": "disponible"
+   "disponibilite": "disponible",
+   "verif_manuelle": "2026-10-14",
+   "recoupement": {
+    "url_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=118426&idOrigine=&LCID=1036&action=jobapplication",
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-O091260917000192",
