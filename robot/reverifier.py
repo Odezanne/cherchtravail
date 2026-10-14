@@ -27,8 +27,10 @@ def main():
     gardees = {i for i, s in suivi.items() if isinstance(s, dict) and s.get("statut") == "a_postuler"}
     ecartees = {i for i, s in suivi.items() if isinstance(s, dict) and s.get("masque")}
     offres = [o for o in base["offres"] if o["id"] not in ecartees]
-    recoupement.recouper(offres, gardees, recherche.verifier,
-                         max_tavily=int(os.environ.get("MAX_TAVILY", "4")), max_verif=int(os.environ.get("MAX_VERIF", "400")))
+    if os.environ.get("MANUEL_SEUL") != "1":
+        recoupement.recouper(offres, gardees, recherche.verifier,
+                             max_tavily=int(os.environ.get("MAX_TAVILY", "4")), max_verif=int(os.environ.get("MAX_VERIF", "400")))
+    recoupement.appliquer_manuelles(offres, donnees.lire_json(recoupement.FICHIER_MANUEL, {}))
     retirees = [o for o in base["offres"] if o.get("disponibilite") == "expiree" and o["id"] not in gardees]
     for o in retirees:
         log(f"  retirée : {o['titre'][:70]} ({o.get('lien_employeur') or o.get('url')})")

@@ -253,6 +253,7 @@ def main():
     if not hors_ligne:
         try:
             recoupement.recouper([o for o in connues.values() if o["id"] not in ecartees], gardees_ids, recherche.verifier)
+            recoupement.appliquer_manuelles(list(connues.values()), donnees.lire_json(recoupement.FICHIER_MANUEL, {}))
         except Exception as e:
             log(f"Recoupement impossible : {e}")
 

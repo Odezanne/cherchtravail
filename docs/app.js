@@ -229,7 +229,8 @@ function blocRecoupement(o) {
   }
   if (r.statut === "officiel" && !aVerifierMain(o)) lignes.push(`<p>Publiée seulement sur Choisir le service public, introuvable sur le site de l'employeur. C'est le portail officiel de l'emploi public, alimenté par les établissements eux-mêmes (MNHN, INRAE, universités…), donc l'offre est bien réelle. Les sites des établissements ne reprennent pas toujours toutes leurs annonces. Vérifie surtout la date limite et le contact indiqué.</p>`);
   if (r.statut === "unique") lignes.push(`<p>Vue sur un seul site pour l'instant. Avant de postuler, cherche l'offre sur le site de l'employeur ou écris au contact indiqué.</p>`);
-  if (r.statut === "employeur") lignes.push(`<p>✓ Publiée par l'employeur lui-même.</p>`);
+  if (o.verif_manuelle) lignes.push(`<p>✓ Vérifiée par Didier sur le site de l'employeur le ${dateFr(o.verif_manuelle)}.</p>`);
+  else if (r.statut === "employeur") lignes.push(`<p>✓ Publiée par l'employeur lui-même.</p>`);
   if (!lignes.length) return "";
   return `<h4>Vérification de l'offre</h4><div class="recoupement">${lignes.join("")}</div>`;
 }

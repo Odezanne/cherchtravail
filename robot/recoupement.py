@@ -8,7 +8,7 @@ import json
 import os
 import re
 import urllib.request
-from datetime import date
+from datetime import date, timedelta
 from urllib.parse import urlparse
 
 from util import log, sans_accents
@@ -189,3 +189,35 @@ def recouper(offres, gardees_ids, verifier, max_tavily=8, max_verif=220):
             o.setdefault("recoupement", {})["statut"] = statut(o)
     log(f"Recoupement : {n_verif} pages revérifiées ({n_mortes} plus en ligne), {n_t} recherches sur le web")
     return n_mortes
+
+
+FICHIER_MANUEL = "verifications-employeur.json"
+
+
+def appliquer_manuelles(offres, verifs, jours_valides=3):
+    """Vérifications faites par Didier sur mon PC (sites qui refusent les robots, comme le MNHN).
+    verifs = {id: {"etat": "en_ligne" | "retiree", "date": "AAAA-MM-JJ"}}. Une offre retirée l'est pour de bon ;
+    « en ligne » vaut quelques jours, puis l'offre repasse « À vérifier »."""
+    if not verifs:
+        return 0
+    limite = (date.today() - timedelta(days=jours_valides)).isoformat()
+    n = 0
+    for o in offres:
+        v = verifs.get(o["id"])
+        if not isinstance(v, dict):
+            continue
+        if v.get("etat") == "retiree":
+            if o.get("disponibilite") != "expiree":
+                o["expiree_le"] = v.get("date") or date.today().isoformat()
+                n += 1
+            o["disponibilite"] = "expiree"
+            o["employeur_verifie"] = "expiree"
+        elif v.get("etat") == "en_ligne" and (v.get("date") or "") >= limite and o.get("disponibilite") != "expiree":
+            o["employeur_verifie"] = "disponible"
+            o["verif_manuelle"] = v.get("date")
+            if o.get("lien_employeur"):
+                o.setdefault("recoupement", {})["url_employeur"] = o["lien_employeur"]
+                o["recoupement"]["statut"] = "employeur"
+    if n:
+        log(f"Vérifications de Didier : {n} offre(s) retirée(s) chez l'employeur")
+    return n

@@ -6,6 +6,11 @@ on:
   schedule:
     - cron: "10 12 * * *"
   workflow_dispatch:
+    inputs:
+      manuel_seul:
+        description: "Appliquer seulement les vérifications faites par Didier (rapide)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -32,6 +37,7 @@ jobs:
         env:
           DONNEES_TOKEN: ${{ secrets.DONNEES_TOKEN }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          MANUEL_SEUL: ${{ github.event_name == 'workflow_dispatch' && inputs.manuel_seul && '1' || '0' }}
         run: python robot/reverifier.py
       - name: Enregistrer
         id: commit
