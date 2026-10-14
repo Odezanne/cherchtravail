@@ -183,8 +183,20 @@ def lien_employeur_csp(page):
         if re.search(r"site\s+(de\s+l.)?employeur|postuler\s+sur", texte, re.I):
             h = re.search(r'href="([^"]+)"', m.group(1))
             if h and h.group(1).startswith("http") and "choisirleservicepublic" not in h.group(1):
-                return html.unescape(h.group(1))
+                return lien_utile(html.unescape(h.group(1)))
     return None
+
+
+def lien_utile(url):
+    """Rend le lien employeur directement utilisable : None pour une simple page d'accueil (ex. recrutement.mnhn.fr/,
+    qui ne mène pas à l'offre) ; sans « action=jobapplication » sur les sites Talent-soft (ministères), qui ouvre la
+    page de connexion au lieu de la fiche de l'offre."""
+    p = urllib.parse.urlparse(url)
+    if p.path in ("", "/") and not p.query:
+        return None
+    if "detailoffre.aspx" in p.path.lower():
+        url = re.sub(r"[&?]action=jobapplication(?=&|$)", "", url, flags=re.I)
+    return url
 
 
 def texte_offre_csp(page):

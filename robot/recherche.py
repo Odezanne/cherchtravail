@@ -24,7 +24,7 @@ import analyse  # noqa: E402
 import donnees  # noqa: E402
 import sources  # noqa: E402
 from llm import IA  # noqa: E402
-from util import JOURNAL, NE_JAMAIS_TELECHARGER, autorise, html_en_texte, identifiant, log, sans_accents, telecharger  # noqa: E402
+from util import JOURNAL, NE_JAMAIS_TELECHARGER, autorise, date_limite, html_en_texte, identifiant, log, sans_accents, telecharger  # noqa: E402
 
 RACINE = Path(__file__).resolve().parent.parent
 EXPIREE = re.compile(r"(n.est plus en ligne|n.est plus disponible|plus disponible à la candidature|"
@@ -75,6 +75,18 @@ def _page_expiree(url):
     return ("expiree" if EXPIREE.search(html_en_texte(page)[:6000]) else "disponible"), page
 
 
+def noter_date_limite(o, texte):
+    """Complète la date limite d'une offre qui n'en a pas, d'après le texte de sa page (sans IA)."""
+    a = o.get("analyse")
+    if (a or {}).get("date_limite") or o.get("date_limite"):
+        return
+    dl = date_limite(texte)
+    if dl and a is not None:
+        a["date_limite"] = dl
+    elif dl:
+        o["date_limite"] = dl  # offre pas encore analysée : main.py la recopie dans l'analyse
+
+
 def verifier(o):
     """Renvoie (disponibilite, texte). disponibilite : 'disponible', 'expiree' ou 'non_verifiable'.
     Pour Choisir le service public, on suit aussi le lien « Postuler sur le site employeur » : une offre retirée par
@@ -83,6 +95,7 @@ def verifier(o):
     etat_page, page = _page_expiree(url)
     if etat_page != "disponible":
         return etat_page, ""
+    noter_date_limite(o, html_en_texte(page))
     texte = sources.texte_offre_csp(page) if "choisirleservicepublic" in url else html_en_texte(page)
     debut = sans_accents(texte).find(sans_accents(o.get("titre", ""))[:25])
     texte = texte[debut:] if debut > 0 else texte
@@ -90,13 +103,20 @@ def verifier(o):
         return "expiree", texte[:6000]
     if "choisirleservicepublic" in url:
         lien = sources.lien_employeur_csp(page)
+        if not lien:
+            # lien disparu ou inutilisable (ex. page d'accueil du site de recrutement) : on oublie l'ancien
+            o.pop("lien_employeur", None)
+            o.pop("employeur_verifie", None)
         if lien:
             o["lien_employeur"] = lien
             etat_emp, page_emp = _page_expiree(lien)
             if etat_emp == "disponible":
                 from recoupement import ressemble
                 # page en ligne, mais l'offre y figure-t-elle ? (sinon : renvoi vers la liste générale des offres)
-                etat_emp = "disponible" if ressemble(o.get("titre", ""), html_en_texte(page_emp)[:12000], 0.7) else "introuvable"
+                texte_emp = html_en_texte(page_emp)
+                etat_emp = "disponible" if ressemble(o.get("titre", ""), texte_emp[:12000], 0.7) else "introuvable"
+                if etat_emp == "disponible":
+                    noter_date_limite(o, texte_emp)
             o["employeur_verifie"] = etat_emp
             if etat_emp == "expiree":
                 log(f"Retirée chez l'employeur : {o.get('titre', '')[:60]} ({lien})")
@@ -163,11 +183,13 @@ def main():
             if a.get(champ) and not o.get(champ):
                 o[champ] = a[champ]
             a.pop(champ, None)
+        if not a.get("date_limite"):
+            a["date_limite"] = o.get("date_limite") or date_limite(o.get("texte") or "")
         o["analyse"] = a
         o["extrait"] = (o.get("texte") or "")[:400]
         o["vu_le"] = datetime.now(ZoneInfo("Europe/Paris")).date().isoformat()
         o["recherche"] = rid
-        for champ in ("texte", "telechargeable", "prefiltre", "flux_large"):
+        for champ in ("texte", "telechargeable", "prefiltre", "flux_large", "date_limite"):
             o.pop(champ, None)
         resultats.append(o)
     resultats.sort(key=lambda o: -o["analyse"]["score"])

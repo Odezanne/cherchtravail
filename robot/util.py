@@ -122,3 +122,32 @@ def identifiant(*parties):
 
 def nettoyer(s):
     return re.sub(r"\s+", " ", html.unescape(s or "")).strip()
+
+
+MOIS = {m: i + 1 for i, m in enumerate(["janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout",
+                                        "septembre", "octobre", "novembre", "decembre"])}
+MOIS.update({m: i + 1 for i, m in enumerate(["january", "february", "march", "april", "may", "june", "july", "august",
+                                             "september", "october", "november", "december"])})
+# « Date limite de candidature : jeudi 15 octobre 2026 », « Date limite : 30/05/2027 », « Date limite du dépôt des
+# candidatures : 20/11/2026 », « Clôture des candidatures le 4 novembre 2026 », « Application deadline: 15 November 2026 ».
+# Entre le libellé et la date : ni chiffre, ni point, ni retour à la ligne (sinon on attraperait une autre date).
+_DATE_LIMITE = re.compile(
+    r"(?:date limite|cloture des candidatures|candidater avant|candidatures? (?:jusqu.au|avant)|deadline)"
+    r"[^:.\d\n]{0,45}:?\s*(?:le\s+)?(?:[a-z]+,?\s+)?(\d{1,2})(?:er)?[\s/.-]+(\d{1,2}|[a-z]+)[\s/.-]+(\d{4})\b")
+
+
+def date_limite(texte):
+    """Date limite de candidature trouvée dans le texte d'une offre (AAAA-MM-JJ), sans IA. None si absente ou
+    invraisemblable (déjà passée ou à plus de 18 mois : probablement une autre date)."""
+    from datetime import date, timedelta
+    auj = date.today()
+    for m in _DATE_LIMITE.finditer(sans_accents(texte or "")):
+        j, mois, a = m.groups()
+        mois = int(mois) if mois.isdigit() else MOIS.get(mois)
+        try:
+            d = date(int(a), mois, int(j))
+        except (TypeError, ValueError):
+            continue
+        if auj <= d <= auj + timedelta(days=550):
+            return d.isoformat()
+    return None

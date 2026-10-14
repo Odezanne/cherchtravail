@@ -21,7 +21,7 @@ import condense  # noqa: E402
 import recoupement  # noqa: E402
 import sources  # noqa: E402
 from llm import IA  # noqa: E402
-from util import JOURNAL, identifiant, log, sans_accents, telecharger, html_en_texte  # noqa: E402
+from util import JOURNAL, date_limite, identifiant, log, sans_accents, telecharger, html_en_texte  # noqa: E402
 
 RACINE = Path(__file__).resolve().parent.parent
 DONNEES = RACINE / "docs" / "data" / "offres.json"
@@ -228,8 +228,8 @@ def main():
             if a.get(champ) and (not o.get(champ) or o.get(champ) == "?"):
                 o[champ] = a[champ]
             a.pop(champ, None)
-        if not a.get("date_limite") and o.get("date_limite"):
-            a["date_limite"] = o["date_limite"]
+        if not a.get("date_limite"):
+            a["date_limite"] = o.get("date_limite") or date_limite(o.get("texte") or "")
         o.pop("date_limite", None)
         o["analyse"] = a
         if o["id"] not in ids_reprises:
