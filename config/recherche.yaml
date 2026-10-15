@@ -1,7 +1,7 @@
 # Réglages de la recherche. Modifiable directement sur GitHub (icône crayon).
 
 # Heure d'envoi du condensé quotidien (heure de Paris)
-heure_condense: 8
+heure_condense: 10
 
 # Nombre maximum de nouvelles offres analysées par l'IA chaque jour
 # (les modèles gratuits ont un quota quotidien limité)
