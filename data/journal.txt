@@ -1,39 +1,30 @@
-07:17:02 Données privées lues : 1 offres suivies ou écartées
-07:17:02 Profil personnalisé du site appliqué
-07:17:03 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
-07:17:03 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
-07:17:06 CNRS : 414 offres dans le flux
-07:17:33 Choisir le service public : 136 offres (21 du MNHN)
-07:18:26 INRAE : 189 offres récentes dans le plan du site, 40 nouvelles lues, 40 gardées
-07:18:42 ABG : 53 offres de thèse
-07:18:46 Jooble : 41 offres
-07:18:48 Alertes mail : 4 mails d'emploi récents, 3 lus (hors candidatures et échanges protégés)
-07:19:01 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-07:19:28 Alertes mail : 13 offres extraites
-07:19:29 Ménage des mails (essai) : 4 mail(s) seraient mis à la corbeille
-07:19:29   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
-07:19:29   essai : 2026-10-15 · "Indeed" <donotreply@jobalert.indeed.com · Chargé d'études et méthodes en transport routier de voyageurs H/F à LACROIXSAVAC
-07:19:29   essai : 2026-10-16 · France Travail <nepasrepondre@offre.fran · Vous avez reçu 2 nouvelles offres
-07:19:29   essai : 2026-10-16 · France Travail <nepasrepondre@offre.fran · Vous avez reçu 1 nouvelle offre
-07:19:29 697 offres collectées, 261 nouvelles, 60 retenues pour l'analyse (dont 14 anciennes à réanalyser), 22 gardées sans IA
-07:19:51 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
-07:20:04 1 offres déjà retirées par l'employeur, écartées : Post-doc en écologie quantitative
-07:21:02 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-07:22:32 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-07:22:48 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-07:25:15 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-07:25:31 IA gemini-flash-latest : HTTP 429 [{   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-
-07:25:56 IA gemini-flash-lite-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-07:28:12 IA gemini-flash-lite-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-07:31:06 Appels IA : 41, offres analysées par IA : 54 / 59
-07:32:24   plus en ligne : Ingénieur d’étude en techniques biologiques (https://emploi.cnrs.fr/Offres/CDD/UMR8002-CENAGU-006/Default.aspx)
-07:33:11   plus en ligne : Contrat doctoral en neurosciences cognitives computationnelles : modél (https://emploi.cnrs.fr/Offres/Doctorant/UMR5263-ANNCAM-088/Default.aspx)
-07:34:37   plus en ligne : Ingénieur d’études  en neurosciences auditives (analyse et modélisatio (https://emploi.cnrs.fr/Offres/CDD/UMR7289-BRUGIO-009/Default.aspx)
-07:34:45   plus en ligne : Modélisation multi-échelle des particules ultrafines et de l’expositio (https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140390/job/modelisation-multi-echelle-des-particules-ultrafines-et-de-l-exposition-en-milieu-urbain)
-07:35:48   plus en ligne : Chercheur post-doctoral  en neurosciences auditives : attention dirigé (https://emploi.cnrs.fr/Offres/CDD/UMR7289-BRUGIO-011/Default.aspx)
-07:36:40   plus en ligne : Post-Doctorat en biologie structurale (https://emploi.cnrs.fr/Offres/CDD/UMR5075-CYNDAV-089/Default.aspx)
-07:38:31   plus en ligne : Ingénieur d'étude  en biologie moléculaire (épitranscriptomique virale (https://emploi.cnrs.fr/Offres/CDD/UMR8038-BRUSAR-001/Default.aspx)
-07:38:33 Recoupement : 220 pages revérifiées (7 plus en ligne), 2 recherches sur le web
-07:38:33 Site mis à jour : 210 offres (34 hors profil écartées)
-07:38:36 Condensé envoyé par e-mail
-07:38:36 Notification envoyée
+07:12:51 Données privées lues : 1 offres suivies ou écartées
+07:12:51 Profil personnalisé du site appliqué
+07:12:52 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
+07:12:52 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
+07:12:56 CNRS : 413 offres dans le flux
+07:13:22 Choisir le service public : 136 offres (21 du MNHN)
+07:14:11 INRAE : 190 offres récentes dans le plan du site, 40 nouvelles lues, 40 gardées
+07:14:27 ABG : 53 offres de thèse
+07:14:28 Jooble : 41 offres
+07:14:51 Alertes mail : 8 mails d'emploi récents, 7 lus (hors candidatures et échanges protégés)
+07:15:44 Alertes mail : 2 offres extraites
+07:15:45 Ménage des mails (essai) : 8 mail(s) seraient mis à la corbeille
+07:15:45   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
+07:15:45   essai : 2026-10-15 · "Indeed" <donotreply@jobalert.indeed.com · Chargé d'études et méthodes en transport routier de voyageurs H/F à LACROIXSAVAC
+07:15:45   essai : 2026-10-16 · France Travail <nepasrepondre@offre.fran · Vous avez reçu 2 nouvelles offres
+07:15:45   essai : 2026-10-16 · France Travail <nepasrepondre@offre.fran · Vous avez reçu 1 nouvelle offre
+07:15:45   essai : 2026-10-16 · "Welcome to the Jungle" <welcome@welcome · Comment ça se passe depuis votre arrivée, Eliott ?
+07:15:45   essai : 2026-10-16 · France Travail <noreply@email.francetrav · Réunion d’information en ligne avec l’association NQT – Jeudi 22 octobre à 10 h
+07:15:45   essai : 2026-10-16 · "Indeed" <donotreply@jobalert.indeed.com · Chargé d'études et méthodes en transport routier de voyageurs H/F à LACROIXSAVAC
+07:15:45   essai : 2026-10-17 · "Indeed" <donotreply@match.indeed.com> · Associé(e) scientifique à la recherche et développement h/f – INNOBIOMIL
+07:15:45 685 offres collectées, 230 nouvelles, 60 retenues pour l'analyse (dont 34 anciennes à réanalyser), 8 gardées sans IA
+07:15:50 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
+07:15:54 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
+07:15:58 2 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Post-doc en écologie quantitative
+07:25:54 Appels IA : 22, offres analysées par IA : 58 / 58
+07:33:09   plus en ligne : Post doc écologie théorique appliquée à la dynamique des fonctions des (https://emploi.cnrs.fr/Offres/CDD/UAR2029-SEVBON-062/Default.aspx)
+07:33:32 Recoupement : 220 pages revérifiées (1 plus en ligne), 0 recherches sur le web
+07:33:32 Site mis à jour : 210 offres (26 hors profil écartées)
+07:33:35 Condensé envoyé par e-mail
+07:33:35 Notification envoyée
