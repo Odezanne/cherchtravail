@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-17T09:33+02:00",
+ "maj": "2026-10-17T14:33+02:00",
  "offres": [
   {
    "id": "cnrs-UMR9191-ARNLER-009",
@@ -13475,7 +13475,7 @@
    "vu_le": "2026-10-13",
    "extrait": "",
    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1639&id_origin=0",
-   "verifiee_le": "2026-10-16",
+   "verifiee_le": "2026-10-17",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1639&id_origin=0",
    "employeur_verifie": "disponible",
@@ -13519,7 +13519,7 @@
    "extrait": "",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1655&id_origin=0",
    "employeur_verifie": "non_verifiable",
-   "verifiee_le": "2026-10-16",
+   "verifiee_le": "2026-10-17",
    "disponibilite": "disponible"
   },
   {
@@ -13556,7 +13556,7 @@
    "extrait": "",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1651&id_origin=0",
    "employeur_verifie": "non_verifiable",
-   "verifiee_le": "2026-10-16",
+   "verifiee_le": "2026-10-17",
    "disponibilite": "disponible"
   },
   {
@@ -13592,7 +13592,7 @@
    "vu_le": "2026-10-13",
    "extrait": "",
    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1647&id_origin=0",
-   "verifiee_le": "2026-10-16",
+   "verifiee_le": "2026-10-17",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1647&id_origin=0",
    "employeur_verifie": "non_verifiable"
@@ -13630,7 +13630,7 @@
    "vu_le": "2026-10-13",
    "extrait": "",
    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1645&id_origin=0",
-   "verifiee_le": "2026-10-16",
+   "verifiee_le": "2026-10-17",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1645&id_origin=0",
    "employeur_verifie": "disponible",
@@ -13673,7 +13673,7 @@
    "vu_le": "2026-10-13",
    "extrait": "",
    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1646&id_origin=0",
-   "verifiee_le": "2026-10-16",
+   "verifiee_le": "2026-10-17",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1646&id_origin=0",
    "employeur_verifie": "disponible",
@@ -13716,7 +13716,7 @@
    "vu_le": "2026-10-13",
    "extrait": "",
    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1644&id_origin=0",
-   "verifiee_le": "2026-10-16",
+   "verifiee_le": "2026-10-17",
    "disponibilite": "disponible",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1644&id_origin=0",
    "employeur_verifie": "disponible",
@@ -13760,7 +13760,7 @@
    "extrait": "",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1635&id_origin=0",
    "employeur_verifie": "disponible",
-   "verifiee_le": "2026-10-16",
+   "verifiee_le": "2026-10-17",
    "disponibilite": "disponible",
    "verif_manuelle": "2026-10-14",
    "recoupement": {
@@ -13802,7 +13802,7 @@
    "extrait": "",
    "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1561&id_origin=3",
    "employeur_verifie": "non_verifiable",
-   "verifiee_le": "2026-10-16",
+   "verifiee_le": "2026-10-17",
    "disponibilite": "disponible"
   }
  ]
