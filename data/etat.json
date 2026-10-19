@@ -16,9 +16,15 @@
   "e989a3453d4f",
   "a6120e33cc34",
   "79c8a9e73b23",
-  "5eac4b837f9a"
+  "5eac4b837f9a",
+  "3339cbfe12f0",
+  "a5e1652ff8b5",
+  "876248d5f0f6",
+  "98fe97c2bde5",
+  "6cc25841e3b7",
+  "b7156b7e431f"
  ],
- "dernier_condense": "2026-10-18",
+ "dernier_condense": "2026-10-19",
  "expirees": [
   "abg-140390",
   "cnrs-UMR5286-VIRPET-008",
@@ -522,6 +528,12 @@
   "csp-DEF_17-00070913",
   "joo-d7ad91003e5f",
   "joo-e4ff67be493f",
-  "joo-36059b98d9f1"
+  "joo-36059b98d9f1",
+  "joo-5ae7a51ceb80",
+  "mail-660efcd2d180",
+  "mail-fbd74b2728a1",
+  "csp-MINT_BA075ACA-127686",
+  "joo-bd2133478c0a",
+  "joo-cff84c721611"
  ]
 }
