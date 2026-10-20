@@ -1,41 +1,27 @@
-07:26:54 Données privées lues : 1 offres suivies ou écartées
-07:26:54 Profil personnalisé du site appliqué
-07:26:55 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
-07:26:55 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
-07:26:57 CNRS indisponible : HTTP Error 503: Service Unavailable
-07:27:26 Choisir le service public : 132 offres (19 du MNHN)
-07:27:28 INRAE : 185 offres récentes dans le plan du site, 0 nouvelles lues, 0 gardées
-07:27:45 ABG : 54 offres de thèse
-07:27:47 Jooble : 38 offres
-07:28:07 Alertes mail : 13 mails d'emploi récents, 13 lus (hors candidatures et échanges protégés)
-07:29:14 Alertes mail : 5 offres extraites
-07:29:15 Ménage des mails (essai) : 17 mail(s) seraient mis à la corbeille
-07:29:15   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
-07:29:15   essai : 2026-10-15 · "Indeed" <donotreply@jobalert.indeed.com · Chargé d'études et méthodes en transport routier de voyageurs H/F à LACROIXSAVAC
-07:29:15   essai : 2026-10-16 · France Travail <nepasrepondre@offre.fran · Vous avez reçu 2 nouvelles offres
-07:29:15   essai : 2026-10-16 · France Travail <nepasrepondre@offre.fran · Vous avez reçu 1 nouvelle offre
-07:29:15   essai : 2026-10-16 · "Welcome to the Jungle" <welcome@welcome · Comment ça se passe depuis votre arrivée, Eliott ?
-07:29:15   essai : 2026-10-16 · France Travail <noreply@email.francetrav · Réunion d’information en ligne avec l’association NQT – Jeudi 22 octobre à 10 h
-07:29:15   essai : 2026-10-16 · "Indeed" <donotreply@jobalert.indeed.com · Chargé d'études et méthodes en transport routier de voyageurs H/F à LACROIXSAVAC
-07:29:15   essai : 2026-10-17 · "Indeed" <donotreply@match.indeed.com> · Associé(e) scientifique à la recherche et développement h/f – INNOBIOMIL
-07:29:15   essai : 2026-10-17 · "Indeed" <donotreply@jobalert.indeed.com · Ingénieur d'études-Assistant ingénieur, Modèles précliniques de sarcomes F/H à I
-07:29:15   essai : 2026-10-18 · "Indeed" <donotreply@match.indeed.com> · Assistant-e ingénieur-e en biologie – INRAE
-07:29:15   essai : 2026-10-18 · France Travail <nepasrepondre@evenement. · Rappel de confirmation à distance
-07:29:15   essai : 2026-10-18 · "Welcome to the Jungle" <welcome@welcome · Vous êtes officiellement des nôtres !
-07:29:15   essai : 2026-10-18 · "Indeed" <donotreply@jobalert.indeed.com · Un(e) Gestionnaire de Prestation (H/F) à Mutualité Sociale Agricole Ile De Franc
-07:29:15   essai : 2026-10-19 · "Choisir le Service Public"
- <ne-pas-re · Notification d'offre(s) d'emploi - Choisir le Service Public
-07:29:15   essai : 2026-10-19 · France Travail <nepasrepondre@offre.fran · Vous avez reçu 1 nouvelle offre
-07:29:15   essai : 2026-10-19 · France Travail <nepasrepondre@offre.fran · Vous avez reçu 1 nouvelle offre
-07:29:15   essai : 2026-10-19 · "France Travail" <nepasrepondre@email.fr · Connexion à votre compte France Travail
-07:29:15 229 offres collectées, 55 nouvelles, 13 retenues pour l'analyse (dont 0 anciennes à réanalyser), 3 gardées sans IA
-07:29:20 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
-07:29:23 Retirée chez l'employeur : Ingénieur-e d’études en nutrition animale et modélisation :  (http://jobs.inrae.fr/ot-30268)
-07:29:28 Retirée chez l'employeur : Assistant-Ingénieur en expérimentation animale et immunologi (https://inserm.softy.pro/offre/205628?idt=164)
-07:29:37 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
-07:29:40 4 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Ingénieur-e d’études en nutrition animale et modél | Assistant-Ingénieur en expérimentation animale et  | Post-doc en écologie quantitative
-07:31:44 Appels IA : 5, offres analysées par IA : 9 / 9
-07:38:37 Recoupement : 220 pages revérifiées (0 plus en ligne), 1 recherches sur le web
-07:38:37 Site mis à jour : 217 offres (6 hors profil écartées)
-07:38:39 Condensé envoyé par e-mail
-07:38:39 Notification envoyée
+07:20:03 Données privées lues : 1 offres suivies ou écartées
+07:20:03 Profil personnalisé du site appliqué
+07:20:04 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
+07:20:04 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
+07:20:09 CNRS : 433 offres dans le flux
+07:20:43 Choisir le service public : 131 offres (19 du MNHN)
+07:21:16 INRAE : 197 offres récentes dans le plan du site, 18 nouvelles lues, 18 gardées
+07:21:36 ABG : 51 offres de thèse
+07:21:39 Jooble : 41 offres
+07:21:40 Alertes mail : 1 mails d'emploi récents, 0 lus (hors candidatures et échanges protégés)
+07:21:40 Alertes mail : 0 offres extraites
+07:21:41 Ménage des mails (essai) : 1 mail(s) seraient mis à la corbeille
+07:21:41   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
+07:21:41 674 offres collectées, 235 nouvelles, 20 retenues pour l'analyse (dont 0 anciennes à réanalyser), 16 gardées sans IA
+07:21:47 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
+07:21:53 Retirée chez l'employeur : Ingénieur-e d’études en nutrition animale et modélisation :  (http://jobs.inrae.fr/ot-30268)
+07:21:57 Retirée chez l'employeur : Assistant-Ingénieur en expérimentation animale et immunologi (https://inserm.softy.pro/offre/205628?idt=164)
+07:22:02 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
+07:22:07 4 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Ingénieur-e d’études en nutrition animale et modél | Assistant-Ingénieur en expérimentation animale et  | Post-doc en écologie quantitative
+07:31:48 Appels IA : 7, offres analysées par IA : 16 / 16
+07:35:17   plus en ligne : Thèse CIFRE (2027-2029) Écophysiologie et Adaptation du Pois Protéagin (https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140300/job/these-cifre-2027-2029-ecophysiologie-et-adaptation-du-pois-proteagineux)
+07:39:48   plus en ligne : Diagnostic multifonctionnel des CHAussées POreuses à structure réservo (https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140471/job/diagnostic-multifonctionnel-des-chaussees-poreuses-a-structure-reservoir-suivis-in-situ-et-modelisation-integrant-des-externalites-environnementales-extremes)
+07:39:50   plus en ligne : Ingénieur d'étude en développement de cellules solaires transparentes  (https://emploi.cnrs.fr/Offres/CDD/UMR7314-FRESAU-022/Default.aspx)
+07:40:17 Recoupement : 220 pages revérifiées (3 plus en ligne), 1 recherches sur le web
+07:40:17 Site mis à jour : 227 offres (17 hors profil écartées)
+07:40:19 Condensé envoyé par e-mail
+07:40:19 Notification envoyée
