@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-20T14:41+02:00",
+ "maj": "2026-10-21T09:43+02:00",
  "offres": [
   {
    "id": "cnrs-UMR9191-ARNLER-009",
@@ -65,7 +65,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -145,72 +145,97 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Assistant-e ingénieur-e en biologie\n\n 78350 Jouy en Josas \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 centres sur ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
    }
   },
   {
-   "id": "cnrs-UMR5175-MARVAN-005",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5175-MARVAN-005/Default.aspx",
-   "titre": "Assistant ingénieur en écologie urbaine des pollinisateurs",
-   "employeur": "CNRS",
-   "lieu": "Montpellier",
-   "region": "france",
-   "contrat": "Ingénieur/Technicien CDD",
+   "id": "csp-INRAE-OT-30657",
+   "source": "Choisir le service public",
+   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/assistant-e-ingenieur-e-en-biologie-reference-INRAE-OT-30657/",
+   "titre": "Assistant-e ingénieur-e en biologie",
+   "employeur": "Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement (INRAE)",
+   "lieu": "Yvelines (78)",
+   "region": "idf",
+   "contrat": "CDD",
    "type": "emploi",
-   "date_publication": "2026-09-29",
+   "date_publication": "2026-10-21",
+   "lien_employeur": "http://jobs.inrae.fr/ot-30657",
+   "employeur_verifie": "disponible",
+   "verifiee_le": "2026-10-21",
+   "disponibilite": "disponible",
    "analyse": {
-    "score": 75,
+    "score": 82,
     "niveau": "coeur",
     "mode": "ia",
-    "resume": "Poste d'assistant ingénieur en écologie urbaine des pollinisateurs au CEFE à Montpellier pour une durée de 6 mois. L'offre correspond bien au profil du candidat et à ses compétences de terrain, bien que géographiquement éloignée.",
+    "resume": "Poste d'assistant ingénieur au sein de l'UE IERP de Jouy-en-Josas sur modèle de larves de poisson zèbre en infectiologie et nanomédecine. C'est une excellente opportunité pour le candidat qui a déjà réalisé un stage de 4 mois dans cette unité exacte sur le zebrafish, offrant un tremplin direct vers le réseau de recherche local.",
     "missions": [
-     "Suivi de l'activité de nidification d'Osmia cornuta",
-     "Prélèvement d'échantillons in situ et relevés botaniques",
-     "Encodage des données sous forme de base exploitable",
-     "Expérimentations en laboratoire"
+     "Production de matériel biologique (embryons de poisson zèbre, cultures cellulaires)",
+     "Réalisation d'expérimentations en zone confinée L2/A2 (infections virales, phénotypage)",
+     "Traitement, modélisation et analyse des données expérimentales",
+     "Formulation et caractérisation physico-chimique de nanovecteurs",
+     "Gestion logistique et suivi qualité au sein de l'unité"
     ],
     "prerequis": [
-     "BAC+3/4"
+     "Diplôme BAC+2 à BAC+5 (DUT, BTS, Master en biologie)",
+     "Habilitation à l'expérimentation animale",
+     "Anglais niveau B1 minimum",
+     "Débutant accepté"
     ],
     "competences": [
      {
-      "nom": "Échantillonnage comportemental",
+      "nom": "Modèle poisson zèbre (zebrafish)",
       "ok": true
      },
      {
-      "nom": "Protocoles expérimentaux",
+      "nom": "Traitement et analyse de données",
       "ok": true
      },
      {
-      "nom": "Biologie moléculaire de paillasse",
+      "nom": "Anglais B1+",
+      "ok": true
+     },
+     {
+      "nom": "Habilitation à l'expérimentation animale",
+      "ok": false
+     },
+     {
+      "nom": "Virologie et immunologie de paillasse",
+      "ok": false
+     },
+     {
+      "nom": "Formulation physico-chimique",
       "ok": false
      }
     ],
     "atouts": [
-     "Formation en biologie et écologie (Master PRIAM)",
-     "Expérience solide de terrain et de protocoles",
-     "Capacité à encoder et structurer des données"
+     "Stage M1 déjà effectué au sein même de l'IERP INRAE Jouy-en-Josas sur le suivi comportemental de larves de zebrafish",
+     "Connaissance directe du modèle biologique et de l'environnement de recherche Paris-Saclay",
+     "Niveau d'anglais excellent (IELTS 8.5) dépassant largement le niveau B1 requis",
+     "Compétences solides en traitement et analyse de données sous R"
     ],
     "manques": [
-     "Expérimentations en laboratoire (dosages biochimiques précis)"
+     "Habilitation réglementaire à l'expérimentation animale",
+     "Techniques de biochimie/virologie cellulaire et formulation de nanomatériaux"
     ],
-    "bloquants": [],
-    "conseil": "Mettez en avant votre rigueur de terrain acquise lors de vos stages sur les primates et votre maîtrise de la mise en forme des données. Le contrat de 6 mois est idéal.",
-    "salaire_min": 2302,
+    "bloquants": [
+     {
+      "type": "autre",
+      "texte": "Habilitation à l'expérimentation animale exigée"
+     }
+    ],
+    "conseil": "Activez immédiatement votre réseau : contactez directement votre ancien maître de stage ou les chercheurs de l'IERP à Jouy-en-Josas pour leur signaler votre intérêt. Mettez en avant votre expérience passée sur les larves de zebrafish dans leurs locaux et proposez de suivre la formation à l'expérimentation animale dès votre prise de poste.",
+    "salaire_min": null,
     "salaire_max": null,
-    "duree_mois": 6,
-    "date_limite": "2026-10-20",
+    "duree_mois": null,
+    "date_limite": "2026-10-31",
     "contact": null,
     "lien_these": true
    },
-   "vu_le": "2026-10-13",
-   "extrait": "Assistant ingénieur en écologie urbaine des pollinisateurs H/F\n\n Centre d'écologie fonctionnelle et évolutive\r\n\nMONTPELLIER • Hérault\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nCentre d'écologie fonctionn",
-   "verifiee_le": "2026-10-20",
-   "disponibilite": "disponible",
+   "vu_le": "2026-10-21",
+   "extrait": "Assistant-e ingénieur-e en biologie\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonc",
    "recoupement": {
     "statut": "employeur"
    }
@@ -272,7 +297,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Doctorat : Les indicateurs écologiques sont-ils à l’épreuve du climat ? Réévaluer les relations pressions–réponses dans les communautés de poissons estuariennes à l’ère du changement global\n\n 33610 CESTAS \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche ras",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -338,7 +363,7 @@
    "extrait": "Ingénieur(e) de recherche en écologie/agronomie à EVA\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indica",
    "url_employeur": "https://recrutement-unicaen.nous-recrutons.fr/poste/ns11o5c3pc-ingenieure-de-recherche-en-ecologieagronomie-a-eva/",
    "employeur_confirme": true,
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "recoupement": {
     "url_employeur": "https://recrutement-unicaen.nous-recrutons.fr/poste/ns11o5c3pc-ingenieure-de-recherche-en-ecologieagronomie-a-eva/",
     "statut": "employeur"
@@ -411,7 +436,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Ingénieur-e d'études en production, traitement, analyse de données et enquêtes\n\n 37380 Nouzilly \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimen",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -482,7 +507,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Ingénieur-e en analyse d’images et vision par ordinateur appliquées au comportement de la truite arc-en-ciel\n\n 31300 TOULOUSE \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de rech",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -559,7 +584,7 @@
    },
    "vu_le": "2026-10-20",
    "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -656,7 +681,7 @@
    "vu_le": "2026-10-13",
    "extrait": "Chargé d'études en expérimentation et analyse du comportement lié au stress (F/H)\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n2000€ - 2300€ net mensuel \n € brut/an ",
    "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1643&id_origin=0",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "sites": [
@@ -684,7 +709,7 @@
    "contrat": "CDD",
    "type": "emploi",
    "date_publication": "2026-10-14",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 70,
@@ -824,7 +849,7 @@
    "date_publication": "2026-10-18",
    "lien_employeur": "https://jobaffinity.fr/apply/qoh5jmwlmn4phmam0g",
    "employeur_verifie": "disponible",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 68,
@@ -973,7 +998,7 @@
    },
    "vu_le": "2026-10-20",
    "extrait": "Ingénieur(e) De Recherche en Expérimentation animale\n\n Nouveau\r\n\n Institut des Neurosciences Paris Saint-Pères\r\n\nPARIS 06 • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut des Neurosciences Paris ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -1056,7 +1081,7 @@
    "extrait": "Chargé de projet : études et analyse des données biodiversité Guyane H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fon",
    "url_employeur": "https://ofb.gestmax.fr/4624/12/charge-de-projet-etudes-et-analyse-des-donnees-biodiversite-guyane-h-f",
    "employeur_confirme": true,
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "recoupement": {
     "url_employeur": "https://ofb.gestmax.fr/4624/12/charge-de-projet-etudes-et-analyse-des-donnees-biodiversite-guyane-h-f",
     "statut": "employeur"
@@ -1064,6 +1089,84 @@
    "disponibilite": "disponible",
    "lien_employeur": "https://ofb.gestmax.fr/4624/12/charge-de-projet-etudes-et-analyse-des-donnees-biodiversite-guyane-h-f",
    "employeur_verifie": "disponible"
+  },
+  {
+   "id": "cnrs-UAR2029-SEVBON-065",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UAR2029-SEVBON-065/Default.aspx",
+   "titre": "Ingénieur-e d'étude en écologie comportementale",
+   "employeur": "CNRS",
+   "lieu": "Moulis",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-21",
+   "analyse": {
+    "score": 65,
+    "niveau": "tres_proche",
+    "mode": "ia",
+    "resume": "Poste d'ingénieur d'étude en écologie comportementale pour le suivi des populations d'oiseaux et la gestion de terrain au CNRS. Très intéressant pour le domaine et la proximité avec la recherche académique, mais la durée est courte (5 mois) et le lieu est éloigné de l'Île-de-France.",
+    "missions": [
+     "Suivi de la reproduction des oiseaux en nichoirs",
+     "Prélèvements biologiques sur oiseaux",
+     "Gestion et encadrement des stagiaires",
+     "Organisation des expérimentations au nichoir",
+     "Gestion des données"
+    ],
+    "prerequis": [
+     "BAC+5",
+     "5 à 10 années d'expérience souhaitée",
+     "Langue anglaise : B1"
+    ],
+    "competences": [
+     {
+      "nom": "Écologie comportementale",
+      "ok": true
+     },
+     {
+      "nom": "Anglais B1",
+      "ok": true
+     },
+     {
+      "nom": "Conduite 4x4",
+      "ok": false
+     },
+     {
+      "nom": "Baguage / habilitation",
+      "ok": false
+     }
+    ],
+    "atouts": [
+     "Master en biologie intégrative et écologie comportementale",
+     "Solide expérience de terrain et de manipulation d'animaux sauvages (macaques)",
+     "Compétences avérées en gestion de données"
+    ],
+    "manques": [
+     "Permis de conduire / conduite 4x4",
+     "Expérience spécifique en ornithologie et baguage",
+     "5 à 10 ans d'expérience exigés"
+    ],
+    "bloquants": [
+     {
+      "type": "experience",
+      "texte": "5 à 10 années d'expérience souhaitée"
+     }
+    ],
+    "conseil": "Bien que 5 à 10 ans d'expérience soient demandés (bloquant contractuel), mettez en avant votre Master spécialisé, votre rigueur de terrain sur primates et votre autonomie pour tenter de compenser.",
+    "salaire_min": 2662,
+    "salaire_max": 2879,
+    "duree_mois": 5,
+    "date_limite": "2026-11-11",
+    "contact": "Alexis CHAINE",
+    "lien_these": true
+   },
+   "vu_le": "2026-10-21",
+   "extrait": "Ingénieur-e d'étude en écologie comportementale\n\n Nouveau\r\n\n Station d'Ecologie Théorique et Expérimentale\r\n\nMOULIS • Ariège\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 5 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nStation d'Ecologie Théorique et Expéri",
+   "verifiee_le": "2026-10-21",
+   "disponibilite": "disponible",
+   "recoupement": {
+    "statut": "employeur"
+   }
   },
   {
    "id": "inrae-ot-30731",
@@ -1122,7 +1225,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Ingénieur-e en analyse et manipulation de données acoustiques pour étudier les effets des immersions de sédiments en milieu estuarien sur les peuplements ichtyologiques\n\n 33610 CESTAS \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communau",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -1141,7 +1244,7 @@
    "date_publication": "2026-10-16",
    "lien_employeur": "http://jobs.inrae.fr/ot-30738",
    "employeur_verifie": "disponible",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 65,
@@ -1212,7 +1315,7 @@
    "contrat": "CDD",
    "type": "emploi",
    "date_publication": "2026-10-14",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 65,
@@ -1312,7 +1415,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Thèse : Soutenir la résilience des territoires d’élevage face aux crises sanitaires\n\n 63122 Saint-Genès-Champanelle \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -1401,7 +1504,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Ingénieur d'étude en Biologie H/F\n\n Nouveau\r\n\n Pathophysiologie et génétique du neurone et du muscle\r\n\nLYON 08 • Rhône\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 13 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nPathophysiologie et génétique du neurone ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -1477,7 +1580,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Ingénieur-e d'étude en écologie et botanique (H/F)\n\n Nouveau\r\n\n Station d'Ecologie Théorique et Expérimentale\r\n\nMOULIS • Ariège\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 7 mois\r\n\n- \r\n BAC+5\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -1559,7 +1662,7 @@
    "extrait": "Technicien-ne en expérimentation animale\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les",
    "url_employeur": "http://jobs.inrae.fr/ot-30620",
    "employeur_confirme": true,
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "recoupement": {
     "url_employeur": "http://jobs.inrae.fr/ot-30620",
     "statut": "employeur"
@@ -1567,6 +1670,74 @@
    "disponibilite": "disponible",
    "lien_employeur": "http://jobs.inrae.fr/ot-30620",
    "employeur_verifie": "disponible"
+  },
+  {
+   "id": "abg-140391",
+   "source": "ABG",
+   "url": "https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140391/job/etude-des-liens-entre-biodiversite-structure-et-fonctionnement-des-sols",
+   "titre": "Etude des liens entre biodiversité, structure et fonctionnement des sols",
+   "employeur": "",
+   "lieu": "Centre Val de Loire",
+   "region": "france",
+   "contrat": "Thèse",
+   "type": "these",
+   "date_publication": "",
+   "analyse": {
+    "score": 60,
+    "niveau": "tres_proche",
+    "mode": "ia",
+    "resume": "Sujet de thèse en écologie des sols et biodiversité au sein d'INRAE Centre-Val de Loire. Bien que le domaine de l'écologie soit connexe, le sujet est axé sur la pédologie et les organismes du sol plutôt que sur le comportement animal.",
+    "missions": [
+     "Étude des liens entre biodiversité, structure et fonctionnement des sols",
+     "Analyse des forçages environnementaux et des interactions biotiques-abiotiques"
+    ],
+    "prerequis": [
+     "Master ou équivalent (requis pour une inscription en thèse)"
+    ],
+    "competences": [
+     {
+      "nom": "Écologie",
+      "ok": true
+     },
+     {
+      "nom": "Biostatistique",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Master en biologie et écologie",
+     "Solides compétences en analyse de données"
+    ],
+    "manques": [
+     "Spécialisation en biologie des sols"
+    ],
+    "bloquants": [],
+    "conseil": "Mettre en avant la rigueur méthodologique, la formation en écologie et la capacité à traiter de grands jeux de données sous R.",
+    "salaire_min": null,
+    "salaire_max": null,
+    "duree_mois": 36,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": true
+   },
+   "vu_le": "2026-10-21",
+   "extrait": "INRAE Info&Sols Thesis , Centre Val de Loire , France Les forçages environnementaux liés aux activités humaines altèrent à la fois la matrice organo-minérale du sol, les organismes du sol et les interactions biotiques – abiotiques qui sous-tendent les fonct ... Scientific expertises : Ecology, environment - Agronomy, agri food Keywords : sol, biodiversité, structure, fonctionnement Ref. ABG-140391",
+   "verifiee_le": "2026-10-21",
+   "disponibilite": "disponible",
+   "recoupement": {
+    "sites": [
+     {
+      "nom": "INRAE",
+      "url": "https://jobs.inrae.fr/ot-28746"
+     },
+     {
+      "nom": "fr.indeed.com",
+      "url": "https://fr.indeed.com/viewjob?jk=0bcd4a9ba6fd9775"
+     }
+    ],
+    "cherche_le": "2026-10-21",
+    "statut": "plusieurs"
+   }
   },
   {
    "id": "inrae-ot-30553",
@@ -1634,7 +1805,7 @@
    },
    "vu_le": "2026-10-18",
    "extrait": "Ingénieur-e d’étude en statistiques\n\n 63122 Saint-Genès-Champanelle \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 ce",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -1705,7 +1876,7 @@
    "extrait": "Ingénieur-e en analyse d’images et vision par ordinateur appliquées au comportement de la truite arc\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les c",
    "url_employeur": "http://jobs.inrae.fr/ot-30644",
    "employeur_confirme": true,
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "recoupement": {
     "url_employeur": "http://jobs.inrae.fr/ot-30644",
     "statut": "employeur"
@@ -1763,7 +1934,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "...dont des chefs de projets, des attachés recherches cliniques, des biostatisticiens et des data-managers.Le CMG est spécialisé dans la coordination et...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable",
    "recoupement": {
     "sites": [
@@ -1792,7 +1963,7 @@
    "contrat": "CDD",
    "type": "emploi",
    "date_publication": "2026-10-20",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 58,
@@ -1931,7 +2102,7 @@
    },
    "vu_le": "2026-10-19",
    "extrait": "Nous recrutons un(e) Biostatisticien(ne) H/F pour une mission en prestation au sein d'un acteur du secteur de la santé, à pourvoir dès que possible en Île-de-France. Notre client intervient auprès d'entreprises pharmaceutiques, biotechs et medtechs, ainsi qu'auprès d'hôpitau...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable",
    "recoupement": {
     "sites": [],
@@ -2016,7 +2187,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Assistant / Assistante ingénieur en expérimentation animale\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD d'1 an\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\nde 2289 à 3134 euros/mois\n € brut/",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -2099,7 +2270,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Ingénieur(e) d'étude en biologie (H/F)\n\n Nouveau\r\n\n Institut des Neurosciences Paris-Saclay\r\n\nSACLAY • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut des Neurosciences Paris-Saclay\n\nType de C",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -2169,7 +2340,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Ingénieur-e en génétique quantitative et méthodologie de sélection \n\n 84140 MONTFAVET \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, imp",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -2234,7 +2405,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "BIOSTATISTICIEN(NE) SPECIALISE(E) EN RECHERCHE BIOMEDICALE - DRCI\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonct",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -2293,7 +2464,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Chargé-e de mission biodiversité\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non renseignée \n- \n Ca",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -2355,7 +2526,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Data Manager Direction de la Recherche en Santé\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non renseign",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -2426,7 +2597,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur de Recherche Biostatisticien SEEDem PHARES F/H\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD d'1 an\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\nENTRE 29520 ET 37680 EUROS BRUT\n € br",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -2498,7 +2669,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur en analyse de données transcriptomiques\n\n Institut des Neurosciences Paris-Saclay\r\n\nSACLAY • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut des Neurosciences Paris-Saclay\n\nType de C",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -2557,7 +2728,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Ingénieur-e en analyse génétique et bioinformatique\n\n 21000 Dijon \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 cent",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -2626,7 +2797,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Ingénieur-e en expérimentation animale\n\n 37380 NOUZILLY \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 centres sur to",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -2708,7 +2879,62 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Lyon 1 Université - Ingénieur d'études en conception de bases de données pour l'écologie (H/F)\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD d'1 an\n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n2534",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
+   "disponibilite": "disponible"
+  },
+  {
+   "id": "abg-139186",
+   "source": "ABG",
+   "url": "https://www.abg.asso.fr/en/candidatOffres/show/id_offre/139186/job/modelisation-structure-fonction-de-la-plasticite-du-tallage-chez-les-poacees-pour-anticiper-les-effets-du-changement-climatique-sur-les-couverts-prairiaux",
+   "titre": "Modélisation structure-fonction de la plasticité du tallage chez les Poacées pour anticiper les effets du changement climatique sur les couverts prairiaux.",
+   "employeur": "",
+   "lieu": "Lusignan",
+   "region": "france",
+   "contrat": "Thèse",
+   "type": "these",
+   "date_publication": "",
+   "analyse": {
+    "score": 50,
+    "niveau": "proche",
+    "mode": "ia",
+    "resume": "Sujet de thèse portant sur la modélisation structure-fonction et la plasticité du tallage chez les Poacées face au changement climatique à INRAE Lusignan. Le poste implique de la modélisation, mais s'éloigne de la zoologie et du comportement animal.",
+    "missions": [
+     "Travailler sur la plasticité du tallage des Poacées",
+     "Modélisation structure-fonction (FSPM)",
+     "Anticiper les effets du changement climatique sur les couverts prairiaux"
+    ],
+    "prerequis": [
+     "Master ou diplôme équivalent"
+    ],
+    "competences": [
+     {
+      "nom": "Modélisation",
+      "ok": true
+     },
+     {
+      "nom": "Écologie",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Compétences en modélisation et traitement de données"
+    ],
+    "manques": [
+     "Écophysiologie végétale",
+     "Modélisation FSPM"
+    ],
+    "bloquants": [],
+    "conseil": "Mettre en avant les compétences quantitatives et la modélisation statistique si vous souhaitez vous orienter vers la modélisation végétale, bien que cela reste éloigné de votre cœur de cible animal.",
+    "salaire_min": null,
+    "salaire_max": null,
+    "duree_mois": 36,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": true
+   },
+   "vu_le": "2026-10-21",
+   "extrait": "INRAE (Lusignan) Thesis , Nouvelle Aquitaine , France Vous travaillerez sur la plasticité du tallage, qui constitue un levier majeur pour l'adaptation des Poacées à leur environnement. Le changement climatique, caractérisé par une importante complexité des r& ... Scientific expertises : Ecology, environment Keywords : tallage, prairies, Poacees, changement climatique, ecophysiologie, modelisation ",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -2776,7 +3002,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Thèse en Science du sol : Etude des liens entre biodiversité, structure et fonctionnement des sols\n\n 45000 ORLEANS \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de s",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -2855,7 +3081,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Ingénieur d'étude en experimentation et instrumentation Biologiques (H/F)\n\n Nouveau\r\n\n Institut de Biologie Intégrative de la Cellule\r\n\nGIF SUR YVETTE • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -2937,7 +3163,7 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "Ingénieur-e en microbiologie\n\n 78350 Jouy-en-Josas \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 centres sur toute l",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -3009,7 +3235,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Assistant-e Ingénieur-e biologiste sur un essai de recherche\n\n 40280 BENQUET \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées d",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -3073,7 +3299,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Assistant-e ingénieur-e en expérimentation et production végétales\n\n 21000 DIJON \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implanté",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -3158,7 +3384,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Biostatisticien-ne\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non r",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -3211,7 +3437,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "...la nature causale des questions de recherche, le recrutement d’un biostatisticien dédié est indispensable pour garantir la rigueur méthodologique et...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -3270,7 +3496,7 @@
    "vu_le": "2026-10-13",
    "extrait": "Chargé d'études scientifiques \nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non renseignée \n- \n Caté",
    "url_employeur": "https://recrutement.mnhn.fr/",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -3341,7 +3567,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Chargé(e) de mission : Bilan hydrique et impact sur les forêts françaises\n\n 54280 \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implant",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -3403,8 +3629,83 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Chargé.e de mission Biodiversité (Savoie) EHN214\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non re",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
+  },
+  {
+   "id": "cnrs-UMR5175-CLAMIA-005",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR5175-CLAMIA-005/Default.aspx",
+   "titre": "Ingénieur d'études en ADN environnemental",
+   "employeur": "CNRS",
+   "lieu": "Montpellier",
+   "region": "france",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-21",
+   "analyse": {
+    "score": 45,
+    "niveau": "proche",
+    "mode": "ia",
+    "resume": "Ce poste d'ingénieur d'études au CNRS (CEFE) implique des missions de terrain et de biologie moléculaire pour l'ADN environnemental. L'offre est intéressante pour sa durée et son ancrage en laboratoire public, mais elle demande des compétences de biologie moléculaire de paillasse que le candidat ne possède pas.",
+    "missions": [
+     "Participation au design des expérimentations de terrain en ADNe et exécution",
+     "Production de capteur PAN par electrospinning",
+     "Analyses de biologie moléculaire (extraction, qPCR, PCR, metabarcoding)",
+     "Interprétation des données de metabarcoding"
+    ],
+    "prerequis": [
+     "BAC+3/4",
+     "Techniques de biologie moléculaire (extraction, PCR, metabarcoding)",
+     "1 à 4 années d'expérience souhaitée"
+    ],
+    "competences": [
+     {
+      "nom": "Techniques de biologie moléculaire",
+      "ok": false
+     },
+     {
+      "nom": "Extraction",
+      "ok": false
+     },
+     {
+      "nom": "PCR",
+      "ok": false
+     },
+     {
+      "nom": "Metabarcoding",
+      "ok": false
+     }
+    ],
+    "atouts": [
+     "Expérience solide en conception de protocole et de terrain",
+     "Solide bagage en traitement de données et analyse"
+    ],
+    "manques": [
+     "Biologie moléculaire de paillasse",
+     "Expérience de 1 à 4 ans exigée"
+    ],
+    "bloquants": [
+     {
+      "type": "experience",
+      "texte": "1 à 4 années d'expérience souhaitée / exigée"
+     }
+    ],
+    "conseil": "Mettez en avant votre forte capacité d'apprentissage, vos compétences en traitement de données sous R et votre expérience de terrain rigoureuse pour compenser le manque d'expérience et de paillasse pure.",
+    "salaire_min": 2522,
+    "salaire_max": null,
+    "duree_mois": 6,
+    "date_limite": "2026-11-11",
+    "contact": null,
+    "lien_these": true
+   },
+   "vu_le": "2026-10-21",
+   "extrait": "Ingénieur d'études en ADN environnemental H/F\n\n Nouveau\r\n\n Centre d'écologie fonctionnelle et évolutive\r\n\nMONTPELLIER • Hérault\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nCentre d'écologie fonctionnelle e",
+   "verifiee_le": "2026-10-21",
+   "disponibilite": "disponible",
+   "recoupement": {
+    "statut": "employeur"
+   }
   },
   {
    "id": "cnrs-UMR7159-CHRHER-004",
@@ -3460,82 +3761,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com",
-   "verifiee_le": "2026-10-20",
-   "disponibilite": "disponible",
-   "recoupement": {
-    "statut": "employeur"
-   }
-  },
-  {
-   "id": "cnrs-UMR9191-RICCOR-002",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR9191-RICCOR-002/Default.aspx",
-   "titre": "Ingénieur d’études en analyse de données de génomique évolutive",
-   "employeur": "CNRS",
-   "lieu": "Gif Sur Yvette",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien CDD",
-   "type": "emploi",
-   "date_publication": "2026-09-29",
-   "analyse": {
-    "score": 45,
-    "niveau": "proche",
-    "mode": "ia",
-    "resume": "Ce poste d'ingénieur d'études de 6 mois au CNRS concerne la génomique évolutive et la bioinformatique chez les isopodes. Bien que la durée et le lieu (Île-de-France) correspondent aux critères, le domaine est trop axé sur la génomique moléculaire et la bioinformatique pure plutôt que sur le comportement animal ou l'écologie comportementale.",
-    "missions": [
-     "Analyser des jeux de données de séquences génomiques Illumina",
-     "Réaliser l'assemblage de novo et l'annotation de gènes",
-     "Effectuer le mapping et les analyses de SNPs et de variants structuraux",
-     "Rédiger des comptes-rendus de résultats"
-    ],
-    "prerequis": [
-     "Master en bioinformatique, génomique évolutive ou autre domaine apparenté",
-     "Connaissances en programmation (Python, R…)",
-     "Maîtrise de l'environnement UNIX/LINUX"
-    ],
-    "competences": [
-     {
-      "nom": "R",
-      "ok": true
-     },
-     {
-      "nom": "Master",
-      "ok": true
-     },
-     {
-      "nom": "Python",
-      "ok": false
-     },
-     {
-      "nom": "UNIX/LINUX",
-      "ok": false
-     },
-     {
-      "nom": "bioinformatique",
-      "ok": false
-     }
-    ],
-    "atouts": [
-     "Master validé",
-     "Solides compétences en R",
-     "Localisation en Île-de-France"
-    ],
-    "manques": [
-     "Compétences en bioinformatique",
-     "Maîtrise de Python et UNIX/LINUX"
-    ],
-    "bloquants": [],
-    "conseil": "Mettez en avant votre formation en génétique des populations et votre maîtrise de R, mais sachez que le profil attendu est très orienté bioinformatique pure.",
-    "salaire_min": 2572,
-    "salaire_max": 3312,
-    "duree_mois": 6,
-    "date_limite": "2026-10-20",
-    "contact": "Richard Cordaux",
-    "lien_these": true
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Ingénieur d’études en analyse de données de génomique évolutive (H/F)\n\n Évolution, génomes, comportement et écologie\r\n\nGIF SUR YVETTE • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nÉvolution, génome",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -3629,7 +3855,7 @@
    "extrait": "Ingénieur(e) d'études en écologie marine – M2C\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative po",
    "url_employeur": "https://recrutement-unicaen.nous-recrutons.fr/poste/79reiwo9de-ingenieure-detudes-en-ecologie-marine-m2c/",
    "employeur_confirme": true,
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "recoupement": {
     "url_employeur": "https://recrutement-unicaen.nous-recrutons.fr/poste/79reiwo9de-ingenieure-detudes-en-ecologie-marine-m2c/",
     "statut": "employeur"
@@ -3651,7 +3877,7 @@
    "date_publication": "2026-10-18",
    "lien_employeur": "http://jobs.inrae.fr/ot-30733",
    "employeur_verifie": "disponible",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 45,
@@ -3787,7 +4013,7 @@
    },
    "vu_le": "2026-10-20",
    "extrait": "Ingénieur·e de recherche en ADN environnemental et analyse spatiale de l’érosion en montagne (F/H)\n\n 34 398 Montpellier \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche,",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -3804,7 +4030,7 @@
    "contrat": "CDD",
    "type": "emploi",
    "date_publication": "2026-10-14",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 45,
@@ -3921,7 +4147,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Chargé de médiation scientifique (H/F)\n\n Institut d'astrophysique spatiale\r\n\nORSAY • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut d'astrophysique spatiale\n\nType de Contrat\n\nIT en contrat CD",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -3995,7 +4221,7 @@
    },
    "vu_le": "2026-10-20",
    "extrait": "Ingénieur d'études en perception sociale, médiation et acceptabilité du patrimoine culturel face au changement climatique - 70% (H/F) )\n\n Nouveau\r\n\n Institut de Recherche de Chimie Paris\r\n\nPARIS • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 15 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapé",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -4014,7 +4240,7 @@
    "date_publication": "2026-10-19",
    "lien_employeur": "https://jobs.sorbonne-universite.fr/offre-de-emploi/emploi-zootechnicien-en-experimentation-animale-f-h_1339.aspx",
    "employeur_verifie": "introuvable",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 42,
@@ -4120,7 +4346,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Description de la mission Description du poste : Au sein du pôle Statistiques composé de 5 experts métiers, nous recherchons un Chargé d’études ...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -4173,7 +4399,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Chargé d'études statistiques — H/F Nous recherchons un chargé d’études statistiques pour contribuer à l’analyse et au pilotage des activités du SIAO ...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -4225,7 +4451,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Chargé(e) d'études Pêche, Natura 2000 et Biodiversité\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n N",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -4278,7 +4504,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Chargé(e) de mission biodiversité\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non renseignée \n- \n C",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -4332,7 +4558,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Chargé(e) de mission eau et biodiversité - Unité « accompagnement des grands projets »\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indi",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -4388,7 +4614,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "DUPA/DDPP/SPSAE/UPNA/B - Inspecteur sanitaire pour la prévention des nuisances animales\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette ind",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -4443,7 +4669,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Centre de Recherche Azrieli du CHU Sainte-Justine (Université de Montréal) Thesis Montréal, Canada L'équipe recrute pour deux sous-projets distincts. Les personnes candidates sont invitées à préciser leur préférence pour l'un ou l'autre de ces sous-projets dans leur lettre d'introduction. ... Scientific expertises : Psychology, neurosciences - Health, human and veterinary medicine - Data science (",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -4506,7 +4732,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur d’études en techniques biologiques et expérimentation animale (H/F)\n\n Immuno-Neuro Modulation\r\n\nORLEANS • Loiret\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 13 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nImmuno-Neuro Modulation\n\nType de Contra",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -4578,7 +4804,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur en analyse de données biologiques (H/F)\n\n Institut de Génétique Humaine\r\n\nMONTPELLIER • Hérault\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 13 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut de Génétique Humaine\n\nType de Contrat\n\nIT en co",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -4643,7 +4869,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Ingénieur-e d’études en expérimentation végétale\n\n 34000 montpellier \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 c",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -4660,7 +4886,7 @@
    "contrat": "CDD / Titulaire",
    "type": "emploi",
    "date_publication": "2026-10-14",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 40,
@@ -4753,7 +4979,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Centre de Recherche Azrieli du CHU Sainte-Justine (Université de Montréal) Thesis Montréal, Canada Le laboratoire recrute des étudiants au doctorat hautement motivés afin d’étudier comment l’adaptation métabolique régule la réparation vasculaire et la survie neuronale dans les maladies ré ... Scientific expertises : Psychology, neurosciences - Biochemistry - Health, human and veterinary medicine K",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -4808,7 +5034,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Technicien-ne de recherche en élevage Petits-ruminants\n\n 97160 Le Moule \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 1",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -4878,7 +5104,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Créateur-rice de contenu, de capsules vidéo et graphismes polyvalent-e pour les écosystèmes lacustres\n\n 74200 THONON LES BAINS \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de rec",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -4949,7 +5175,7 @@
    },
    "vu_le": "2026-10-20",
    "extrait": "Assistant ingénieur en microbiologie (H/F) pour la caractérisation phénotypique de bactériophages\n\n Nouveau\r\n\n Maladies infectieuses et vecteurs : écologie, génétique, évolution et contrôle\r\n\nMONTPELLIER • Hérault\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 13 mois\r\n\n- \r\n BAC + 2\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleus",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -5010,7 +5236,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "CHARGE D'ENVIRONNEMENT-CHARGE DE LA PREPARATION OPERATIONNELLE ET BIODIVERSITE 3B/23\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -5060,7 +5286,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Chargé de mission – Projet européen ALCOTRA ALMA « Ambassadeurs de la biodiversité maralpine » (H/F)\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD de 2 ans\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les cont",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -5119,7 +5345,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Chargé(e) de mission coordination et accompagnement - eau et biodiversité\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\nselon profil\n € brut/an \n Fourchette indicativ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -5178,7 +5404,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Chargé(e) de mission coordination-accompagnement biodiversité\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\nselon profil\n € brut/an \n Fourchette indicative pour les f",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -5194,7 +5420,7 @@
    "date_publication": "2026-10-17",
    "lien_employeur": "https://www.emploi-territorial.fr/offre/o029261013000489-chef-e-projet-breizh-natur-adapt?pk_campaign=ep",
    "employeur_verifie": "introuvable",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 35,
@@ -5329,7 +5555,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "CeRCA Université de Poitiers Thesis , Nouvelle Aquitaine , France Contexte Thèse CIFRE (36 mois) en partenariat avec l’entreprise OVIDE (région lyonnaise), l’université de Poitiers et le CNRS. Le doctorant sera rattaché au laboratoire CeRCA (Maison des Sciences de l&rsquo ... Scientific expertises : Psychology, neurosciences Keywords : Gamification/ludification, Ergonomie, Psychologie cognitive, I",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -5384,7 +5610,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -5457,7 +5683,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -5516,7 +5742,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -5586,7 +5812,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -5659,7 +5885,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur de recherche en bio informatique - DR - Laboratoire GBCM\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\nA partir de 35k\n € bru",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -5725,7 +5951,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur de recherche en traitement, production et analyse des données (H/F)\n\n Centre Maurice Halbwachs\r\n\nPARIS 14 • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+5\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'u",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -5794,7 +6020,7 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "Ingénieur-e de Projets en Partenariat\n\n 78000 VERSAILLES \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 centres sur t",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -5813,7 +6039,7 @@
    "date_publication": "2026-10-15",
    "lien_employeur": "http://jobs.inrae.fr/ot-30527",
    "employeur_verifie": "disponible",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 35,
@@ -5928,7 +6154,7 @@
    },
    "vu_le": "2026-10-18",
    "extrait": "Ingénieur-e en Biologie moléculaire\n\n 68000 COLMAR \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 centres sur toute l",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -5992,7 +6218,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Ingénieur-e en formulation et physico-chimie des lipides\n\n 44300 NANTES \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 1",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -6063,7 +6289,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Ingénieur-e en épigénomique pour l’aquaculture\n\n 34192 Palavas-Les-Flots \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -6145,7 +6371,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Méthodologiste - Biostatisticien - CIC domaine d'activité Biométrie H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD de 2 ans\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n30000 € BRUT/AN\n € b",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -6210,7 +6436,7 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "Sorbonne Université Thesis , Ile-de-France , France The position focuses on \"Evaluating how complement dysregulation influences mononuclear phagocyte accumulation in AMD\" within the MSCA Doctoral Network PANDORA (Discovering Pathomechanisms and Novel Drug Optimization for AMD). S ... Scientific expertises : Biology - Health, human and veterinary medicine Keywords : Biological sciences, Biology, Me",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -6268,7 +6494,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Poste d’Ingénieur de Recherche en biologie moleculaire et epigenetique\n\n Intégrité du Génome et Cancers\r\n\nVILLEJUIF • Val-de-Marne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 18 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nIntégrité du Génome et Cancers\n",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -6321,7 +6547,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "...et à la sécurité des animaux du Jardin d'... ...: - Observer le comportement des animaux pour détecter... ...sécurité, de bien-être animal et des protocoles sanitaires...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -6388,7 +6614,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Technicien-ne en expérimentation animale\n\n 37380 NOUZILLY \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 centres sur ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -6442,7 +6668,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Description du poste Le pôle Etudes et statistiques de la Fédération nationale pilote la production d’études et de données issues du réseau. Il recueille...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -6496,7 +6722,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Animalier Zootechnicien(H/F)\n\n Typage et Archivage d'Animaux Modèles\r\n\nORLEANS • Loiret\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n BAC\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nTypage et Archivage d'Animaux Modèles\n\nType de Contrat\n\nIT en contrat CDD\n\nT",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -6553,7 +6779,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Chercheur en écologie chimique marine (H/F)\n\n Sustainable TEchnologies for LittoraL Aquaculture and MArine REsearch\r\n\nBIGUGLIA • Corse\n\n- \r\n Chercheur en contrat CDD\r\n\n- \r\n\n 24 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre e",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -6631,7 +6857,7 @@
    },
    "vu_le": "2026-10-20",
    "extrait": "Chercheur-euse en génie végétal et restauration écologique des milieux montagnards\n\n 38400 Saint-Martin-d'Hères \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de serv",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -6720,7 +6946,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Chercheur.se en épidémiologie ou biostatistique - IAB\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indica",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -6834,7 +7060,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur de recherche – Analyse d’image et modélisation multiphysique pour modèles tumor-on-chip (H/F)\n\n Physique des Cellules et Cancer\r\n\nPARIS 05 • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 18 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapé",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -6912,7 +7138,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur(e) d’études - biologiste en laboratoire\n\n Institut de biologie de l'Ecole Normale Supérieure\r\n\nPARIS 05 • Paris\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut de biologie de l'Ecole Normale ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -7011,7 +7237,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur-e biologiste en analyse de données (Bioinformaticien.ne)\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD d'1 an\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n2927,84 à 4295,15 euros bru",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -7061,7 +7287,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Ingénieur-e biologiste en traitement de données\n\n 84140 Montfavet \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 cent",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -7147,79 +7373,68 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur-e d'études en biologie - PGNM\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
-   "id": "inrae-ot-30541",
+   "id": "inrae-ot-30780",
    "source": "INRAE",
-   "url": "https://jobs.inrae.fr/ot-30541",
-   "titre": "Ingénieur·e de recherche en modélisation intégrée et nexus WEFE",
+   "url": "https://jobs.inrae.fr/ot-30780",
+   "titre": "Ingénieur.e de recherche en isotopie et fluxomique",
    "employeur": "INRAE",
-   "lieu": "Montpellier",
+   "lieu": "Villenave D'Ornon (33)",
    "region": "france",
    "contrat": "Mission temporaire 12 mois",
    "type": "emploi",
-   "date_publication": "2026-09-21",
+   "date_publication": "2026-10-20",
    "analyse": {
     "score": 30,
     "niveau": "eloigne",
     "mode": "ia",
-    "resume": "Poste d'ingénieur de recherche axé sur la modélisation intégrée des ressources en eau et des systèmes territoriaux dans le bassin de l'Aude. Bien qu'il s'agisse d'un CDD en recherche publique, la thématique hydrologique et de gestion des ressources est très éloignée de la biologie du comportement animal.",
+    "resume": "Poste d'ingénieur.e de recherche en fluxomique et isotopie végétale à INRAE Bordeaux, axé sur le métabolisme des plantes. Ce poste s'éloigne fortement de l'écologie comportementale et de la biostatistique animale visées par le candidat, en plus d'exiger un niveau doctorat.",
     "missions": [
-     "Développer, mettre à jour et calibrer le modèle intégré de bassin versant",
-     "Intégrer les composantes hydroélectriques, agricoles et écosystémiques au modèle",
-     "Participer à la co-évaluation des solutions de gestion de l'eau avec les acteurs locaux",
-     "Contribuer aux activités du projet international PRIMA MORFeuS"
+     "Analyse des flux métaboliques à partir d'expériences de marquage au carbone 13",
+     "Intégration et traitement de données issues de la LC-MS, GC-MS et RMN",
+     "Calcul des flux métaboliques avec le logiciel Influx et visualisation des réseaux métaboliques",
+     "Caractérisation de standards végétaux marqués au ¹³C",
+     "Valorisation scientifique des résultats"
     ],
     "prerequis": [
-     "Diplôme de niveau Bac+5 à Doctorat (niveau Ingénieur de recherche)",
-     "Compétences avancées en modélisation intégrée des systèmes hydrologiques/territoriaux",
-     "Aptitude au travail interdisciplinaire et en partenariat territorial"
+     "Niveau doctorat en métabolomique appliquée à la fluxomique ou en biologie computationnelle",
+     "Expérience en isotopie, traitement de données isotopiques et/ou résolution mathématique de modèles",
+     "Anglais indispensable"
     ],
     "competences": [
      {
-      "nom": "Modélisation quantitative",
+      "nom": "Traitement de données",
       "ok": true
-     },
-     {
-      "nom": "Systèmes d'information géographique (QGIS)",
-      "ok": true
-     },
-     {
-      "nom": "Modélisation hydrologique et nexus WEFE",
-      "ok": false
-     },
-     {
-      "nom": "Python / outils de modélisation de bassin",
-      "ok": false
      }
     ],
     "atouts": [
-     "Rigueur méthodologique et compétences en analyse de données quantitatives",
-     "Expérience des approches interdisciplinaires acquise à AgroParisTech"
+     "Solide formation en biologie et traitement de données"
     ],
     "manques": [
-     "Connaissances spécialisées en hydrologie et modélisation de bassins versants",
-     "Niveau Ingénieur de recherche nécessitant souvent une thèse ou plusieurs années d'expérience"
+     "Doctorat",
+     "Expérience en isotopie et fluxomique",
+     "Compétences en spectrométrie de masse (LC-MS, GC-MS) et RMN"
     ],
     "bloquants": [
      {
-      "type": "autre",
-      "texte": "Niveau d'expertise Ingénieur de recherche (IR) généralement hors de portée d'un premier emploi sans doctorat"
+      "type": "diplome",
+      "texte": "Formation de niveau doctorat exigée"
      }
     ],
-    "conseil": "Si vous souhaitez vous réorienter vers la modélisation environnementale territoriale, contactez l'UMR G-EAU en valorisant votre solide bagage quantitatif AgroParisTech, mais gardez à l'esprit que ce poste ne prépare pas à une thèse en comportement animal.",
-    "salaire_min": null,
+    "conseil": "Le profil ne correspond pas aux attentes scientifiques (métabolomique végétale vs comportement animal) et demande un doctorat. Candidature non conseillée.",
+    "salaire_min": 2815,
     "salaire_max": null,
     "duree_mois": 12,
-    "date_limite": "2026-10-20",
+    "date_limite": "2026-11-20",
     "contact": null,
-    "lien_these": true
+    "lien_these": false
    },
-   "vu_le": "2026-10-18",
-   "extrait": "Ingénieur·e de recherche en modélisation intégrée et nexus WEFE\n\n Montpellier \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées ",
-   "verifiee_le": "2026-10-20",
+   "vu_le": "2026-10-21",
+   "extrait": "Ingénieur.e de recherche en isotopie et fluxomique\n\n 33140 VILLENAVE D'ORNON \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées d",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -7292,7 +7507,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Offre de thèse en modélisation mathématique de la morphogenèse des vertébrés (H/F)\n\n Nouveau\r\n\n Institut Camille Jordan\r\n\nVILLEURBANNE • Rhône\n\n- \r\n CDD Doctorant\r\n\n- \r\n\n 36 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en u",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -7363,7 +7578,7 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "Technicien-ne en expérimentation et production végétales\n\n 54280 CHAMPENOUX \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées da",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -7415,8 +7630,65 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Laboratoire Universitaire de Biodiversité et Ecologie Microbienne, Université de Bretagne Occidentale Thesis , Bretagne , France Scientific context Food fermentations have been used for centuries, representing a highly diversified category of food products shaped by the metabolically active microbial communities that intervene during fermentation and impact overall product ... Scientific expertise",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
+  },
+  {
+   "id": "cnrs-UMR8214-VERSAR-041",
+   "source": "CNRS",
+   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8214-VERSAR-041/Default.aspx",
+   "titre": "Assistant Ingénieur en biologie",
+   "employeur": "CNRS",
+   "lieu": "Orsay",
+   "region": "idf",
+   "contrat": "Ingénieur/Technicien CDD",
+   "type": "emploi",
+   "date_publication": "2026-10-21",
+   "analyse": {
+    "score": 25,
+    "niveau": "eloigne",
+    "mode": "ia",
+    "resume": "Le poste consiste à superviser des salles de biologie et à réaliser des techniques de culture cellulaire et de préparation d'échantillons à l'ISMO d'Orsay. Il est peu intéressant car orienté vers la biologie moléculaire/cellulaire de paillasse, qui ne correspond pas au profil quantitatif et éthologique du candidat.",
+    "missions": [
+     "Superviser le fonctionnement des salles de biologie (L1 et L2) et biochimie",
+     "Mettre en œuvre des techniques spécifiques de culture cellulaire",
+     "Assurer la gestion des stocks et des commandes",
+     "Rédiger et actualiser les fiches de préparations et de protocoles techniques"
+    ],
+    "prerequis": [
+     "BAC + 2",
+     "Anglais B2"
+    ],
+    "competences": [
+     {
+      "nom": "Anglais courant",
+      "ok": true
+     }
+    ],
+    "atouts": [
+     "Bon niveau d'anglais",
+     "Formation solide en biologie"
+    ],
+    "manques": [
+     "Biologie moléculaire de paillasse",
+     "Culture cellulaire"
+    ],
+    "bloquants": [],
+    "conseil": "Mettez en avant votre rigueur expérimentale acquise lors de vos stages, mais sachez que le poste est très axé sur la paillasse et l'hygiène/sécurité en laboratoire de chimie/physique.",
+    "salaire_min": 2348,
+    "salaire_max": 2482,
+    "duree_mois": 12,
+    "date_limite": "2026-11-11",
+    "contact": null,
+    "lien_these": true
+   },
+   "vu_le": "2026-10-21",
+   "extrait": "Assistant Ingénieur en biologie (H/F)\n\n Nouveau\r\n\n Institut des Sciences Moléculaires d'Orsay\r\n\nORSAY • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n BAC + 2\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut des Sciences Moléculaires d'Orsay\n\nType",
+   "verifiee_le": "2026-10-21",
+   "disponibilite": "disponible",
+   "recoupement": {
+    "statut": "employeur"
+   }
   },
   {
    "id": "csp-2026-2344533",
@@ -7429,7 +7701,7 @@
    "contrat": "CDD",
    "type": "emploi",
    "date_publication": "2026-10-15",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 25,
@@ -7547,7 +7819,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Assistant-e ingénieur-e en biologie, sciences de la vie et de la terre\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD d'1 an\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\nCatégorie A. ASI\n € bru",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -7609,7 +7881,7 @@
    },
    "vu_le": "2026-10-18",
    "extrait": "",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -7687,7 +7959,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "CDD IE en biologie structurale et biochimie dans une équipe de recherche H/F\n\n Institut de Biologie Intégrative de la Cellule\r\n\nGIF SUR YVETTE • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitu",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -7751,7 +8023,7 @@
    },
    "vu_le": "2026-10-20",
    "extrait": "À propos de la CARPV La CARPV est l'une des dix sections professionnelles de la Caisse Nationale d'Assurance Vieillesse des Professions Libérales ...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -7803,7 +8075,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Poste Vos missions au sein de l'Université Paris Dauphine – PSL Sous la responsabilité directe du Directeur de l'Aide au Pilotage, le/la Chargé(...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -7867,7 +8139,7 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "Chargé-e d’innovation PUI (CI-PUI)\n\n 78000 VERSAILLES \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche placé sous la double tutelle des ministères chargés de l’agriculture et de la recherche. Il rassemble une communauté de travail de 12 000 personnes répart",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -7967,7 +8239,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -8034,7 +8306,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur d’étude en génétique, biologie moléculaire (H/F)\n\n Nouveau\r\n\n Institut de Biologie Intégrative de la Cellule\r\n\nGIF SUR YVETTE • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 13 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut de Bi",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -8115,7 +8387,7 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "Ingénieur en biologie moleculaire et cellulaire (H/F)\n\n Nouveau\r\n\n Institut de génétique et développement de Rennes\r\n\nRENNES • Ille-et-Vilaine\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut de génétiq",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -8191,7 +8463,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur(e) d'étude sen biologie–Lab manager\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD de 3 ans\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n2445 à 3569€/mois\n € brut/an \n Fourchette indi",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -8267,7 +8539,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Ingénieur-e de recherche en hydrologie fluviale mondiale à partir des données SWOT\n\n 34000 Montpellier \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et ex",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -8325,7 +8597,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Ingénieur-e développement pour le data brokering des données de microbiomes et santé.\n\n 78350 Jouy-en-josas \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -8399,7 +8671,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Ingénieur-e d’étude sur la conception d’instruments de mesure de performances\n\n 03150 Montoldre \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimen",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -8480,7 +8752,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Ingénieur-e en Immunologie et Virologie \n\n 44300 NANTES \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 centres sur to",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -8550,7 +8822,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Ingénieur-e en analyse des coûts et bénéfices de l’irrigation & dialogue sciences-société\n\n 34060 Montpellier \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de servic",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -8604,7 +8876,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Matthieu P Vanni Thesis , Canada Le projet porte sur l’étude de la plasticité sensorimotrice multimodale et de la réorganisation des circuits neuronaux à la suite d’une perte de vision (cécité) ou de lésions cér&eacu ... Scientific expertises : Biology Keywords : Plasticité cérébrale, neurophysiologie in vivo, imagerie 2-photon, intégration sensorimotrice, optogénétique Ref. ABG-135166 2026-01-18 ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -8691,7 +8963,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "TECHNICIEN.NE EN BIOLOGIE VEGETALE ET ECOLOGIE\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non rens",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -8761,7 +9033,7 @@
    "extrait": "Technicien / agent chargé de la préservation de la biodiversité\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctio",
    "url_employeur": "https://ofb.gestmax.fr/4616/12/technicien-agent-charge-de-la-preservation-de-la-biodiversite-h-f",
    "employeur_confirme": true,
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "recoupement": {
     "url_employeur": "https://ofb.gestmax.fr/4616/12/technicien-agent-charge-de-la-preservation-de-la-biodiversite-h-f",
     "statut": "employeur"
@@ -8783,7 +9055,7 @@
    "date_publication": "2026-10-14",
    "lien_employeur": "https://passerelles.economie.gouv.fr/Pages/Offre/DetailOffre.aspx?idOffre=32315&idOrigine=&LCID=1036",
    "employeur_verifie": "introuvable",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 25,
@@ -8902,7 +9174,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Thèse en bioinformatique/modélisation structurale (H/F)\n\n Laboratoire de Biologie et Modélisation de la Cellule\r\n\nLYON 07 • Rhône\n\n- \r\n CDD Doctorant\r\n\n- \r\n\n 36 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -8919,7 +9191,7 @@
    "contrat": "CDD",
    "type": "emploi",
    "date_publication": "2026-10-19",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 25,
@@ -9042,7 +9314,7 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "Description de l'entreprise Avec plus de 4 400 collaborateurs, SMABTP assure pour l’ensemble de leurs besoins en assurance plus de 180 000 clients...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -9102,7 +9374,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "A propos de CRIT PARIS Fonctions Supports & Cadres: Envie d'explorer de nouvelles opportunités ? Chez Crit, nous vous accompagnons dans chaque étape...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -9179,7 +9451,7 @@
    },
    "vu_le": "2026-10-20",
    "extrait": "Chercheur en neurosciences \"Etude des mécanismes neuronaux impliqués dans le traitement des informations sensorielles.\" H/F\n\n Nouveau\r\n\n Institut Interdisciplinaire de Neurosciences\r\n\nBORDEAUX • Gironde\n\n- \r\n Chercheur en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la quali",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -9232,7 +9504,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Centre de Recherche Azrieli du CHU Sainte-Justine (Université de Montréal) Thesis Montréal, Canada Dans une optique d’amélioration de la trajectoire des patients, un vaste projet de recherche reposant sur des données de séquençage de nouvelle génération est en cours. Celui-ci comporte de nombreuses so ... Scientific expertises : Biotechnology - Health, human and veterinary medicine - Data science ",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -9314,7 +9586,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur d'études en biologie cellulaire et immunologie\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n31200\n € brut/an \n Fourchette indicative pour les fonctionnaires\n No",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -9375,7 +9647,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Née de la volonté conjuguée d’universités, de grandes écoles et d’organismes de recherche, l’Université Paris-Saclay compte parmi les grandes universités européennes et mondiales, couvrant les secteurs des Sciences et Ingénierie, des Sciences de la Vie et Santé, et des Sciences Humaines ...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -9437,7 +9709,7 @@
    },
    "vu_le": "2026-10-18",
    "extrait": "Le Centre de recherche de l’Institut Curie 1er centre français de recherche et de lutte contre le cancer, l'Institut Curie associe un centr...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -9504,7 +9776,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -9573,7 +9845,7 @@
    "extrait": "Ingénieur détude, en biologie moléculaire et cellulaire \nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires",
    "url_employeur": "https://inserm.softy.pro/offre/198452?idt=164",
    "employeur_confirme": true,
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "recoupement": {
     "url_employeur": "https://inserm.softy.pro/offre/198452?idt=164",
     "statut": "employeur"
@@ -9642,7 +9914,7 @@
    "extrait": "LPS LYON - Analyste section Pré-Analytique - DIP-TDC - Biologie H/F H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Débutant \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonc",
    "lien_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=126620&idOrigine=&LCID=1036",
    "employeur_verifie": "introuvable",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "verif_manuelle": "2026-10-14",
    "recoupement": {
@@ -9711,7 +9983,7 @@
    },
    "vu_le": "2026-10-18",
    "extrait": "Optimisation des voies de valorisation des boues piscicoles\n\n 35000 \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 ce",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -9781,7 +10053,7 @@
    },
    "vu_le": "2026-10-19",
    "extrait": "INSERM UMR-S 1237 PhIND - Université de Caen Normandie Thesis Caen , Normandie , France Stroke is a major health concern worldwide, with approximately 25% of people expected to experience one in their lifetime. Current treatments for ischemic stroke, such as thrombolysis and thrombectomy, are effective but not always available for patien ... Scientific expertises : Health, human and veterinary med",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -9842,7 +10114,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Technicien-ne en expérimentation production végétales – Phénotypage et conduite de culture en arboriculture\n\n 30127 BELLEGARDE \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de rec",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -9859,7 +10131,7 @@
    "contrat": "CDD",
    "type": "emploi",
    "date_publication": "2026-10-18",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 18,
@@ -9938,7 +10210,7 @@
    "date_publication": "2026-10-16",
    "lien_employeur": "https://recrutement.agriculture.gouv.fr/nos-offres/2026-16-A6R2100075-58013",
    "employeur_verifie": "disponible",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 18,
@@ -10082,7 +10354,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "ingénieur d'étude en analyse de données et IA pour la caractérisation des réacteurs catalytriques à lit fixe\n\n Nouveau\r\n\n Laboratoire Réactions et Génie des Procédés\r\n\nNANCY • Meurthe-et-Moselle\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 9 mois\r\n\n- \r\n BAC+3/4\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -10101,7 +10373,7 @@
    "date_publication": "2026-10-16",
    "lien_employeur": "https://recrutement.agriculture.gouv.fr/nos-offres/2026-16-A5SAS00201-57825",
    "employeur_verifie": "disponible",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 15,
@@ -10207,7 +10479,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Adjoint·e au Chef·fe du bureau de la Biodiversité, de la Nature et du Paysage\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative po",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -10268,83 +10540,8 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "InnoBioMil est une entreprise de biotechnologie avant-gardiste implantée à Bailly-Romainvilliers (77), en France. Nous développons activement un nouveau site dédié à la fabrication de milieux de culture cellulaire et de nutriments destinés à la production biopharmaceutique, en mettant l'accent sur l'innovation et la qualité dans les processus de fabrication…",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
-  },
-  {
-   "id": "cnrs-UMR9198-CHROUL1-162",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR9198-CHROUL1-162/Default.aspx",
-   "titre": "CDD Doctorant en biologie structurale, biochimie",
-   "employeur": "CNRS",
-   "lieu": "Gif Sur Yvette",
-   "region": "idf",
-   "contrat": "CDD Doctorant",
-   "type": "these",
-   "date_publication": "2026-09-29",
-   "analyse": {
-    "score": 15,
-    "niveau": "hors",
-    "mode": "ia",
-    "resume": "Contrat doctoral de 36 mois au CNRS portant sur la biochimie et la biologie structurale des chaînes de synthèse non ribosomales. Le sujet est très éloigné de vos domaines d'intérêt (comportement animal, écologie) et nécessite des techniques de paillasse chimique que vous ne pratiquez pas.",
-    "missions": [
-     "Déterminer le mécanisme moléculaire d'assemblage du cycle pyrimidinique dans la biosynthèse de la bléomycine",
-     "Associer biochimie, biologie structurale et synthèse chimique pour caractériser les complexes NRPS",
-     "Analyser les interactions protéine-protéine régissant l'efficacité biosynthétique",
-     "Valoriser les résultats par des publications et communications scientifiques"
-    ],
-    "prerequis": [
-     "Diplôme de Master 2 ou diplôme d'ingénieur en biochimie, biologie structurale ou chimie biologique",
-     "Solides connaissances en enzymologie et synthèse organique"
-    ],
-    "competences": [
-     {
-      "nom": "Biochimie",
-      "ok": false
-     },
-     {
-      "nom": "Biologie structurale",
-      "ok": false
-     },
-     {
-      "nom": "Synthèse chimique",
-      "ok": false
-     },
-     {
-      "nom": "Anglais scientifique",
-      "ok": true
-     },
-     {
-      "nom": "Biologie moléculaire",
-      "ok": false
-     }
-    ],
-    "atouts": [
-     "Diplôme Bac+5 (Master PRIAM)",
-     "Excellente maîtrise de l'anglais scientifique (IELTS 8.5)",
-     "Rigueur méthodologique et expérience du travail de recherche"
-    ],
-    "manques": [
-     "Biologie moléculaire et biochimie de paillasse",
-     "Biologie structurale (cristallographie, cryo-EM)",
-     "Synthèse chimique organique"
-    ],
-    "bloquants": [],
-    "conseil": "Ce projet de thèse est totalement hors de votre domaine de prédilection (comportement animal, écologie, biostatistique) et requiert des compétences en biochimie/chimie de paillasse que vous ne maîtrisez pas.",
-    "salaire_min": 2300,
-    "salaire_max": null,
-    "duree_mois": 36,
-    "date_limite": "2026-10-20",
-    "contact": null,
-    "lien_these": true
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "CDD Doctorant en biologie structurale, biochimie H/F\n\n Institut de Biologie Intégrative de la Cellule\r\n\nGIF SUR YVETTE • Essonne\n\n- \r\n CDD Doctorant\r\n\n- \r\n\n 36 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r",
-   "verifiee_le": "2026-10-20",
-   "disponibilite": "disponible",
-   "recoupement": {
-    "statut": "employeur"
-   }
   },
   {
    "id": "csp-2026-2445185",
@@ -10359,7 +10556,7 @@
    "date_publication": "2026-10-20",
    "lien_employeur": "https://ofb.gestmax.fr/4655/12/cdd-hp-charge-e-de-mission-deploiement-de-dispositifs-territoriaux-en-faveur-de-la-biodiversite-h-f",
    "employeur_verifie": "disponible",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 15,
@@ -10420,7 +10617,8 @@
    "vu_le": "2026-10-20",
    "extrait": "CDD HP - Chargé.e de mission Déploiement de dispositifs territoriaux en faveur de la biodiversité... H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fo",
    "recoupement": {
-    "statut": "employeur"
+    "statut": "employeur",
+    "url_employeur": "https://ofb.gestmax.fr/4655/12/cdd-hp-charge-e-de-mission-deploiement-de-dispositifs-territoriaux-en-faveur-de-la-biodiversite-h-f"
    }
   },
   {
@@ -10463,7 +10661,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Chargé de mission biodiversité et pêche en eau douce H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -10479,7 +10677,7 @@
    "date_publication": "2026-10-14",
    "lien_employeur": "https://ofb.gestmax.fr/4649/12/charge-e-de-recherche-biodiversite-usages-et-anthropisation-des-ecosystemes-lacustres-h-f",
    "employeur_verifie": "disponible",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 15,
@@ -10596,7 +10794,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -10666,7 +10864,7 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "Développeur-euse bioinformatique\n\n 63122 Saint-Genès-Champanelle \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 centr",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -10742,7 +10940,7 @@
    "extrait": "Ingénieur d'étude en Biologie cellulaire \nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non renseigné",
    "url_employeur": "https://inserm.softy.pro/offre/202814?idt=164",
    "employeur_confirme": true,
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "recoupement": {
     "url_employeur": "https://inserm.softy.pro/offre/202814?idt=164",
     "statut": "employeur"
@@ -10844,7 +11042,7 @@
    "extrait": "Ingénieur d'étude en biologie animale \nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n Non renseignée \n",
    "url_employeur": "https://inserm.softy.pro/offre/208663?idt=164",
    "employeur_confirme": true,
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "recoupement": {
     "url_employeur": "https://inserm.softy.pro/offre/208663?idt=164",
     "statut": "employeur"
@@ -10923,7 +11121,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur d'étude en biologie moléculaire et cellulaire H/F\n\n Ingénierie Moléculaire, Cellulaire et Physiopathologie\r\n\nVANDOEUVRE LES NANCY • Meurthe-et-Moselle\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 36 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nI",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -10995,7 +11193,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Ingénieur d'étude en génétique et biologie moléculaire CDD H/F\n\n Nouveau\r\n\n Institut de Biologie Intégrative de la Cellule\r\n\nGIF SUR YVETTE • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 12 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut d",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -11072,7 +11270,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -11127,7 +11325,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "...projets ENR, ENGIE Green recherche un Ingénieur Calcul de Productible Éolien et... ...3 ans d'expérience en bureau d' études. Vos futures...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -11214,7 +11412,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur d'études en biologie\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\nCDD d'1 an\n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -11288,75 +11486,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur d'études en biologie moleculaire (H/F)\n\n Institut de génétique moléculaire de Montpellier\r\n\nMONTPELLIER • Hérault\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 3 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nInstitut de génétique moléculaire de ",
-   "verifiee_le": "2026-10-20",
-   "disponibilite": "disponible",
-   "recoupement": {
-    "statut": "employeur"
-   }
-  },
-  {
-   "id": "cnrs-UMR8539-ISARIC-131",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8539-ISARIC-131/Default.aspx",
-   "titre": "Ingénieur de Recherche expert  en calcul numérique pour la modélisation du climat de la planète Mars",
-   "employeur": "CNRS",
-   "lieu": "Paris 05",
-   "region": "idf",
-   "contrat": "Ingénieur/Technicien de projet",
-   "type": "emploi",
-   "date_publication": "2026-09-29",
-   "analyse": {
-    "score": 15,
-    "niveau": "hors",
-    "mode": "ia",
-    "resume": "Poste d'ingénieur de recherche expert en calcul numérique pour la modélisation du climat martien au Laboratoire de Météorologie Dynamique à Paris. L'offre cible un profil expérimenté (1 à 4 ans d'expérience exigés) avec des compétences en programmation Fortran et physique, éloigné du domaine du candidat.",
-    "missions": [
-     "Développer des outils pour modéliser l'atmosphère et la surface martienne",
-     "Effectuer de la programmation numérique en Fortran",
-     "Réaliser des simulations sur supercalculateur",
-     "Traiter les données spatiales sous Python"
-    ],
-    "prerequis": [
-     "Doctorat ou Diplôme d'ingénieur",
-     "1 à 4 années d'expérience souhaitée",
-     "Compétence en physique",
-     "Maîtrise de l'anglais"
-    ],
-    "competences": [
-     {
-      "nom": "Anglais",
-      "ok": true
-     },
-     {
-      "nom": "Python",
-      "ok": false
-     }
-    ],
-    "atouts": [
-     "Solide formation scientifique d'ingénieur"
-    ],
-    "manques": [
-     "Expérience professionnelle exigée (1 à 4 ans)",
-     "Compétences en programmation Fortran",
-     "Contexte en physique atmosphérique ou planétologie"
-    ],
-    "bloquants": [
-     {
-      "type": "experience",
-      "texte": "1 à 4 années d'expérience souhaitée / exigée"
-     }
-    ],
-    "conseil": "Poste très éloigné de votre spécialité en biologie intégrative et comportementale.",
-    "salaire_min": 3238,
-    "salaire_max": null,
-    "duree_mois": 60,
-    "date_limite": "2026-10-20",
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Ingénieur de Recherche expert (H/F) en calcul numérique pour la modélisation du climat de la planète Mars\n\n Laboratoire de météorologie dynamique\r\n\nPARIS 05 • Paris\n\n- \r\n IT en contrat de projet\r\n\n- \r\n\n 60 mois\r\n\n- \r\n BAC+5\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\n",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -11398,7 +11528,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Thales - Palaiseau (91)",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -11480,7 +11610,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Ingénieur d’études en Biologie et Physiologie (H/F)\n\n Nouveau\r\n\n Institut de Biologie Valrose\r\n\nNICE • Alpes-Maritimes\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 24 mois\r\n\n- \r\n BAC+5\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -11537,7 +11667,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "...cadre, nous recherchons un.e ingénieur.e d’étude qui contribuera à la caractérisation... ...Conduire des expériences en biologie moléculaire (clonages,...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -11613,7 +11743,7 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "Ingénieur-e en systèmes embarqués GNSS/RTK\n\n 31326 CASTANET TOLOSAN \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 ce",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -11688,7 +11818,7 @@
    },
    "vu_le": "2026-10-15",
    "extrait": "Ingénieur-e en techniques biologiques végétales\n\n 91190 GIF SUR YVETTE \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -11744,7 +11874,7 @@
    },
    "vu_le": "2026-10-18",
    "extrait": "Ingénieur-e technologue Alimentaire\n\n 35042 - Rennes \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 centres sur toute",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -11763,7 +11893,7 @@
    "date_publication": "2026-10-16",
    "lien_employeur": "https://recrutement.agriculture.gouv.fr/nos-offres/2026-16-A6D3600059-57999",
    "employeur_verifie": "disponible",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 15,
@@ -11892,7 +12022,7 @@
    "extrait": "LPS LYON - Analyste section Analytique - Groupe recherche innovation développement - Biologie H/F H/F\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Débutant \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourc",
    "lien_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=123992&idOrigine=&LCID=1036",
    "employeur_verifie": "introuvable",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "verif_manuelle": "2026-10-14",
    "recoupement": {
@@ -11913,7 +12043,7 @@
    "date_publication": "2026-10-14",
    "lien_employeur": "https://recrutement.aphp.fr/jobs/job-redirect?extId=2026-22822&source=exchange&action=jobapplication",
    "employeur_verifie": "disponible",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 15,
@@ -11955,62 +12085,6 @@
    "recoupement": {
     "statut": "employeur",
     "url_employeur": "https://recrutement.aphp.fr/jobs/job-redirect?extId=2026-22822&source=exchange&action=jobapplication"
-   }
-  },
-  {
-   "id": "inrae-ot-30684",
-   "source": "INRAE",
-   "url": "https://jobs.inrae.fr/ot-30684",
-   "titre": "Technicien-ne de recherche en biologie moléculaire",
-   "employeur": "INRAE",
-   "lieu": "Petit-Bourg (97)",
-   "region": "france",
-   "contrat": "Mission temporaire 18 mois",
-   "type": "emploi",
-   "date_publication": "2026-10-09",
-   "analyse": {
-    "score": 15,
-    "niveau": "hors",
-    "mode": "ia",
-    "resume": "Ce poste de technicien en biologie moléculaire ne correspond pas au profil quantitatif et comportemental du candidat. Il s'agit d'un travail de laboratoire axé sur la phytopathologie et les analyses de paillasse en Guadeloupe, loin de ses compétences en biostatistiques et en éthologie.",
-    "missions": [
-     "Conditionner des prélèvements de feuilles ou de lésions fongiques",
-     "Effectuer des extractions d'acides nucléiques sur plantes et champignons",
-     "Réaliser des amplifications par PCR, RT-PCR et LAMP",
-     "Gérer le laboratoire de biologie moléculaire et les stocks de consommables"
-    ],
-    "prerequis": [
-     "Licence en Biologie/Biochimie ou BUT/BTS en Biotechnologie ou équivalent",
-     "Maîtrise du français"
-    ],
-    "competences": [
-     {
-      "nom": "biologie moléculaire de paillasse",
-      "ok": false
-     }
-    ],
-    "atouts": [
-     "Solide formation universitaire en biologie"
-    ],
-    "manques": [
-     "Biologie moléculaire de paillasse",
-     "Expérience en laboratoire de virologie ou mycologie végétale"
-    ],
-    "bloquants": [],
-    "conseil": "Ce poste est très éloigné de vos compétences en modélisation et éthologie, et ne constitue pas un tremplin vers une thèse en comportement animal. Passez votre chemin.",
-    "salaire_min": null,
-    "salaire_max": null,
-    "duree_mois": 18,
-    "date_limite": "2026-10-20",
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-14",
-   "extrait": "Technicien-ne de recherche en biologie moléculaire\n\n 97170 PETIT-BOURG \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18",
-   "verifiee_le": "2026-10-20",
-   "disponibilite": "disponible",
-   "recoupement": {
-    "statut": "employeur"
    }
   },
   {
@@ -12071,7 +12145,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "chef(fe) de l'unité biodiversité terrestre et marine\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n No",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible"
   },
   {
@@ -12128,7 +12202,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "Aller au contenu\r\n\n Le CNRS sur le Web\r\n\n- \r\n\n FR\r\n\n- \r\n\n EN\r\n\nLe CNRS sur le Web\n\n Fermer\r\n\n- \r\n Institutionnel\r\n\n- \r\n Cnrs.fr\r\n\n- \r\n Fondation CNRS \r\n\n- \r\n CNRS innovation\r\n\n- \r\n Linkedin\r\n\n- \r\n Recrutement\r\n\n- \r\n le site Carrières\r\n\n- \r\n Organisation administrative\r\n\n- \r\n Les délégations\r\n\n- \r\n Les instituts\r\n\n- \n\n- \n\n- \n\n Se connecter\r\n\n Fermer\r\n\nCréer un compte\n\n Fermer\r\n\nLa création d'un com",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -12210,7 +12284,7 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "Technicien-ne en expérimentation végétale\n\n 45160 ARDON \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 centres sur to",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -12291,7 +12365,7 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "Technicien-ne forêt pépinière\n\n 45160 ARDON \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 centres sur toute la Franc",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -12353,7 +12427,7 @@
    "vu_le": "2026-10-13",
    "extrait": "Agent de capture animale - COMMUNAUTE D'AGGLOMERATION DE LENS - LIEVIN\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert uniquement aux contractuels \n- \n Nature du contrat\n Non renseigné \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n ",
    "url_employeur": "https://www.emploi-territorial.fr/offre/o062260622000502-agent-capture-animale?pk_campaign=ep",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "lien_employeur": "https://www.emploi-territorial.fr/offre/o062260622000502-agent-capture-animale?pk_campaign=ep",
    "employeur_verifie": "introuvable",
@@ -12417,7 +12491,7 @@
    },
    "vu_le": "2026-10-16",
    "extrait": "Le projet VORTEX développe des dispositifs brevetés de neutralisation de l'hydrogène fondés sur un matériau catalytique innovant. Après validation en laboratoire, le ...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -12468,7 +12542,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "CDI IDF - Paris Etudes, contrôle, conseil et organisation REF2001U Au sein du pôle « Organisation, Processus et Pilotage » de la Direction...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -12533,7 +12607,7 @@
    "extrait": "Chargé de projet Écologie Industrielle Territoriale F/H\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Non renseigné \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les fonctionnaires\n",
    "url_employeur": "http://jobstats.robopost.com/count/clic.php?v=2557298&j=2849&external_ats_id=1019",
    "employeur_confirme": true,
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "recoupement": {
     "url_employeur": "http://jobstats.robopost.com/count/clic.php?v=2557298&j=2849&external_ats_id=1019",
     "statut": "employeur"
@@ -12607,7 +12681,7 @@
    },
    "vu_le": "2026-10-17",
    "extrait": "Chargé-e de contenu digital et réseaux sociaux (F/H)\n\n 31320 Auzeville-Tolosane \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantée",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -12688,71 +12762,7 @@
    },
    "vu_le": "2026-10-20",
    "extrait": "Chercheur / Chercheuse post-doc en neurobiologie (H/F)\n\n Nouveau\r\n\n Immuno-Neuro Modulation\r\n\nORLEANS • Loiret\n\n- \r\n Chercheur en contrat CDD\r\n\n- \r\n\n 13 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'uni",
-   "verifiee_le": "2026-10-20",
-   "disponibilite": "disponible",
-   "recoupement": {
-    "statut": "employeur"
-   }
-  },
-  {
-   "id": "cnrs-UMR8197-VALHER-258",
-   "source": "CNRS",
-   "url": "https://emploi.cnrs.fr/Offres/CDD/UMR8197-VALHER-258/Default.aspx",
-   "titre": "Chercheur en Dynamique des interactions intestine-cerveau chez la larve du poisson zèbre.",
-   "employeur": "CNRS",
-   "lieu": "Paris 05",
-   "region": "idf",
-   "contrat": "Chercheur CDD",
-   "type": "emploi",
-   "date_publication": "2026-09-29",
-   "analyse": {
-    "score": 10,
-    "niveau": "hors",
-    "mode": "ia",
-    "resume": "Offre de chercheur post-doctoral ou équivalent nécessitant un doctorat. Le profil de jeune diplômé en Master ne permet pas de postuler.",
-    "missions": [
-     "Recherche fondamentale sur les interactions intestin-cerveau chez le poisson zèbre",
-     "Expériences d'imagerie bi-photonique et optogénétique",
-     "Analyser les données et écrire des articles"
-    ],
-    "prerequis": [
-     "Doctorat",
-     "Compétences en Matlab et Python"
-    ],
-    "competences": [
-     {
-      "nom": "poisson zèbre",
-      "ok": true
-     },
-     {
-      "nom": "Matlab",
-      "ok": false
-     }
-    ],
-    "atouts": [
-     "Expérience préalable sur le poisson zèbre (stage M1)"
-    ],
-    "manques": [
-     "Doctorat",
-     "Maîtrise de Matlab et Python"
-    ],
-    "bloquants": [
-     {
-      "type": "diplome",
-      "texte": "Doctorat exigé"
-     }
-    ],
-    "conseil": "Le niveau doctorat exigé bloque l'accès à ce poste de chercheur.",
-    "salaire_min": 3131,
-    "salaire_max": 4806,
-    "duree_mois": 22,
-    "date_limite": "2026-10-20",
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-13",
-   "extrait": "Chercheur en Dynamique des interactions intestine-cerveau chez la larve du poisson zèbre.\n\n Institut de biologie de l'Ecole Normale Supérieure\r\n\nPARIS 05 • Paris\n\n- \r\n Chercheur en contrat CDD\r\n\n- \r\n\n 22 mois\r\n\n- \r\n Doctorat\r\n\n This offer is available in English version\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleu",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -12817,7 +12827,7 @@
    "vu_le": "2026-10-13",
    "extrait": "DGA Ecologie et cadre de vie - Communauté d'Agglomération de Cergy Pontoise\nVeuillez autoriser le dépôt de cookies pour partager sur Facebook, Twitter et LinkedIn.\n- \n- \n- \n- \n- \n- \n Nature de l’emploi\n Emploi ouvert aux titulaires et aux contractuels \n- \n Expérience souhaitée\n Confirmé \n- \n Rémunération\n Fourchette indicative pour les contractuels\n Non renseignée \n Fourchette indicative pour les ",
    "url_employeur": "https://www.emploi-territorial.fr/offre/o095260914000974-dga-ecologie-cadre-vie?pk_campaign=ep",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "lien_employeur": "https://www.emploi-territorial.fr/offre/o095260914000974-dga-ecologie-cadre-vie?pk_campaign=ep",
    "employeur_verifie": "introuvable",
@@ -12840,7 +12850,7 @@
    "date_publication": "2026-10-16",
    "lien_employeur": "https://ministereinterieur-career.talent-soft.com/Pages/Offre/DetailOffre.aspx?idOffre=122300&idOrigine=&LCID=1036",
    "employeur_verifie": "introuvable",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "analyse": {
     "score": 10,
@@ -12955,7 +12965,7 @@
    },
    "vu_le": "2026-10-20",
    "extrait": "Description de l'entrepriseChez ASI, nous accompagnons de grands acteurs de la banque, de l’assurance et de la finance dans leurs programmes de transformation...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -13022,7 +13032,7 @@
    },
    "vu_le": "2026-10-20",
    "extrait": "Gestionnaire financier-e des contrats de recherche\n\n 34060 Montpellier \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -13066,7 +13076,7 @@
    },
    "vu_le": "2026-10-14",
    "extrait": "...public. Vos futures missions Rattaché(e) à la Direction du Bureau d' Etudes, vous participez à l'éléboration des dossiers pour répondre à des...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -13137,7 +13147,7 @@
    },
    "vu_le": "2026-10-13",
    "extrait": "Ingénieur d'étude en simulation d'écoulements multiphasiques (H/F)\n\n Laboratoire d'Hydrodynamique\r\n\nPALAISEAU • Essonne\n\n- \r\n IT en contrat CDD\r\n\n- \r\n\n 6 mois\r\n\n- \r\n BAC+3/4\r\n\n Cette offre est ouverte aux personnes disposant d’un titre leur reconnaissant la qualité de travailleur handicapé ou travailleuse handicapée.\r\n\n L'offre en un coup d'oeil\r\n\nL'unité\n\nLaboratoire d'Hydrodynamique\n\nType de Con",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "disponible",
    "recoupement": {
     "statut": "employeur"
@@ -13193,7 +13203,7 @@
    },
    "vu_le": "2026-10-18",
    "extrait": "...grande diversité de métiers et de secteurs d'activité En tant qu' Ingénieur d' tudes confirmé / Développeur Applicatif & SI, rejoignez une DSI à taille...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -13243,7 +13253,7 @@
    },
    "vu_le": "2026-10-18",
    "extrait": "...pour notre client, spécialisé dans le secteur de l'ingénierie, un Ingénieur d'études pour une mission en intérim de 12 mois à EVRY COURCOURONNES. Le...",
-   "verifiee_le": "2026-10-20",
+   "verifiee_le": "2026-10-21",
    "disponibilite": "non_verifiable"
   },
   {
@@ -13318,6 +13328,10 @@
      {
       "nom": "emploipublic.fr",
       "url": "https://fr.jooble.org/desc/-3611346431815462607?ckey=ing%c3%a9nieur+d%27%c3%a9tudes+biologie&rgn=12&pos=3&groupId=-1158654151&elckey=-8858957573995234875&p=1&aq=3363448603312443764&cid=853&jobAge=824&brelb=110&bscr=154.1473&scr=154.1473"
+     },
+     {
+      "nom": "emploipublic.fr",
+      "url": "https://fr.jooble.org/desc/-3611346431815462607?ckey=ing%c3%a9nieur+d%27%c3%a9tudes+biologie&rgn=12&pos=3&groupId=-1158654151&elckey=-1136580377491612254&p=1&aq=1561083739287085269&cid=853&jobAge=848&brelb=110&bscr=149.93396&scr=149.93396"
      }
     ],
     "statut": "plusieurs"
@@ -13660,80 +13674,6 @@
    "extrait": "Description de l'offre : L’ Ingénieur Chargé d’ études apporte son expertise technique... ...3 ans en tant qu’Ingénieur Etudes, Support Technique, Chef de Projet...",
    "verifiee_le": "2026-10-20",
    "disponibilite": "non_verifiable"
-  },
-  {
-   "id": "inrae-ot-30537",
-   "source": "INRAE",
-   "url": "https://jobs.inrae.fr/ot-30537",
-   "titre": "Ingénieur-e d’étude en autonomie des machines",
-   "employeur": "INRAE",
-   "lieu": "Montoldre",
-   "region": "france",
-   "contrat": "Mission temporaire 1 an",
-   "type": "emploi",
-   "date_publication": "2026-09-21",
-   "analyse": {
-    "score": 10,
-    "niveau": "hors",
-    "mode": "ia",
-    "resume": "Poste d'ingénieur d'étude axé sur la sécurité et la sûreté de fonctionnement des robots agricoles autonomes dans l'Allier. Le profil recherché relève purement du génie industriel et de la robotique, sans rapport avec la biologie animale ni les biostatistiques.",
-    "missions": [
-     "Piloter et réaliser des études de sûreté de fonctionnement (AMDEC, arbres de défaillance)",
-     "Suivre les normes et règlements applicables aux machines autonomes et à l'IA",
-     "Développer des protocoles de tests et de qualification de sécurité machine",
-     "Participer à la conception des systèmes robotiques agricoles"
-    ],
-    "prerequis": [
-     "Bac+5 avec spécialisation en maîtrise des risques industriels, fiabilité ou systèmes complexes",
-     "Maîtrise des méthodes AMDEC, arbres de défaillance, modélisation SdF",
-     "Anglais niveau B1-B2"
-    ],
-    "competences": [
-     {
-      "nom": "Maîtrise des risques industriels / SdF (AMDEC)",
-      "ok": false
-     },
-     {
-      "nom": "Robotique et systèmes embarqués",
-      "ok": false
-     },
-     {
-      "nom": "Anglais B1-B2",
-      "ok": true
-     },
-     {
-      "nom": "Rédaction et présentation de rapports",
-      "ok": true
-     }
-    ],
-    "atouts": [
-     "Excellent niveau d'anglais"
-    ],
-    "manques": [
-     "Formation en ingénierie industrielle / robotique",
-     "Connaissances en sûreté de fonctionnement (AMDEC, normes ISO machines)"
-    ],
-    "bloquants": [
-     {
-      "type": "diplome",
-      "texte": "Bac+5 avec spécialisation en maîtrise des risques industriels, fiabilité ou systèmes complexes exigé"
-     }
-    ],
-    "conseil": "Ne pas postuler : le profil requis relève des sciences de l'ingénieur industriel et mécanique, totalement hors champ de la biologie.",
-    "salaire_min": null,
-    "salaire_max": null,
-    "duree_mois": 12,
-    "date_limite": "2026-10-20",
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-18",
-   "extrait": "Ingénieur-e d’étude en autonomie des machines\n\n 03150 Montoldre \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dans 18 centre",
-   "verifiee_le": "2026-10-20",
-   "disponibilite": "disponible",
-   "recoupement": {
-    "statut": "employeur"
-   }
   },
   {
    "id": "csp-MINT_PTSB075PS-126445",
@@ -14442,68 +14382,6 @@
    }
   },
   {
-   "id": "inrae-ot-30683",
-   "source": "INRAE",
-   "url": "https://jobs.inrae.fr/ot-30683",
-   "titre": "Technicien-ne de recherche en expérimentation végétale",
-   "employeur": "INRAE",
-   "lieu": "Petit-Bourg (97)",
-   "region": "france",
-   "contrat": "Mission temporaire 18 mois",
-   "type": "emploi",
-   "date_publication": "2026-10-09",
-   "analyse": {
-    "score": 10,
-    "niveau": "hors",
-    "mode": "ia",
-    "resume": "Ce poste de technicien en expérimentation végétale en Guadeloupe exige le permis B et une orientation purement agronomique de terrain. Il ne correspond ni aux aspirations de modélisation statistique ni au domaine de l'éthologie animale du candidat.",
-    "missions": [
-     "Préparer le matériel nécessaire aux collectes et l'étiquetage",
-     "Réaliser des échantillonnages de végétaux sur le terrain",
-     "Assurer la traçabilité et le transfert des échantillons",
-     "Appuyer la planification des campagnes d'échantillonnage"
-    ],
-    "prerequis": [
-     "Diplôme de technicien agricole",
-     "Expérience significative dans le suivi agronomique des cultures tropicales",
-     "Permis B obligatoire"
-    ],
-    "competences": [
-     {
-      "nom": "permis de conduire",
-      "ok": false
-     }
-    ],
-    "atouts": [
-     "Goût pour le travail en extérieur et la rigueur scientifique"
-    ],
-    "manques": [
-     "Permis de conduire",
-     "Expérience en agronomie tropicale"
-    ],
-    "bloquants": [
-     {
-      "type": "autre",
-      "texte": "Permis B obligatoire"
-     }
-    ],
-    "conseil": "L'exigence du permis B et l'orientation agronomique végétale bloquent cette candidature qui vise l'éthologie et la biostatistique.",
-    "salaire_min": null,
-    "salaire_max": null,
-    "duree_mois": 18,
-    "date_limite": "2026-10-20",
-    "contact": null,
-    "lien_these": false
-   },
-   "vu_le": "2026-10-14",
-   "extrait": "Technicien-ne de recherche en expérimentation végétale\n\n 97170 PETIT-BOURG \n\n Retour à la liste des résultats\n\nPrésentation INRAE\n\nL’Institut national de recherche pour l’agriculture, l’alimentation et l’environnement (INRAE) est un établissement public de recherche rassemblant une communauté de travail de 12 000 personnes, avec 272 unités de recherche, de service et expérimentales, implantées dan",
-   "verifiee_le": "2026-10-20",
-   "disponibilite": "disponible",
-   "recoupement": {
-    "statut": "employeur"
-   }
-  },
-  {
    "id": "inrae-ot-30656",
    "source": "INRAE",
    "url": "https://jobs.inrae.fr/ot-30656",
@@ -14709,6 +14587,43 @@
     "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1642&id_origin=0",
     "statut": "employeur"
    }
+  },
+  {
+   "id": "csp-2026-2445670",
+   "source": "MNHN",
+   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/assistant-de-projet-europeen--cooperation-avec-la-convention-sur-la-diversite-biologique--co-op4cbd-f-reference-2026-2445670/",
+   "titre": "Assistant de projet européen « Coopération avec la Convention sur la diversité biologique » CO-OP4CBD (F",
+   "employeur": "MNHN",
+   "lieu": "Paris (75)",
+   "region": "idf",
+   "contrat": "",
+   "type": "emploi",
+   "date_publication": "2026-10-21",
+   "analyse": {
+    "score": 8,
+    "niveau": "hors",
+    "mode": "mots-cles",
+    "resume": "Offre éloignée de ton profil d'après les mots-clés : pas d'analyse détaillée. Ouvre l'offre d'origine si le titre t'intrigue.",
+    "missions": [],
+    "prerequis": [],
+    "competences": [],
+    "atouts": [],
+    "manques": [],
+    "bloquants": [],
+    "conseil": "",
+    "salaire_min": null,
+    "salaire_max": null,
+    "duree_mois": null,
+    "date_limite": "2026-11-20",
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-21",
+   "extrait": "",
+   "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1654&id_origin=0",
+   "employeur_verifie": "non_verifiable",
+   "verifiee_le": "2026-10-21",
+   "disponibilite": "disponible"
   },
   {
    "id": "csp-2026-2418414",
@@ -15167,6 +15082,43 @@
    }
   },
   {
+   "id": "csp-2026-2445619",
+   "source": "MNHN",
+   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/technicien-de-collections-specialise-en-numerisation-3d-fh-reference-2026-2445619/",
+   "titre": "Technicien de collections spécialisé en numérisation 3D",
+   "employeur": "MNHN",
+   "lieu": "Paris (75)",
+   "region": "idf",
+   "contrat": "",
+   "type": "emploi",
+   "date_publication": "2026-10-21",
+   "analyse": {
+    "score": 8,
+    "niveau": "hors",
+    "mode": "mots-cles",
+    "resume": "Offre éloignée de ton profil d'après les mots-clés : pas d'analyse détaillée. Ouvre l'offre d'origine si le titre t'intrigue.",
+    "missions": [],
+    "prerequis": [],
+    "competences": [],
+    "atouts": [],
+    "manques": [],
+    "bloquants": [],
+    "conseil": "",
+    "salaire_min": null,
+    "salaire_max": null,
+    "duree_mois": null,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-21",
+   "extrait": "",
+   "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1653&id_origin=0",
+   "employeur_verifie": "non_verifiable",
+   "verifiee_le": "2026-10-21",
+   "disponibilite": "disponible"
+  },
+  {
    "id": "csp-2026-2416411",
    "source": "MNHN",
    "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/diteur-scientifique-multisupport-fh-reference-2026-2416411/",
@@ -15207,6 +15159,43 @@
     "url_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1635&id_origin=0",
     "statut": "employeur"
    }
+  },
+  {
+   "id": "csp-2026-2445596",
+   "source": "MNHN",
+   "url": "https://choisirleservicepublic.gouv.fr/offre-emploi/gestionnaire-administratif---correspondant-marketing-fh-reference-2026-2445596/",
+   "titre": "Gestionnaire administratif - Correspondant marketing",
+   "employeur": "MNHN",
+   "lieu": "Indre (36)",
+   "region": "france",
+   "contrat": "",
+   "type": "emploi",
+   "date_publication": "2026-10-21",
+   "analyse": {
+    "score": 0,
+    "niveau": "hors",
+    "mode": "mots-cles",
+    "resume": "Offre éloignée de ton profil d'après les mots-clés : pas d'analyse détaillée. Ouvre l'offre d'origine si le titre t'intrigue.",
+    "missions": [],
+    "prerequis": [],
+    "competences": [],
+    "atouts": [],
+    "manques": [],
+    "bloquants": [],
+    "conseil": "",
+    "salaire_min": null,
+    "salaire_max": null,
+    "duree_mois": null,
+    "date_limite": null,
+    "contact": null,
+    "lien_these": false
+   },
+   "vu_le": "2026-10-21",
+   "extrait": "",
+   "lien_employeur": "https://recrutement.mnhn.fr/front-jobs-detail.html?id_job=1652&id_origin=0",
+   "employeur_verifie": "non_verifiable",
+   "verifiee_le": "2026-10-21",
+   "disponibilite": "disponible"
   },
   {
    "id": "csp-2026-2323425",

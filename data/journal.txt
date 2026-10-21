@@ -1,27 +1,34 @@
-07:20:03 Données privées lues : 1 offres suivies ou écartées
-07:20:03 Profil personnalisé du site appliqué
-07:20:04 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
-07:20:04 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
-07:20:09 CNRS : 433 offres dans le flux
-07:20:43 Choisir le service public : 131 offres (19 du MNHN)
-07:21:16 INRAE : 197 offres récentes dans le plan du site, 18 nouvelles lues, 18 gardées
-07:21:36 ABG : 51 offres de thèse
-07:21:39 Jooble : 41 offres
-07:21:40 Alertes mail : 1 mails d'emploi récents, 0 lus (hors candidatures et échanges protégés)
-07:21:40 Alertes mail : 0 offres extraites
-07:21:41 Ménage des mails (essai) : 1 mail(s) seraient mis à la corbeille
-07:21:41   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
-07:21:41 674 offres collectées, 235 nouvelles, 20 retenues pour l'analyse (dont 0 anciennes à réanalyser), 16 gardées sans IA
-07:21:47 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
-07:21:53 Retirée chez l'employeur : Ingénieur-e d’études en nutrition animale et modélisation :  (http://jobs.inrae.fr/ot-30268)
-07:21:57 Retirée chez l'employeur : Assistant-Ingénieur en expérimentation animale et immunologi (https://inserm.softy.pro/offre/205628?idt=164)
-07:22:02 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
-07:22:07 4 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Ingénieur-e d’études en nutrition animale et modél | Assistant-Ingénieur en expérimentation animale et  | Post-doc en écologie quantitative
-07:31:48 Appels IA : 7, offres analysées par IA : 16 / 16
-07:35:17   plus en ligne : Thèse CIFRE (2027-2029) Écophysiologie et Adaptation du Pois Protéagin (https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140300/job/these-cifre-2027-2029-ecophysiologie-et-adaptation-du-pois-proteagineux)
-07:39:48   plus en ligne : Diagnostic multifonctionnel des CHAussées POreuses à structure réservo (https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140471/job/diagnostic-multifonctionnel-des-chaussees-poreuses-a-structure-reservoir-suivis-in-situ-et-modelisation-integrant-des-externalites-environnementales-extremes)
-07:39:50   plus en ligne : Ingénieur d'étude en développement de cellules solaires transparentes  (https://emploi.cnrs.fr/Offres/CDD/UMR7314-FRESAU-022/Default.aspx)
-07:40:17 Recoupement : 220 pages revérifiées (3 plus en ligne), 1 recherches sur le web
-07:40:17 Site mis à jour : 227 offres (17 hors profil écartées)
-07:40:19 Condensé envoyé par e-mail
-07:40:19 Notification envoyée
+07:23:14 Données privées lues : 1 offres suivies ou écartées
+07:23:14 Profil personnalisé du site appliqué
+07:23:15 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
+07:23:15 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
+07:23:19 CNRS : 422 offres dans le flux
+07:23:51 Choisir le service public : 134 offres (23 du MNHN)
+07:24:03 INRAE : 196 offres récentes dans le plan du site, 10 nouvelles lues, 10 gardées
+07:24:24 ABG : 50 offres de thèse
+07:24:25 Jooble : 39 offres
+07:24:29 Alertes mail : 0 mails d'emploi récents, 0 lus (hors candidatures et échanges protégés)
+07:24:29 Alertes mail : 0 offres extraites
+07:24:31 Ménage des mails (essai) : 1 mail(s) seraient mis à la corbeille
+07:24:31   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
+07:24:31 655 offres collectées, 231 nouvelles, 19 retenues pour l'analyse (dont 0 anciennes à réanalyser), 16 gardées sans IA
+07:24:39 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
+07:24:42 Retirée chez l'employeur : Ingénieur-e d’études en nutrition animale et modélisation :  (http://jobs.inrae.fr/ot-30268)
+07:24:50 Retirée chez l'employeur : Assistant-Ingénieur en expérimentation animale et immunologi (https://inserm.softy.pro/offre/205628?idt=164)
+07:24:55 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
+07:24:55 4 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Ingénieur-e d’études en nutrition animale et modél | Assistant-Ingénieur en expérimentation animale et  | Post-doc en écologie quantitative
+07:27:47 IA gemini-flash-latest : The read operation timed out
+07:30:21 IA gemini-flash-latest : The read operation timed out
+07:30:35 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+07:30:55 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+07:35:22 IA gemini-flash-latest : The read operation timed out
+07:35:26 Appels IA : 13, offres analysées par IA : 15 / 15
+07:36:17   plus en ligne : Assistant ingénieur en écologie urbaine des pollinisateurs (https://emploi.cnrs.fr/Offres/CDD/UMR5175-MARVAN-005/Default.aspx)
+07:38:04   plus en ligne : Ingénieur d’études en analyse de données de génomique évolutive (https://emploi.cnrs.fr/Offres/CDD/UMR9191-RICCOR-002/Default.aspx)
+07:41:52   plus en ligne : CDD Doctorant en biologie structurale, biochimie (https://emploi.cnrs.fr/Offres/Doctorant/UMR9198-CHROUL1-162/Default.aspx)
+07:42:32   plus en ligne : Ingénieur de Recherche expert  en calcul numérique pour la modélisatio (https://emploi.cnrs.fr/Offres/CDD/UMR8539-ISARIC-131/Default.aspx)
+07:43:25   plus en ligne : Chercheur en Dynamique des interactions intestine-cerveau chez la larv (https://emploi.cnrs.fr/Offres/CDD/UMR8197-VALHER-258/Default.aspx)
+07:43:40 Recoupement : 220 pages revérifiées (5 plus en ligne), 1 recherches sur le web
+07:43:40 Site mis à jour : 228 offres (21 hors profil écartées)
+07:43:43 Condensé envoyé par e-mail
+07:43:44 Notification envoyée

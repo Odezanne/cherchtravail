@@ -24,7 +24,7 @@
   "6cc25841e3b7",
   "b7156b7e431f"
  ],
- "dernier_condense": "2026-10-20",
+ "dernier_condense": "2026-10-21",
  "expirees": [
   "abg-140300",
   "abg-140390",
@@ -262,7 +262,17 @@
   "https://jobs.inrae.fr/ot-30762",
   "https://jobs.inrae.fr/ot-30752",
   "https://jobs.inrae.fr/ot-30413",
-  "https://jobs.inrae.fr/ot-30760"
+  "https://jobs.inrae.fr/ot-30760",
+  "https://jobs.inrae.fr/ot-30787",
+  "https://jobs.inrae.fr/ot-30784",
+  "https://jobs.inrae.fr/ot-30786",
+  "https://jobs.inrae.fr/ot-30785",
+  "https://jobs.inrae.fr/ot-30783",
+  "https://jobs.inrae.fr/ot-30782",
+  "https://jobs.inrae.fr/ot-30781",
+  "https://jobs.inrae.fr/ot-30776",
+  "https://jobs.inrae.fr/ot-30780",
+  "https://jobs.inrae.fr/ot-30777"
  ],
  "hors_profil": [
   "cnrs-UMR5001-SANASK0-007",
@@ -571,6 +581,27 @@
   "joo-6a892353397c",
   "joo-93bd121e3a7e",
   "joo-bba738315ca9",
-  "joo-078f381508a0"
+  "joo-078f381508a0",
+  "csp-AGRI_2026-15803",
+  "inrae-ot-30782",
+  "inrae-ot-30785",
+  "joo-1cbff48cfbfb",
+  "joo-94b8cdb2e270",
+  "joo-756650c1f08b",
+  "joo-2d438d22d81f",
+  "joo-76e33b30c147",
+  "cnrs-UMR8235-CARSAN-007",
+  "cnrs-UAR851-JOELEG-143",
+  "cnrs-UMR8601-LAUIAN-005",
+  "cnrs-UMR8249-SABLEV-003",
+  "cnrs-UMR5505-CHLBOU-113",
+  "cnrs-UMR5048-FLOLEP-131",
+  "cnrs-UMR6523-BENSOY-028",
+  "cnrs-UMR5553-FREBOY-001",
+  "joo-9c46326ab6a8",
+  "joo-1125d31f5d8d",
+  "joo-dd5b7d5055aa",
+  "joo-6409c3e30a42",
+  "joo-a97cd1df94c5"
  ]
 }
