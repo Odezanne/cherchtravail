@@ -1,30 +1,28 @@
-07:24:24 Données privées lues : 1 offres suivies ou écartées
-07:24:24 Profil personnalisé du site appliqué
-07:24:24 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
-07:24:24 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
-07:24:28 CNRS : 421 offres dans le flux
-07:24:56 Choisir le service public : 133 offres (21 du MNHN)
-07:25:07 INRAE : 200 offres récentes dans le plan du site, 9 nouvelles lues, 9 gardées
-07:25:24 ABG : 51 offres de thèse
-07:25:25 Jooble : 39 offres
-07:25:27 Alertes mail : 3 mails d'emploi récents, 3 lus (hors candidatures et échanges protégés)
-07:25:56 Alertes mail : 2 offres extraites
-07:25:57 Ménage des mails (essai) : 4 mail(s) seraient mis à la corbeille
-07:25:57   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
-07:25:57   essai : 2026-10-22 · France Travail <nepasrepondre@offre.fran · Vous avez reçu 1 nouvelle offre
-07:25:57   essai : 2026-10-22 · France Travail <nepasrepondre@offre.fran · Vous avez reçu 1 nouvelle offre
-07:25:57   essai : 2026-10-22 · "France travail" <service-candidat@email · Vous avez reçu un courrier " Synthèse échange " dans votre espace francetravail.
-07:25:57 655 offres collectées, 220 nouvelles, 18 retenues pour l'analyse (dont 0 anciennes à réanalyser), 7 gardées sans IA
-07:26:02 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
-07:26:05 Retirée chez l'employeur : Ingénieur-e d’études en nutrition animale et modélisation :  (http://jobs.inrae.fr/ot-30268)
-07:26:09 Retirée chez l'employeur : Assistant-Ingénieur en expérimentation animale et immunologi (https://inserm.softy.pro/offre/205628?idt=164)
-07:26:13 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
-07:26:19 4 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Ingénieur-e d’études en nutrition animale et modél | Assistant-Ingénieur en expérimentation animale et  | Post-doc en écologie quantitative
-07:28:44 Appels IA : 8, offres analysées par IA : 14 / 14
-07:31:01   plus en ligne : Ingénieur de Recherche  en calcul scientifique en appui à l’analyse de (https://emploi.cnrs.fr/Offres/CDD/UMR7159-CHRHER-004/Default.aspx)
-07:32:33   plus en ligne : Chercheur en écologie chimique marine (https://emploi.cnrs.fr/Offres/CDD/UAR3514-AMESAU-002/Default.aspx)
-07:32:40   plus en ligne : Ingénieur(e) d’études - biologiste en laboratoire (https://emploi.cnrs.fr/Offres/CDD/UMR8197-VALHER-259/Default.aspx)
-07:36:10 Recoupement : 220 pages revérifiées (3 plus en ligne), 0 recherches sur le web
-07:36:10 Site mis à jour : 227 offres (11 hors profil écartées)
-07:36:12 Condensé envoyé par e-mail
-07:36:12 Notification envoyée
+07:22:48 Données privées lues : 1 offres suivies ou écartées
+07:22:48 Profil personnalisé du site appliqué
+07:22:49 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
+07:22:49 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
+07:22:53 CNRS : 421 offres dans le flux
+07:23:22 Choisir le service public : 137 offres (26 du MNHN)
+07:23:45 INRAE : 213 offres récentes dans le plan du site, 16 nouvelles lues, 16 gardées
+07:24:03 ABG : 52 offres de thèse
+07:24:04 Jooble : 37 offres
+07:24:19 Alertes mail : 0 mails d'emploi récents, 0 lus (hors candidatures et échanges protégés)
+07:24:19 Alertes mail : 0 offres extraites
+07:24:44 Ménage des mails (essai) : 1 mail(s) seraient mis à la corbeille
+07:24:44   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
+07:24:44 663 offres collectées, 222 nouvelles, 16 retenues pour l'analyse (dont 0 anciennes à réanalyser), 14 gardées sans IA
+07:24:55 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
+07:24:59 Retirée chez l'employeur : Ingénieur-e d’études en nutrition animale et modélisation :  (http://jobs.inrae.fr/ot-30268)
+07:25:07 Retirée chez l'employeur : Ingénieur(e) d'études en écologie marine – M2C (https://recrutement-unicaen.nous-recrutons.fr/poste/79reiwo9de-ingenieure-detudes-en-ecologie-marine-m2c/)
+07:25:11 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
+07:25:20 4 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Ingénieur-e d’études en nutrition animale et modél | Ingénieur(e) d'études en écologie marine – M2C | Post-doc en écologie quantitative
+07:25:35 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+07:29:00 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+07:29:04 Appels IA : 10, offres analysées par IA : 12 / 12
+07:31:45   plus en ligne : Chargé de médiation scientifique (https://emploi.cnrs.fr/Offres/CDD/UMR8617-VIRKAT-013/Default.aspx)
+07:33:42   plus en ligne : CDD IE en biologie structurale et biochimie dans une équipe de recherc (https://emploi.cnrs.fr/Offres/CDD/UMR9198-PIECOU-001/Default.aspx)
+07:36:42 Recoupement : 220 pages revérifiées (2 plus en ligne), 0 recherches sur le web
+07:36:42 Site mis à jour : 238 offres (10 hors profil écartées)
+07:36:44 Condensé envoyé par e-mail
+07:36:44 Notification envoyée

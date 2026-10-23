@@ -27,7 +27,7 @@
   "37bd181ca9d5",
   "f11ed0ee4ce2"
  ],
- "dernier_condense": "2026-10-22",
+ "dernier_condense": "2026-10-23",
  "expirees": [
   "abg-140179",
   "abg-140300",
@@ -285,7 +285,23 @@
   "https://jobs.inrae.fr/ot-30790",
   "https://jobs.inrae.fr/ot-30789",
   "https://jobs.inrae.fr/ot-30788",
-  "https://jobs.inrae.fr/ot-30748"
+  "https://jobs.inrae.fr/ot-30748",
+  "https://jobs.inrae.fr/ot-30815",
+  "https://jobs.inrae.fr/ot-30813",
+  "https://jobs.inrae.fr/ot-30814",
+  "https://jobs.inrae.fr/ot-30812",
+  "https://jobs.inrae.fr/ot-30809",
+  "https://jobs.inrae.fr/ot-30811",
+  "https://jobs.inrae.fr/ot-30810",
+  "https://jobs.inrae.fr/ot-30808",
+  "https://jobs.inrae.fr/ot-30807",
+  "https://jobs.inrae.fr/ot-30806",
+  "https://jobs.inrae.fr/ot-30805",
+  "https://jobs.inrae.fr/ot-30803",
+  "https://jobs.inrae.fr/ot-30798",
+  "https://jobs.inrae.fr/ot-30801",
+  "https://jobs.inrae.fr/ot-30802",
+  "https://jobs.inrae.fr/ot-30800"
  ],
  "hors_profil": [
   "cnrs-UMR5001-SANASK0-007",
@@ -626,6 +642,16 @@
   "cnrs-UMR8134-ASSCOU-006",
   "cnrs-UMR5026-FREBON0-294",
   "cnrs-IRL2820-ALEBAC-001",
-  "abg-140648"
+  "abg-140648",
+  "cnrs-UMR8539-ISARIC-133",
+  "joo-2f5a54e6760f",
+  "joo-e85bba4c313e",
+  "cnrs-UMR7588-EMMLAC-007",
+  "cnrs-UMR5242-EGLHEU-006",
+  "cnrs-UMR7636-FREAUG-068",
+  "cnrs-UAR851-GUIHAR-015",
+  "cnrs-UAR851-SYLTHE-013",
+  "cnrs-UMR5133-DIAALB-003",
+  "cnrs-UMR8000-MOHGHA-010"
  ]
 }
