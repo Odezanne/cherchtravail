@@ -1,28 +1,29 @@
-07:22:48 Données privées lues : 1 offres suivies ou écartées
-07:22:48 Profil personnalisé du site appliqué
-07:22:49 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
-07:22:49 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
-07:22:53 CNRS : 421 offres dans le flux
-07:23:22 Choisir le service public : 137 offres (26 du MNHN)
-07:23:45 INRAE : 213 offres récentes dans le plan du site, 16 nouvelles lues, 16 gardées
-07:24:03 ABG : 52 offres de thèse
-07:24:04 Jooble : 37 offres
-07:24:19 Alertes mail : 0 mails d'emploi récents, 0 lus (hors candidatures et échanges protégés)
-07:24:19 Alertes mail : 0 offres extraites
-07:24:44 Ménage des mails (essai) : 1 mail(s) seraient mis à la corbeille
-07:24:44   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
-07:24:44 663 offres collectées, 222 nouvelles, 16 retenues pour l'analyse (dont 0 anciennes à réanalyser), 14 gardées sans IA
-07:24:55 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
-07:24:59 Retirée chez l'employeur : Ingénieur-e d’études en nutrition animale et modélisation :  (http://jobs.inrae.fr/ot-30268)
-07:25:07 Retirée chez l'employeur : Ingénieur(e) d'études en écologie marine – M2C (https://recrutement-unicaen.nous-recrutons.fr/poste/79reiwo9de-ingenieure-detudes-en-ecologie-marine-m2c/)
-07:25:11 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
-07:25:20 4 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Ingénieur-e d’études en nutrition animale et modél | Ingénieur(e) d'études en écologie marine – M2C | Post-doc en écologie quantitative
-07:25:35 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-07:29:00 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-07:29:04 Appels IA : 10, offres analysées par IA : 12 / 12
-07:31:45   plus en ligne : Chargé de médiation scientifique (https://emploi.cnrs.fr/Offres/CDD/UMR8617-VIRKAT-013/Default.aspx)
-07:33:42   plus en ligne : CDD IE en biologie structurale et biochimie dans une équipe de recherc (https://emploi.cnrs.fr/Offres/CDD/UMR9198-PIECOU-001/Default.aspx)
-07:36:42 Recoupement : 220 pages revérifiées (2 plus en ligne), 0 recherches sur le web
-07:36:42 Site mis à jour : 238 offres (10 hors profil écartées)
-07:36:44 Condensé envoyé par e-mail
-07:36:44 Notification envoyée
+07:16:28 Données privées lues : 1 offres suivies ou écartées
+07:16:28 Profil personnalisé du site appliqué
+07:16:29 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
+07:16:29 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
+07:16:34 CNRS : 404 offres dans le flux
+07:17:08 Choisir le service public : 137 offres (26 du MNHN)
+07:17:26 INRAE : 216 offres récentes dans le plan du site, 9 nouvelles lues, 9 gardées
+07:17:45 ABG : 53 offres de thèse
+07:17:47 Jooble : 35 offres
+07:17:48 Alertes mail : 0 mails d'emploi récents, 0 lus (hors candidatures et échanges protégés)
+07:17:48 Alertes mail : 0 offres extraites
+07:17:50 Ménage des mails (essai) : 1 mail(s) seraient mis à la corbeille
+07:17:50   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
+07:17:50 638 offres collectées, 207 nouvelles, 16 retenues pour l'analyse (dont 0 anciennes à réanalyser), 8 gardées sans IA
+07:17:56 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
+07:18:00 Retirée chez l'employeur : Ingénieur-e d’études en nutrition animale et modélisation :  (http://jobs.inrae.fr/ot-30268)
+07:18:05 Retirée chez l'employeur : Ingénieur(e) d'études en écologie marine – M2C (https://recrutement-unicaen.nous-recrutons.fr/poste/79reiwo9de-ingenieure-detudes-en-ecologie-marine-m2c/)
+07:18:10 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
+07:18:10 4 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Ingénieur-e d’études en nutrition animale et modél | Ingénieur(e) d'études en écologie marine – M2C | Post-doc en écologie quantitative
+07:20:49 IA gemini-flash-latest : The read operation timed out
+07:21:02 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+07:21:21 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+07:24:20 Appels IA : 9, offres analysées par IA : 12 / 12
+07:27:44   plus en ligne : Ingénieur en analyse de données biologiques (https://emploi.cnrs.fr/Offres/CDD/UMR9002-SOFKOS-064/Default.aspx)
+07:31:27   plus en ligne : Ingénieur d'études (/D) en biologie moléculaire et culture cellulaire (https://emploi.cnrs.fr/Offres/CDD/UMR5077-RAFGAL-009/Default.aspx)
+07:32:40 Recoupement : 220 pages revérifiées (2 plus en ligne), 0 recherches sur le web
+07:32:40 Site mis à jour : 237 offres (13 hors profil écartées)
+07:32:42 Condensé envoyé par e-mail
+07:32:42 Notification envoyée

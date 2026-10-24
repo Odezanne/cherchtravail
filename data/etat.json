@@ -27,7 +27,7 @@
   "37bd181ca9d5",
   "f11ed0ee4ce2"
  ],
- "dernier_condense": "2026-10-23",
+ "dernier_condense": "2026-10-24",
  "expirees": [
   "abg-140179",
   "abg-140300",
@@ -301,7 +301,16 @@
   "https://jobs.inrae.fr/ot-30798",
   "https://jobs.inrae.fr/ot-30801",
   "https://jobs.inrae.fr/ot-30802",
-  "https://jobs.inrae.fr/ot-30800"
+  "https://jobs.inrae.fr/ot-30800",
+  "https://jobs.inrae.fr/ot-30825",
+  "https://jobs.inrae.fr/ot-30824",
+  "https://jobs.inrae.fr/ot-30823",
+  "https://jobs.inrae.fr/ot-30821",
+  "https://jobs.inrae.fr/ot-30817",
+  "https://jobs.inrae.fr/ot-30822",
+  "https://jobs.inrae.fr/ot-30820",
+  "https://jobs.inrae.fr/ot-30818",
+  "https://jobs.inrae.fr/ot-30819"
  ],
  "hors_profil": [
   "cnrs-UMR5001-SANASK0-007",
@@ -652,6 +661,19 @@
   "cnrs-UAR851-GUIHAR-015",
   "cnrs-UAR851-SYLTHE-013",
   "cnrs-UMR5133-DIAALB-003",
-  "cnrs-UMR8000-MOHGHA-010"
+  "cnrs-UMR8000-MOHGHA-010",
+  "inrae-ot-30821",
+  "inrae-ot-30824",
+  "joo-f433f19d49ad",
+  "joo-597756f304d0",
+  "joo-5984c63e9254",
+  "cnrs-UMR8215-CLENIC-002",
+  "cnrs-MOY1609-BEADOM-001",
+  "cnrs-UMR8212-MATDAE-005",
+  "cnrs-MOY200-ANNSAR-001",
+  "csp-2026-2407092",
+  "joo-46a2e5740c96",
+  "joo-e4a69630f3c1",
+  "joo-d2ce82b2ea14"
  ]
 }
