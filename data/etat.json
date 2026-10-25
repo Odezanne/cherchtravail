@@ -27,7 +27,7 @@
   "37bd181ca9d5",
   "f11ed0ee4ce2"
  ],
- "dernier_condense": "2026-10-24",
+ "dernier_condense": "2026-10-25",
  "expirees": [
   "abg-140179",
   "abg-140300",
@@ -41,6 +41,7 @@
   "cnrs-UMR7258-FREBAR-008",
   "cnrs-UMR7289-BRUGIO-010",
   "cnrs-UMR7648-EDOBOU-053",
+  "cnrs-UMR8113-CRICEL-010",
   "cnrs-UMR8180-CLEGHI-002",
   "cnrs-UMR8243-LAUPIN-004",
   "cnrs-UMR8520-NICDEF0-002",
@@ -674,6 +675,7 @@
   "csp-2026-2407092",
   "joo-46a2e5740c96",
   "joo-e4a69630f3c1",
-  "joo-d2ce82b2ea14"
+  "joo-d2ce82b2ea14",
+  "abg-140678"
  ]
 }
