@@ -1,26 +1,28 @@
-08:04:19 Données privées lues : 1 offres suivies ou écartées
-08:04:19 Profil personnalisé du site appliqué
-08:04:20 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
-08:04:20 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
-08:04:24 CNRS : 401 offres dans le flux
-08:04:58 Choisir le service public : 133 offres (22 du MNHN)
-08:05:00 INRAE : 211 offres récentes dans le plan du site, 0 nouvelles lues, 0 gardées
-08:05:20 ABG : 53 offres de thèse
-08:05:22 Jooble : 37 offres
-08:05:23 Alertes mail : 0 mails d'emploi récents, 0 lus (hors candidatures et échanges protégés)
-08:05:23 Alertes mail : 0 offres extraites
-08:05:33 Ménage des mails (essai) : 1 mail(s) seraient mis à la corbeille
-08:05:33   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
-08:05:33 624 offres collectées, 190 nouvelles, 7 retenues pour l'analyse (dont 0 anciennes à réanalyser), 0 gardées sans IA
-08:05:38 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
-08:05:43 Retirée chez l'employeur : Ingénieur-e d’études en nutrition animale et modélisation :  (http://jobs.inrae.fr/ot-30268)
-08:05:49 Retirée chez l'employeur : Ingénieur(e) d'études en écologie marine – M2C (https://recrutement-unicaen.nous-recrutons.fr/poste/79reiwo9de-ingenieure-detudes-en-ecologie-marine-m2c/)
-08:05:55 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
-08:06:05 4 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Ingénieur-e d’études en nutrition animale et modél | Ingénieur(e) d'études en écologie marine – M2C | Post-doc en écologie quantitative
-08:06:46 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:06:50 Appels IA : 3, offres analysées par IA : 3 / 3
-08:14:59   plus en ligne : Ingénieur de Recherche  en biologie de l’ARN (https://emploi.cnrs.fr/Offres/CDD/UMR8113-CRICEL-010/Default.aspx)
-08:15:52 Recoupement : 220 pages revérifiées (1 plus en ligne), 1 recherches sur le web
-08:15:52 Site mis à jour : 236 offres (1 hors profil écartées)
-08:15:54 Condensé envoyé par e-mail
-08:15:55 Notification envoyée
+08:22:38 Données privées lues : 1 offres suivies ou écartées
+08:22:38 Profil personnalisé du site appliqué
+08:22:39 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
+08:22:39 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
+08:22:42 CNRS : 408 offres dans le flux
+08:23:18 Choisir le service public : 132 offres (21 du MNHN)
+08:23:21 INRAE : 211 offres récentes dans le plan du site, 1 nouvelles lues, 1 gardées
+08:23:36 ABG : 53 offres de thèse
+08:23:37 Jooble : 36 offres
+08:23:38 Alertes mail : 0 mails d'emploi récents, 0 lus (hors candidatures et échanges protégés)
+08:23:38 Alertes mail : 0 offres extraites
+08:23:39 Ménage des mails (essai) : 1 mail(s) seraient mis à la corbeille
+08:23:39   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
+08:23:39 630 offres collectées, 195 nouvelles, 9 retenues pour l'analyse (dont 0 anciennes à réanalyser), 4 gardées sans IA
+08:23:43 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
+08:23:46 Retirée chez l'employeur : Ingénieur-e d’études en nutrition animale et modélisation :  (http://jobs.inrae.fr/ot-30268)
+08:23:50 Retirée chez l'employeur : Assistant-Ingénieur en expérimentation animale et immunologi (https://inserm.softy.pro/offre/205628?idt=164)
+08:23:56 Retirée chez l'employeur : Ingénieur(e) d'études en écologie marine – M2C (https://recrutement-unicaen.nous-recrutons.fr/poste/79reiwo9de-ingenieure-detudes-en-ecologie-marine-m2c/)
+08:24:00 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
+08:24:00 5 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Ingénieur-e d’études en nutrition animale et modél | Assistant-Ingénieur en expérimentation animale et  | Ingénieur(e) d'études en écologie marine – M2C | Post-doc en écologie quantitative
+08:24:21 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+08:26:55 IA gemini-flash-latest : The read operation timed out
+08:29:35 IA gemini-flash-latest : The read operation timed out
+08:29:37 Appels IA : 6, offres analysées par IA : 4 / 4
+08:36:58 Recoupement : 220 pages revérifiées (0 plus en ligne), 0 recherches sur le web
+08:36:59 Site mis à jour : 238 offres (5 hors profil écartées)
+08:37:00 Condensé envoyé par e-mail
+08:37:00 Notification envoyée
