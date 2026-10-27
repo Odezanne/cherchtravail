@@ -25,9 +25,12 @@
   "b7156b7e431f",
   "670c62db3f01",
   "37bd181ca9d5",
-  "f11ed0ee4ce2"
+  "f11ed0ee4ce2",
+  "cac60b9fbf4d",
+  "195659575dd1",
+  "ac09d15dcf62"
  ],
- "dernier_condense": "2026-10-26",
+ "dernier_condense": "2026-10-27",
  "expirees": [
   "abg-140179",
   "abg-140300",
@@ -312,7 +315,16 @@
   "https://jobs.inrae.fr/ot-30820",
   "https://jobs.inrae.fr/ot-30818",
   "https://jobs.inrae.fr/ot-30819",
-  "https://jobs.inrae.fr/ot-30827"
+  "https://jobs.inrae.fr/ot-30827",
+  "https://jobs.inrae.fr/ot-30834",
+  "https://jobs.inrae.fr/ot-30831",
+  "https://jobs.inrae.fr/ot-30832",
+  "https://jobs.inrae.fr/ot-30828",
+  "https://jobs.inrae.fr/ot-30836",
+  "https://jobs.inrae.fr/ot-30835",
+  "https://jobs.inrae.fr/ot-30833",
+  "https://jobs.inrae.fr/ot-30829",
+  "https://jobs.inrae.fr/ot-30403"
  ],
  "hors_profil": [
   "cnrs-UMR5001-SANASK0-007",
@@ -682,6 +694,23 @@
   "cnrs-UMR7327-MARROU0-086",
   "cnrs-INS1650-VERMAT-044",
   "joo-641c88c2d5cf",
-  "joo-0eb3ac125293"
+  "joo-0eb3ac125293",
+  "joo-3186568e867e",
+  "mail-70fdf4984e7b",
+  "mail-06be521d630c",
+  "mail-78d38e18b096",
+  "mail-a5db858564b9",
+  "mail-c91fb4bf7ef8",
+  "mail-8a47292cfd8e",
+  "mail-f3ecb4e9fbab",
+  "mail-f38a530e7c78",
+  "mail-031d8936700e",
+  "cnrs-UMR7253-OLITOU-002",
+  "cnrs-UMR8520-AMAABD-003",
+  "cnrs-UMR8205-RAHSID-002",
+  "cnrs-UMR137-MANBIB-030",
+  "cnrs-UMR5300-JULCOT-002",
+  "csp-DEF_17-00072187",
+  "joo-04e5441327fd"
  ]
 }
