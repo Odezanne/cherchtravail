@@ -1,2 +1,6 @@
-12:52:50 Recoupement : 25 pages revérifiées (0 plus en ligne), 0 recherches sur le web
-12:52:50 Revérification : 0 offres retirées du site, 240 restantes
+12:55:35   plus en ligne : Ingénieur de recherche en traitement, production et analyse des donnée (https://emploi.cnrs.fr/Offres/CDD/UMR8097-ARLMOL-008/Default.aspx)
+12:59:31   plus en ligne : Ingénieur de recherche MLops (https://emploi.cnrs.fr/Offres/CDD/UAR2506-NICSAU-002/Default.aspx)
+13:00:54 Recoupement : 240 pages revérifiées (2 plus en ligne), 0 recherches sur le web
+13:00:54   retirée : Ingénieur de recherche en traitement, production et analyse des donnée (https://emploi.cnrs.fr/Offres/CDD/UMR8097-ARLMOL-008/Default.aspx)
+13:00:54   retirée : Ingénieur de recherche MLops (https://emploi.cnrs.fr/Offres/CDD/UAR2506-NICSAU-002/Default.aspx)
+13:00:54 Revérification : 2 offres retirées du site, 238 restantes
