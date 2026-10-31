@@ -32,7 +32,7 @@
   "813d13fd8239",
   "8b9ef08c97b5"
  ],
- "dernier_condense": "2026-10-30",
+ "dernier_condense": "2026-10-31",
  "expirees": [
   "abg-140179",
   "abg-140300",
@@ -345,7 +345,14 @@
   "https://jobs.inrae.fr/ot-30845",
   "https://jobs.inrae.fr/ot-30843",
   "https://jobs.inrae.fr/ot-30450",
-  "https://jobs.inrae.fr/ot-30842"
+  "https://jobs.inrae.fr/ot-30842",
+  "https://jobs.inrae.fr/ot-30858",
+  "https://jobs.inrae.fr/ot-30855",
+  "https://jobs.inrae.fr/ot-30857",
+  "https://jobs.inrae.fr/ot-30856",
+  "https://jobs.inrae.fr/ot-30854",
+  "https://jobs.inrae.fr/ot-30853",
+  "https://jobs.inrae.fr/ot-30852"
  ],
  "hors_profil": [
   "cnrs-UMR5001-SANASK0-007",
@@ -748,6 +755,10 @@
   "cnrs-UMR8253-LEADID-006",
   "cnrs-UMR7315-VINRAT-002",
   "cnrs-INS1619-CLAETI-021",
-  "joo-8417cc4e4971"
+  "joo-8417cc4e4971",
+  "inrae-ot-30852",
+  "cnrs-UPR2940-ELOBER-181",
+  "cnrs-UMR7197-ALBMEZ-001",
+  "joo-423995f74519"
  ]
 }
