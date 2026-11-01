@@ -32,7 +32,7 @@
   "813d13fd8239",
   "8b9ef08c97b5"
  ],
- "dernier_condense": "2026-10-31",
+ "dernier_condense": "2026-11-01",
  "expirees": [
   "abg-140179",
   "abg-140300",
@@ -759,6 +759,10 @@
   "inrae-ot-30852",
   "cnrs-UPR2940-ELOBER-181",
   "cnrs-UMR7197-ALBMEZ-001",
-  "joo-423995f74519"
+  "joo-423995f74519",
+  "joo-a819426c58a1",
+  "joo-f7b29ddaa146",
+  "joo-de688fd00b14",
+  "joo-f092c95f71ea"
  ]
 }

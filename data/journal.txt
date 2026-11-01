@@ -1,27 +1,28 @@
-08:21:41 Données privées lues : 1 offres suivies ou écartées
-08:21:41 Profil personnalisé du site appliqué
-08:21:41 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
-08:21:41 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
-08:21:46 CNRS : 367 offres dans le flux
-08:22:18 Choisir le service public : 135 offres (24 du MNHN)
-08:22:32 INRAE : 215 offres récentes dans le plan du site, 7 nouvelles lues, 7 gardées
-08:23:01 ABG : 0 offres de thèse
-08:23:03 Jooble : 34 offres
-08:23:05 Alertes mail : 1 mails d'emploi récents, 1 lus (hors candidatures et échanges protégés)
-08:23:05 Alertes mail : 0 offres extraites
-08:23:06 Ménage des mails (essai) : 2 mail(s) seraient mis à la corbeille
-08:23:06   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
-08:23:06   essai : 2026-10-29 · APEC <no-reply@apec.fr> · Demande d’information complémentaire dans le cadre du CEP 
-08:23:06 543 offres collectées, 156 nouvelles, 11 retenues pour l'analyse (dont 0 anciennes à réanalyser), 5 gardées sans IA
-08:23:17 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
-08:23:26 Retirée chez l'employeur : Ingénieur(e) d'études en écologie marine – M2C (https://recrutement-unicaen.nous-recrutons.fr/poste/79reiwo9de-ingenieure-detudes-en-ecologie-marine-m2c/)
-08:23:37 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
-08:23:41 3 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Ingénieur(e) d'études en écologie marine – M2C | Post-doc en écologie quantitative
-08:26:32 IA gemini-flash-latest : The read operation timed out
-08:31:10 IA gemini-flash-latest : The read operation timed out
-08:31:13 Appels IA : 7, offres analysées par IA : 8 / 8
-08:36:44   plus en ligne : Ingénieur d’étude  en modélisation moléculaire des protéines membranai (https://emploi.cnrs.fr/Offres/CDD/UMR5203-XIACON-003/Default.aspx)
-08:40:06 Recoupement : 220 pages revérifiées (1 plus en ligne), 0 recherches sur le web
-08:40:07 Site mis à jour : 245 offres (4 hors profil écartées)
-08:40:08 Condensé envoyé par e-mail
-08:40:09 Notification envoyée
+08:24:12 Données privées lues : 1 offres suivies ou écartées
+08:24:12 Profil personnalisé du site appliqué
+08:24:12 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
+08:24:12 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
+08:24:16 CNRS : 354 offres dans le flux
+08:24:49 Choisir le service public : 130 offres (19 du MNHN)
+08:24:51 INRAE : 190 offres récentes dans le plan du site, 0 nouvelles lues, 0 gardées
+08:25:20 ABG : 0 offres de thèse
+08:25:21 Jooble : 34 offres
+08:25:23 Alertes mail : 1 mails d'emploi récents, 1 lus (hors candidatures et échanges protégés)
+08:25:23 Alertes mail : 0 offres extraites
+08:25:24 Ménage des mails (essai) : 2 mail(s) seraient mis à la corbeille
+08:25:24   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
+08:25:24   essai : 2026-10-29 · APEC <no-reply@apec.fr> · Demande d’information complémentaire dans le cadre du CEP 
+08:25:24 518 offres collectées, 148 nouvelles, 6 retenues pour l'analyse (dont 0 anciennes à réanalyser), 4 gardées sans IA
+08:25:30 Retirée chez l'employeur : Ingénieur en biologie animale (https://inserm.softy.pro/offre/206681?idt=164)
+08:25:34 Retirée chez l'employeur : Assistant-Ingénieur en expérimentation animale et immunologi (https://inserm.softy.pro/offre/205628?idt=164)
+08:25:39 Retirée chez l'employeur : Ingénieur(e) d'études en écologie marine – M2C (https://recrutement-unicaen.nous-recrutons.fr/poste/79reiwo9de-ingenieure-detudes-en-ecologie-marine-m2c/)
+08:25:44 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
+08:25:49 4 offres déjà retirées par l'employeur, écartées : Ingénieur en biologie animale | Assistant-Ingénieur en expérimentation animale et  | Ingénieur(e) d'études en écologie marine – M2C | Post-doc en écologie quantitative
+08:28:19 IA gemini-flash-latest : The read operation timed out
+08:30:59 IA gemini-flash-latest : The read operation timed out
+08:31:02 Appels IA : 3, offres analysées par IA : 2 / 2
+08:38:14   plus en ligne : Ingénieur d'études en biologie moleculaire (https://emploi.cnrs.fr/Offres/CDD/UMR5535-SARADE-114/Default.aspx)
+08:39:21 Recoupement : 220 pages revérifiées (1 plus en ligne), 0 recherches sur le web
+08:39:22 Site mis à jour : 234 offres (4 hors profil écartées)
+08:39:25 Condensé envoyé par e-mail
+08:39:25 Notification envoyée
