@@ -1,2 +1,4 @@
-12:49:20 Recoupement : 30 pages revérifiées (0 plus en ligne), 0 recherches sur le web
-12:49:21 Revérification : 0 offres retirées du site, 234 restantes
+13:08:16   plus en ligne : Thèse en bioinformatique/modélisation structurale (https://emploi.cnrs.fr/Offres/Doctorant/UMR5239-JULMAR-002/Default.aspx)
+13:12:26 Recoupement : 234 pages revérifiées (1 plus en ligne), 0 recherches sur le web
+13:12:26   retirée : Thèse en bioinformatique/modélisation structurale (https://emploi.cnrs.fr/Offres/Doctorant/UMR5239-JULMAR-002/Default.aspx)
+13:12:26 Revérification : 1 offres retirées du site, 233 restantes
