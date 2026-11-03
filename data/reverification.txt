@@ -1,4 +1,14 @@
-13:08:16   plus en ligne : Thèse en bioinformatique/modélisation structurale (https://emploi.cnrs.fr/Offres/Doctorant/UMR5239-JULMAR-002/Default.aspx)
-13:12:26 Recoupement : 234 pages revérifiées (1 plus en ligne), 0 recherches sur le web
-13:12:26   retirée : Thèse en bioinformatique/modélisation structurale (https://emploi.cnrs.fr/Offres/Doctorant/UMR5239-JULMAR-002/Default.aspx)
-13:12:26 Revérification : 1 offres retirées du site, 233 restantes
+12:59:00   plus en ligne : Etude des liens entre biodiversité, structure et fonctionnement des so (https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140391/job/etude-des-liens-entre-biodiversite-structure-et-fonctionnement-des-sols)
+13:01:40   plus en ligne : Ingénieur d'étude  - Développement d'applications biologiques pour une (https://emploi.cnrs.fr/Offres/CDD/UMR8175-KARBOU-001/Default.aspx)
+13:01:42   plus en ligne : Ingénieur de recherche  en bioinformatique: génétique des populations  (https://emploi.cnrs.fr/Offres/CDD/UMR5239-MARDEL-006/Default.aspx)
+13:02:22   plus en ligne : Offre de thèse en modélisation mathématique de la morphogenèse des ver (https://emploi.cnrs.fr/Offres/Doctorant/UMR5208-MICROM-001/Default.aspx)
+13:05:10   plus en ligne : post doctorat  recherche action en santé-environnement PC4 PEPR TRANSF (https://emploi.cnrs.fr/Offres/CDD/UAR2058-STEVER0-014/Default.aspx)
+13:05:42   plus en ligne : Ingénieur de recherche en neurobiologie cellulaire (https://emploi.cnrs.fr/Offres/CDD/UPR3212-JULQUI-038/Default.aspx)
+13:07:05 Recoupement : 233 pages revérifiées (6 plus en ligne), 0 recherches sur le web
+13:07:05   retirée : Etude des liens entre biodiversité, structure et fonctionnement des so (https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140391/job/etude-des-liens-entre-biodiversite-structure-et-fonctionnement-des-sols)
+13:07:05   retirée : Ingénieur d'étude  - Développement d'applications biologiques pour une (https://emploi.cnrs.fr/Offres/CDD/UMR8175-KARBOU-001/Default.aspx)
+13:07:05   retirée : Ingénieur de recherche  en bioinformatique: génétique des populations  (https://emploi.cnrs.fr/Offres/CDD/UMR5239-MARDEL-006/Default.aspx)
+13:07:05   retirée : Offre de thèse en modélisation mathématique de la morphogenèse des ver (https://emploi.cnrs.fr/Offres/Doctorant/UMR5208-MICROM-001/Default.aspx)
+13:07:05   retirée : post doctorat  recherche action en santé-environnement PC4 PEPR TRANSF (https://emploi.cnrs.fr/Offres/CDD/UAR2058-STEVER0-014/Default.aspx)
+13:07:05   retirée : Ingénieur de recherche en neurobiologie cellulaire (https://emploi.cnrs.fr/Offres/CDD/UPR3212-JULQUI-038/Default.aspx)
+13:07:05 Revérification : 6 offres retirées du site, 227 restantes
