@@ -1,2 +1,19 @@
-13:14:42 Recoupement : 226 pages revérifiées (0 plus en ligne), 0 recherches sur le web
-13:14:42 Revérification : 0 offres retirées du site, 226 restantes
+12:59:24   plus en ligne : Doctorant(e)  : Modélisation théorique et statistique des boucles de r (https://emploi.cnrs.fr/Offres/Doctorant/UMR9191-ARNLER-009/Default.aspx)
+13:00:20   plus en ligne : Ingénieur d'étude en Biologie (https://emploi.cnrs.fr/Offres/CDD/UMR5261-FLASTR-007/Default.aspx)
+13:00:26   plus en ligne : Ingénieur-e d'étude en écologie et botanique (https://emploi.cnrs.fr/Offres/CDD/UAR2029-SEVBON-064/Default.aspx)
+13:00:49   plus en ligne : Ingénieur(e) d'étude en biologie (https://emploi.cnrs.fr/Offres/CDD/UMR9197-LAUDAS-004/Default.aspx)
+13:01:21   plus en ligne : Ingénieur d'étude en experimentation et instrumentation Biologiques (https://emploi.cnrs.fr/Offres/CDD/UMR9198-SOLSTR-014/Default.aspx)
+13:06:07 Retirée chez l'employeur : Ingénieur d'étude en Biologie cellulaire (https://inserm.softy.pro/offre/202814?idt=164)
+13:06:07   plus en ligne : Ingénieur d'étude en Biologie cellulaire (https://inserm.softy.pro/offre/202814?idt=164)
+13:06:15   plus en ligne : Ingénieur d'étude en génétique et biologie moléculaire CDD (https://emploi.cnrs.fr/Offres/CDD/UMR9198-JUDELV-011/Default.aspx)
+13:06:28   plus en ligne : Ingénieur d’études en Biologie et Physiologie (https://emploi.cnrs.fr/Offres/CDD/UMR7277-EZZAMR-002/Default.aspx)
+13:08:53 Recoupement : 226 pages revérifiées (8 plus en ligne), 0 recherches sur le web
+13:08:53   retirée : Doctorant(e)  : Modélisation théorique et statistique des boucles de r (https://emploi.cnrs.fr/Offres/Doctorant/UMR9191-ARNLER-009/Default.aspx)
+13:08:53   retirée : Ingénieur d'étude en Biologie (https://emploi.cnrs.fr/Offres/CDD/UMR5261-FLASTR-007/Default.aspx)
+13:08:53   retirée : Ingénieur-e d'étude en écologie et botanique (https://emploi.cnrs.fr/Offres/CDD/UAR2029-SEVBON-064/Default.aspx)
+13:08:53   retirée : Ingénieur(e) d'étude en biologie (https://emploi.cnrs.fr/Offres/CDD/UMR9197-LAUDAS-004/Default.aspx)
+13:08:53   retirée : Ingénieur d'étude en experimentation et instrumentation Biologiques (https://emploi.cnrs.fr/Offres/CDD/UMR9198-SOLSTR-014/Default.aspx)
+13:08:53   retirée : Ingénieur d'étude en Biologie cellulaire (https://inserm.softy.pro/offre/202814?idt=164)
+13:08:53   retirée : Ingénieur d'étude en génétique et biologie moléculaire CDD (https://emploi.cnrs.fr/Offres/CDD/UMR9198-JUDELV-011/Default.aspx)
+13:08:53   retirée : Ingénieur d’études en Biologie et Physiologie (https://emploi.cnrs.fr/Offres/CDD/UMR7277-EZZAMR-002/Default.aspx)
+13:08:53 Revérification : 8 offres retirées du site, 218 restantes
