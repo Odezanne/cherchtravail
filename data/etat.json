@@ -32,7 +32,7 @@
   "813d13fd8239",
   "8b9ef08c97b5"
  ],
- "dernier_condense": "2026-11-07",
+ "dernier_condense": "2026-11-08",
  "expirees": [
   "abg-140179",
   "abg-140300",
@@ -861,6 +861,15 @@
   "joo-7252ba30ce0d",
   "joo-d5ca57f4f90f",
   "joo-fa5d37199c76",
-  "cnrs-UMR7283-DELLER-109"
+  "cnrs-UMR7283-DELLER-109",
+  "cnrs-UMR5001-SANASK0-011",
+  "cnrs-UMR6205-VINCAL0-009",
+  "joo-dac18be57556",
+  "joo-4d97804d8547",
+  "joo-65a9ecde5ae4",
+  "joo-4e36fad66a2e",
+  "cnrs-UMR7061-JULPER-009",
+  "csp-UMR5086-LAULEC-006",
+  "joo-8d7b40598abd"
  ]
 }
