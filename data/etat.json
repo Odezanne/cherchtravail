@@ -32,7 +32,7 @@
   "813d13fd8239",
   "8b9ef08c97b5"
  ],
- "dernier_condense": "2026-11-08",
+ "dernier_condense": "2026-11-09",
  "expirees": [
   "abg-140179",
   "abg-140300",
@@ -870,6 +870,9 @@
   "joo-4e36fad66a2e",
   "cnrs-UMR7061-JULPER-009",
   "csp-UMR5086-LAULEC-006",
-  "joo-8d7b40598abd"
+  "joo-8d7b40598abd",
+  "joo-118936cea890",
+  "joo-d1112f58c53d",
+  "joo-b0890e0c1129"
  ]
 }
