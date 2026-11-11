@@ -1,18 +1,2 @@
-12:59:25   plus en ligne : Ingénieur de Recherche  -- Économie du bien-être animal (https://emploi.cnrs.fr/Offres/CDD/UMR8568-ROMESP-003/Default.aspx)
-12:59:31   plus en ligne : Ingénieur(e) De Recherche en Expérimentation animale (https://emploi.cnrs.fr/Offres/CDD/UMR8003-NICGUE-006/Default.aspx)
-13:00:41   plus en ligne : Ingénieur d'études en perception sociale, médiation et acceptabilité d (https://emploi.cnrs.fr/Offres/CDD/UMR8247-ANNBOU0-004/Default.aspx)
-13:00:49   plus en ligne : Doctorant.e en neurosciences computationnelles (https://emploi.cnrs.fr/Offres/Doctorant/UMR7210-MATCHA-001/Default.aspx)
-13:01:21   plus en ligne : Assistant ingénieur en microbiologie  pour la caractérisation phénotyp (https://emploi.cnrs.fr/Offres/CDD/UMR5290-REMFRO-007/Default.aspx)
-13:01:49   plus en ligne : Ingénieur d'Etude  : microbiologie, génétique et génomique des levures (https://emploi.cnrs.fr/Offres/CDD/UMR7238-GILFIS-001/Default.aspx)
-13:01:57   plus en ligne : Ingénieur-e en formulation et physico-chimie des lipides (https://jobs.inrae.fr/ot-30661)
-13:04:11   plus en ligne : Chercheur en neurosciences "Etude des mécanismes neuronaux impliqués d (https://emploi.cnrs.fr/Offres/CDD/UMR5297-MELDES0-334/Default.aspx)
-13:07:55 Recoupement : 244 pages revérifiées (8 plus en ligne), 0 recherches sur le web
-13:07:55   retirée : Ingénieur de Recherche  -- Économie du bien-être animal (https://emploi.cnrs.fr/Offres/CDD/UMR8568-ROMESP-003/Default.aspx)
-13:07:55   retirée : Ingénieur(e) De Recherche en Expérimentation animale (https://emploi.cnrs.fr/Offres/CDD/UMR8003-NICGUE-006/Default.aspx)
-13:07:55   retirée : Ingénieur d'études en perception sociale, médiation et acceptabilité d (https://emploi.cnrs.fr/Offres/CDD/UMR8247-ANNBOU0-004/Default.aspx)
-13:07:55   retirée : Doctorant.e en neurosciences computationnelles (https://emploi.cnrs.fr/Offres/Doctorant/UMR7210-MATCHA-001/Default.aspx)
-13:07:55   retirée : Assistant ingénieur en microbiologie  pour la caractérisation phénotyp (https://emploi.cnrs.fr/Offres/CDD/UMR5290-REMFRO-007/Default.aspx)
-13:07:55   retirée : Ingénieur d'Etude  : microbiologie, génétique et génomique des levures (https://emploi.cnrs.fr/Offres/CDD/UMR7238-GILFIS-001/Default.aspx)
-13:07:55   retirée : Ingénieur-e en formulation et physico-chimie des lipides (https://jobs.inrae.fr/ot-30661)
-13:07:55   retirée : Chercheur en neurosciences "Etude des mécanismes neuronaux impliqués d (https://emploi.cnrs.fr/Offres/CDD/UMR5297-MELDES0-334/Default.aspx)
-13:07:55 Revérification : 8 offres retirées du site, 236 restantes
+13:15:07 Recoupement : 236 pages revérifiées (0 plus en ligne), 0 recherches sur le web
+13:15:07 Revérification : 0 offres retirées du site, 236 restantes
