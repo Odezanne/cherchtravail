@@ -1,2 +1,10 @@
-13:15:07 Recoupement : 236 pages revérifiées (0 plus en ligne), 0 recherches sur le web
-13:15:07 Revérification : 0 offres retirées du site, 236 restantes
+13:08:30   plus en ligne : Doctorant en évolution du développement de Caenorhabditis elegans et a (https://emploi.cnrs.fr/Offres/Doctorant/UMR8197-VALHER-261/Default.aspx)
+13:08:47   plus en ligne : Ingénieur-e d'étude en écologie comportementale (https://emploi.cnrs.fr/Offres/CDD/UAR2029-SEVBON-065/Default.aspx)
+13:10:47   plus en ligne : Ingénieur d'études en ADN environnemental (https://emploi.cnrs.fr/Offres/CDD/UMR5175-CLAMIA-005/Default.aspx)
+13:13:59   plus en ligne : Ingénieur de Recherche en Bioinformatique (https://emploi.cnrs.fr/Offres/CDD/UMR8263-DOMWEI-004/Default.aspx)
+13:18:27 Recoupement : 236 pages revérifiées (4 plus en ligne), 0 recherches sur le web
+13:18:27   retirée : Doctorant en évolution du développement de Caenorhabditis elegans et a (https://emploi.cnrs.fr/Offres/Doctorant/UMR8197-VALHER-261/Default.aspx)
+13:18:27   retirée : Ingénieur-e d'étude en écologie comportementale (https://emploi.cnrs.fr/Offres/CDD/UAR2029-SEVBON-065/Default.aspx)
+13:18:27   retirée : Ingénieur d'études en ADN environnemental (https://emploi.cnrs.fr/Offres/CDD/UMR5175-CLAMIA-005/Default.aspx)
+13:18:27   retirée : Ingénieur de Recherche en Bioinformatique (https://emploi.cnrs.fr/Offres/CDD/UMR8263-DOMWEI-004/Default.aspx)
+13:18:27 Revérification : 4 offres retirées du site, 232 restantes
