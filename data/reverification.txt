@@ -1,10 +1,10 @@
-13:08:30   plus en ligne : Doctorant en évolution du développement de Caenorhabditis elegans et a (https://emploi.cnrs.fr/Offres/Doctorant/UMR8197-VALHER-261/Default.aspx)
-13:08:47   plus en ligne : Ingénieur-e d'étude en écologie comportementale (https://emploi.cnrs.fr/Offres/CDD/UAR2029-SEVBON-065/Default.aspx)
-13:10:47   plus en ligne : Ingénieur d'études en ADN environnemental (https://emploi.cnrs.fr/Offres/CDD/UMR5175-CLAMIA-005/Default.aspx)
-13:13:59   plus en ligne : Ingénieur de Recherche en Bioinformatique (https://emploi.cnrs.fr/Offres/CDD/UMR8263-DOMWEI-004/Default.aspx)
-13:18:27 Recoupement : 236 pages revérifiées (4 plus en ligne), 0 recherches sur le web
-13:18:27   retirée : Doctorant en évolution du développement de Caenorhabditis elegans et a (https://emploi.cnrs.fr/Offres/Doctorant/UMR8197-VALHER-261/Default.aspx)
-13:18:27   retirée : Ingénieur-e d'étude en écologie comportementale (https://emploi.cnrs.fr/Offres/CDD/UAR2029-SEVBON-065/Default.aspx)
-13:18:27   retirée : Ingénieur d'études en ADN environnemental (https://emploi.cnrs.fr/Offres/CDD/UMR5175-CLAMIA-005/Default.aspx)
-13:18:27   retirée : Ingénieur de Recherche en Bioinformatique (https://emploi.cnrs.fr/Offres/CDD/UMR8263-DOMWEI-004/Default.aspx)
-13:18:27 Revérification : 4 offres retirées du site, 232 restantes
+19:34:19   plus en ligne : Ingénieur d’études en expérimentation animale (https://emploi.cnrs.fr/Offres/CDD/UAR2018-STELEC-001/Default.aspx)
+19:34:23   plus en ligne : Assitant Ingénieur  pour analyse comportementale des comportements add (https://emploi.cnrs.fr/Offres/CDD/UMR9197-LAUDAS-006/Default.aspx)
+19:37:06   plus en ligne : Assistant-e Ingénieur-e en Physiologie végétale (https://jobs.inrae.fr/ot-30876)
+19:37:42   plus en ligne : ingénieur d'étude  : biologie moléculaire et génomique environnemental (https://emploi.cnrs.fr/Offres/CDD/UMR8520-ALEVLA-003/Default.aspx)
+19:41:27 Recoupement : 232 pages revérifiées (4 plus en ligne), 0 recherches sur le web
+19:41:27   retirée : Ingénieur d’études en expérimentation animale (https://emploi.cnrs.fr/Offres/CDD/UAR2018-STELEC-001/Default.aspx)
+19:41:27   retirée : Assitant Ingénieur  pour analyse comportementale des comportements add (https://emploi.cnrs.fr/Offres/CDD/UMR9197-LAUDAS-006/Default.aspx)
+19:41:27   retirée : Assistant-e Ingénieur-e en Physiologie végétale (https://jobs.inrae.fr/ot-30876)
+19:41:27   retirée : ingénieur d'étude  : biologie moléculaire et génomique environnemental (https://emploi.cnrs.fr/Offres/CDD/UMR8520-ALEVLA-003/Default.aspx)
+19:41:27 Revérification : 4 offres retirées du site, 228 restantes
