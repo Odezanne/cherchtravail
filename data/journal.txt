@@ -1,27 +1,34 @@
-08:48:48 Données privées lues : 1 offres suivies ou écartées
-08:48:48 Profil personnalisé du site appliqué
-08:48:49 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
-08:48:49 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
-08:48:53 CNRS : 369 offres dans le flux
-08:49:27 Choisir le service public : 132 offres (23 du MNHN)
-08:49:30 INRAE : 185 offres récentes dans le plan du site, 0 nouvelles lues, 0 gardées
-08:49:58 ABG : 0 offres de thèse
-08:50:00 Jooble : 39 offres
-08:50:02 Alertes mail : 0 mails d'emploi récents, 0 lus (hors candidatures et échanges protégés)
-08:50:02 Alertes mail : 0 offres extraites
-08:50:03 Ménage des mails (essai) : 2 mail(s) seraient mis à la corbeille
-08:50:03   essai : 2026-09-08 · France Travail <services_internet@messag · Confirmation de votre adresse électronique
-08:50:03   essai : 2026-10-29 · APEC <no-reply@apec.fr> · Demande d’information complémentaire dans le cadre du CEP 
-08:50:03 540 offres collectées, 158 nouvelles, 12 retenues pour l'analyse (dont 7 anciennes à réanalyser), 2 gardées sans IA
-08:50:09 Retirée chez l'employeur : Ingénieur d'étude en Biologie cellulaire (https://inserm.softy.pro/offre/202814?idt=164)
-08:50:15 Retirée chez l'employeur : Ingénieur(e) d'études en écologie marine – M2C (https://recrutement-unicaen.nous-recrutons.fr/poste/79reiwo9de-ingenieure-detudes-en-ecologie-marine-m2c/)
-08:50:20 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
-08:50:20 3 offres déjà retirées par l'employeur, écartées : Ingénieur d'étude en Biologie cellulaire | Ingénieur(e) d'études en écologie marine – M2C | Post-doc en écologie quantitative
-08:53:18 IA gemini-flash-latest : The read operation timed out
-08:56:05 IA gemini-flash-latest : The read operation timed out
-08:58:38 IA gemini-flash-latest : The read operation timed out
-08:59:51 Appels IA : 8, offres analysées par IA : 9 / 9
-09:09:28 Recoupement : 220 pages revérifiées (0 plus en ligne), 0 recherches sur le web
-09:09:29 Site mis à jour : 244 offres (3 hors profil écartées)
-09:09:30 Condensé envoyé par e-mail
-09:09:30 Notification envoyée
+08:24:41 Données privées lues : 1 offres suivies ou écartées
+08:24:41 Profil personnalisé du site appliqué
+08:24:42 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
+08:24:42 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
+08:24:46 CNRS : 356 offres dans le flux
+08:25:13 Choisir le service public : 132 offres (22 du MNHN)
+08:26:06 INRAE : 199 offres récentes dans le plan du site, 40 nouvelles lues, 40 gardées
+08:26:29 ABG : 0 offres de thèse
+08:26:31 Jooble : 39 offres
+08:26:31 Lecture Gmail impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+08:26:31 Alertes mail : 0 offres extraites
+08:26:31 Ménage des mails impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+08:26:31 567 offres collectées, 230 nouvelles, 46 retenues pour l'analyse (dont 0 anciennes à réanalyser), 33 gardées sans IA
+08:26:36 Retirée chez l'employeur : Ingénieur d'étude en Biologie cellulaire (https://inserm.softy.pro/offre/202814?idt=164)
+08:27:03 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
+08:27:24 2 offres déjà retirées par l'employeur, écartées : Ingénieur d'étude en Biologie cellulaire | Post-doc en écologie quantitative
+08:28:17 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+08:28:36 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+08:28:55 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+08:31:29 IA gemini-flash-latest : The read operation timed out
+08:34:09 IA gemini-flash-latest : The read operation timed out
+08:34:32 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+08:34:52 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+08:37:26 IA gemini-flash-latest : The read operation timed out
+08:40:06 IA gemini-flash-latest : The read operation timed out
+08:42:40 IA gemini-flash-latest : The read operation timed out
+08:45:20 IA gemini-flash-latest : The read operation timed out
+08:47:55 IA gemini-flash-latest : The read operation timed out
+08:48:05 IA gemini-flash-latest : HTTP 429 [{   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/d
+08:49:09 Appels IA : 36, offres analysées par IA : 44 / 44
+08:56:21 Recoupement : 220 pages revérifiées (0 plus en ligne), 1 recherches sur le web
+08:56:21 Site mis à jour : 251 offres (35 hors profil écartées)
+08:56:21 Envoi e-mail impossible : Connection unexpectedly closed
+08:56:21 Notification envoyée
