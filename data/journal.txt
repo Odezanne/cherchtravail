@@ -1,34 +1,30 @@
-08:24:41 Données privées lues : 1 offres suivies ou écartées
-08:24:41 Profil personnalisé du site appliqué
-08:24:42 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
-08:24:42 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
-08:24:46 CNRS : 356 offres dans le flux
-08:25:13 Choisir le service public : 132 offres (22 du MNHN)
-08:26:06 INRAE : 199 offres récentes dans le plan du site, 40 nouvelles lues, 40 gardées
-08:26:29 ABG : 0 offres de thèse
-08:26:31 Jooble : 39 offres
-08:26:31 Lecture Gmail impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
-08:26:31 Alertes mail : 0 offres extraites
-08:26:31 Ménage des mails impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
-08:26:31 567 offres collectées, 230 nouvelles, 46 retenues pour l'analyse (dont 0 anciennes à réanalyser), 33 gardées sans IA
-08:26:36 Retirée chez l'employeur : Ingénieur d'étude en Biologie cellulaire (https://inserm.softy.pro/offre/202814?idt=164)
-08:27:03 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
-08:27:24 2 offres déjà retirées par l'employeur, écartées : Ingénieur d'étude en Biologie cellulaire | Post-doc en écologie quantitative
-08:28:17 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:28:36 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:28:55 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:31:29 IA gemini-flash-latest : The read operation timed out
-08:34:09 IA gemini-flash-latest : The read operation timed out
-08:34:32 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:34:52 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:37:26 IA gemini-flash-latest : The read operation timed out
-08:40:06 IA gemini-flash-latest : The read operation timed out
-08:42:40 IA gemini-flash-latest : The read operation timed out
-08:45:20 IA gemini-flash-latest : The read operation timed out
-08:47:55 IA gemini-flash-latest : The read operation timed out
-08:48:05 IA gemini-flash-latest : HTTP 429 [{   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/d
-08:49:09 Appels IA : 36, offres analysées par IA : 44 / 44
-08:56:21 Recoupement : 220 pages revérifiées (0 plus en ligne), 1 recherches sur le web
-08:56:21 Site mis à jour : 251 offres (35 hors profil écartées)
-08:56:21 Envoi e-mail impossible : Connection unexpectedly closed
-08:56:21 Notification envoyée
+08:32:54 Données privées lues : 1 offres suivies ou écartées
+08:32:54 Profil personnalisé du site appliqué
+08:32:55 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
+08:32:55 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
+08:32:58 CNRS : 358 offres dans le flux
+08:33:27 Choisir le service public : 133 offres (22 du MNHN)
+08:33:34 INRAE : 171 offres récentes dans le plan du site, 4 nouvelles lues, 4 gardées
+08:33:56 ABG : 0 offres de thèse
+08:33:57 Jooble : 40 offres
+08:33:58 Lecture Gmail impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+08:33:58 Alertes mail : 0 offres extraites
+08:33:58 Ménage des mails impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+08:33:58 535 offres collectées, 168 nouvelles, 10 retenues pour l'analyse (dont 0 anciennes à réanalyser), 7 gardées sans IA
+08:34:03 Retirée chez l'employeur : Ingénieur d'étude en Biologie cellulaire (https://inserm.softy.pro/offre/202814?idt=164)
+08:34:09 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
+08:34:15 2 offres déjà retirées par l'employeur, écartées : Ingénieur d'étude en Biologie cellulaire | Post-doc en écologie quantitative
+08:37:03 IA gemini-flash-latest : The read operation timed out
+08:39:37 IA gemini-flash-latest : The read operation timed out
+08:42:18 IA gemini-flash-latest : The read operation timed out
+08:42:35 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+08:42:48 Appels IA : 10, offres analysées par IA : 8 / 8
+08:46:08   plus en ligne : Développement cérébral chez les enfants et les adolescents, et santé m (https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140520/job/developpement-cerebral-chez-les-enfants-et-les-adolescents-et-sante-mentale-et-consommation-de-substances-a-l-adolescence)
+08:46:29   plus en ligne : Régulation métabolique de la réparation neurovasculaire dans les malad (https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140533/job/regulation-metabolique-de-la-reparation-neurovasculaire-dans-les-maladies-retiniennes-ischemiques)
+08:48:41   plus en ligne : De la séquence à la clinique - amélioration du diagnostic de leucémie  (https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140524/job/de-la-sequence-a-la-clinique-amelioration-du-diagnostic-de-leucemie-par-l-utilisation-de-sequencage-de-3e-generation)
+08:50:02 Retirée chez l'employeur : Inspecteur Santé et Protection Animales - Environnement (https://recrutement.agriculture.gouv.fr/nos-offres/2026-16-A6D3600059-57999)
+08:50:02   plus en ligne : Inspecteur Santé et Protection Animales - Environnement (https://choisirleservicepublic.gouv.fr/offre-emploi/inspecteur-sante-et-protection-animales---environnement-reference-AGRI_2026-16-A6D3600059-57999/)
+08:50:37 Recoupement : 220 pages revérifiées (4 plus en ligne), 0 recherches sur le web
+08:50:38 Site mis à jour : 249 offres (9 hors profil écartées)
+08:50:38 Envoi e-mail impossible : Connection unexpectedly closed
+08:50:38 Notification envoyée

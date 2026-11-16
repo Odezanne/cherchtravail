@@ -32,13 +32,16 @@
   "813d13fd8239",
   "8b9ef08c97b5"
  ],
- "dernier_condense": "2026-11-15",
+ "dernier_condense": "2026-11-16",
  "expirees": [
   "abg-140179",
   "abg-140300",
   "abg-140390",
   "abg-140391",
   "abg-140471",
+  "abg-140520",
+  "abg-140524",
+  "abg-140533",
   "cnrs-UAR2018-STELEC-001",
   "cnrs-UAR2029-SEVBON-064",
   "cnrs-UAR2029-SEVBON-065",
@@ -464,7 +467,11 @@
   "https://jobs.inrae.fr/ot-30915",
   "https://jobs.inrae.fr/ot-30914",
   "https://jobs.inrae.fr/ot-30912",
-  "https://jobs.inrae.fr/ot-30911"
+  "https://jobs.inrae.fr/ot-30911",
+  "https://jobs.inrae.fr/ot-30906",
+  "https://jobs.inrae.fr/ot-30905",
+  "https://jobs.inrae.fr/ot-30904",
+  "https://jobs.inrae.fr/ot-30903"
  ],
  "hors_profil": [
   "cnrs-UMR5001-SANASK0-007",
@@ -965,6 +972,15 @@
   "joo-3856ab059ae3",
   "joo-f40d0e405858",
   "joo-a4c4893ca266",
-  "joo-054ebb5005b4"
+  "joo-054ebb5005b4",
+  "csp-MINT_BA069ATB-128703",
+  "cnrs-UMR7355-STEMOR-003",
+  "cnrs-UPR5301-LAUHEU0-005",
+  "cnrs-UMR6303-CLESTR-004",
+  "csp-UMR9004-MAIDEF-002",
+  "csp-INRAE-OT-30903",
+  "joo-2f4fdfe172da",
+  "joo-531f80592d28",
+  "joo-7406e7efaa03"
  ]
 }
