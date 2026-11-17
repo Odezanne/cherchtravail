@@ -1,2 +1,12 @@
-21:57:32 Recoupement : 44 pages revérifiées (0 plus en ligne), 0 recherches sur le web
-21:57:32 Revérification : 0 offres retirées du site, 249 restantes
+20:47:32   plus en ligne : Ingénieur d’études en électrophysiologie et neurosciences de la douleu (https://emploi.cnrs.fr/Offres/CDD/UMR5203-EMMBOU-003/Default.aspx)
+20:47:50   plus en ligne : Ingénieur en écologie chimique des interactions (https://emploi.cnrs.fr/Offres/CDD/UMR7261-AICBEL-056/Default.aspx)
+20:49:02   plus en ligne : Ingénieur d'Etude en Archéo-anthropologie (https://emploi.cnrs.fr/Offres/CDD/UMR8215-FRABOS-005/Default.aspx)
+20:53:58   plus en ligne : PhD Position in Neurosciences [Applications reopened] - Intestinal MAd (https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140607/job/phd-position-in-neurosciences-applications-reopened-intestinal-madcam-1-assessment-for-prognostic-and-improvement-of-functional-outcome-in-stroke)
+20:55:01   plus en ligne : Ingénieur de recherche en microscopie de super-résolution appliquée à  (https://emploi.cnrs.fr/Offres/CDD/UMR5297-MELDES0-337/Default.aspx)
+20:57:26 Recoupement : 249 pages revérifiées (5 plus en ligne), 0 recherches sur le web
+20:57:26   retirée : Ingénieur d’études en électrophysiologie et neurosciences de la douleu (https://emploi.cnrs.fr/Offres/CDD/UMR5203-EMMBOU-003/Default.aspx)
+20:57:26   retirée : Ingénieur en écologie chimique des interactions (https://emploi.cnrs.fr/Offres/CDD/UMR7261-AICBEL-056/Default.aspx)
+20:57:26   retirée : Ingénieur d'Etude en Archéo-anthropologie (https://emploi.cnrs.fr/Offres/CDD/UMR8215-FRABOS-005/Default.aspx)
+20:57:26   retirée : PhD Position in Neurosciences [Applications reopened] - Intestinal MAd (https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140607/job/phd-position-in-neurosciences-applications-reopened-intestinal-madcam-1-assessment-for-prognostic-and-improvement-of-functional-outcome-in-stroke)
+20:57:26   retirée : Ingénieur de recherche en microscopie de super-résolution appliquée à  (https://emploi.cnrs.fr/Offres/CDD/UMR5297-MELDES0-337/Default.aspx)
+20:57:26 Revérification : 5 offres retirées du site, 244 restantes
