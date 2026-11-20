@@ -1,6 +1,10 @@
-20:31:59   plus en ligne : Ingénieur-e en biologie moléculaire et cellulaire (https://emploi.cnrs.fr/Offres/CDD/UMR7277-MICSTU-017/Default.aspx)
-20:33:15   plus en ligne : Doctorant en biologie (https://emploi.cnrs.fr/Offres/Doctorant/UMR5286-JUSMAL-004/Default.aspx)
-20:35:34 Recoupement : 242 pages revérifiées (2 plus en ligne), 0 recherches sur le web
-20:35:35   retirée : Ingénieur-e en biologie moléculaire et cellulaire (https://emploi.cnrs.fr/Offres/CDD/UMR7277-MICSTU-017/Default.aspx)
-20:35:35   retirée : Doctorant en biologie (https://emploi.cnrs.fr/Offres/Doctorant/UMR5286-JUSMAL-004/Default.aspx)
-20:35:35 Revérification : 2 offres retirées du site, 240 restantes
+19:59:58   plus en ligne : Technicien de Recherche faune sauvage (https://emploi.cnrs.fr/Offres/CDD/UMR7372-DELBON-020/Default.aspx)
+20:01:52   plus en ligne : Chargée de recherche  -- Environnement (https://emploi.cnrs.fr/Offres/CDD/UMR8568-LAUMOU-001/Default.aspx)
+20:04:45   plus en ligne : Technicien en animalerie (https://emploi.cnrs.fr/Offres/CDD/UMR8197-VALHER-262/Default.aspx)
+20:06:40   plus en ligne : Étude expérimentale et modélisation de traitements thermochimiques de  (https://emploi.cnrs.fr/Offres/CDD/UMR7198-MELDOG-046/Default.aspx)
+20:07:30 Recoupement : 240 pages revérifiées (4 plus en ligne), 0 recherches sur le web
+20:07:31   retirée : Technicien de Recherche faune sauvage (https://emploi.cnrs.fr/Offres/CDD/UMR7372-DELBON-020/Default.aspx)
+20:07:31   retirée : Chargée de recherche  -- Environnement (https://emploi.cnrs.fr/Offres/CDD/UMR8568-LAUMOU-001/Default.aspx)
+20:07:31   retirée : Technicien en animalerie (https://emploi.cnrs.fr/Offres/CDD/UMR8197-VALHER-262/Default.aspx)
+20:07:31   retirée : Étude expérimentale et modélisation de traitements thermochimiques de  (https://emploi.cnrs.fr/Offres/CDD/UMR7198-MELDOG-046/Default.aspx)
+20:07:31 Revérification : 4 offres retirées du site, 236 restantes
