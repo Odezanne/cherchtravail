@@ -176,6 +176,29 @@ def collecter_csp(cfg):
     return offres
 
 
+RE_DISCIPLINE_SVT = re.compile(r"svt|sciences? de la vie|biolog|biotechnolog|sante.{0,3}environnement", re.I)
+RE_RECTORAT_IDF = re.compile(r"(rectorat|academie).{0,20}(paris|creteil|versailles)", re.I)
+
+
+def collecter_enseignement(cfg):
+    """Postes de professeur contractuel (SVT, biologie, biotechnologies) publiés par les rectorats de Paris,
+    Créteil et Versailles sur Choisir le service public, où les académies déposent leurs offres.
+    cfg = {motscles: [...], pages: 3}."""
+    from util import sans_accents
+    brutes = collecter_csp({"motscles": cfg.get("motscles") or ["sciences de la vie et de la terre", "SVT"],
+                            "pages": int(cfg.get("pages", 3))})
+    offres = []
+    for o in brutes:
+        qui = sans_accents(f"{o.get('employeur', '')} {o.get('lieu', '')}")
+        if not RE_RECTORAT_IDF.search(qui) or not RE_DISCIPLINE_SVT.search(sans_accents(o.get("titre", ""))):
+            continue
+        o.update({"region": "idf", "flux_large": False, "contrat": o.get("contrat") or "CDD (professeur contractuel)",
+                  "categorie": "enseignement"})
+        offres.append(o)
+    log(f"Enseignement (rectorats d'Île-de-France) : {len(offres)} offres de professeur contractuel")
+    return offres
+
+
 def lien_employeur_csp(page):
     """Lien « Postuler sur le site employeur » d'une page d'offre de Choisir le service public (ou None)."""
     for m in re.finditer(r"<a\b([^>]*)>(.*?)</a>", page, re.S | re.I):

@@ -33,6 +33,15 @@ sources:
     pages: 1        # 20 offres les plus récentes par mot-clé
     pages_mnhn: 3   # le MNHN publie une trentaine d'offres à la fois
 
+  # Académies de Paris, Créteil et Versailles : postes de professeur contractuel en SVT, biologie et
+  # biotechnologies (job alimentaire). Les rectorats publient leurs offres sur Choisir le service public ;
+  # le robot ne garde que celles de ces trois académies et de ces disciplines.
+  enseignement:
+    actif: true
+    motscles: ["sciences de la vie et de la terre", "SVT", "biologie", "biotechnologies", "professeur contractuel",
+               "enseignant contractuel"]
+    pages: 3
+
   # Alertes e-mail reçues dans Gmail : Indeed, LinkedIn, Welcome to the Jungle, APEC,
   # France Travail, ABG, EURAXESS, INRAE, Choisir le service public...
   # Le robot lit uniquement le libellé Gmail indiqué ci-dessous.

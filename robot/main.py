@@ -90,6 +90,12 @@ def main():
                 brutes += sources.collecter_cnrs()
             except Exception as e:
                 log(f"CNRS indisponible : {e}")
+        ens = src.get("enseignement") or {}
+        if ens.get("actif", False):
+            try:
+                brutes += sources.collecter_enseignement(ens)
+            except Exception as e:
+                log(f"Offres des académies indisponibles : {e}")
         if (src.get("choisir_le_service_public") or {}).get("actif", True):
             try:
                 brutes += sources.collecter_csp(src.get("choisir_le_service_public") or {"motscles": ["mnhn"]})
