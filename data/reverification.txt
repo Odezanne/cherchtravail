@@ -1,2 +1,8 @@
-19:30:39 Recoupement : 87 pages revérifiées (0 plus en ligne), 0 recherches sur le web
-19:30:39 Revérification : 0 offres retirées du site, 256 restantes
+23:50:50   plus en ligne : Ingénieur d’études  – Développement de tests diagnostiques ciblant des (https://emploi.cnrs.fr/Offres/CDD/UMR9198-MARVAL-001/Default.aspx)
+23:52:11   plus en ligne : Evolution de la saison sèche en Afrique centrale au cours de l’Holocèn (https://emploi.cnrs.fr/Offres/CDD/UMR8212-DIDROC-002/Default.aspx)
+23:54:59   plus en ligne : Ingénieur de Recherche Biologie Cellulaire et Moléculaire (https://emploi.cnrs.fr/Offres/CDD/UMR8104-TARISS-004/Default.aspx)
+23:56:18 Recoupement : 256 pages revérifiées (3 plus en ligne), 0 recherches sur le web
+23:56:18   retirée : Ingénieur d’études  – Développement de tests diagnostiques ciblant des (https://emploi.cnrs.fr/Offres/CDD/UMR9198-MARVAL-001/Default.aspx)
+23:56:18   retirée : Evolution de la saison sèche en Afrique centrale au cours de l’Holocèn (https://emploi.cnrs.fr/Offres/CDD/UMR8212-DIDROC-002/Default.aspx)
+23:56:18   retirée : Ingénieur de Recherche Biologie Cellulaire et Moléculaire (https://emploi.cnrs.fr/Offres/CDD/UMR8104-TARISS-004/Default.aspx)
+23:56:18 Revérification : 3 offres retirées du site, 253 restantes
