@@ -1,14 +1,4 @@
-21:40:04   plus en ligne : ingénieur d’études en bioinformatique (https://emploi.cnrs.fr/Offres/CDD/UMR8197-VALHER-260/Default.aspx)
-21:40:24   plus en ligne : Doctorant  en biologie du développement et imagerie quantitative (https://emploi.cnrs.fr/Offres/Doctorant/UMR5237-ALBTSA-005/Default.aspx)
-21:41:21   plus en ligne : Chercheur en électrophysiologie et neurosciences de la douleur (https://emploi.cnrs.fr/Offres/CDD/UMR5203-EMMBOU-004/Default.aspx)
-21:42:16   plus en ligne : Ingénieur de Recherche en modélisation numérique et traitement du sign (https://emploi.cnrs.fr/Offres/CDD/UMR7329-VALMER-103/Default.aspx)
-21:42:59   plus en ligne : Doctorat/PhD: Biologie de la chromatine chez les plantes (https://emploi.cnrs.fr/Offres/Doctorant/UMR5168-CHRCAR-010/Default.aspx)
-21:43:11   plus en ligne : Ingénieur de recherche en biologie cellulaire et moléculaire végétale  (https://emploi.cnrs.fr/Offres/CDD/UMR5004-CECABA-070/Default.aspx)
-21:45:06 Recoupement : 253 pages revérifiées (6 plus en ligne), 0 recherches sur le web
-21:45:07   retirée : ingénieur d’études en bioinformatique (https://emploi.cnrs.fr/Offres/CDD/UMR8197-VALHER-260/Default.aspx)
-21:45:07   retirée : Doctorant  en biologie du développement et imagerie quantitative (https://emploi.cnrs.fr/Offres/Doctorant/UMR5237-ALBTSA-005/Default.aspx)
-21:45:07   retirée : Chercheur en électrophysiologie et neurosciences de la douleur (https://emploi.cnrs.fr/Offres/CDD/UMR5203-EMMBOU-004/Default.aspx)
-21:45:07   retirée : Ingénieur de Recherche en modélisation numérique et traitement du sign (https://emploi.cnrs.fr/Offres/CDD/UMR7329-VALMER-103/Default.aspx)
-21:45:07   retirée : Doctorat/PhD: Biologie de la chromatine chez les plantes (https://emploi.cnrs.fr/Offres/Doctorant/UMR5168-CHRCAR-010/Default.aspx)
-21:45:07   retirée : Ingénieur de recherche en biologie cellulaire et moléculaire végétale  (https://emploi.cnrs.fr/Offres/CDD/UMR5004-CECABA-070/Default.aspx)
-21:45:07 Revérification : 6 offres retirées du site, 247 restantes
+21:25:10   plus en ligne : Ingénieur d'étude  en neuroscience - Construction et programmation d'a (https://emploi.cnrs.fr/Offres/CDD/UMR7241-ARIDIN-007/Default.aspx)
+21:28:22 Recoupement : 122 pages revérifiées (1 plus en ligne), 0 recherches sur le web
+21:28:22   retirée : Ingénieur d'étude  en neuroscience - Construction et programmation d'a (https://emploi.cnrs.fr/Offres/CDD/UMR7241-ARIDIN-007/Default.aspx)
+21:28:22 Revérification : 1 offres retirées du site, 299 restantes
