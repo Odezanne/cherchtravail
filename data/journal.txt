@@ -1,39 +1,49 @@
-08:45:41 Données privées lues : 1 offres suivies ou écartées
-08:45:41 Profil personnalisé du site appliqué
-08:45:41 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
-08:45:41 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
-08:45:45 CNRS : 410 offres dans le flux
-08:46:11 Choisir le service public : 124 offres (17 du MNHN)
-08:47:03 INRAE : 189 offres récentes dans le plan du site, 40 nouvelles lues, 40 gardées
-08:47:31 ABG : 0 offres de thèse
-08:47:32 Jooble : 40 offres
-08:47:33 Lecture Gmail impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
-08:47:33 Alertes mail : 0 offres extraites
-08:47:33 Ménage des mails impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
-08:47:33 614 offres collectées, 265 nouvelles, 56 retenues pour l'analyse (dont 0 anciennes à réanalyser), 40 gardées sans IA
-08:47:38 Retirée chez l'employeur : Ingénieur d'étude en Biologie cellulaire (https://inserm.softy.pro/offre/202814?idt=164)
-08:48:04 Retirée chez l'employeur : Inspecteur Santé et Protection Animales - Environnement (https://recrutement.agriculture.gouv.fr/nos-offres/2026-16-A6D3600059-57999)
-08:48:08 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
-08:48:22 3 offres déjà retirées par l'employeur, écartées : Ingénieur d'étude en Biologie cellulaire | Inspecteur Santé et Protection Animales - Environn | Post-doc en écologie quantitative
-08:51:43 IA gemini-flash-latest : The read operation timed out
-08:51:55 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:53:52 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:54:58 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:56:06 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:57:00 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:57:42 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:58:49 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-08:59:12 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-09:00:41 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-09:01:06 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-09:01:22 IA gemini-flash-latest : HTTP 429 [{   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/d
-09:02:02 IA gemini-flash-lite-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-09:02:03 IA nvidia/nemotron-3-super-120b-a12b:free : HTTP 404 {"error":{"message":"This model is unavailable for free. The paid version is available now - use this slug instead: nvidia/nemotron-3-super-120b-a12b","code":404},"user_id":"user_3KdF529cNcyHbztcpcu5r
-09:04:08 IA gemini-flash-lite-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
-09:04:19 IA google/gemma-4-31b-it:free : HTTP 429 {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use y
-09:04:29 IA google/gemma-4-26b-a4b-it:free : HTTP 429 {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to u
-09:06:37 Appels IA : 55, offres analysées par IA : 53 / 53
-09:13:50 Recoupement : 220 pages revérifiées (0 plus en ligne), 0 recherches sur le web
-09:13:50 Site mis à jour : 256 offres (48 hors profil écartées)
-09:13:51 Envoi e-mail impossible : Connection unexpectedly closed
-09:13:51 Notification envoyée
+08:53:30 Données privées lues : 1 offres suivies ou écartées
+08:53:30 Profil personnalisé du site appliqué
+08:53:30 CV de référence lu : CV Eliott Mestrallet.pdf (4517 caractères)
+08:53:30 Secrets présents : OPENROUTER_API_KEY=oui, GEMINI_API_KEY=oui, GMAIL_ADRESSE=oui, GMAIL_MOT_DE_PASSE_APPLI=oui, NTFY_SUJET=oui, FT_CLIENT_ID=non
+08:53:34 CNRS : 411 offres dans le flux
+08:54:52 Choisir le service public : 335 offres (0 du MNHN)
+08:54:52 Enseignement (rectorats d'Île-de-France) : 5 offres de professeur contractuel
+08:55:59 Choisir le service public : 233 offres (20 du MNHN)
+08:56:52 INRAE : 193 offres récentes dans le plan du site, 36 nouvelles lues, 36 gardées
+08:58:06 ABG « biology » : <urlopen error _ssl.c:994: The handshake operation timed out>
+09:00:53 ABG : 0 offres de thèse
+09:00:55 Jooble : 40 offres
+09:00:58 Lecture Gmail impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+09:00:58 Alertes mail : 0 offres extraites
+09:00:58 Ménage des mails impossible : b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+09:00:58 725 offres collectées, 331 nouvelles, 60 retenues pour l'analyse (dont 0 anciennes à réanalyser), 89 gardées sans IA
+09:01:28 Retirée chez l'employeur : Ingénieur d'étude en Biologie cellulaire (https://inserm.softy.pro/offre/202814?idt=164)
+09:02:36 Retirée chez l'employeur : Data manager recherche clinique (3 ans d'expérience minimum) (https://chu-angers.mstaff.co/offer/73483?referer=pep)
+09:03:44 2 offres déjà retirées par l'employeur, écartées : Ingénieur d'étude en Biologie cellulaire | Data manager recherche clinique (3 ans d'expérienc
+09:08:21 IA gemini-flash-latest : The read operation timed out
+09:10:58 IA gemini-flash-latest : The read operation timed out
+09:11:11 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+09:11:27 IA gemini-flash-lite-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+09:11:27 IA nvidia/nemotron-3-super-120b-a12b:free : HTTP 404 {"error":{"message":"This model is unavailable for free. The paid version is available now - use this slug instead: nvidia/nemotron-3-super-120b-a12b","code":404},"user_id":"user_3KdF529cNcyHbztcpcu5r
+09:11:38 IA google/gemma-4-31b-it:free : HTTP 429 {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use y
+09:11:49 IA google/gemma-4-26b-a4b-it:free : HTTP 429 {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to u
+09:13:02 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+09:13:32 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+09:14:06 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+09:14:24 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+09:14:53 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+09:16:07 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+09:16:32 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+09:19:22 IA gemini-flash-latest : The read operation timed out
+09:21:59 IA gemini-flash-latest : The read operation timed out
+09:22:09 IA gemini-flash-latest : HTTP 503 [{   "error": {     "code": 503,     "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",     "status": "UNAVAILABLE"   } } ]
+09:22:29 IA gemini-flash-latest : HTTP 429 [{   "error": {     "code": 429,     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/d
+09:23:41 IA : lot sans réponse (1/3), on continue avec le suivant
+09:23:46 Appels IA : 52, offres analysées par IA : 51 / 58
+09:24:17 Retirée chez l'employeur : Inspecteur Santé et Protection Animales - Environnement (https://recrutement.agriculture.gouv.fr/nos-offres/2026-16-A6D3600059-57999)
+09:24:17   plus en ligne : Inspecteur Santé et Protection Animales - Environnement (https://choisirleservicepublic.gouv.fr/offre-emploi/inspecteur-sante-et-protection-animales---environnement-reference-AGRI_2026-16-A6D3600059-57999/)
+09:24:22 Retirée chez l'employeur : Post-doc en écologie quantitative (https://www.univ-larochelle.fr/luniversite/recrutement/personnels-enseignants-et-recherche/post-doctorat-18-mois-prediction-des-deplacements-des-animaux-marins-et-des-reactions-des-populations-dans-les-environnements-futurs/)
+09:24:22   plus en ligne : Post-doc en écologie quantitative (https://choisirleservicepublic.gouv.fr/offre-emploi/post-doc-en-ecologie-quantitative-reference-2026-2406880/)
+09:30:58   plus en ligne : TECHNICIEN EN EXPÉRIMENTATION ANIMALE ET VÉGÉTALE (https://emploi.cnrs.fr/Offres/CDD/UMR5175-MAGPRO-005/Default.aspx)
+09:32:56   plus en ligne : Doctorant en Neurosciences  en neurobiologie : inflammation systémique (https://emploi.cnrs.fr/Offres/Doctorant/UPR3212-YANGOU-001/Default.aspx)
+09:35:16 Recoupement : 220 pages revérifiées (4 plus en ligne), 1 recherches sur le web
+09:35:17 Site mis à jour : 300 offres (78 hors profil écartées)
+09:35:17 Envoi e-mail impossible : Connection unexpectedly closed
+09:35:17 Notification envoyée
